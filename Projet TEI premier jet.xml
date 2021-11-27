@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Title</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+  </teiHeader>
+  <text>
+      <body>
+      <!-- possibilité d'insérer cette partie dans une balise <front> ? Voir définition précise de <front>-->
+         <div type="en-tête">
+            <p> Mon premier carnet de notes ayant du être égaré - <lb/>
+               <sic>où</sic> alors l'aurias-je laissé à <placeName ref="Pernes">Pernes</placeName>, à la <lb/>
+               maison quand he suis retourné au mois d'<date>avril 1940 </date> <lb/>
+               toujours est-il que j'ai confectionné un nouveau <lb/>
+               carnet sur lequel je vais inscrire mes mémoires <lb/>
+               à partire du <date when="1940-04-21"> 21 avril 1940 </date> <lb/>
+            </p>
+         </div>
+         <div>
+            <p>
+               Au mois d'avril, nous étions toujours aux avants-postes <lb/>
+               nous y montions 5 jours - et ensuite on descendait un peu <lb/>
+               à l'arrière pour 10 jours - dans un cantonnement où on <lb/> <pb n="1"/>
+               
+               continuait à faire des travaux (tranchées, abris, ect) <lb/>
+               c'est donc le <date when="1940-04-21">21 avril 1940</date> que j'obtiens une permis- <lb rend="hyphen"/>
+               sion de 3 jours pour aller voir <persName ref="Jean-Pierre"> Jean-Pierre</persName> qui était <lb/>
+               un peu souffrant. nous étions un en cantonnement à <lb/>
+               <placeName> Kirschnaumen (Moselle)</placeName> les bombardements sur les <lb/>
+               avant-postes se faisaient sentir davantage. et c'est avec <lb/>
+               appréhension qu'on y allait pour 5 jours et 5 nuits. <lb/>
+               le <orgName ref="Bataillon">Bataillon</orgName> y était remonté. je suis <lb/>
+               reparti de <placeName ref="Pernes"></placeName> le <date when="1940-04-27"> 27 avril </date> <sic> j'ai rentré</sic> le <date when="1940-04-29"> 29</date> à <lb/>
+               <placeName ref="Capsilliers"> Capsillers</placeName>. là nous sommes restés 2 <sic>où</sic> 3 jours. puis <lb/> <pb n="2"/>
+               
+               nous sommes allés à <placeName ref="Inglange"> Inglange </placeName> pour 10 jours. c'est là que <lb/>
+               le <orgName ref="Bataillon">Bataillon</orgName> était descendu en repos. d'<placeName ref="Inglange">Inglange</placeName> <sic>est</sic> parti <lb/>
+               les copains <persName ref="Merlin"> Merlin</persName> et autres pour travailler aux <placeName ref="Mines">Mines</placeName> <lb/>
+               comme affectés spéciaux. et le <date when="1940-05-10"> 10 mai </date> au matin nous étions <lb/>
+               en alerte. des vagues d'avions passaient au dessus, qui revenaient de <placeName ref="France"> France</placeName>. et aussitôt on quittait <placeName ref="Inglange">Inglange</placeName> <lb/>
+               pour aller dans un bois à <placeName ref="Budling"> Budling</placeName> qui se trouve à 4 km <lb/>
+               d'<placeName ref="Inglange">Inglange</placeName>. dans ce bois on y montait la garde de nuit et <lb/>
+               jour, et on y faisaient des tranchées et des abris. On <lb/>
+               s'attendait à partir d'un jour à l'autre. et d'aller en <lb/>
+               renfort dans le <placeName ref="Nord"> Nord </placeName>. Le <date when="1940-05-24"> 24 mai </date> dans l'après-midi <lb/> <pb n="3"/>
+               
+               mais quittons le bois de <placeName ref="Budling">Budling</placeName> pour <placeName ref="Metzervisse"> Metzervisse</placeName> qui est <lb/>
+               à 8 km de là. et nous y cantonnons - une brave femme nous <lb/>
+               donne un bidon de lait et le soir nous mangeons dans une <lb/>
+               maison une bonne omelette. c'est là que j'ai rencontré <lb/>
+               <persName ref="Georges Gillet"> Georges Gillet</persName>. nous avons trinqué ensemble, et il nous payat <lb/>
+               une bonne bouteille de champagne. j'y rencontre également <lb/>
+               des soldats appartement au <orgName> 370e B. A. L. V. E.</orgName> et je me <sic>renseigniés</sic> <lb/>
+               tout de suite pour avoir si <persName ref="Raymond">Raymond</persName> n'était pas là. pas <lb/>
+               de veine c'était la <orgName>3e Bie</orgName>. Le <date when="1940-05-25"> 25 mai </date>, départ de <placeName ref="Metzervisse">Metzervisse</placeName> <lb/>
+               par <placeName ref="Semécourt">Semécourt (Moselle)</placeName> étape de 30 km. c'est là que le <lb/>
+               <orgName ref="Bataillon"> Bataillon</orgName> touche le renfort. le <date when="1940-05-26">dimanche 26 mai </date> départ <lb/> <pb n="4"/>
+               
+               
+            </p>
+            <p>
+            </p>
+         </div>
+      </body>
+  </text>
+</TEI>
