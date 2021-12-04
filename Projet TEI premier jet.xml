@@ -15,6 +15,263 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
+     <profileDesc>
+        <particDesc>
+           <listPerson>
+              <person xml:id="Jean-Pierre">
+                 <persName> Jean-Pierre</persName>
+                 <note> Jean-Pierre Seilliez, son fils</note>
+              </person>
+              <person xml:id="Merlin">
+                 <persName>Merliin</persName>
+                 <note></note>
+              </person>
+              <person xml:id="Georges_Gillet">
+                 <persName> Georges Gillet</persName>
+                 <note>
+                 </note>
+              </person>
+              <person xml:id="Raymond">
+                 <persName>Raymond</persName>
+                 <note></note>
+              </person>
+              <person xml:id="Rémy_Grimbert">
+                 <persName> Rémy Grimbert </persName>
+                 <note> </note>
+              </person>
+              <person xml:id="Jean_Merlin">
+                 <persName> Jean Merlin </persName>
+                 <note> </note>
+              </person>
+              <person xml:id="Gustave_Royer">
+                 <persName> Gustave Royer</persName>
+                 <note> un de ses "copains" retrouvé lors de sa capture à Rethel</note>
+              </person>
+              <person xml:id="Joseph">
+                 <persName>Joseph</persName>
+                 <note> </note>
+              </person>
+              <person xml:id="Jean_François">
+                 <persName> Jean François</persName>
+              </person>
+              <person xml:id="Malequin">
+                 <persName> Malequin</persName>
+                 <note> sergent abbé</note>
+              </person>
+              <person xml:id="Boutmy">
+                 <persName>Boutmy</persName>
+                 <note> Commandant du Bataillon</note>
+              </person>
+              <person xml:id="Tirant">
+                 <persName>Tirant</persName>
+                 <note>un de ses copains retrouvé à Rethel lors de sa capture à Rethel</note>
+              </person>
+              <person xml:id="Léonce_Huet">
+                 <persName>Léonce Huet</persName>
+                 <note> </note>
+              </person>
+              <person xml:id="Henri_Darras">
+                 <persName> Henri Darras</persName>
+                 <note> </note>
+              </person>
+              <person xml:id="Paul_Lamorille">
+                 <persName> Paul Lamorille</persName>
+                 <note> gendre de Lourme </note>
+              </person>
+              <person xml:id="Lourme">
+                 <persName>Lourme</persName>
+                 <note>beau -père de Paul Lamorille</note>
+              </person>
+              <person xml:id="Lesaut">
+                 <persName>Lesaut</persName>
+                 <note> </note>
+              </person>
+              <person xml:id ="Mollet">
+                 <persName>Mollet</persName>
+                 <note> </note>
+              </person>
+              <person xml:id="Henri_Lemaire">
+                 <persName> Henri Lemaire</persName>
+                 <note></note>
+              </person>
+           </listPerson>
+        </particDesc>
+        <settingDesc>
+           <listPlace>
+              <place xml:id="Pernes">
+                 <placeName> Pernes-en-Artois</placeName>
+                 <location>
+                    <country key="FR"> France</country>
+                    <district type="département"> Pas-de-Calais</district>
+                    <geo> 50° 29′ 06″ nord, 2° 24′ 41″ est</geo>
+                    <note> Bourg natal d'Edmond Seilliez</note>
+                 </location>
+              </place>
+              <place xml:id="Kirschnaumen">
+                 <placeName> Kirschnaumen </placeName>
+                 <location>
+                    <country key="FR"> France </country>
+                    <district type="département"> Moselle </district>
+                    <geo> 49° 23′ 54″ nord, 6° 26′ 06″ est </geo>
+                    <note> commune de cantonnement d'Edmond en avril 1940 </note>
+                 </location>
+              </place>
+              <place xml:id="Capsilliers">
+                 <placeName> Capsilliers  </placeName>
+                 <location>
+                    <country key="FR"> France </country>
+                    <district type="département"> ??? </district>
+                    <geo> ??? </geo>
+                    <note> toponyme à retrouver </note>
+                 </location>
+              </place>
+              <place xml:id="Inglange">
+                 <placeName> Inglange </placeName>
+                 <location>
+                    <country key="FR"> France </country>
+                    <district type="département"> Moselle </district>
+                    <geo> 49° 20′ 52″ nord, 6° 17′ 56″ est </geo>
+                    <note> </note>
+                 </location>
+              </place>
+              <place xml:id="Budling">
+                 <placeName> Budling </placeName>
+                 <location>
+                    <country key="FR"> France </country>
+                    <district type="département"> Moselle </district>
+                    <geo> 49° 20′ 51″ nord, 6° 21′ 23″ est  </geo>
+                    <note> </note>
+                 </location>
+              </place>
+              <place xml:id="Metzervisse">
+                 <placeName> Metzervisse</placeName>
+                 <location>
+                    <country key="FR"> France</country>
+                    <district type="département"> Moselle </district>
+                    <geo> 49° 18′ 57″ nord, 6° 17′ 11″ est </geo>
+                    <note> </note>
+                 </location>
+              </place>
+              <place xml:id="Semécourt">
+                 <placeName> Semécourt </placeName>
+                 <location>
+                    <country key="FR"> France</country>
+                    <district type="département"> Moselle </district>
+                    <geo> 49° 11′ 38″ nord, 6° 08′ 07″ est </geo>
+                    <note> </note>
+                 </location>
+              </place>
+              <place xml:id="Amanvillers">
+                 <placeName> Amanvillers </placeName>
+                 <location>
+                    <country key="FR"> France </country>
+                    <district type="département"> Moselle </district>
+                    <geo> 49° 10′ 03″ nord, 6° 02′ 37″ est </geo>
+                    <note> </note>
+                 </location>
+              </place>
+              <place xml:id="Sainte-Marie-aux-Chênes">
+                 <placeName> Sainte-Marie-aux-Chênes </placeName>
+                 <location>
+                    <country key="FR"> France </country>
+                    <district type="département"> Moselle </district>
+                    <geo> 49° 11′ 32″ nord, 6° 00′ 11″ est </geo>
+                    <note> </note>
+                 </location>
+              </place>
+              <place xml:id="Vitry-le-François">
+                 <placeName> Vitry-le-François </placeName>
+                 <location>
+                    <country key="FR"> France </country>
+                    <district type="département"> Marne </district>
+                    <geo> 48° 43′ 32″ nord, 4° 35′ 07″ est </geo>
+                    <note> </note>
+                 </location>
+              </place>
+              <place xml:id="Epernay">
+                 <placeName> Epernay </placeName>
+                 <location>
+                    <country key="FR"> France </country>
+                    <district type="département"> Marne</district>
+                    <geo> 49° 02′ 25″ nord, 3° 57′ 36″ est </geo>
+                    <note> </note>
+                 </location>
+              </place>
+              <place xml:id="Elincourt">
+                 <placeName> Elincourt </placeName>
+                 <location>
+                    <country key="FR"> France </country>
+                    <district type="département"> Nord </district>
+                    <geo> 50° 02′ 42″ nord, 3° 22′ 21″ est</geo>
+                    <note> village rural à la frontière administrative entre les département du Nord, de l'Aisne et des Ardennes, expliquant vraisemblablement l'approximation d'Edmond</note>
+                 </location>
+              </place>
+              <place xml:id="Rethel">
+                 <placeName> Rethel </placeName>
+                 <location>
+                    <country key="FR"> France </country>
+                    <district type="département"> Ardennes </district>
+                    <geo> 49° 30′ 38″ nord, 4° 22′ 00″ est </geo>
+                    <note> </note>
+                 </location>
+              </place>
+              <place xml:id="Colmar">
+                 <placeName> Colmar </placeName>
+                 <location>
+                    <country key="FR"> France </country>
+                    <district type="département"> Haut-Rhin </district>
+                    <geo> 48° 04′ 54″ nord, 7° 21′ 20″ est </geo>
+                    <note> mentionné par Edmond lors du remplacement du 152e Régiment d'Infanterie</note>
+                 </location>
+              </place>
+              <place xml:id="Reims">
+                 <placeName> Reims </placeName>
+                 <location>
+                    <country key="FR"> France </country>
+                    <district type="département"> Marne </district>
+                    <geo> 49° 15′ 46″ nord, 4° 02′ 05″ est </geo>
+                    <note> </note>
+                 </location>
+              </place>
+              <place xml:id="Perthes">
+                 <placeName> Perthes  </placeName>
+                 <location>
+                    <country key="FR"> France </country>
+                    <district type="département"> Haute-Marne </district>
+                    <geo> 48° 39′ 25″ nord, 4° 49′ 27″ est </geo>
+                    <note> </note>
+                 </location>
+              </place>
+              <place xml:id="Charleville">
+                 <placeName> Charleville-Mézières </placeName>
+                 <location>
+                    <country key="FR"> France </country>
+                    <district type="département"> Ardennes </district>
+                    <geo> 49° 46′ 19″ nord, 4° 42′ 58″ est </geo>
+                    <note> </note>
+                 </location>
+              </place>
+              <place xml:id="Bertrix">
+                 <placeName> Bertrix </placeName>
+                 <location>
+                    <country key="BL"> Belgique </country>
+                    <district type="Province"> Province du Luxembourg </district>
+                    <geo> 49° 51,25′ nord, 5° 15,2′ est </geo>
+                    <note> </note>
+                 </location>
+              </place>
+                 <place xml:id="Trèves">
+                 <placeName> Trèves (Trier)</placeName>
+                 <location>
+                    <country key="AL"> Allemagne </country>
+                    <district type="Land"> Rhénanie-Palatinat </district>
+                    <geo> 49° 45′ 35″ nord, 6° 38′ 38″ est</geo>
+                    <note> </note>
+                 </location>
+              </place>
+           </listPlace>
+        </settingDesc>
+     </profileDesc>
   </teiHeader>
   <text>
       <body>
@@ -38,7 +295,7 @@
                c'est donc le <date when="1940-04-21">21 avril 1940</date> que j'obtiens une permis- <lb rend="hyphen"/>
                sion de 3 jours pour aller voir <persName ref="#Jean-Pierre"> Jean-Pierre</persName> qui était <lb/>
                un peu souffrant. nous étions un en cantonnement à <lb/>
-               <placeName> Kirschnaumen (Moselle)</placeName> les bombardements sur les <lb/>
+               <placeName ref="#Kirschnaumen"> Kirschnaumen (Moselle)</placeName> les bombardements sur les <lb/>
                avant-postes se faisaient sentir davantage. et c'est avec <lb/>
                appréhension qu'on y allait pour 5 jours et 5 nuits. <lb/>
                le <orgName ref="#Bataillon">Bataillon</orgName> y était remonté. je suis <lb/>
@@ -47,20 +304,20 @@
                
                nous sommes allés à <placeName ref="#Inglange"> Inglange </placeName> pour 10 jours. c'est là que <lb/>
                le <orgName ref="#Bataillon">Bataillon</orgName> était descendu en repos. d'<placeName ref="#Inglange">Inglange</placeName> <sic>est</sic> parti <lb/>
-               les copains <persName ref="#Merlin"> Merlin</persName> et autres pour travailler aux <placeName ref="#Mines">Mines</placeName> <lb/>
+               les copains <persName ref="#Merlin"> Merlin</persName> et autres pour travailler aux <geo>Mines</geo> <lb/>
                comme affectés spéciaux. et le <date when="1940-05-10"> 10 mai </date> au matin nous étions <lb/>
-               en alerte. des vagues d'avions passaient au dessus, qui revenaient de <placeName ref="#France"> France</placeName>. et aussitôt on quittait <placeName ref="#Inglange">Inglange</placeName> <lb/>
+               en alerte. des vagues d'avions passaient au dessus, qui revenaient de France. et aussitôt on quittait <placeName ref="#Inglange">Inglange</placeName> <lb/>
                pour aller dans un bois à <placeName ref="#Budling"> Budling</placeName> qui se trouve à 4 km <lb/>
                d'<placeName ref="#Inglange">Inglange</placeName>. dans ce bois on y montait la garde de nuit et <lb/>
                jour, et on y faisaient des tranchées et des abris. On <lb/>
                s'attendait à partir d'un jour à l'autre. et d'aller en <lb/>
-               renfort dans le <placeName ref="#Nord"> Nord </placeName>. Le <date when="1940-05-24"> 24 mai </date> dans l'après-midi <lb/> <pb n="4"/>
+               renfort dans le Nord. Le <date when="1940-05-24"> 24 mai </date> dans l'après-midi <lb/> <pb n="4"/>
                
                mais quittons le bois de <placeName ref="#Budling">Budling</placeName> pour <placeName ref="#Metzervisse"> Metzervisse</placeName> qui est <lb/>
                à 8 km de là. et nous y cantonnons - une brave femme nous <lb/>
                donne un bidon de lait et le soir nous mangeons dans une <lb/>
                maison une bonne omelette. c'est là que j'ai rencontré <lb/>
-               <persName ref="#Georges Gillet"> Georges Gillet</persName>. nous avons trinqué ensemble, et il nous payat <lb/>
+               <persName ref="#Georges_Gillet"> Georges Gillet</persName>. nous avons trinqué ensemble, et il nous payat <lb/>
                une bonne bouteille de champagne. j'y rencontre également <lb/>
                des soldats appartement au <orgName> 370e B. A. L. V. E.</orgName> et je me <sic>renseigniés</sic> <lb/>
                tout de suite pour avoir si <persName ref="#Raymond">Raymond</persName> n'était pas là. pas <lb/>
@@ -69,12 +326,12 @@
                <orgName ref="#Bataillon"> Bataillon</orgName> touche le renfort. le <date when="1940-05-26">dimanche 26 mai </date> départ <lb/> <pb n="5"/>
                
                de <placeName ref="#Semécourt"> Semécourt</placeName> pour <placeName ref="#Amanvillers"> Amanvillers</placeName> où nous devons embarquer. <lb/>
-               c'est dans ce patelin que <persName ref="#Rémy Grimbert"> Rémy Grimbert</persName> habitait - nous <lb/>
-               y étions déjà passés au mois de <date when-iso="1940-05"> Mai</date> - pour nous rendre à <placeName ref="#Sainte-Marie-aux-Chêne"> Ste-Marie-aux-chênes</placeName>. et de là <persName ref="#Rémy Grimbert">Rémy Grimbert</persName> était <lb/>
-               venu voir <persName ref="#Jean Merlin">Jean Merlin</persName>. aussitôt arrivés à <placeName ref="#Amanvillers">Amanvillers</placeName> <lb/>
+               c'est dans ce patelin que <persName ref="#Rémy_Grimbert"> Rémy Grimbert</persName> habitait - nous <lb/>
+               y étions déjà passés au mois de <date when-iso="1940-05"> Mai</date> - pour nous rendre à <placeName ref="#Sainte-Marie-aux-Chênes"> Ste-Marie-aux-chênes</placeName>. et de là <persName ref="#Rémy_Grimbert">Rémy Grimbert</persName> était <lb/>
+               venu voir <persName ref="#Jean_Merlin">Jean Merlin</persName>. aussitôt arrivés à <placeName ref="#Amanvillers">Amanvillers</placeName> <lb/>
                on se <sic> diriges </sic> sur les quais - où le train nous attend - et <lb/>
                on <sic>embarques</sic> aussitôt. je n'<sic> ait </sic> pas le temps d'aller <lb/>
-               voir <persName ref="#Rémy Grimbert"> Rémy</persName>. le train <sic>démarres</sic> à 8 H du soir. on ne sais pas <lb/>
+               voir <persName ref="#Rémy_Grimbert"> Rémy</persName>. le train <sic>démarres</sic> à 8 H du soir. on ne sais pas <lb/>
                où on va, mais on sait qu'on va monter en lignes. on <lb/>
                <sic> roules </sic> on <sic> arrêtes </sic> et on repart, pour enfin arriver le <lb/>
                <date when="1940-05-27"> 27 </date> au soir à 8 H, le train a du faire de grands détours. <lb/> <pb n="6"/>
@@ -82,25 +339,25 @@
                car les convois d'artillerie qui passaient par <placeName ref="#Vitry-le-François">Vitry-le-François</placeName> <lb/>
                avaient été bombardés par les avions. on <sic> débarques </sic> donc dans <lb/>
                une petite gare de la Marne à 13 KM d'<placeName ref="#Epernay">Epernay</placeName>. on va <lb/>
-               cantonner à <placeName ref="#X"> X </placeName> - je mets X car je ne me souviens plus du nom <lb/>
+               cantonner à X - je mets X car je ne me souviens plus du nom <lb/>
                du patelin. on <sic> restes </sic>  3 jours dans ce village. je  n'<sic> ait </sic> plus <lb/>
-               d'argent sur moi et j'empruntes 50 f. à mon copain <persName ref="#Gustave Royer"> Gustave <lb/>
+               d'argent sur moi et j'empruntes 50 f. à mon copain <persName ref="#Gustave_Royer"> Gustave <lb/>
                Royer </persName>. nous achetons des oeufs, et nous faisons faire une bonne <lb/>
                omelette dans une maison. et ensuite nous buvons quelques <lb/>
                bouteilles de champagne, car il n'est pas très cher ici. le <lb/>
                <date when="1940-05-30">30 mai 1940</date> à 7 H 30 du soir on <sic>embarques</sic> dans des <lb/>
                autobus de la <orgName ref="#STCRP">STCRP</orgName>. on <sic>roules</sic> presque toute la nuit <lb/> <pb n="7"/>
                
-               et on <sic>arrives</sic> le <date ref="#1940-05-31"> 31 </date> à 4 H du matin à <placeName>Elincourt</placeName> pettit village <lb/>
-               des <placeName ref="#Ardennes">Ardennes</placeName>, déja bien touché par de récents bombardements <lb/>
+               et on <sic>arrives</sic> le <date ref="#1940-05-31"> 31 </date> à 4 H du matin à <placeName ref="#Elincourt">Elincourt</placeName> pettit village <lb/>
+               des Ardennes, déja bien touché par de récents bombardements <lb/>
                on <sic>couches</sic> le soir dans un bois à quelques kilomètres <lb/>
                d'<placeName ref="#Elincourt">Elincourt</placeName>, en attendant le lendemain car on doit monter <lb/>
-               à <placeName ref="#Rethel">Rethel</placeName> et remplacer le <orgName ref="#152e Régiment d'Infanterie">152e Rgt d'Infanterie</orgName> de <placeName ref="#Colmar">Colmar.</placeName><lb/>
+               à <placeName ref="#Rethel">Rethel</placeName> et remplacer le <orgName ref="#152e Régiment d'Infanterie">152e Rgt d'Infanterie</orgName> de <placeName ref="#Colmar">Colmar</placeName>.<lb/>
                le <date when="1940-06-01">1er juin</date> donc, on <sic> quittes</sic> le bois pour monter à <placeName ref="#Rethel">Rethel</placeName><lb/>
-               qui se <sic>trouves</sic> à 20 km de là. on <sic>arrives</sic> dans <placeName ref="#Rethen">Rethel</placeName> dans la <lb/>
+               qui se <sic>trouves</sic> à 20 km de là. on <sic>arrives</sic> dans <placeName ref="#Rethel">Rethel</placeName> dans la <lb/>
                nuit. des maisons brûlent par ici - par là - on <sic>entends</sic> les <lb/>
                diffuseurs allemands. notre Cie doit prendre ses positions <lb/>
-               tout à fait en amont. on doit passer le <geogName ref="#canal de l'Aisne">canal de l'Aisne</geogName>
+               tout à fait en amont. on doit passer le <geogName ref="#canal_de_l'_Aisne">canal de l'Aisne</geogName>
                puis une autre <geo>rivière</geo>. on <sic>prends</sic> position dans une <lb/><pb n="8"/>
                
                grande <geo>usine</geo> qui avait déja subit de sérieux bombardement <lb/>
@@ -124,11 +381,11 @@
                à un endroit passer dans l'eau, car ils avaient fait sauter <lb/>
                un <geo>pont</geo>, et on passait dans l'eau jusqu'à 50 cm avec les bidons <lb/>
                et les <sic>bouteillons</sic>. un <time>soir</time> le <date when="1940-06-06">6</date> ou le <date when="1940-06-07"> 7 </date> je vois <persName ref="#Joseph">Joseph</persName> qui
-               <sic> m'apprends </sic> la mort de notre copain <persName ref="#Jean François"> Jean François</persName>. il se trouve <lb/>
+               <sic> m'apprends </sic> la mort de notre copain <persName ref="#Jean_François"> Jean François</persName>. il se trouve <lb/>
                dans une cave avec plusieurs de ses copains et un bombarde <lb/> <pb n="10"/>
                
                ment d'artillerie <sic> fait </sic> écrouler les murs sur ces pauvres <lb/>
-               camarades - fait tué également le <persName ref="# sergent abbé Malequin"> sergent abbé Malequin</persName>. <lb/>
+               camarades - fait tué également le sergent abbé <persName ref="#Malequin">Malequin</persName>. <lb/>
                nous subissons dans <placeName ref="#Rethel"> Rethel </placeName>de gros bombardement d'ar<lb/>
                tillerie, surtout celui du <date when="1940-06-09"> 9 juin</date> au <time> matin à 4 H  </time> jusqu'au <lb/>
                <time>soir à 7 H</time>. des obus de tous calibres nous étaient envoyés. on <lb/>
@@ -145,7 +402,7 @@
                avec sa <orgName>Cie</orgName> et partait vers la sortie du <geo>tunnel</geo> pour <lb/>
                pour monter en lignes. on entendait le bruit des obus qui <lb/>
                éclataient en dehors. on savait ce qui nous attendait. <lb/>
-               le <persName ref="#Commandant du Bataillon Boutmy"> Cdt du Bon Boutmy</persName> nous dit du calme et du <lb/>
+               le Cdt du Bon <persName ref="#Boutmy">Boutmy</persName> nous dit du calme et du <lb/>
                courage, et tout <sic> iras </sic> bien. il est environ <time>10 H du matin</time> <lb/>
                on sort aussi du tunnel. les obus pleuvent, les balles <lb/>
                sifflent à mes oreilles. prendre position dans ces conditions <lb/> <pb n="12"/>
@@ -199,19 +456,19 @@
                
                dans la cour d'une grande maison près de <placeName ref="#Rethel">Rethel</placeName> où <lb/>
                nous passons la nuit dehors. le <time> lendemain matin</time> au réveil <lb/>
-               je retrouves mes copains <persName ref="#Royer"> Royer</persName>, <persName ref="#Tirant"> Tirant </persName> et autres, qui avaient <lb/>
+               je retrouves mes copains <persName ref="#Gustave_Royer"> Royer</persName>, <persName ref="#Tirant"> Tirant </persName> et autres, qui avaient <lb/>
                été prisonniers <time> la veille</time>, mais nous n'étions pas ensemble ce <lb/>
                ce moment là. je cherches dans tout le monde <persName ref="#Joseph">Joseph</persName> <lb/>
                mais je ne le vois pas. je vois arriver un peu plus tard <lb/>
-               <persName ref="#Léonce Huet">Léonce Huet</persName>, <persName ref="#Henri Darras"> Henri Darras</persName>, puis nous partons pour <placeName ref="#Charleville">Charleville</placeName>
+               <persName ref="#Léonce_Huet">Léonce Huet</persName>, <persName ref="#Henri_Darras"> Henri Darras</persName>, puis nous partons pour <placeName ref="#Charleville">Charleville</placeName>
                où nous passons 2 nuits à la caserne des <orgName> gardes mobiles</orgName>. là je <lb/>
-               vois <persName ref="#Paul Lamorille">Paul Lamorille</persName>, le gendre de <persName ref="#Lourme">Lourme</persName> puis nous gagnons la <lb/>
-               <placeName ref="#Belgique">Belgique</placeName> et, toujours à pied, nous faisons de longues <lb/>
+               vois <persName ref="#Paul_Lamorille">Paul Lamorille</persName>, le gendre de <persName ref="#Lourme">Lourme</persName> puis nous gagnons la <lb/>
+               Belgique et, toujours à pied, nous faisons de longues <lb/>
                étapes sans beaucoup nous reposer, sans beaucoup manger, <lb/> <pb n="17"/>
                
                et nous souffrons surtout de la soif, et nous buvons bien souvent <lb/>
                de l'eau qui n'est certes pas potable. puis nous gagnons la <lb/>
-               <placeName ref="#Belgique">Belgique</placeName> où les gens nous font bon accueil, et nous embarquons <lb/>
+               Belgique où les gens nous font bon accueil, et nous embarquons <lb/>
                le <date when="1940-06-15"> 15 juin</date> à <time> midi </time> à <placeName ref="#Bertrix"> Bertrix</placeName> pour  arriver à <placeName ref="#Trèves">Trèves</placeName> à <lb/>
                <time> 6 H le soir</time>. c'est une belle ville toute décorée de drapeaux <lb/>
                les gens nous regardent avec curiosité, nous allons loger dans <lb/>
@@ -223,7 +480,7 @@
                
                pour rester quelques jours, surtout que je n'<sic> ait</sic> mal aux pieds <lb/>
                des suites des longues marches que nous avons faites.<lb/>
-               <persName ref="#Roger">Roger</persName>, <persName ref="#Levant">Levant</persName> et <persName ref="#Mollet">Mollet</persName> travaillent aux cadernes à faire <lb/>
+               <persName ref="#Gustave_Royer">Royer</persName>, <persName ref="#Lesaut">Lesaut</persName> et <persName ref="#Mollet">Mollet</persName> travaillent aux cadernes à faire <lb/>
                des corvées  en ville où ils rapportent un peu de pain. <lb/>
                moi j'épluches les patates à la cuisines avec d'autres où en <lb/>
                plus de ma ration ordinaire et de mon casse-croûte je touches <lb/>
@@ -235,64 +492,14 @@
                
                un paquet de tabac. j'étais bien content, j'ai payé avec une <lb/>
                pièce de 20 f. et on m'a rendu quelques pièces de 10 pfenning. <lb/>
-               étant un jour à la corvée de patates, j'apperçois <persName ref="#Henri Lemaire">Henri Lemaire</persName> de <lb/>
+               étant un jour à la corvée de patates, j'apperçois <persName ref="#Henri_Lemaire">Henri Lemaire</persName> de <lb/>
                <placeName ref="#Pernes">Pernes</placeName>. je lui parles et le <time>soir</time> je le retrouves ainsi que <lb/>
-               <persName ref="#Catelin de Tangry">Catelin de <placeName ref="#Tangry">Tangry</placeName></persName>. puis il <sic>arrives</sic> un ordre que tout le monde <lb/>
+               <persName ref="#Catelin"> Catelin </persName> de <placeName ref="#Tangry"> Tangry </placeName>. puis il <sic>arrives</sic> un ordre que tout le monde <lb/>
                doit partir. ça nous <sic>embêtes</sic>, on s'y <sic>habituais</sic>. on <sic>essayes</sic> de <lb/>
                se camouffler, pas moyen. et nous quittons <placeName ref="#Trèves">Trèves</placeName> le <date when="1940-06-22"> samedi <lb/>
                22 juin 1940</date> dans <time>l'après-midi vers 3 H 30 </time> et ce qui nous <lb/>
                chagrines c'est que nous savons que le convoi par pour la <lb/>
-               <placeName ref="#Prusse Orientale">Prusse Orientale</placeName>
-               
-               
-               
-             
-               
-               
-               
-               
-               
-               
-               
-               
-               
-               
-               
-               
-               
-               
-               
-               
-               
-               
-               
-               
-               
-               
-               
-               
-               
-               
-               
-               
-               
-               
-               
-               
-               
-               
-               
-               
-               
-               
-               
-               
-               
-               
-               
-               
-            
-               
+               Prusse Orientale <!-- Prusse_Orientale = placeName ou autre ? Geo ? -->
             </p>
          </div>
       </body>
