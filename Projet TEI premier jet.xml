@@ -26,13 +26,13 @@
               </org>
               <org xml:id="RALVF">
                  <orgName> 370e R.A.L.V.F  </orgName>
-                 <note> 370eme Régiment d'Artillerie Lourde sur Voie Ferrée. Formation créée pour transporter sur voie ferrée l'artillerie gros calibre sur voie ferrée,
-                    afin de palier les difficulté de transport par la route
+                 <note> 370eme Régiment d'Artillerie Lourde sur Voie Ferrée. Formation créée pour transporter sur voie ferrée l'artillerie "gros calibres" sur voie ferrée,
+                    afin de palier aux difficultés de transport par la route en temps de guerre.
                  </note>
               </org>
               <org xml:id="Bie">
                  <orgName cert="low"> 3e Bie </orgName>
-                 <note> 3e Brigade d'Infanterie Légère </note>
+                 <note> 3e Brigade d'Infanterie Légère. Manque de données contextuelle pour déterminer le corps d'armée à laquelle cette brigade appartient</note>
               </org>
               <org xml:id="STCRP">
                  <orgName> S.T.C.R.P </orgName>
@@ -115,7 +115,7 @@
               </person>
               <person xml:id="Lourme">
                  <persName>Lourme</persName>
-                 <note>beau -père de Paul Lamorille</note>
+                 <note>beau-père de Paul Lamorille</note>
               </person>
               <person xml:id="Lesaut">
                  <persName>Lesaut</persName>
@@ -328,11 +328,11 @@
       <!-- possibilité d'insérer cette partie dans une balise <front> ? Voir définition précise de <front>-->
          <div type="en-tête">
             <p> Mon premier carnet de notes ayant du être égaré - <lb/>
-               <sic>où</sic> alors l'aurias-je laissé à <placeName ref="#Pernes">Pernes</placeName>, à la <lb/>
+               <sic>où</sic> alors l'aurias -je laissai à <placeName ref="#Pernes">Pernes</placeName>, à la <lb/>
                maison quand he suis retourné au mois d'<date>avril 1940 </date> <lb/>
                toujours est-il que j'ai confectionné un nouveau <lb/>
                carnet sur lequel je vais inscrire mes mémoires <lb/>
-               à partire du <date when="1940-04-21"> 21 avril 1940 </date> <lb/>
+               à partir du <date when="1940-04-21"> 21 avril 1940 </date> <lb/>
             </p>
          </div>
          <div>
@@ -342,8 +342,8 @@
                à l'arrière pour 10 jours - dans un cantonnement où on <lb/> <pb n="2"/>
                
                continuait à faire des travaux (tranchées, abris, ect) <lb/>
-               c'est donc le <date when="1940-04-21">21 avril 1940</date> que j'obtiens une permis- <lb rend="hyphen"/>
-               sion de 3 jours pour aller voir <persName ref="#Jean-Pierre"> Jean-Pierre</persName> qui était <lb/>
+               c'est donc le <date when="1940-04-21">21 avril 1940</date> que j'obtiens une permiss- <lb rend="hyphen"/>
+               ion de 3 jours pour aller voir <persName ref="#Jean-Pierre"> Jean-Pierre</persName> qui était <lb/>
                un peu souffrant. nous étions un en cantonnement à <lb/>
                <placeName ref="#Kirschnaumen"> Kirschnaumen (Moselle)</placeName> les bombardements sur les <lb/>
                avant-postes se faisaient sentir davantage. et c'est avec <lb/>
