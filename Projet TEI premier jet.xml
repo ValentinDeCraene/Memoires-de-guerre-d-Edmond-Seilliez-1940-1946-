@@ -6,13 +6,31 @@
   <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Title</title>
+            <title> Carnet des mémoires de guerre d'Edmond Seilliez (1940-1946) </title>
+            <author> Edmond Seilliez </author>
          </titleStmt>
+         <editionStmt>
+            <edition> Edition et encodage TEI dans le cadre de l'évaluation du module TEI du master 2 TNAH de l'Ecole Nationale des Chartes. </edition>
+            <respStmt>
+               <resp> Encodage et édition par </resp>
+               <persName xml:id="VDC">
+                  <forename> Valentin </forename>
+                  <surname> De Craene </surname>
+               </persName>
+            </respStmt>
+         </editionStmt>
          <publicationStmt>
-            <p>Publication Information</p>
+            <p> Edition et encodage en accord avec Alain Seilliez, fils de l'auteur, par Valentin De Craene, arrière-petit-fils de l'auteur
+                à partir dudit carnet, archive privée. </p>
          </publicationStmt>
          <sourceDesc>
-            <p>Information about the source</p>
+            <bibl> Second carnet des mémoires de guerre d'Edmond Seilliez pour la période 1940 à 1946, développant le récit de sa participation en tant que soldat français
+                   à la campagne de France, puis sa captivité en Prusse-Orientale et son retour après la Libération en 1946. Il est fait mention dans l'introduction d'un premier
+                   carnet égaré traitant de la période antérieure. La source primaire se présente sous la forme d'un carnet de papier blanc au format A5 et à la simple reliure
+                   de tissu, comportant 42 pages avec deux marges extérieures verticales. Il s'agit vraisemblablement ici d'un carnet de travail en lien avec l'activité professionnelle
+                   de l'auteur avec la guerre : secrétaire de notaire. L'écriture manuscrite est cursive et régulière. Le style est simple, quasi télégraphique, laissant néanmoins
+                   apparaitre les relations de l'auteur avec les nombreux personnages mentionnés.
+            </bibl>
          </sourceDesc>
       </fileDesc>
      
