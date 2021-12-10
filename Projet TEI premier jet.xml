@@ -23,6 +23,12 @@
             <p> Edition et encodage en accord avec Alain Seilliez, fils de l'auteur, par Valentin De Craene, arrière-petit-fils de l'auteur
                 à partir dudit carnet, archive privée. </p>
          </publicationStmt>
+         
+         <!-- Double possibilité pour le teiHeader 
+                 Première alternative
+            -->
+         
+         
          <sourceDesc>
             <bibl> Second carnet des mémoires de guerre d'Edmond Seilliez pour la période 1940 à 1946, développant le récit de sa participation en tant que soldat français
                    à la campagne de France, puis sa captivité en Prusse-Orientale et son retour après la Libération en 1946. Il est fait mention dans l'introduction d'un premier
@@ -31,6 +37,32 @@
                    de l'auteur avec la guerre : secrétaire de notaire. L'écriture manuscrite est cursive et régulière. Le style est simple, quasi télégraphique, laissant néanmoins
                    apparaitre les relations de l'auteur avec les nombreux personnages mentionnés.
             </bibl>
+            
+            <!-- Double possibilité pour le teiHeader 
+                 Deuxième alternative
+            -->
+            
+            <msDesc>
+               <msIdentifier>
+                  <settlement> Anvin, Pas-de-Calais </settlement>
+                  <repository> fonds privé, conservé par le fils de l'auteur, Alain Seilliez </repository>
+               </msIdentifier>
+               <msContents>
+                  <p>
+                     Second carnet des mémoires de guerre d'Edmond Seilliez pour la période 1940 à 1946, développant le récit de sa participation en tant que soldat français
+                      à la campagne de France, puis sa captivité en Prusse-Orientale et son retour après la Libération en 1946. Il est fait mention dans l'introduction d'un premier
+                      carnet égaré traitant de la période antérieure.
+                  </p>
+               </msContents>
+              <physDesc>
+                 <p>
+                    La source primaire se présente sous la forme d'un carnet de <material> papier blanc au format A5 </material> à la simple reliure
+                    de tissu, comportant 42 pages avec deux marges extérieures verticales. Il s'agit vraisemblablement ici d'un carnet de travail en lien avec l'activité professionnelle
+                    de l'auteur avec la guerre : secrétaire de notaire. L'écriture manuscrite est cursive et régulière. Le style est simple, quasi télégraphique, laissant néanmoins
+                    apparaitre les relations de l'auteur avec les nombreux personnages mentionnés.
+                 </p>
+              </physDesc>
+            </msDesc>
          </sourceDesc>
       </fileDesc>
      
