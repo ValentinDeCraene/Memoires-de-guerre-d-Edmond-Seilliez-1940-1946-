@@ -10,7 +10,7 @@
             <author> Edmond Seilliez </author>
          </titleStmt>
          <editionStmt>
-            <edition> Edition et encodage TEI dans le cadre de l'évaluation du module TEI du master 2 TNAH de l'Ecole Nationale des Chartes. </edition>
+            <edition> Edition et encodage TEI dans le cadre de l'évaluation du module XML/TEI du master 2 TNAH de l'Ecole Nationale des Chartes. </edition>
             <respStmt>
                <resp> Encodage et édition par </resp>
                <persName xml:id="VDC">
@@ -51,17 +51,38 @@
                   <p>
                      Second carnet des mémoires de guerre d'Edmond Seilliez pour la période 1940 à 1946, développant le récit de sa participation en tant que soldat français
                       à la campagne de France, puis sa captivité en Prusse-Orientale et son retour après la Libération en 1946. Il est fait mention dans l'introduction d'un premier
-                      carnet égaré traitant de la période antérieure.
+                      carnet égaré traitant de la période antérieure.e style est simple, quasi télégraphique, laissant néanmoins
+                      apparaitre les relations de l'auteur avec les nombreux personnages mentionnés.
                   </p>
                </msContents>
               <physDesc>
                  <p>
                     La source primaire se présente sous la forme d'un carnet de <material> papier blanc au format A5 </material> à la simple reliure
-                    de tissu, comportant 42 pages avec deux marges extérieures verticales. Il s'agit vraisemblablement ici d'un carnet de travail en lien avec l'activité professionnelle
-                    de l'auteur avec la guerre : secrétaire de notaire. L'écriture manuscrite est cursive et régulière. Le style est simple, quasi télégraphique, laissant néanmoins
-                    apparaitre les relations de l'auteur avec les nombreux personnages mentionnés.
+                    de tissu, comportant 42 double-pages avec deux marges extérieures verticales. Il s'agit vraisemblablement ici d'un carnet de travail en lien avec l'activité professionnelle
+                    de l'auteur avec la guerre : secrétaire de notaire. L'écriture manuscrite est cursive et régulière.
                  </p>
-              </physDesc>
+                 
+                 <!-- Description complexe de physDesc -->
+                 
+                 <objectDesc form="carnet">
+                     <supportDesc material="papier">
+                        <support> Carnet de travail, papier blanc </support>
+                           <extent> 42 double-pages au format A5 (148 x 210 mm) </extent>
+                       </supportDesc>                      
+                       <layoutDesc>
+                          <layout> 12 lignes par pages et deux marges extérieures verticales </layout>
+                       </layoutDesc>
+                    </objectDesc>
+                    <handDesc>
+                       <p> L'écriture manuscrite est cursive et régulière, par une seule main.</p>
+                    </handDesc>
+                 <bindingDesc>
+                    <binding>
+                       <p> simple reliure de <material>tissu</material></p>
+                       <condition> Déterriorée, décousue sur le haut de la reliure </condition>
+                    </binding>
+                 </bindingDesc>
+                 </physDesc>
             </msDesc>
          </sourceDesc>
       </fileDesc>
@@ -361,7 +382,7 @@
                  </location>
               </place>
               <place xml:id="Belgique">
-                 <placeName>  Belgique</placeName>
+                 <placeName>  Belgique </placeName>
                  <location>
                     <country key="BL"> Belgique</country>
                  </location>
@@ -378,7 +399,7 @@
                  <placeName> canal de l'Aisne</placeName>
                  <location>
                     <country key="Fr"> France </country>
-                    <note> </note>
+                    <note> canal de 58 km reliant l'Aisne à la Marne </note>
                  </location>
               </place>
            </listPlace>
@@ -400,7 +421,7 @@
       </front>
      
       <body>
-         <div>
+         <div type="Extrait">
             <p>
                Au mois d'avril, nous étions toujours aux avants-postes. <lb/>
                Nous y montions 5 jours - et ensuite on descendait un peu <lb/>
@@ -578,12 +599,12 @@
                <persName ref="#Léonce_Huet"> Léonce Huet </persName>, <persName ref="#Henri_Darras"> Henri Darras </persName>, puis nous partons pour <placeName ref="#Charleville"> Charleville </placeName>
                où nous passons 2 nuits à la caserne des <orgName type="corps_armées" ref="#gardes_mobiles"> gardes mobiles</orgName>. Là je <lb/>
                vois <persName ref="#Paul_Lamorille"> Paul Lamorille </persName>, le gendre de <persName ref="#Lourme"> Lourme </persName> puis nous gagnons la <lb/>
-               <placeName ref="#Belgique"> Belgique </placeName> et, toujours à pied, nous faisons de longues <lb/>
+               <placeName ref="#Belgique" type="pays"> Belgique </placeName> et, toujours à pied, nous faisons de longues <lb/>
                étapes sans beaucoup nous reposer, sans beaucoup manger, <lb/> <pb n="17"/>
                
                et nous souffrons surtout de la soif, et nous buvons bien souvent <lb/>
                de l'eau qui n'est certes pas potable. Puis nous gagnons la <lb/>
-               <placeName ref="#Belgique"> Belgique </placeName> où les gens nous font bon accueil, et nous embarquons <lb/>
+               <placeName ref="#Belgique" type="pays"> Belgique </placeName> où les gens nous font bon accueil, et nous embarquons <lb/>
                le <date when="1940-06-15"> 15 juin</date> à <time> midi </time> à <placeName ref="#Bertrix"> Bertrix</placeName> pour  arriver à <placeName ref="#Trèves"> Trèves </placeName> à <lb/>
                <time> 6 H le soir</time>. C'est une belle ville toute décorée de drapeaux <lb/>
                les gens nous regardent avec curiosité, nous allons loger dans <lb/>
@@ -614,7 +635,7 @@
                se camouffler, pas moyen. et nous quittons <placeName ref="#Trèves">Trèves</placeName> le <date when="1940-06-22"> samedi <lb/>
                22 juin 1940</date> dans <time>l'après-midi vers 3 H 30 </time> et ce qui nous <lb/>
                chagrine c'est que nous savons que le convoi par pour la <lb/>
-               <placeName type="country" ref="#Prusse_Orientale"> Prusse Orientale. </placeName>
+               <placeName ref="#Prusse_Orientale" type="pays"> Prusse Orientale. </placeName>
             </p>
          </div>
       </body>
