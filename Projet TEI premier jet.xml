@@ -24,7 +24,7 @@
                 à partir dudit carnet, archive privée. </p>
          </publicationStmt>
          
-         <!-- Double possibilité pour le teiHeader 
+         <!-- Double possibilité pour le sourceDesc 
                  Première alternative
             -->
          
@@ -38,7 +38,7 @@
                    apparaitre les relations de l'auteur avec les nombreux personnages mentionnés.
             </bibl>
             
-            <!-- Double possibilité pour le teiHeader 
+            <!-- Double possibilité pour le sourceDesc 
                  Deuxième alternative
             -->
             
@@ -93,7 +93,7 @@
            <listOrg>
               <org xml:id="Bataillon">
                  <orgName> Bataillon </orgName>
-                 <note> Bataillon de l'armée de terre à laquelle appartenait Edmond Seilliez, à savoir ... </note>
+                 <note> Bataillon de l'armée de terre à laquelle appartenait Edmond Seilliez, à savoir ... (voir avec Alain) </note>
               </org>
               <org xml:id="RALVF">
                  <orgName> 370e R.A.L.V.F  </orgName>
@@ -411,19 +411,19 @@
       <front>
          <div type="notes_introductives">
             <p> Mon premier carnet de notes ayant du être égaré - <lb/>
-               <choice><sic>où</sic> <corr> ou </corr></choice> alors l'aurais-je laissai à <placeName ref="#Pernes">Pernes</placeName>, à la <lb/>
-               maison quand he suis retourné au mois d'<date> avril 1940 </date> <lb/>
+               <choice><sic>où</sic> <corr> ou </corr></choice> alors l'aurais-je laissé à <placeName ref="#Pernes"> Pernes </placeName>, à la <lb/>
+               maison quand j'y suis retourné au mois d'<date> avril 1940 </date> <lb/>
                 - toujours est-il que j'ai confectionné un nouveau <lb/>
                carnet sur lequel je vais inscrire mes mémoires <lb/>
-               à partir du <date when="1940-04-21"> 21 avril 1940. </date> <lb/>
+               à partir du <date when="1940-04-21"> 21 avril 1940. </date> <lb rend="séparation_par_une_double _ligne"/>
             </p>
          </div>
       </front>
      
       <body>
-         <div type="Extrait">
+         <div type="extrait">
             <p>
-               Au mois d'avril, nous étions toujours aux avants-postes. <lb/>
+               Au <date when="1940-04"> mois d'avril </date>, nous étions toujours aux avants-postes. <lb/>
                Nous y montions 5 jours - et ensuite on descendait un peu <lb/>
                à l'arrière pour 10 jours - dans un cantonnement où on <lb/> <pb n="2"/>
                
