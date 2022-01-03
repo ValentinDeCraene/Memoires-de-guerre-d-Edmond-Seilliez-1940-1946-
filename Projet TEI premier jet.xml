@@ -10,7 +10,7 @@
             <author> Edmond Seilliez </author>
          </titleStmt>
          <editionStmt>
-            <edition> Edition et encodage TEI dans le cadre de l'évaluation du module XML/TEI du master 2 TNAH de l'Ecole Nationale des Chartes. </edition>
+            <edition> Edition et encodage TEI dans le cadre de l'évaluation du module XML/TEI du master 2 TNAH de l'École Nationale des Chartes. </edition>
             <respStmt>
                <resp> Encodage et édition par </resp>
                <persName xml:id="VDC">
@@ -31,11 +31,11 @@
          
          <sourceDesc>
             <bibl> Second carnet des mémoires de guerre d'Edmond Seilliez pour la période 1940 à 1946, développant le récit de sa participation en tant que soldat français
-                   à la campagne de France, puis sa captivité en Prusse-Orientale et son retour après la Libération en 1946. Il est fait mention dans l'introduction d'un premier
+                   à la campagne de France, puis sa captivité en Prusse-Orientale et enfin son retour après la Libération, en 1946. Il est fait mention dans l'introduction d'un premier
                    carnet égaré traitant de la période antérieure. La source primaire se présente sous la forme d'un carnet de papier blanc au format A5 et à la simple reliure
-                   de tissu, comportant 42 pages avec deux marges extérieures verticales. Il s'agit vraisemblablement ici d'un carnet de travail en lien avec l'activité professionnelle
+                   de tissu, comportant 42 pages avec deux marges extérieures verticales. Il s'agit vraisemblablement d'un carnet de travail en lien avec l'activité professionnelle
                    de l'auteur avec la guerre : secrétaire de notaire. L'écriture manuscrite est cursive et régulière. Le style est simple, quasi télégraphique, laissant néanmoins
-                   apparaitre les relations de l'auteur avec les nombreux personnages mentionnés.
+                   transparaître les relations d'amitié, de camaraderie ou de subordination de l'auteur avec les nombreux personnages mentionnés.
             </bibl>
             
             <!-- Double possibilité pour le sourceDesc 
@@ -50,9 +50,9 @@
                <msContents>
                   <p>
                      Second carnet des mémoires de guerre d'Edmond Seilliez pour la période 1940 à 1946, développant le récit de sa participation en tant que soldat français
-                      à la campagne de France, puis sa captivité en Prusse-Orientale et son retour après la Libération en 1946. Il est fait mention dans l'introduction d'un premier
-                      carnet égaré traitant de la période antérieure.e style est simple, quasi télégraphique, laissant néanmoins
-                      apparaitre les relations de l'auteur avec les nombreux personnages mentionnés.
+                     à la campagne de France, puis sa captivité en Prusse-Orientale et enfin son retour après la Libération, en 1946. Il est fait mention dans l'introduction d'un premier
+                     carnet égaré traitant de la période antérieure. La source primaire se présente sous la forme d'un carnet de papier blanc. L'écriture manuscrite est cursive et régulière. Le style est simple, quasi télégraphique, laissant néanmoins
+                     transparaître les relations d'amitié, de camaraderie ou de subordination de l'auteur avec les nombreux personnages mentionnés.
                   </p>
                </msContents>
               <physDesc>
@@ -66,15 +66,17 @@
                  
                  <objectDesc form="carnet">
                      <supportDesc material="papier">
-                        <support> Carnet de travail, papier blanc </support>
+                        <support> Carnet de travail vraisemblablement en lien avec l'activité professionnelle
+                           de l'auteur avec la guerre : secrétaire de notaire. </support>
                            <extent> 42 double-pages au format A5 (148 x 210 mm) </extent>
                        </supportDesc>                      
                        <layoutDesc>
-                          <layout> 12 lignes par pages et deux marges extérieures verticales </layout>
+                          <layout> 12 lignes par pages et deux marges extérieures verticales. </layout>
                        </layoutDesc>
                     </objectDesc>
                     <handDesc>
-                       <p> L'écriture manuscrite est cursive et régulière, par une seule main.</p>
+                       <p> L'écriture manuscrite est cursive et régulière, par une seule main. Le style est simple, quasi télégraphique, laissant néanmoins
+                          transparaître les relations d'amitié, de camaraderie ou de subordination de l'auteur avec les nombreux personnages mentionnés. </p>
                     </handDesc>
                  <bindingDesc>
                     <binding>
@@ -89,11 +91,11 @@
      
      <profileDesc>
         <particDesc>
-           
+         
            <listOrg>
               <org xml:id="Bataillon">
                  <orgName> Bataillon </orgName>
-                 <note> Bataillon de l'armée de terre à laquelle appartenait Edmond Seilliez, à savoir ... (voir avec Alain) </note>
+                 <note> Bataillon de l'armée de terre à laquelle appartenait Edmond Seilliez, à savoir la 71e division d'infanterie </note>
               </org>
               <org xml:id="RALVF">
                  <orgName> 370e R.A.L.V.F  </orgName>
@@ -103,7 +105,7 @@
               </org>
               <org xml:id="Bie">
                  <orgName cert="low"> 3e Bie </orgName>
-                 <note> <expan>3e Brigade d'Infanterie Légère</expan>. Manque de données contextuelles pour déterminer le corps d'armée à laquelle cette brigade appartient</note>
+                 <note> <expan>3e Brigade d'Infanterie Légère</expan>. Manque de données contextuelles pour déterminer le corps d'armée à laquelle cette brigade appartient (probablement le 3e régime d'infanterie).</note>
               </org>
               <org xml:id="Cie">
                  <orgName cert="low"> Cie </orgName>
@@ -113,17 +115,17 @@
               <org xml:id="STCRP">
                  <orgName> S.T.C.R.P </orgName>
                  <note> <expan>Société des Transports en Commun de la Région Parisienne</expan>. Société d'exploitation des transports en commun en activité entre 1921 et 1941,
-                        réquisitionnée pour le transport des soldats en 1940
+                        réquisitionnée pour le transport des soldats en 1940.
                  </note>
               </org>
               <org xml:id="Rgt">
                  <orgName> 152e Rgt </orgName>
-                 <note> <expan>152e Régiment d'Infanterie de l'armée de terre</expan>, stationnée à Colmar depuis 1919, régiment traditionnel de l'Alsace depuis le XIXe siècle</note>
+                 <note> <expan>152e Régiment d'Infanterie de l'armée de terre</expan>, stationné à Colmar depuis 1919. Régiment traditionnel de l'Alsace depuis le XIXe siècle.</note>
               </org>
               <org xml:id="gardes_mobiles">
                  <orgName> gardes mobiles </orgName>
-                 <note> <expan>Garde nationale Mobile</expan>, corps militaire auxiliaire de l'armée française stationnée dans les places fortes et villes. Préfigure les réservitstes contemporains.
-                        Il s'agit ici probablement du Régiment des Ardennes
+                 <note> <expan>Garde nationale Mobile</expan>, corps militaire auxiliaire de l'armée française stationné dans les places fortes et villes. Préfigure les réservitstes contemporains.
+                        Il s'agit ici probablement du Régiment des Ardennes.
                  </note>
               </org>
            </listOrg>
@@ -131,16 +133,15 @@
            <listPerson>
               <person xml:id="Jean-Pierre">
                  <persName> Jean-Pierre</persName>
-                 <note> Jean-Pierre Seilliez, son fils</note>
+                 <note> Jean-Pierre Seilliez, fils de l'auteur. </note>
               </person>
               <person xml:id="Merlin">
-                 <persName>Merliin</persName>
-                 <note></note>
+                 <persName cert="low"> Henri Merlin</persName>
+                 <note> Il peut s'agir d'un agriculteur de Pernes-en-Artois.</note>
               </person>
               <person xml:id="Georges_Gillet">
                  <persName> Georges Gillet</persName>
-                 <note>
-                 </note>
+                 <note> Rencontré par Edmond à Metzervisse</note>
               </person>
               <person xml:id="Raymond">
                  <persName>Raymond</persName>
@@ -148,11 +149,11 @@
               </person>
               <person xml:id="Rémy_Grimbert">
                  <persName> Rémy Grimbert </persName>
-                 <note> </note>
+                 <note></note>
               </person>
               <person xml:id="Jean_Merlin">
                  <persName> Jean Merlin </persName>
-                 <note> </note>
+                 <note></note>
               </person>
               <person xml:id="Gustave_Royer">
                  <persName> Gustave Royer</persName>
@@ -160,38 +161,38 @@
               </person>
               <person xml:id="Joseph">
                  <persName>Joseph</persName>
-                 <note> </note>
+                 <note> Proche amis de l'auteur, qui n'est jamais identifié autrement que part son prénom.</note>
               </person>
               <person xml:id="Jean_François">
                  <persName> Jean François</persName>
               </person>
               <person xml:id="Malequin">
                  <persName> Malequin</persName>
-                 <note> sergent abbé</note>
+                 <note> sergent abbé.</note>
               </person>
               <person xml:id="Boutmy">
                  <persName>Boutmy</persName>
-                 <note> Commandant du Bataillon</note>
+                 <note> Commandant du Bataillon.</note>
               </person>
               <person xml:id="Tirant">
                  <persName>Tirant</persName>
-                 <note>un de ses copains retrouvé à Rethel lors de sa capture à Rethel</note>
+                 <note>un de ses "copains" retrouvé à Rethel lors de sa capture à Rethel.</note>
               </person>
               <person xml:id="Léonce_Huet">
                  <persName>Léonce Huet</persName>
-                 <note> </note>
+                 <note> Un de ses "copains" retrouvé lors de sa capture à Rethel.</note>
               </person>
               <person xml:id="Henri_Darras">
                  <persName> Henri Darras</persName>
-                 <note> </note>
+                 <note> Un de ses "copains" retrouvé lors de sa capture à Rethel.</note>
               </person>
               <person xml:id="Paul_Lamorille">
                  <persName> Paul Lamorille</persName>
-                 <note> gendre de Lourme </note>
+                 <note> Gendre de Lourme, rencontré à la caserne des gardes-mobiles de Charleville. </note>
               </person>
               <person xml:id="Lourme">
                  <persName>Lourme</persName>
-                 <note>beau-père de Paul Lamorille</note>
+                 <note>beau-père de Paul Lamorille, rencontré à la caserne des gardes-mobiles de Charleville.</note>
               </person>
               <person xml:id="Lesaut">
                  <persName>Lesaut</persName>
@@ -216,7 +217,7 @@
                     <country key="FR"> France</country>
                     <district type="département"> Pas-de-Calais</district>
                     <geo> 50° 29′ 06″ nord, 2° 24′ 41″ est</geo>
-                    <note> Bourg natal d'Edmond Seilliez</note>
+                    <note> Bourg natal d'Edmond Seilliez.</note>
                  </location>
               </place>
               <place xml:id="Kirschnaumen">
@@ -225,7 +226,7 @@
                     <country key="FR"> France </country>
                     <district type="département"> Moselle </district>
                     <geo> 49° 23′ 54″ nord, 6° 26′ 06″ est </geo>
-                    <note> commune de cantonnement d'Edmond en avril 1940 </note>
+                    <note> Commune de cantonnement d'Edmond en avril 1940 </note>
                  </location>
               </place>
               <place xml:id="Capsilliers" cert="low">
@@ -234,7 +235,7 @@
                     <country key="FR"> France </country>
                     <district type="département" cert="low"> Moselle </district>
                     <geo> introuvable </geo>
-                    <note> Toponyme non élucidé. Il s'agit vraisemblablement d'un lieu-dit dont l'emplacement est indéterminé </note>
+                    <note> Toponyme non élucidé. Il s'agit probablement d'un lieu-dit dont l'emplacement est indéterminé </note>
                  </location>
               </place>
               <place xml:id="Inglange">
@@ -315,7 +316,9 @@
                     <country key="FR"> France </country>
                     <district type="département"> Nord </district>
                     <geo> 50° 02′ 42″ nord, 3° 22′ 21″ est</geo>
-                    <note> village rural à la frontière administrative entre les département du Nord, de l'Aisne et des Ardennes, expliquant vraisemblablement l'approximation d'Edmond</note>
+                    <note> Village rural à la frontière administrative entre les département du Nord, de l'Aisne et des Ardennes, expliquant vraisemblablement l'approximation d'Edmond qui le situe
+                           dans les Ardennes (à comprendre sûrement sous la plume de l'auteur comme "région" historique ou géographique)
+                    </note>
                  </location>
               </place>
               <place xml:id="Rethel">
@@ -333,7 +336,7 @@
                     <country key="FR"> France </country>
                     <district type="département"> Haut-Rhin </district>
                     <geo> 48° 04′ 54″ nord, 7° 21′ 20″ est </geo>
-                    <note> mentionné par Edmond lors du remplacement du 152e Régiment d'Infanterie</note>
+                    <note> Mentionné par Edmond lors du remplacement du 152e Régiment d'Infanterie</note>
                  </location>
               </place>
               <place xml:id="Reims">
@@ -378,7 +381,7 @@
                     <country key="AL"> Allemagne </country>
                     <district type="Land"> Rhénanie-Palatinat </district>
                     <geo> 49° 45′ 35″ nord, 6° 38′ 38″ est</geo>
-                    <note> </note>
+                    <note> Edmond mentionne le nom allemand de la ville en plus du nom français (probablement une retranscription orale). </note>
                  </location>
               </place>
               <place xml:id="Belgique">
@@ -391,15 +394,17 @@
                  <placeName> Prusse Orientale </placeName>
                  <location>
                     <country key="AL"> Allemagne</country>
-                    <district> province de Prusse-Orientale </district>
-                    <note> Province faisant théorique partie de l'Etat Libre de Prusse, elle est occupée et administrée par l'Allemagne en 1940</note>
+                    <district> Province de Prusse-Orientale </district>
+                    <note> Province faisant théorique partie de l'Etat Libre de Prusse, elle est occupée et administrée par l'Allemagne en 1940. Territoire de transfert
+                           des soldats captifs entre 1940 et début 1941.
+                    </note>
                  </location>
               </place>
               <place xml:id="canal">
                  <placeName> canal de l'Aisne</placeName>
                  <location>
                     <country key="Fr"> France </country>
-                    <note> canal de 58 km reliant l'Aisne à la Marne </note>
+                    <note> Canal de 58 km reliant l'Aisne à la Marne. </note>
                  </location>
               </place>
            </listPlace>
@@ -415,7 +420,7 @@
                maison quand j'y suis retourné au mois d'<date> avril 1940 </date> <lb/>
                 - toujours est-il que j'ai confectionné un nouveau <lb/>
                carnet sur lequel je vais inscrire mes mémoires <lb/>
-               à partir du <date when="1940-04-21"> 21 avril 1940. </date> <lb rend="séparation_par_une_double _ligne"/>
+               à partir du <date when="1940-04-21"> 21 avril 1940. </date> <lb rend="séparation_par_une_double_ligne"/>
             </p>
          </div>
       </front>
@@ -423,7 +428,7 @@
       <body>
          <div type="extrait">
             <p>
-               Au <date when="1940-04"> mois d'avril </date>, nous étions toujours aux avants-postes. <lb/>
+               Au <date when="1940-04"> mois d'avril </date>, nous étions toujours aux avant-postes. <lb/>
                Nous y montions 5 jours - et ensuite on descendait un peu <lb/>
                à l'arrière pour 10 jours - dans un cantonnement où on <lb/> <pb n="2"/>
                
@@ -442,11 +447,11 @@
                le <orgName type="corps_armées" ref="#Bataillon"> Bataillon </orgName> était descendu en repos. D'<placeName ref="#Inglange"> Inglange </placeName> <choice><sic> est parti </sic><corr> sont partis </corr></choice> <lb/>
                les copains <persName ref="#Merlin"> Merlin</persName> et autres pour travailler aux mines <lb/>
                comme affectés spéciaux. Et le <date when="1940-05-10"> 10 mai </date> au matin nous étions <lb/>
-               en alerte. des vagues d'avions passaient au dessus, qui revenaient de France. et aussitôt on quittait <placeName ref="#Inglange">Inglange</placeName> <lb/>
+               en alerte. Des vagues d'avions passaient au dessus, qui revenaient de France. Et aussitôt on quittait <placeName ref="#Inglange">Inglange</placeName> <lb/>
                pour aller dans un bois à <placeName ref="#Budling"> Budling </placeName> qui se trouve à 4 KM <lb/>
                d'<placeName ref="#Inglange"> Inglange </placeName>. Dans ce bois on y montait la garde de nuit et <lb/>
                jour, et on y faisaient des tranchées et des abris. On <lb/>
-               s'attendait à partir d'un jour à l'autre. et d'aller en <lb/>
+               s'attendait à partir d'un jour à l'autre. Et d'aller en <lb/>
                renfort dans le Nord. Le <date when="1940-05-24"> 24 mai </date> dans l'après-midi <lb/> <pb n="4"/>
                
                nous quittons le bois de <placeName ref="#Budling"> Budling </placeName> pour <placeName ref="#Metzervisse"> Metzervisse </placeName> qui est <lb/>
@@ -496,7 +501,7 @@
                tout à fait en amont. On doit passer le <placeName ref="#canal"> canal de l'Aisne </placeName>
                puis une autre <geo>rivière</geo>. On <choice><sic> prends </sic><corr> prend </corr></choice> position dans une <lb/><pb n="8"/>
                
-               grande <geo> usine </geo> qui avait déja subit de sérieux bombardements. <lb/>
+               grande usine qui avait déja subit de sérieux bombardements. <lb/>
                Nous serons là un peu en sécuritié, car nous avons au <lb/>
                dessus de nos têtes plusieurs plafonds en béton. Nous prenons <lb/>
                la garde nuit et de jour chacun son tour. Un fusil mitrailleur <lb/>
@@ -538,7 +543,7 @@
                avec sa <orgName type="corps-armées" ref="Compagnie"> Cie </orgName> et partait vers la sortie du tunnel pour <lb/>
                pour monter en lignes. On entendait le bruit des obus qui <lb/>
                éclataient en dehors. On savait ce qui nous attendait. <lb/>
-               le Cdt du Bon <persName ref="#Boutmy"> Boutmy </persName> nous dit du calme et du <lb/>
+               Le Cdt du Bon <persName ref="#Boutmy"> Boutmy </persName> nous dit du calme et du <lb/>
                courage, et tout <choice><sic> iras </sic><corr> ira </corr></choice> bien. Il est environ <time> 10 H du matin </time> <lb/>
                on sort aussi du tunnel. Les obus pleuvent, les balles <lb/>
                sifflent à mes oreilles. Prendre position dans ces conditions <lb/> <pb n="12"/>
@@ -558,7 +563,7 @@
                Mais je n'avais absoluement rien - je l'avais échappé belle. <lb/>
                On est resté là plusieurs heures, le fusil-mitrailleur tirait <lb/>
                sans arrêt. Les allemands en face de nous, dans la <geo> plaine </geo> <lb/>
-               avançait toujours. Puis ensuite on devait à nouveau se <lb/>
+               avançaient toujours. Puis ensuite on devait à nouveau se <lb/>
                replier, mais déjà on voyait arriver sur route de <lb/>
                <placeName ref="#Reims"> Reims </placeName>  et sur la route de <placeName ref="#Perthes"> Perthes </placeName> des chars allemands. On <lb/>
                se sentait encerclés, et notre situation était critique. Il <lb/>
@@ -579,8 +584,8 @@
                terrible. Les soldats allemands nous conduisent près de la <lb/> <pb n="15"/>
                
                voie ferrée où se trouve une locomotive abandonnée. Et <lb/>
-               on <choice><sic> vides </sic><corr> vide </corr></choice> l'eau qui se trouve dans le tender pour boire et <lb/>
-               pour les blessés. Un <choice> <abbr> <distinct type="vocabulaire_militaire"> sg. ch.</distinct></abbr><expan> sergent chef </expan></choice> français qui ne voulait pas donner <lb/>
+               on <choice><sic> vides </sic><corr> vide </corr></choice> l'eau qui se trouve dans le <distinct type="vocabulaire_militaire">tender</distinct> pour boire et <lb/>
+               pour les blessés. Un <choice> <abbr>  sg. ch.</abbr><expan> sergent chef </expan></choice> français qui ne voulait pas donner <lb/>
                son bidon d'eau se voit menacé d'un revolver par un <lb/>
                officier allemand. Les balles sifflent toujours, les obus tombent <lb/>
                autour de nous. Les soldats allemands passent devant nous <lb/>
@@ -592,7 +597,7 @@
                
                dans la cour d'une grande maison près de <placeName ref="#Rethel"> Rethel </placeName> où <lb/>
                nous passons la nuit dehors. Le <time> lendemain matin </time> au réveil <lb/>
-               je retrouves mes copains <persName ref="#Gustave_Royer"> Royer</persName>, <persName ref="#Tirant"> Tirant </persName> et autres, qui avaient <lb/>
+               je retrouve mes copains <persName ref="#Gustave_Royer"> Royer</persName>, <persName ref="#Tirant"> Tirant </persName> et autres, qui avaient <lb/>
                été prisonniers <time> la veille</time>, mais nous n'étions pas ensemble ce <lb/>
                ce moment là. Je cherche dans tout le monde <persName ref="#Joseph"> Joseph </persName> <lb/>
                mais je ne le vois pas. Je vois arriver un peu plus tard <lb/>
@@ -616,13 +621,13 @@
                
                pour rester quelques jours, surtout que je n'<choice><sic> ait </sic><corr> ai </corr></choice> mal aux pieds <lb/>
                des suites des longues marches que nous avons faites.<lb/>
-               <persName ref="#Gustave_Royer"> Royer </persName>, <persName ref="#Lesaut">Lesaut</persName> et <persName ref="#Mollet"> Mollet </persName> travaillent aux cadernes à faire <lb/>
+               <persName ref="#Gustave_Royer"> Royer </persName>, <persName ref="#Lesaut">Lesaut</persName> et <persName ref="#Mollet"> Mollet </persName> travaillent aux casernes à faire <lb/>
                des corvées  en ville où ils rapportent un peu de pain. <lb/>
                moi j'épluche les patates à la cuisines avec d'autres où en <lb/>
                plus de ma ration ordinaire et de mon casse-croûte je touche <lb/>
                une autre soupe et un morceau de pain et du fromage. on n'est <lb/>
                pas mal. Il y a aussi une cantine où on peut aller boire <lb/>
-               bière et vin, et acheter d'autres articles. Il y a du monde et il faut <lb/>
+               bière et vin, et acheter d'autres articles. Il y a du monde et il faut faire <lb/>
                la guerre. On n'y <choice><sic> rentres </sic><corr> rentre</corr></choice> d'ailleurs que 10 par 10. J'y <lb/>
                suis allé qu'une seule fois, j'ai bu une verre de bierre et acheté <lb/> <pb n="19"/>
                
@@ -632,7 +637,7 @@
                <placeName ref="#Pernes"> Pernes </placeName>. Je lui parle et le <time>soir</time> je le retrouve ainsi que <lb/>
                <persName ref="#Catelin"> Catelin </persName> de <placeName ref="#Tangry"> Tangry </placeName>. Puis il <choice><sic>arrives</sic><corr>arrive</corr></choice> un ordre que tout le monde <lb/>
                doit partir. Ca nous <choice><sic>embêtes</sic><corr>embête</corr></choice>, on s'y <choice><sic>habituais</sic><corr>habituait</corr></choice>. On <choice><sic> essayes </sic><corr> essaie </corr></choice> de <lb/>
-               se camouffler, pas moyen. et nous quittons <placeName ref="#Trèves">Trèves</placeName> le <date when="1940-06-22"> samedi <lb/>
+               se camoufler, pas moyen. et nous quittons <placeName ref="#Trèves">Trèves</placeName> le <date when="1940-06-22"> samedi <lb/>
                22 juin 1940</date> dans <time>l'après-midi vers 3 H 30 </time> et ce qui nous <lb/>
                chagrine c'est que nous savons que le convoi par pour la <lb/>
                <placeName ref="#Prusse_Orientale" type="pays"> Prusse Orientale. </placeName>
