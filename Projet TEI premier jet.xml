@@ -4,11 +4,14 @@
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
+     
       <fileDesc>
+         
          <titleStmt>
             <title> Carnet des mémoires de guerre d'Edmond Seilliez (1940-1946) </title>
             <author> Edmond Seilliez </author>
          </titleStmt>
+         
          <editionStmt>
             <edition> Edition et encodage TEI dans le cadre de l'évaluation du module XML/TEI du master 2 TNAH de l'École Nationale des Chartes. </edition>
             <respStmt>
@@ -19,10 +22,12 @@
                </persName>
             </respStmt>
          </editionStmt>
+         
          <publicationStmt>
             <p> Edition et encodage en accord avec Alain Seilliez, fils de l'auteur, par Valentin De Craene, arrière-petit-fils de l'auteur
                 à partir dudit carnet, archive privée. </p>
          </publicationStmt>
+         
          <sourceDesc>
             <msDesc>
                <msIdentifier>
@@ -64,6 +69,7 @@
       </fileDesc>
      
      <profileDesc>
+        
         <particDesc>
            
            <listOrg>
@@ -109,25 +115,21 @@
                  <persName> Jean-Pierre</persName>
                  <note> Jean-Pierre Seilliez, fils de l'auteur. </note>
               </person>
-              <person xml:id="Merlin">
-                 <persName cert="low"> Henri Merlin</persName>
-                 <note> Il peut s'agir d'un agriculteur de Pernes-en-Artois.</note>
+              <person xml:id="Jean_Merlin">
+                 <persName> Jean Merlin </persName>
+                 <note> Connaissance d'Edmond Seilliez, Jean Merlin est envoyé travailler au mines proches d'Inglange.</note>
               </person>
               <person xml:id="Georges_Gillet">
                  <persName> Georges Gillet</persName>
                  <note> Rencontré par Edmond à Metzervisse</note>
               </person>
               <person xml:id="Raymond">
-                 <persName>Raymond</persName>
-                 <note></note>
+                 <persName> Raymond </persName>
+                 <note cert="high"> Il s'agit très probablement du frère de l'auteur, Raymond Seilliez.</note>
               </person>
               <person xml:id="Rémy_Grimbert">
                  <persName> Rémy Grimbert </persName>
-                 <note></note>
-              </person>
-              <person xml:id="Jean_Merlin">
-                 <persName> Jean Merlin </persName>
-                 <note></note>
+                 <note> Connaissance d'Edmond Seilliez habitant à Amanvillers</note>
               </person>
               <person xml:id="Gustave_Royer">
                  <persName> Gustave Royer</persName>
@@ -139,18 +141,19 @@
               </person>
               <person xml:id="Jean_François">
                  <persName> Jean François</persName>
+                 <note> Proche amis de l'auteur dont il apprend la mort lors de l'étape à Rethel. </note>
               </person>
               <person xml:id="Malequin">
                  <persName> Malequin</persName>
-                 <note> sergent abbé.</note>
+                 <note> Sergent-abbé mort lors du bombardement de Rethel.</note>
               </person>
               <person xml:id="Boutmy">
                  <persName>Boutmy</persName>
-                 <note> Commandant du Bataillon.</note>
+                 <note> Commandant du Bataillon auquel appartenait Edmond.</note>
               </person>
               <person xml:id="Tirant">
                  <persName>Tirant</persName>
-                 <note>un de ses "copains" retrouvé à Rethel lors de sa capture à Rethel.</note>
+                 <note>Un des "copains" de l'auteur lors de sa capture à Rethel.</note>
               </person>
               <person xml:id="Léonce_Huet">
                  <persName>Léonce Huet</persName>
@@ -166,19 +169,19 @@
               </person>
               <person xml:id="Lourme">
                  <persName>Lourme</persName>
-                 <note>beau-père de Paul Lamorille, rencontré à la caserne des gardes-mobiles de Charleville.</note>
+                 <note> Beau-père de Paul Lamorille, rencontré à la caserne des gardes-mobiles de Charleville.</note>
               </person>
               <person xml:id="Lesaut">
                  <persName>Lesaut</persName>
-                 <note> </note>
+                 <note> Ami rencontré lors de sa captivité au stalag. Celui-ci semble affecté aux corvées. </note>
               </person>
               <person xml:id ="Mollet">
                  <persName>Mollet</persName>
-                 <note> </note>
+                 <note> Ami rencontré lors de sa captivité au stalag. Celui-ci semble affecté aux corvées. </note>
               </person>
               <person xml:id="Henri_Lemaire">
                  <persName> Henri Lemaire</persName>
-                 <note></note>
+                 <note> Ami rencontré lors de sa captivité au stalag. Celui-ci semble affecté aux corvées. Personne originaire de Pernes-en-Artois, bourg natal d'Edmond.</note>
               </person>
            </listPerson>
         </particDesc>
@@ -218,7 +221,7 @@
                     <country key="FR"> France </country>
                     <district type="département"> Moselle </district>
                     <geo> 49° 20′ 52″ nord, 6° 17′ 56″ est </geo>
-                    <note> </note>
+                    <note> Ville de Moselle où Edmond et son bataillon stationne 10 jours en mai 1940. </note>
                  </location>
               </place>
               <place xml:id="Budling">
@@ -227,7 +230,7 @@
                     <country key="FR"> France </country>
                     <district type="département"> Moselle </district>
                     <geo> 49° 20′ 51″ nord, 6° 21′ 23″ est  </geo>
-                    <note> </note>
+                    <note> Localité proche d'Inglange. Le bataillon d'Edmond se cache dans un bois proche en mai 1940. </note>
                  </location>
               </place>
               <place xml:id="Metzervisse">
@@ -236,7 +239,7 @@
                     <country key="FR"> France</country>
                     <district type="département"> Moselle </district>
                     <geo> 49° 18′ 57″ nord, 6° 17′ 11″ est </geo>
-                    <note> </note>
+                    <note> Localité proche de Budling et Inglange. </note>
                  </location>
               </place>
               <place xml:id="Semécourt">
@@ -245,7 +248,8 @@
                     <country key="FR"> France</country>
                     <district type="département"> Moselle </district>
                     <geo> 49° 11′ 38″ nord, 6° 08′ 07″ est </geo>
-                    <note> </note>
+                    <note> Etape du parcours du bataillon d'Edmond en Moselle. L'auteur précise la région entre parathèses.
+                    Cela traduit vraisemblablement une volonté de désambiguiser le nom du lieu. </note>
                  </location>
               </place>
               <place xml:id="Amanvillers">
@@ -254,7 +258,7 @@
                     <country key="FR"> France </country>
                     <district type="département"> Moselle </district>
                     <geo> 49° 10′ 03″ nord, 6° 02′ 37″ est </geo>
-                    <note> </note>
+                    <note> Village où Edmond et son bataillon prennent le train pour rejoindre la ligne de front. </note>
                  </location>
               </place>
               <place xml:id="Sainte-Marie-aux-Chênes">
@@ -263,7 +267,7 @@
                     <country key="FR"> France </country>
                     <district type="département"> Moselle </district>
                     <geo> 49° 11′ 32″ nord, 6° 00′ 11″ est </geo>
-                    <note> </note>
+                    <note> Mentionné par Edmond comme étant une localité qu'il a déjà visité avant les combats.</note>
                  </location>
               </place>
               <place xml:id="Vitry-le-François">
@@ -272,7 +276,7 @@
                     <country key="FR"> France </country>
                     <district type="département"> Marne </district>
                     <geo> 48° 43′ 32″ nord, 4° 35′ 07″ est </geo>
-                    <note> </note>
+                    <note> Gare par laquelle devaient transiter l'artillerie lourde française, qui fut d'après Edmond bombardée peu avant son passage. </note>
                  </location>
               </place>
               <place xml:id="Epernay">
@@ -281,7 +285,7 @@
                     <country key="FR"> France </country>
                     <district type="département"> Marne</district>
                     <geo> 49° 02′ 25″ nord, 3° 57′ 36″ est </geo>
-                    <note> </note>
+                    <note> Ville mentionnée par Edmond comme repère géographique pour situer le village X dont il ne parvient pas à se souvenir.</note>
                  </location>
               </place>
               <place xml:id="Elincourt">
@@ -301,7 +305,8 @@
                     <country key="FR"> France </country>
                     <district type="département"> Ardennes </district>
                     <geo> 49° 30′ 38″ nord, 4° 22′ 00″ est </geo>
-                    <note> </note>
+                    <note> Mentionné à plusieurs reprise. Espace des combats et des bombardements que relate Edmond. Il s'agit parfois de la ville précisement, parfois d'un espace
+                    géographique moins clairement circonscrit.</note>
                  </location>
               </place>
               <place xml:id="Colmar">
@@ -319,7 +324,7 @@
                     <country key="FR"> France </country>
                     <district type="département"> Marne </district>
                     <geo> 49° 15′ 46″ nord, 4° 02′ 05″ est </geo>
-                    <note> </note>
+                    <note> Mentionné par Edmond comme direction générale empruntée par son bataillon lors de sa retraite.</note>
                  </location>
               </place>
               <place xml:id="Perthes">
@@ -328,7 +333,7 @@
                     <country key="FR"> France </country>
                     <district type="département"> Haute-Marne </district>
                     <geo> 48° 39′ 25″ nord, 4° 49′ 27″ est </geo>
-                    <note> </note>
+                    <note> Ville a proximité de laquelle le bataillon d'Edmond est capturé lors de leur retraite. </note>
                  </location>
               </place>
               <place xml:id="Charleville">
@@ -337,16 +342,16 @@
                     <country key="FR"> France </country>
                     <district type="département"> Ardennes </district>
                     <geo> 49° 46′ 19″ nord, 4° 42′ 58″ est </geo>
-                    <note> </note>
+                    <note> Lieu de cantonnement d'Edmond, au sein de la caserne des gardes-mobiles.</note>
                  </location>
               </place>
               <place xml:id="Bertrix">
                  <placeName> Bertrix </placeName>
                  <location>
                     <country key="BL"> Belgique </country>
-                    <district type="Province"> Province du Luxembourg </district>
+                    <district type="province"> Province du Luxembourg </district>
                     <geo> 49° 51,25′ nord, 5° 15,2′ est </geo>
-                    <note> </note>
+                    <note> Etape du train conduisant Edmond captif vers Trèves </note>
                  </location>
               </place>
                  <place xml:id="Trèves">
@@ -368,7 +373,7 @@
                  <placeName> Prusse Orientale </placeName>
                  <location>
                     <country key="AL"> Allemagne</country>
-                    <district> Province de Prusse-Orientale </district>
+                    <district type="province"> Province de Prusse-Orientale </district>
                     <note> Province faisant théorique partie de l'Etat Libre de Prusse, elle est occupée et administrée par l'Allemagne en 1940. Territoire de transfert
                            des soldats captifs entre 1940 et début 1941.
                     </note>
@@ -378,7 +383,7 @@
                  <placeName> canal de l'Aisne</placeName>
                  <location>
                     <country key="Fr"> France </country>
-                    <note> Canal de 58 km reliant l'Aisne à la Marne. </note>
+                    <note> Canal de 58 km reliant l'Aisne à la Marne.</note>
                  </location>
               </place>
            </listPlace>
@@ -419,7 +424,7 @@
                
                nous sommes allés à <placeName ref="#Inglange"> Inglange </placeName> pour 10 jours. C'est là que <lb/>
                le <orgName type="corps_armées" ref="#Bataillon"> Bataillon </orgName> était descendu en repos. D'<placeName ref="#Inglange"> Inglange </placeName> <choice><sic> est parti </sic><corr> sont partis </corr></choice> <lb/>
-               les copains <persName ref="#Merlin"> Merlin</persName> et autres pour travailler aux mines <lb/>
+               les copains <persName ref="#Jean_Merlin"> Merlin</persName> et autres pour travailler aux mines <lb/>
                comme affectés spéciaux. Et le <date when="1940-05-10"> 10 mai </date> au matin nous étions <lb/>
                en alerte. Des vagues d'avions passaient au dessus, qui revenaient de France. Et aussitôt on quittait <placeName ref="#Inglange">Inglange</placeName> <lb/>
                pour aller dans un bois à <placeName ref="#Budling"> Budling </placeName> qui se trouve à 4 KM <lb/>
@@ -523,15 +528,15 @@
                sifflent à mes oreilles. Prendre position dans ces conditions <lb/> <pb n="12"/>
                
                se n'est pas intéressant. Notre section s'installe dans un <lb/>
-               petit <geo> vallonnement </geo> où on <choice><sic> mets </sic><corr> met </corr></choice> les fusils-mitrailleurs en <lb/>
+               petit <geo> vallonnement </geo> où on <choice><sic> mets </sic><corr> met </corr></choice> les <distinct type="vocabulaire_militaire">fusils-mitrailleurs</distinct> en <lb/>
                batterie. Pour arriver au trou où on doit se mettre je <lb/>
                courais à demi penché pour pas qu'on m'apperçoive <lb/>
-               et je tenais mon sac-chargeur d'une main et mon <lb/>
+               et je tenais mon <distinct type="vocabulaire_militaire"> sac-chargeur</distinct> d'une main et mon <lb/>
                fusil de l'autre, car les balles passaient au dessus de notre <lb/>
                tête. Quand tout à coup je me laisse tomber à terre aussitôt et je roules <lb/>
                comme un tonneau dans le trou pour rejoindre les <lb/>
                camarades qui s'y trouvaient déjà, je regardes sur <lb/>
-               moi, et je m'apperçois que ma cartouchière gauche <lb/> <pb n="13"/>
+               moi, et je m'apperçois que ma <distinct type="vocabulaire_militaire">cartouchière gauche</distinct>  <lb/> <pb n="13"/>
                
                et mon masque à gaz avaient été traversés de part en part. <lb/>
                Mais je n'avais absoluement rien - je l'avais échappé belle. <lb/>
