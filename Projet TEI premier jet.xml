@@ -23,25 +23,7 @@
             <p> Edition et encodage en accord avec Alain Seilliez, fils de l'auteur, par Valentin De Craene, arrière-petit-fils de l'auteur
                 à partir dudit carnet, archive privée. </p>
          </publicationStmt>
-         
-         <!-- Double possibilité pour le sourceDesc 
-                 Première alternative
-            -->
-         
-         
          <sourceDesc>
-            <bibl> Second carnet des mémoires de guerre d'Edmond Seilliez pour la période 1940 à 1946, développant le récit de sa participation en tant que soldat français
-                   à la campagne de France, puis sa captivité en Prusse-Orientale et enfin son retour après la Libération, en 1946. Il est fait mention dans l'introduction d'un premier
-                   carnet égaré traitant de la période antérieure. La source primaire se présente sous la forme d'un carnet de papier blanc au format A5 et à la simple reliure
-                   de tissu, comportant 42 pages avec deux marges extérieures verticales. Il s'agit vraisemblablement d'un carnet de travail en lien avec l'activité professionnelle
-                   de l'auteur avec la guerre : secrétaire de notaire. L'écriture manuscrite est cursive et régulière. Le style est simple, quasi télégraphique, laissant néanmoins
-                   transparaître les relations d'amitié, de camaraderie ou de subordination de l'auteur avec les nombreux personnages mentionnés.
-            </bibl>
-            
-            <!-- Double possibilité pour le sourceDesc 
-                 Deuxième alternative
-            -->
-            
             <msDesc>
                <msIdentifier>
                   <settlement> Anvin, Pas-de-Calais </settlement>
@@ -56,14 +38,6 @@
                   </p>
                </msContents>
               <physDesc>
-                 <p>
-                    La source primaire se présente sous la forme d'un carnet de <material> papier blanc au format A5 </material> à la simple reliure
-                    de tissu, comportant 42 double-pages avec deux marges extérieures verticales. Il s'agit vraisemblablement ici d'un carnet de travail en lien avec l'activité professionnelle
-                    de l'auteur avec la guerre : secrétaire de notaire. L'écriture manuscrite est cursive et régulière.
-                 </p>
-                 
-                 <!-- Description complexe de physDesc -->
-                 
                  <objectDesc form="carnet">
                      <supportDesc material="papier">
                         <support> Carnet de travail vraisemblablement en lien avec l'activité professionnelle
@@ -91,7 +65,7 @@
      
      <profileDesc>
         <particDesc>
-         
+           
            <listOrg>
               <org xml:id="Bataillon">
                  <orgName> Bataillon </orgName>
@@ -317,7 +291,7 @@
                     <district type="département"> Nord </district>
                     <geo> 50° 02′ 42″ nord, 3° 22′ 21″ est</geo>
                     <note> Village rural à la frontière administrative entre les département du Nord, de l'Aisne et des Ardennes, expliquant vraisemblablement l'approximation d'Edmond qui le situe
-                           dans les Ardennes (à comprendre sûrement sous la plume de l'auteur comme "région" historique ou géographique)
+                           dans les Ardennes (à comprendre sûrement sous la plume de l'auteur comme "région" historique ou géographique).
                     </note>
                  </location>
               </place>
