@@ -35,12 +35,20 @@
                   <repository> fonds privé, conservé par le fils de l'auteur, Alain Seilliez </repository>
                </msIdentifier>
                <msContents>
-                  <p>
-                     Second carnet des mémoires de guerre d'Edmond Seilliez pour la période 1940 à 1946, développant le récit de sa participation en tant que soldat français
-                     à la campagne de France, puis sa captivité en Prusse-Orientale et enfin son retour après la Libération, en 1946. Il est fait mention dans l'introduction d'un premier
-                     carnet égaré traitant de la période antérieure. La source primaire se présente sous la forme d'un carnet de papier blanc. L'écriture manuscrite est cursive et régulière. Le style est simple, quasi télégraphique, laissant néanmoins
-                     transparaître les relations d'amitié, de camaraderie ou de subordination de l'auteur avec les nombreux personnages mentionnés.
-                  </p>
+                  <summary>
+                     <p>
+                        Second carnet des mémoires de guerre d'Edmond Seilliez pour la période 1940 à 1946, développant le récit de sa participation en tant que soldat français
+                        à la campagne de France, puis sa captivité en Prusse-Orientale et enfin son retour après la Libération, en 1946. Il est fait mention dans l'introduction d'un premier
+                        carnet égaré traitant de la période antérieure. La source primaire se présente sous la forme d'un carnet de papier blanc. 
+                        L'écriture manuscrite est cursive et régulière. Le style est simple, quasi télégraphique, laissant néanmoins
+                        transparaître les relations d'amitié, de camaraderie ou de subordination de l'auteur avec les nombreux personnages mentionnés.
+                        L'extrait encodé se présente comme une unité narrative et intellectuelle à part entière puisqu'elle raconte
+                        la période des combats précédent sa captivité en Prusse-Orientale. Cet épisode de l'acheminement vers les camps
+                        de détention en Prusse Orientale s'affirme effectivement comme une rupture de fond, puisqu'à partir de ce moment
+                        l'auteur s'attache à transmettre son ressenti personnel et sa peur. Cette rupture justifie donc ce choix d'encoder à part
+                        entière ce passage.
+                     </p>
+                  </summary>
                </msContents>
               <physDesc>
                  <objectDesc form="carnet">
@@ -69,6 +77,12 @@
       </fileDesc>
      
      <profileDesc>
+        
+        <langUsage>
+           <language ident="fr-FR" usage="96"> Français </language>
+           <language ident="en-GB" usage="2"> Anglais </language>
+           <language ident="de-DE" usage="2"> Allemand </language>
+        </langUsage>
         
         <particDesc>
            
@@ -391,6 +405,85 @@
      </profileDesc>
   </teiHeader>
    
+  <facsimile>
+     <surface>
+        <graphic url='IMAGES/page1.png' width='3435.66666px' height='2408.66666px' />
+        <zone xml:id="p1" ulx="2069" uly="174" lrx="3397" lry="1311" />
+     </surface>
+     <surface>
+        <graphic url='IMAGES/page2.png' width='846.66666px' height='736.66666px' />
+        <zone xml:id="p2" ulx="15" uly="23" lrx="830" lry="718" />
+     </surface>
+     <surface>
+        <graphic url='IMAGES/page3.png' width='866.66666px' height='765.66666px' />
+        <zone xml:id="p3" ulx="2" uly="11" lrx="857" lry="755" />
+     </surface>
+     <surface>
+        <graphic url='IMAGES/page4.png' width='974.66666px' height='788.66666px' />
+        <zone xml:id="p4" ulx="22" uly="26" lrx="964" lry="776" />
+     </surface>
+     <surface>
+        <graphic url='IMAGES/page5.png' width='913.66666px' height='812.66666px' />
+        <zone xml:id="p5" ulx="29" uly="30" lrx="905" lry="771" />
+     </surface>
+     <surface>
+        <graphic url='IMAGES/page6.png' width='927.66666px' height='762.66666px' />
+        <zone xml:id="p6" ulx="10" uly="10" lrx="914" lry="731" />
+     </surface>
+     <surface>
+        <graphic url='IMAGES/page7.png' width='895.66666px' height='795.66666px' />
+        <zone xml:id="p7" ulx="12" uly="15" lrx="894" lry="738" />
+     </surface>
+     <surface>
+        <graphic url='IMAGES/page8.png' width='925.66666px' height='756.66666px' />
+        <zone xml:id="p8" ulx="20" uly="18" lrx="919" lry="730" />
+     </surface>
+     <surface>
+        <graphic url='IMAGES/page9.png' width='866.66666px' height='799.66666px' />
+        <zone xml:id="p9" ulx="10" uly="18" lrx="857" lry="718" />
+     </surface>
+     <surface>
+        <graphic url='IMAGES/page10.png' width='889.66666px' height='744.66666px' />
+        <zone xml:id="p10" ulx="10" uly="13" lrx="880" lry="698" />
+     </surface>
+     <surface>
+        <graphic url='IMAGES/page11.png' width='961.66666px' height='820.66666px' />
+        <zone xml:id="p11" ulx="44" uly="26" lrx="959" lry="746" />
+     </surface>
+     <surface>
+        <graphic url='IMAGES/page12.png' width='866.66666px' height='758.66666px' />
+        <zone xml:id="p12" ulx="10" uly="18" lrx="865" lry="715" />
+     </surface>
+     <surface>
+        <graphic url='IMAGES/page13.png' width='878.66666px' height='780.66666px' />
+        <zone xml:id="p13" ulx="17" uly="25" lrx="874" lry="746" />
+     </surface>
+     <surface>
+        <graphic url='IMAGES/page14.png' width='901.66666px' height='744.66666px' />
+        <zone xml:id="p14" ulx="14" uly="8" lrx="889" lry="716" />
+     </surface>
+     <surface>
+        <graphic url='IMAGES/page15.png' width='894.66666px' height='754.66666px' />
+        <zone xml:id="p15" ulx="10" uly="30" lrx="892" lry="735" />
+     </surface>
+     <surface>
+        <graphic url='IMAGES/page16.png' width='906.66666px' height='786.66666px' />
+        <zone xml:id="p16" ulx="19" uly="11" lrx="904" lry="743" />
+     </surface>
+     <surface>
+        <graphic url='IMAGES/page17.png' width='916.66666px' height='748.66666px' />
+        <zone xml:id="p17" ulx="17" uly="10" lrx="910" lry="723" />
+     </surface>
+     <surface>
+        <graphic url='IMAGES/page18.png' width='929.66666px' height='806.66666px' />
+        <zone xml:id="p18" ulx="15" uly="13" lrx="922" lry="775" />
+     </surface>
+     <surface>
+        <graphic url='IMAGES/page19.png' width='915.66666px' height='795.66666px' />
+        <zone xml:id="p19" ulx="15" uly="15" lrx="914" lry="736" />
+     </surface>
+  </facsimile>
+   
   <text>
       <front>
          <div type="notes_introductives">
@@ -403,13 +496,14 @@
             </p>
          </div>
       </front>
-     
+
       <body>
          <div type="extrait">
-            <p>
+            <pb n="1" facs="#p1"/>
+              <p>
                Au <date when="1940-04"> mois d'avril </date>, nous étions toujours aux avant-postes. <lb/>
                Nous y montions 5 jours - et ensuite on descendait un peu <lb/>
-               à l'arrière pour 10 jours - dans un cantonnement où on <lb/> <pb n="2"/>
+               à l'arrière pour 10 jours - dans un cantonnement où on <lb/> <pb n="2" facs="#2"/>
                
                continuait à faire des travaux (tranchées, abris, ect). <lb/>
                C'est donc le <date when="1940-04-21"> 21 avril 1940 </date> que j'obtiens une permiss- <lb rend="hyphen"/>
@@ -420,7 +514,7 @@
                appréhension qu'on y allait pour 5 jours et 5 nuits. <lb/>
                Le <orgName type="corps_armées" ref="#Bataillon">Bataillon</orgName> y était remonté. Je suis <lb/>
                reparti de <placeName ref="#Pernes"> Pernes </placeName> le <date when="1940-04-27"> 27 avril </date>. <choice><sic> J'ai rentré </sic> <corr> Je suis rentré</corr></choice> le <date when="1940-04-29"> 29 </date> à <lb/>
-               <placeName ref="#Capsilliers" cert="low"> Capsillers</placeName>. Là nous sommes restés 2 <choice><sic>où</sic><corr> ou </corr></choice> 3 jours. Puis <lb/> <pb n="3"/>
+               <placeName ref="#Capsilliers" cert="low"> Capsillers</placeName>. Là nous sommes restés 2 <choice><sic>où</sic><corr> ou </corr></choice> 3 jours. Puis <lb/> <pb n="3" facs="#p3"/>
                
                nous sommes allés à <placeName ref="#Inglange"> Inglange </placeName> pour 10 jours. C'est là que <lb/>
                le <orgName type="corps_armées" ref="#Bataillon"> Bataillon </orgName> était descendu en repos. D'<placeName ref="#Inglange"> Inglange </placeName> <choice><sic> est parti </sic><corr> sont partis </corr></choice> <lb/>
@@ -431,7 +525,7 @@
                d'<placeName ref="#Inglange"> Inglange </placeName>. Dans ce bois on y montait la garde de nuit et <lb/>
                jour, et on y faisaient des tranchées et des abris. On <lb/>
                s'attendait à partir d'un jour à l'autre. Et d'aller en <lb/>
-               renfort dans le Nord. Le <date when="1940-05-24"> 24 mai </date> dans l'après-midi <lb/> <pb n="4"/>
+               renfort dans le Nord. Le <date when="1940-05-24"> 24 mai </date> dans l'après-midi <lb/> <pb n="4" facs="#p4"/>
                
                nous quittons le bois de <placeName ref="#Budling"> Budling </placeName> pour <placeName ref="#Metzervisse"> Metzervisse </placeName> qui est <lb/>
                à 8 km de là. Et nous y cantonnons - une brave femme nous <lb/>
@@ -443,7 +537,7 @@
                tout de suite pour avoir si <persName ref="#Raymond"> Raymond </persName> n'était pas là. Pas <lb/>
                de veine c'était la <orgName type="corps_armées" ref="#Bie"> 3e Bie </orgName>. Le <date when="1940-05-25"> 25 mai </date>, départ de <placeName ref="#Metzervisse"> Metzervisse </placeName> <lb/>
                par <placeName ref="#Semécourt"> Semécourt (Moselle) </placeName> étape de 30 km. C'est là que le <lb/>
-               <orgName type="corps_armées" ref="#Bataillon"> Bataillon </orgName> touche le renfort. Le <date when="1940-05-26"> dimanche 26 mai </date> départ <lb/> <pb n="5"/>
+               <orgName type="corps_armées" ref="#Bataillon"> Bataillon </orgName> touche le renfort. Le <date when="1940-05-26"> dimanche 26 mai </date> départ <lb/> <pb n="5" facs="#p5"/>
                
                de <placeName ref="#Semécourt"> Semécourt</placeName> pour <placeName ref="#Amanvillers"> Amanvillers</placeName> où nous devons embarquer. <lb/>
                C'est dans ce patelin que <persName ref="#Rémy_Grimbert"> Rémy Grimbert </persName> habitait - nous <lb/>
@@ -454,7 +548,7 @@
                voir <persName ref="#Rémy_Grimbert"> Rémy</persName>. Le train <choice><sic>démarres</sic><corr> démarre</corr></choice> à 8 H du soir. on ne sais pas <lb/>
                où on va, mais on sait qu'on va monter en lignes. On <lb/>
                <choice><sic> roules </sic><corr> roule </corr></choice> on <choice><sic> arrêtes </sic><corr> s'arrête</corr></choice> et on repart, pour enfin arriver le <lb/>
-               <date when="1940-05-27"> 27 </date> au soir à 8 H. Le train a dû faire de grands détours, <lb/> <pb n="6"/>
+               <date when="1940-05-27"> 27 </date> au soir à 8 H. Le train a dû faire de grands détours, <lb/> <pb n="6" facs="#p6"/>
                
                car les convois d'artillerie qui passaient par <placeName ref="#Vitry-le-François"> Vitry-le-François </placeName> <lb/>
                avaient été bombardés par les avions. On <choice><sic> débarques </sic><corr> débarque </corr></choice> donc dans <lb/>
@@ -466,7 +560,7 @@
                omelette dans une maison. Et ensuite nous buvons quelques <lb/>
                bouteilles de champagne, car il n'est pas très cher ici. Le <lb/>
                <date when="1940-05-30"> 30 mai 1940 </date> à 7 H 30 du soir on <choice><sic>embarques</sic><corr> embarque </corr></choice> dans des <lb/>
-               autobus de la <orgName type="société" ref="#STCRP"> S.T.C.R.P </orgName>. On <choice><sic> roules </sic><corr> roule </corr></choice> presque toute la nuit <lb/> <pb n="7"/>
+               autobus de la <orgName type="société" ref="#STCRP"> S.T.C.R.P </orgName>. On <choice><sic> roules </sic><corr> roule </corr></choice> presque toute la nuit <lb/> <pb n="7" facs="#p7"/>
                
                et on <choice><sic> arrives </sic><corr> arrive </corr></choice> le <date ref="#1940-05-31"> 31 </date> à 4 H du matin à <placeName ref="#Elincourt"> Elincourt </placeName>, petit village <lb/>
                des Ardennes, déja bien touché par de récents bombardements. <lb/>
@@ -478,7 +572,7 @@
                nuit. Des maisons brûlent par ici - par là - on <choice><sic> entends </sic><corr> entend </corr> </choice> les <lb/>
                diffuseurs allemands. Notre <orgName type="corps_armées" ref="#Cie"> Cie </orgName> doit prendre ses positions <lb/>
                tout à fait en amont. On doit passer le <placeName ref="#canal"> canal de l'Aisne </placeName>
-               puis une autre <geo>rivière</geo>. On <choice><sic> prends </sic><corr> prend </corr></choice> position dans une <lb/><pb n="8"/>
+               puis une autre <geo>rivière</geo>. On <choice><sic> prends </sic><corr> prend </corr></choice> position dans une <lb/><pb n="8" facs="#p8"/>
                
                grande usine qui avait déja subit de sérieux bombardements. <lb/>
                Nous serons là un peu en sécuritié, car nous avons au <lb/>
@@ -490,7 +584,7 @@
                et que l'on croit toujours à une attaque - heureusement <lb/>
                que l'on n'est pas privé pour la nourriture et la boisson. <lb/>
                On <choice><sic> trouves </sic><corr> trouve </corr> </choice> dans les maisons abandonnées des lapins et des <lb/>
-               poules, des légumes, des conserves, et on fait un peu de <lb/> <pb n="9"/>
+               poules, des légumes, des conserves, et on fait un peu de <lb/> <pb n="9" facs="#p9"/>
                
                popote nous même, rien que pour le groupe - soit une <lb/>
                douzaine. Nous avons trouvé un dépôt avec plus de <lb/>
@@ -502,7 +596,7 @@
                un pont, et on passait dans l'eau jusqu'à 50 cm avec les bidons <lb/>
                et les <distinct type="vocabulaire_militaire"> bouteillons </distinct>. Un <time> soir </time> le <date when="1940-06-06"> 6 </date> ou le <date when="1940-06-07"> 7 </date> je vois <persName ref="#Joseph"> Joseph </persName> qui
                <choice><sic> m'apprends </sic><corr> m'apprend </corr></choice> la mort de notre copain <persName ref="#Jean_François"> Jean François </persName>. Il se trouve <lb/>
-               dans une cave avec plusieurs de ses copains et un bombarde- <lb rend="hyphen"/> <pb n="10"/>
+               dans une cave avec plusieurs de ses copains et un bombarde- <lb rend="hyphen"/> <pb n="10" facs="#p10"/>
                
                ment d'artillerie <choice><sic> fait </sic><corr> a fait </corr></choice> écrouler les murs sur ces pauvres <lb/>
                camarades - fait tué également le sergent abbé <persName ref="#Malequin"> Malequin </persName>. <lb/>
@@ -513,7 +607,7 @@
                on reçoit l'ordre de nous replier. La situation devient de <lb/>
                plus en plus grave pour nous, on laisse pas mal de <lb/>
                munitions sur place. On se replit donc à 5 KM de <placeName ref="#Rethel"> Rethel </placeName> <lb/>
-               et tout le <orgName type="corps_armées" ref="#Bataillon"> Bataillon </orgName> s'engage en dessous d'un tunnel <lb/> <pb n="11"/>
+               et tout le <orgName type="corps_armées" ref="#Bataillon"> Bataillon </orgName> s'engage en dessous d'un tunnel <lb/> <pb n="11" facs="#p11"/>
                
                de 500 m de long. On fait là une pause de plusieurs <lb/>
                heures. Je me souviens avoir <choice><sic> dormit </sic><corr>dormi</corr></choice> un peu dans ce tunnel. <lb/>
@@ -525,7 +619,7 @@
                Le Cdt du Bon <persName ref="#Boutmy"> Boutmy </persName> nous dit du calme et du <lb/>
                courage, et tout <choice><sic> iras </sic><corr> ira </corr></choice> bien. Il est environ <time> 10 H du matin </time> <lb/>
                on sort aussi du tunnel. Les obus pleuvent, les balles <lb/>
-               sifflent à mes oreilles. Prendre position dans ces conditions <lb/> <pb n="12"/>
+               sifflent à mes oreilles. Prendre position dans ces conditions <lb/> <pb n="12" facs="#p12"/>
                
                se n'est pas intéressant. Notre section s'installe dans un <lb/>
                petit <geo> vallonnement </geo> où on <choice><sic> mets </sic><corr> met </corr></choice> les <distinct type="vocabulaire_militaire">fusils-mitrailleurs</distinct> en <lb/>
@@ -536,7 +630,7 @@
                tête. Quand tout à coup je me laisse tomber à terre aussitôt et je roules <lb/>
                comme un tonneau dans le trou pour rejoindre les <lb/>
                camarades qui s'y trouvaient déjà, je regardes sur <lb/>
-               moi, et je m'apperçois que ma <distinct type="vocabulaire_militaire">cartouchière gauche</distinct>  <lb/> <pb n="13"/>
+               moi, et je m'apperçois que ma <distinct type="vocabulaire_militaire">cartouchière gauche</distinct>  <lb/> <pb n="13" facs="#p13"/>
                
                et mon masque à gaz avaient été traversés de part en part. <lb/>
                Mais je n'avais absoluement rien - je l'avais échappé belle. <lb/>
@@ -548,7 +642,7 @@
                se sentait encerclés, et notre situation était critique. Il <lb/>
                était trop tard pour se débiner. Ceux qui ont voulu se <lb/>
                replier sur <placeName ref="#Perthes"> Perthes </placeName> à travers champs sont tombés morts <lb/>
-               ou blessés en se repliant. L'étau se refermait de plus en <lb/> <pb n="14"/>
+               ou blessés en se repliant. L'étau se refermait de plus en <lb/> <pb n="14" facs="#p14"/>
                
                plus. On sentait bien que nous allions être prisonniers. <lb/>
                Rien à faire - en attendant ce temps - je mange un morceau <lb/>
@@ -560,7 +654,7 @@
                l'après-midi</time>, nous sommes fait prisonnier. J'en <choice><sic> ait </sic><corr> ai </corr></choice> gros sur le
                coeur. Nous restons plusieurs heures sur le terrain. Nous <lb/>
                ramassons sur le terrain les blessés. Il fait une chaleur <lb/>
-               terrible. Les soldats allemands nous conduisent près de la <lb/> <pb n="15"/>
+               terrible. Les soldats allemands nous conduisent près de la <lb/> <pb n="15" facs="#p15"/>
                
                voie ferrée où se trouve une locomotive abandonnée. Et <lb/>
                on <choice><sic> vides </sic><corr> vide </corr></choice> l'eau qui se trouve dans le <distinct type="vocabulaire_militaire">tender</distinct> pour boire et <lb/>
@@ -572,7 +666,7 @@
                de leur porter leurs munitions et leurs armes en direction <lb/>
                de <placeName ref="#Perthes">Perthes</placeName>. Ils <choice><sic>essuyent</sic><corr>essuient</corr></choice> les balles et obus des français. Des <lb/>
                copain, nous les avons revus le <time> lendemain matin </time>, tous les <lb/>
-               prisonniers étant rassemblés nous partons pour cantonner <lb/> <pb n="16"/>
+               prisonniers étant rassemblés nous partons pour cantonner <lb/> <pb n="16" facs="#p16"/>
                
                dans la cour d'une grande maison près de <placeName ref="#Rethel"> Rethel </placeName> où <lb/>
                nous passons la nuit dehors. Le <time> lendemain matin </time> au réveil <lb/>
@@ -584,7 +678,7 @@
                où nous passons 2 nuits à la caserne des <orgName type="corps_armées" ref="#gardes_mobiles"> gardes mobiles</orgName>. Là je <lb/>
                vois <persName ref="#Paul_Lamorille"> Paul Lamorille </persName>, le gendre de <persName ref="#Lourme"> Lourme </persName> puis nous gagnons la <lb/>
                <placeName ref="#Belgique" type="pays"> Belgique </placeName> et, toujours à pied, nous faisons de longues <lb/>
-               étapes sans beaucoup nous reposer, sans beaucoup manger, <lb/> <pb n="17"/>
+               étapes sans beaucoup nous reposer, sans beaucoup manger, <lb/> <pb n="17" facs="#p17"/>
                
                et nous souffrons surtout de la soif, et nous buvons bien souvent <lb/>
                de l'eau qui n'est certes pas potable. Puis nous gagnons la <lb/>
@@ -596,7 +690,7 @@
                travailleurs allemands. Il est immense et bien agencé. Tous <lb/>
                les prisonniers qui y passent ne posent que 24 à 48 heures. <lb/>
                C'est dit-on un camp de passage, et ensuite on doit être dirigé <lb/>
-               sur un <foreign xml:lang="allemand"> stalag </foreign>. Aussi pour se retaper un peu on se <choice><sic> débrouilles </sic><corr> débrouille </corr></choice> <lb/> <pb n="18"/>
+               sur un <foreign xml:lang="allemand"> stalag </foreign>. Aussi pour se retaper un peu on se <choice><sic> débrouilles </sic><corr> débrouille </corr></choice> <lb/> <pb n="18" facs="#p18"/>
                
                pour rester quelques jours, surtout que je n'<choice><sic> ait </sic><corr> ai </corr></choice> mal aux pieds <lb/>
                des suites des longues marches que nous avons faites.<lb/>
@@ -608,7 +702,7 @@
                pas mal. Il y a aussi une cantine où on peut aller boire <lb/>
                bière et vin, et acheter d'autres articles. Il y a du monde et il faut faire <lb/>
                la guerre. On n'y <choice><sic> rentres </sic><corr> rentre</corr></choice> d'ailleurs que 10 par 10. J'y <lb/>
-               suis allé qu'une seule fois, j'ai bu une verre de bierre et acheté <lb/> <pb n="19"/>
+               suis allé qu'une seule fois, j'ai bu une verre de bierre et acheté <lb/> <pb n="19" facs="#p19"/>
                
                un paquet de tabac. J'étais bien content, j'ai payé avec une <lb/>
                pièce de <choice><abbr type="monnaie"> 20 f. </abbr><expan> 20 francs </expan></choice> et on m'a rendu quelques pièces de 10 <foreign xml:lang="allemand"> pfenning </foreign>. <lb/>
