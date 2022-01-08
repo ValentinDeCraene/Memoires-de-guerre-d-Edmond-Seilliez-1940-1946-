@@ -79,9 +79,9 @@
      <profileDesc>
         
         <langUsage>
-           <language ident="fr-FR" usage="96"> Français </language>
-           <language ident="en-GB" usage="2"> Anglais </language>
-           <language ident="de-DE" usage="2"> Allemand </language>
+           <language ident="fr-FR" usage="98"> Français </language>
+           <language ident="en-GB" usage="1"> Anglais </language>
+           <language ident="de-DE" usage="1"> Allemand </language>
         </langUsage>
         
         <particDesc>
@@ -126,75 +126,129 @@
            
            <listPerson>
               <person xml:id="Jean-Pierre">
-                 <persName> Jean-Pierre</persName>
+                 <persName>
+                    <forename>Jean-Pierre</forename>
+                    <surname>Seilliez</surname>
+                 </persName>
                  <note> Jean-Pierre Seilliez, fils de l'auteur. </note>
               </person>
               <person xml:id="Jean_Merlin">
-                 <persName> Jean Merlin </persName>
+                 <persName> 
+                    <forename>Jean</forename> 
+                    <surname>Merlin</surname>
+                 </persName>
                  <note> Connaissance d'Edmond Seilliez, Jean Merlin est envoyé travailler au mines proches d'Inglange.</note>
               </person>
               <person xml:id="Georges_Gillet">
-                 <persName> Georges Gillet</persName>
+                 <persName> 
+                    <forename>Georges</forename> 
+                    <surname>Gillet</surname>
+                 </persName>
                  <note> Rencontré par Edmond à Metzervisse</note>
               </person>
               <person xml:id="Raymond">
-                 <persName> Raymond </persName>
+                 <persName>
+                    <forename>Raymond</forename>
+                    <surname cert="high"> Seilliez</surname>
+                 </persName>
                  <note cert="high"> Il s'agit très probablement du frère de l'auteur, Raymond Seilliez.</note>
               </person>
               <person xml:id="Rémy_Grimbert">
-                 <persName> Rémy Grimbert </persName>
+                 <persName> 
+                    <forename>Rémy</forename> 
+                    <surname>Grimbert</surname>
+                 </persName>
                  <note> Connaissance d'Edmond Seilliez habitant à Amanvillers</note>
               </person>
               <person xml:id="Gustave_Royer">
-                 <persName> Gustave Royer</persName>
+                 <persName> 
+                    <forename>Gustave</forename> 
+                    <surname>Royer</surname>
+                 </persName>
                  <note> un de ses "copains" retrouvé lors de sa capture à Rethel</note>
               </person>
               <person xml:id="Joseph">
-                 <persName>Joseph</persName>
+                 <persName>
+                    <forename>Joseph</forename>
+                    <surname></surname>
+                 </persName>
                  <note> Proche amis de l'auteur, qui n'est jamais identifié autrement que part son prénom.</note>
               </person>
               <person xml:id="Jean_François">
-                 <persName> Jean François</persName>
+                 <persName> 
+                    <forename>Jean</forename> 
+                    <surname>François</surname>
+                 </persName>
                  <note> Proche amis de l'auteur dont il apprend la mort lors de l'étape à Rethel. </note>
               </person>
               <person xml:id="Malequin">
-                 <persName> Malequin</persName>
-                 <note> Sergent-abbé mort lors du bombardement de Rethel.</note>
+                 <persName>
+                    <forename></forename>
+                    <surname>Malequin</surname>
+                 </persName>
+                 <note> <roleName type="officier">Sergent-abbé</roleName> mort lors du bombardement de Rethel. Prénom inconnu.</note>
               </person>
               <person xml:id="Boutmy">
-                 <persName>Boutmy</persName>
-                 <note> Commandant du Bataillon auquel appartenait Edmond.</note>
+                 <persName>
+                    <forename></forename>
+                    <surname>Boutmy</surname>
+                 </persName>
+                 <note> <roleName type="officier">Commandant</roleName> du Bataillon auquel appartenait Edmond.</note>
               </person>
               <person xml:id="Tirant">
-                 <persName>Tirant</persName>
+                 <persName>
+                    <forename></forename>
+                    <surname>Tirant</surname>
+                 </persName>
                  <note>Un des "copains" de l'auteur lors de sa capture à Rethel.</note>
               </person>
               <person xml:id="Léonce_Huet">
-                 <persName>Léonce Huet</persName>
+                 <persName>
+                    <forename>Léonce</forename> 
+                    <surname>Huet</surname>
+                 </persName>
                  <note> Un de ses "copains" retrouvé lors de sa capture à Rethel.</note>
               </person>
               <person xml:id="Henri_Darras">
-                 <persName> Henri Darras</persName>
+                 <persName>
+                    <forename>Henri</forename> 
+                    <surname>Darras</surname>
+                 </persName>
                  <note> Un de ses "copains" retrouvé lors de sa capture à Rethel.</note>
               </person>
               <person xml:id="Paul_Lamorille">
-                 <persName> Paul Lamorille</persName>
+                 <persName>
+                    <forename>Paul</forename> 
+                    <surname>Lamorille</surname>
+                 </persName>
                  <note> Gendre de Lourme, rencontré à la caserne des gardes-mobiles de Charleville. </note>
               </person>
               <person xml:id="Lourme">
-                 <persName>Lourme</persName>
+                 <persName>
+                    <forename></forename>
+                    <surname>Lourme</surname>
+                 </persName>
                  <note> Beau-père de Paul Lamorille, rencontré à la caserne des gardes-mobiles de Charleville.</note>
               </person>
               <person xml:id="Lesaut">
-                 <persName>Lesaut</persName>
+                 <persName>
+                    <forename></forename>
+                    <surname>Lesaut</surname>
+                 </persName>
                  <note> Ami rencontré lors de sa captivité au stalag. Celui-ci semble affecté aux corvées. </note>
               </person>
               <person xml:id ="Mollet">
-                 <persName>Mollet</persName>
+                 <persName>
+                    <forename></forename>
+                    <surname>Mollet</surname>
+                 </persName>
                  <note> Ami rencontré lors de sa captivité au stalag. Celui-ci semble affecté aux corvées. </note>
               </person>
               <person xml:id="Henri_Lemaire">
-                 <persName> Henri Lemaire</persName>
+                 <persName> 
+                    <forename>Henri</forename> 
+                    <surname>Lemaire</surname>
+                 </persName>
                  <note> Ami rencontré lors de sa captivité au stalag. Celui-ci semble affecté aux corvées. Personne originaire de Pernes-en-Artois, bourg natal d'Edmond.</note>
               </person>
            </listPerson>
@@ -507,7 +561,7 @@
                
                continuait à faire des travaux (tranchées, abris, ect). <lb/>
                C'est donc le <date when="1940-04-21"> 21 avril 1940 </date> que j'obtiens une permiss- <lb rend="hyphen"/>
-               ion de 3 jours pour aller voir <persName ref="#Jean-Pierre"> Jean-Pierre</persName> qui était <lb/>
+               ion de 3 jours pour aller voir <persName ref="#Jean-Pierre"> <forename>Jean-Pierre</forename></persName> qui était <lb/>
                un peu souffrant. Nous étions dans un en cantonnement à <lb/>
                <placeName ref="#Kirschnaumen"> Kirschnaumen (Moselle)</placeName>. Les bombardements sur les <lb/>
                avant-postes se faisaient sentir davantage. Et c'est avec <lb/>
@@ -518,7 +572,7 @@
                
                nous sommes allés à <placeName ref="#Inglange"> Inglange </placeName> pour 10 jours. C'est là que <lb/>
                le <orgName type="corps_armées" ref="#Bataillon"> Bataillon </orgName> était descendu en repos. D'<placeName ref="#Inglange"> Inglange </placeName> <choice><sic> est parti </sic><corr> sont partis </corr></choice> <lb/>
-               les copains <persName ref="#Jean_Merlin"> Merlin</persName> et autres pour travailler aux mines <lb/>
+               les copains <persName ref="#Jean_Merlin"> <surname>Merlin</surname></persName> et autres pour travailler aux mines <lb/>
                comme affectés spéciaux. Et le <date when="1940-05-10"> 10 mai </date> au matin nous étions <lb/>
                en alerte. Des vagues d'avions passaient au dessus, qui revenaient de France. Et aussitôt on quittait <placeName ref="#Inglange">Inglange</placeName> <lb/>
                pour aller dans un bois à <placeName ref="#Budling"> Budling </placeName> qui se trouve à 4 KM <lb/>
@@ -531,21 +585,21 @@
                à 8 km de là. Et nous y cantonnons - une brave femme nous <lb/>
                donne un bidon de lait et le soir nous mangeons dans une <lb/>
                maison une bonne omelette. C'est là que j'ai rencontré <lb/>
-               <persName ref="#Georges_Gillet"> Georges Gillet</persName>. Nous avons trinqué ensemble, et il nous <choice> <sic> payat</sic><corr> paya </corr></choice> <lb/>
+               <persName ref="#Georges_Gillet"> <forename>Georges</forename> <surname>Gillet</surname></persName>. Nous avons trinqué ensemble, et il nous <choice> <sic> payat</sic><corr> paya </corr></choice> <lb/>
                une bonne bouteille de champagne. J'y rencontre également <lb/>
                des soldats appartenant au <orgName type="corps_armées" ref="#RALVF"> 370e R. A. L. V. F.</orgName> et je me <choice><sic>renseigniés</sic><corr>renseignais</corr></choice> <lb/>
-               tout de suite pour avoir si <persName ref="#Raymond"> Raymond </persName> n'était pas là. Pas <lb/>
+               tout de suite pour avoir si <persName ref="#Raymond"> <forename>Raymond</forename> </persName> n'était pas là. Pas <lb/>
                de veine c'était la <orgName type="corps_armées" ref="#Bie"> 3e Bie </orgName>. Le <date when="1940-05-25"> 25 mai </date>, départ de <placeName ref="#Metzervisse"> Metzervisse </placeName> <lb/>
                par <placeName ref="#Semécourt"> Semécourt (Moselle) </placeName> étape de 30 km. C'est là que le <lb/>
                <orgName type="corps_armées" ref="#Bataillon"> Bataillon </orgName> touche le renfort. Le <date when="1940-05-26"> dimanche 26 mai </date> départ <lb/> <pb n="5" facs="#p5"/>
                
                de <placeName ref="#Semécourt"> Semécourt</placeName> pour <placeName ref="#Amanvillers"> Amanvillers</placeName> où nous devons embarquer. <lb/>
-               C'est dans ce patelin que <persName ref="#Rémy_Grimbert"> Rémy Grimbert </persName> habitait - nous <lb/>
-               y étions déjà passés au mois de <date when-iso="1940-05"> Mai </date> - pour nous rendre à <placeName ref="#Sainte-Marie-aux-Chênes"> Ste-Marie-aux-chênes </placeName>. Et de là <persName ref="#Rémy_Grimbert"> Rémy Grimbert </persName> était <lb/>
-               venu voir <persName ref="#Jean_Merlin"> Jean Merlin </persName>. Aussitôt arrivés à <placeName ref="#Amanvillers"> Amanvillers </placeName> <lb/>
+               C'est dans ce patelin que <persName ref="#Rémy_Grimbert"> <forename>Rémy</forename> <surname>Grimbert</surname> </persName> habitait - nous <lb/>
+               y étions déjà passés au mois de <date when-iso="1940-05"> Mai </date> - pour nous rendre à <placeName ref="#Sainte-Marie-aux-Chênes"> Ste-Marie-aux-chênes </placeName>. Et de là <persName ref="#Rémy_Grimbert"> <forename>Rémy</forename> <surname>Grimbert</surname> </persName> était <lb/>
+               venu voir <persName ref="#Jean_Merlin"> <forename>Jean</forename> <surname>Merlin</surname> </persName>. Aussitôt arrivés à <placeName ref="#Amanvillers"> Amanvillers </placeName> <lb/>
                on se <choice><sic> diriges </sic><corr> dirige </corr></choice> sur les quais - où le train nous attend - et <lb/>
                on <choice><sic> embarques </sic><corr> embarque </corr></choice> aussitôt. Je n'<choice><sic> ait </sic><corr> ai </corr></choice> pas le temps d'aller <lb/>
-               voir <persName ref="#Rémy_Grimbert"> Rémy</persName>. Le train <choice><sic>démarres</sic><corr> démarre</corr></choice> à 8 H du soir. on ne sais pas <lb/>
+               voir <persName ref="#Rémy_Grimbert"> <forename>Rémy</forename></persName>. Le train <choice><sic>démarres</sic><corr> démarre</corr></choice> à 8 H du soir. on ne sais pas <lb/>
                où on va, mais on sait qu'on va monter en lignes. On <lb/>
                <choice><sic> roules </sic><corr> roule </corr></choice> on <choice><sic> arrêtes </sic><corr> s'arrête</corr></choice> et on repart, pour enfin arriver le <lb/>
                <date when="1940-05-27"> 27 </date> au soir à 8 H. Le train a dû faire de grands détours, <lb/> <pb n="6" facs="#p6"/>
@@ -555,8 +609,8 @@
                une petite gare de la Marne à 13 KM d'<placeName ref="#Epernay"> Epernay </placeName>. On va <lb/>
                cantonner à X - je mets X car je ne me souviens plus du nom <lb/>
                du patelin. On <choice><sic> restes </sic><corr> reste </corr></choice>  3 jours dans ce village. Je  n'<choice><sic> ait </sic><corr> ai </corr></choice> plus <lb/>
-               d'argent sur moi et j'empruntes <choice> <abbr type="monnaie"> 50 f.</abbr> <expan> 50 francs </expan></choice> à mon copain <persName ref="#Gustave_Royer"> Gustave <lb/>
-               Royer </persName>. Nous achetons des oeufs, et nous faisons faire une bonne <lb/>
+               d'argent sur moi et j'empruntes <choice> <abbr type="monnaie"> 50 f.</abbr> <expan> 50 francs </expan></choice> à mon copain <persName ref="#Gustave_Royer"> <forename>Gustave</forename> <lb/>
+               <surname>Royer</surname> </persName>. Nous achetons des oeufs, et nous faisons faire une bonne <lb/>
                omelette dans une maison. Et ensuite nous buvons quelques <lb/>
                bouteilles de champagne, car il n'est pas très cher ici. Le <lb/>
                <date when="1940-05-30"> 30 mai 1940 </date> à 7 H 30 du soir on <choice><sic>embarques</sic><corr> embarque </corr></choice> dans des <lb/>
@@ -590,16 +644,16 @@
                douzaine. Nous avons trouvé un dépôt avec plus de <lb/>
                300 bouteilles de champagne, et du vin vieux. Je n'<choice><sic> ait </sic><corr> ai </corr></choice> <lb/>
                jamais bu autant de champagne de ma vie qu'à <placeName ref="#Rethel"> Rethel </placeName>. J'ai vu 2 <lb/>
-               fois mon copain <persName ref="#Joseph"> Joseph </persName>. Je le voyais <time> la nuit </time> en allant à la <lb/>
+               fois mon copain <persName ref="#Joseph"> <forename>Joseph</forename> </persName>. Je le voyais <time> la nuit </time> en allant à la <lb/>
                corvée de soupe. Cette corvée n'était pas intéressante. Il fallait <lb/>
                à un endroit passer dans l'eau, car ils avaient fait sauter <lb/>
                un pont, et on passait dans l'eau jusqu'à 50 cm avec les bidons <lb/>
-               et les <distinct type="vocabulaire_militaire"> bouteillons </distinct>. Un <time> soir </time> le <date when="1940-06-06"> 6 </date> ou le <date when="1940-06-07"> 7 </date> je vois <persName ref="#Joseph"> Joseph </persName> qui
-               <choice><sic> m'apprends </sic><corr> m'apprend </corr></choice> la mort de notre copain <persName ref="#Jean_François"> Jean François </persName>. Il se trouve <lb/>
+               et les <distinct type="vocabulaire_militaire"> bouteillons </distinct>. Un <time> soir </time> le <date when="1940-06-06"> 6 </date> ou le <date when="1940-06-07"> 7 </date> je vois <persName ref="#Joseph"> <forename>Joseph</forename> </persName> qui
+               <choice><sic> m'apprends </sic><corr> m'apprend </corr></choice> la mort de notre copain <persName ref="#Jean_François"> <forename>Jean</forename> <surname>François</surname> </persName>. Il se trouve <lb/>
                dans une cave avec plusieurs de ses copains et un bombarde- <lb rend="hyphen"/> <pb n="10" facs="#p10"/>
                
                ment d'artillerie <choice><sic> fait </sic><corr> a fait </corr></choice> écrouler les murs sur ces pauvres <lb/>
-               camarades - fait tué également le sergent abbé <persName ref="#Malequin"> Malequin </persName>. <lb/>
+               camarades - fait tué également le <roleName type="officier">sergent abbé</roleName> <persName ref="#Malequin"> <surname>Malequin</surname> </persName>. <lb/>
                Nous subissons dans <placeName ref="#Rethel"> Rethel </placeName> de gros bombardement d'ar-<lb rend="hyphen"/>
                tillerie, surtout celui du <date when="1940-06-09"> 9 juin </date> au <time> matin à 4 H  </time> jusqu'au <lb/>
                <time> soir à 7 H</time>. Des obus de tous calibres nous étaient envoyés. On <lb/>
@@ -611,12 +665,12 @@
                
                de 500 m de long. On fait là une pause de plusieurs <lb/>
                heures. Je me souviens avoir <choice><sic> dormit </sic><corr>dormi</corr></choice> un peu dans ce tunnel. <lb/>
-               C'est là que j'ai vu <persName ref="#Joseph"> Joseph </persName> pour la dernière fois. Je n'<choice><sic> ait </sic><corr> ai </corr></choice><lb/>
+               C'est là que j'ai vu <persName ref="#Joseph"> <forename>Joseph</forename> </persName> pour la dernière fois. Je n'<choice><sic> ait </sic><corr> ai </corr></choice><lb/>
                guère <choice><sic> eut </sic><corr> eu </corr></choice> le temps de lui parler. Il passait devant nous <lb/>
                avec sa <orgName type="corps-armées" ref="Compagnie"> Cie </orgName> et partait vers la sortie du tunnel pour <lb/>
                pour monter en lignes. On entendait le bruit des obus qui <lb/>
                éclataient en dehors. On savait ce qui nous attendait. <lb/>
-               Le Cdt du Bon <persName ref="#Boutmy"> Boutmy </persName> nous dit du calme et du <lb/>
+               Le <choice><abbr><roleName type="officier">Cdt</roleName> du Bon</abbr><expan> Commandant du Bataillon</expan></choice> <persName ref="#Boutmy"> <surname>Boutmy</surname> </persName> nous dit du calme et du <lb/>
                courage, et tout <choice><sic> iras </sic><corr> ira </corr></choice> bien. Il est environ <time> 10 H du matin </time> <lb/>
                on sort aussi du tunnel. Les obus pleuvent, les balles <lb/>
                sifflent à mes oreilles. Prendre position dans ces conditions <lb/> <pb n="12" facs="#p12"/>
@@ -670,13 +724,13 @@
                
                dans la cour d'une grande maison près de <placeName ref="#Rethel"> Rethel </placeName> où <lb/>
                nous passons la nuit dehors. Le <time> lendemain matin </time> au réveil <lb/>
-               je retrouve mes copains <persName ref="#Gustave_Royer"> Royer</persName>, <persName ref="#Tirant"> Tirant </persName> et autres, qui avaient <lb/>
+               je retrouve mes copains <persName ref="#Gustave_Royer"> <surname>Royer</surname></persName>, <persName ref="#Tirant"> <surname>Tirant</surname> </persName> et autres, qui avaient <lb/>
                été prisonniers <time> la veille</time>, mais nous n'étions pas ensemble ce <lb/>
-               ce moment là. Je cherche dans tout le monde <persName ref="#Joseph"> Joseph </persName> <lb/>
+               ce moment là. Je cherche dans tout le monde <persName ref="#Joseph"> <forename>Joseph</forename> </persName> <lb/>
                mais je ne le vois pas. Je vois arriver un peu plus tard <lb/>
-               <persName ref="#Léonce_Huet"> Léonce Huet </persName>, <persName ref="#Henri_Darras"> Henri Darras </persName>, puis nous partons pour <placeName ref="#Charleville"> Charleville </placeName>
+               <persName ref="#Léonce_Huet"> <forename>Léonce</forename> <surname>Huet</surname> </persName>, <persName ref="#Henri_Darras"> <forename>Henri</forename> <surname>Darras</surname> </persName>, puis nous partons pour <placeName ref="#Charleville"> Charleville </placeName>
                où nous passons 2 nuits à la caserne des <orgName type="corps_armées" ref="#gardes_mobiles"> gardes mobiles</orgName>. Là je <lb/>
-               vois <persName ref="#Paul_Lamorille"> Paul Lamorille </persName>, le gendre de <persName ref="#Lourme"> Lourme </persName> puis nous gagnons la <lb/>
+               vois <persName ref="#Paul_Lamorille"> <forename>Paul</forename> <surname>Lamorille</surname> </persName>, le gendre de <persName ref="#Lourme"> <surname>Lourme</surname> </persName> puis nous gagnons la <lb/>
                <placeName ref="#Belgique" type="pays"> Belgique </placeName> et, toujours à pied, nous faisons de longues <lb/>
                étapes sans beaucoup nous reposer, sans beaucoup manger, <lb/> <pb n="17" facs="#p17"/>
                
@@ -694,7 +748,7 @@
                
                pour rester quelques jours, surtout que je n'<choice><sic> ait </sic><corr> ai </corr></choice> mal aux pieds <lb/>
                des suites des longues marches que nous avons faites.<lb/>
-               <persName ref="#Gustave_Royer"> Royer </persName>, <persName ref="#Lesaut">Lesaut</persName> et <persName ref="#Mollet"> Mollet </persName> travaillent aux casernes à faire <lb/>
+               <persName ref="#Gustave_Royer"> <surname>Royer</surname> </persName>, <persName ref="#Lesaut"><surname>Lesaut</surname></persName> et <persName ref="#Mollet"> <surname>Mollet</surname> </persName> travaillent aux casernes à faire <lb/>
                des corvées  en ville où ils rapportent un peu de pain. <lb/>
                moi j'épluche les patates à la cuisines avec d'autres où en <lb/>
                plus de ma ration ordinaire et de mon casse-croûte je touche <lb/>
@@ -706,9 +760,9 @@
                
                un paquet de tabac. J'étais bien content, j'ai payé avec une <lb/>
                pièce de <choice><abbr type="monnaie"> 20 f. </abbr><expan> 20 francs </expan></choice> et on m'a rendu quelques pièces de 10 <foreign xml:lang="allemand"> pfenning </foreign>. <lb/>
-               Etant un jour à la corvée de patates, j'apperçois <persName ref="#Henri_Lemaire"> Henri Lemaire </persName> de <lb/>
+               Etant un jour à la corvée de patates, j'apperçois <persName ref="#Henri_Lemaire"> <forename>Henri</forename> <surname>Lemaire</surname> </persName> de <lb/>
                <placeName ref="#Pernes"> Pernes </placeName>. Je lui parle et le <time>soir</time> je le retrouve ainsi que <lb/>
-               <persName ref="#Catelin"> Catelin </persName> de <placeName ref="#Tangry"> Tangry </placeName>. Puis il <choice><sic>arrives</sic><corr>arrive</corr></choice> un ordre que tout le monde <lb/>
+               <persName ref="#Catelin"> <surname>Catelin</surname> </persName> de <placeName ref="#Tangry"> Tangry </placeName>. Puis il <choice><sic>arrives</sic><corr>arrive</corr></choice> un ordre que tout le monde <lb/>
                doit partir. Ca nous <choice><sic>embêtes</sic><corr>embête</corr></choice>, on s'y <choice><sic>habituais</sic><corr>habituait</corr></choice>. On <choice><sic> essayes </sic><corr> essaie </corr></choice> de <lb/>
                se camoufler, pas moyen. et nous quittons <placeName ref="#Trèves">Trèves</placeName> le <date when="1940-06-22"> samedi <lb/>
                22 juin 1940</date> dans <time>l'après-midi vers 3 H 30 </time> et ce qui nous <lb/>
