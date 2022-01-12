@@ -137,14 +137,14 @@
                     <forename>Jean</forename> 
                     <surname>Merlin</surname>
                  </persName>
-                 <note> Connaissance d'Edmond Seilliez, Jean Merlin est envoyé travailler au mines proches d'Inglange.</note>
+                 <note> Connaissance d'Edmond Seilliez, Jean Merlin est envoyé travailler au mines proches d'<placeName ref="#Inglange">Inglange</placeName>.</note>
               </person>
               <person xml:id="Georges_Gillet">
                  <persName> 
                     <forename>Georges</forename> 
                     <surname>Gillet</surname>
                  </persName>
-                 <note> Rencontré par Edmond à Metzervisse</note>
+                 <note> Rencontré par Edmond à <placeName ref="#Metzervisse">Metzervisse</placeName></note>
               </person>
               <person xml:id="Raymond">
                  <persName>
@@ -158,98 +158,117 @@
                     <forename>Rémy</forename> 
                     <surname>Grimbert</surname>
                  </persName>
-                 <note> Connaissance d'Edmond Seilliez habitant à Amanvillers</note>
+                 <note> Connaissance d'Edmond Seilliez habitant à <placeName ref="#Amanvillers">Amanvillers</placeName></note>
               </person>
               <person xml:id="Gustave_Royer">
                  <persName> 
                     <forename>Gustave</forename> 
                     <surname>Royer</surname>
                  </persName>
-                 <note> un de ses "copains" retrouvé lors de sa capture à Rethel</note>
+                 <note> un de ses "copains" retrouvé lors de sa capture à <placeName ref="#Rethel">Rethel</placeName></note>
               </person>
               <person xml:id="Joseph">
                  <persName>
                     <forename>Joseph</forename>
-                    <surname></surname>
+                    <surname cert="low">Maréchal</surname>
                  </persName>
-                 <note> Proche amis de l'auteur, qui n'est jamais identifié autrement que part son prénom.</note>
+                 <note> Proche ami de l'auteur, qui n'est jamais identifié autrement que part son prénom. 
+                        Il pourrait s'agir d'un paysan artésien nommé Maréchal, mais le niveau de certitude
+                        est bas.
+                 </note>
               </person>
               <person xml:id="Jean_François">
                  <persName> 
                     <forename>Jean</forename> 
                     <surname>François</surname>
                  </persName>
-                 <note> Proche amis de l'auteur dont il apprend la mort lors de l'étape à Rethel. </note>
+                 <note> Proche amis de l'auteur dont il apprend la mort lors de l'étape à <placeName ref="#Rethel">Rethel</placeName>. </note>
               </person>
               <person xml:id="Malequin">
                  <persName>
                     <forename></forename>
                     <surname>Malequin</surname>
                  </persName>
-                 <note> <roleName type="officier">Sergent-abbé</roleName> mort lors du bombardement de Rethel. Prénom inconnu.</note>
+                 <note> <roleName type="officier">Sergent-abbé</roleName> mort lors du bombardement de <placeName ref="#Rethel">Rethel</placeName>.
+                        Prénom inconnu.
+                 </note>
               </person>
               <person xml:id="Boutmy">
                  <persName>
                     <forename></forename>
                     <surname>Boutmy</surname>
                  </persName>
-                 <note> <roleName type="officier">Commandant</roleName> du Bataillon auquel appartenait Edmond.</note>
+                 <note> <roleName type="officier">Commandant</roleName> du bataillon auquel appartenait Edmond. Prénom inconnu.</note>
               </person>
               <person xml:id="Tirant">
                  <persName>
                     <forename></forename>
                     <surname>Tirant</surname>
                  </persName>
-                 <note>Un des "copains" de l'auteur lors de sa capture à Rethel.</note>
+                 <note>Un des "copains" de l'auteur lors de sa capture à <placeName ref="#Rethel">Rethel</placeName>.
+                 </note>
               </person>
               <person xml:id="Léonce_Huet">
                  <persName>
                     <forename>Léonce</forename> 
                     <surname>Huet</surname>
                  </persName>
-                 <note> Un de ses "copains" retrouvé lors de sa capture à Rethel.</note>
+                 <note> Un de ses "copains" retrouvé lors de sa capture à <placeName ref="#Rethel">Rethel</placeName>.</note>
               </person>
               <person xml:id="Henri_Darras">
                  <persName>
                     <forename>Henri</forename> 
                     <surname>Darras</surname>
                  </persName>
-                 <note> Un de ses "copains" retrouvé lors de sa capture à Rethel.</note>
+                 <note> Un de ses "copains" retrouvé lors de sa capture à <placeName ref="#Rethel">Rethel</placeName>.</note>
               </person>
               <person xml:id="Paul_Lamorille">
                  <persName>
                     <forename>Paul</forename> 
                     <surname>Lamorille</surname>
                  </persName>
-                 <note> Gendre de Lourme, rencontré à la caserne des gardes-mobiles de Charleville. </note>
+                 <note> Gendre de <persName ref="#Lourme">Lourme</persName>, rencontré à la caserne 
+                    des <roleName ref="#gardes_mobiles">gardes-mobiles</roleName> 
+                    de <placeName ref="#Charleville">Charleville</placeName>. </note>
               </person>
               <person xml:id="Lourme">
                  <persName>
                     <forename></forename>
                     <surname>Lourme</surname>
                  </persName>
-                 <note> Beau-père de Paul Lamorille, rencontré à la caserne des gardes-mobiles de Charleville.</note>
+                 <note> Beau-père de <persName ref="#Paul_Lamorille">Paul Lamorille</persName>, rencontré à la caserne 
+                    des <roleName ref="#gardes_mobiles">gardes-mobiles</roleName> 
+                    de <placeName ref="#Charleville">Charleville</placeName>.
+                 </note>
               </person>
               <person xml:id="Lesaut">
                  <persName>
                     <forename></forename>
                     <surname>Lesaut</surname>
                  </persName>
-                 <note> Ami rencontré lors de sa captivité au stalag. Celui-ci semble affecté aux corvées. </note>
+                 <note> Ami rencontré lors de sa captivité au <foreign xml:lang="allemand">stalag</foreign>. 
+                        Celui-ci semble affecté aux corvées.
+                 </note>
               </person>
               <person xml:id ="Mollet">
                  <persName>
                     <forename></forename>
                     <surname>Mollet</surname>
                  </persName>
-                 <note> Ami rencontré lors de sa captivité au stalag. Celui-ci semble affecté aux corvées. </note>
+                 <note> Ami rencontré lors de sa captivité au <foreign xml:lang="allemand">stalag</foreign>.
+                    Celui-ci semble affecté aux corvées. 
+                 </note>
               </person>
               <person xml:id="Henri_Lemaire">
                  <persName> 
                     <forename>Henri</forename> 
                     <surname>Lemaire</surname>
                  </persName>
-                 <note> Ami rencontré lors de sa captivité au stalag. Celui-ci semble affecté aux corvées. Personne originaire de Pernes-en-Artois, bourg natal d'Edmond.</note>
+                 <note> Ami rencontré lors de sa captivité au <foreign xml:lang="allemand">stalag</foreign>. 
+                    Celui-ci semble affecté aux corvées.
+                    Personne originaire de <placeName ref="#Pernes">Pernes-en-Artois</placeName>, 
+                    bourg natal d'Edmond.
+                 </note>
               </person>
            </listPerson>
         </particDesc>
