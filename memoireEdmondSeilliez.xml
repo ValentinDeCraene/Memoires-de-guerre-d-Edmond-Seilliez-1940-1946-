@@ -489,31 +489,31 @@
            <date when="1940-04"> Avril 1940</date>
         </item>
         <item xml:id="d2">
-           <p> Permission d'Edmond, retour temporaire à Pernes-en-Artois. </p>
+           <p> Permission d'Edmond, retour temporaire à <placeName ref="#Pernes">Pernes-en-Artois</placeName>. </p>
            <date when="1940-04-21"> 21 avril 1940.</date>
         </item>
         <item xml:id="d3">
-           <p> Date de fin de la permission d'Edmond, départ de Pernes-en-Artois. </p>
+           <p> Date de fin de la permission d'Edmond, départ de <placeName ref="#Pernes">Pernes-en-Artois</placeName>. </p>
            <date when="1940-04-27"> 27 avril 1940. </date>
         </item>
         <item xml:id="d4">
-           <p> Retour d'Edmond à Capsilliers et réintégration de son bataillon</p>
+           <p> Retour d'Edmond à <placeName ref="#Capsilliers">Capsilliers</placeName> et réintégration de son bataillon.</p>
            <date when="1940-04-29"> 29 avril 1940.</date>
         </item>
         <item xml:id="d5">
-           <p> Bataillon d'Edmond en alerte, premiers passages des avions allemands, départ d'Inglange. </p>
+           <p> Bataillon d'Edmond en alerte, premiers passages des avions allemands, départ d'<placeName ref="#Inglange">Inglange</placeName>. </p>
            <date when="1940-05-10"> 10 mai 1940.</date>
         </item>
         <item xml:id="d6">
-           <p> Départ du bois de Budling pour Metzervisse.</p>
+           <p> Départ du bois de <placeName ref="#Budling">Budling</placeName> pour <placeName ref="#Metzervisse">Metzervisse</placeName>.</p>
            <date when="1940-05-24"> 24 mai 1940. </date>
         </item>
         <item xml:id="d7">
-           <p> Le bataillon d'Edmond quitte Metzervisse par la Moselle. </p>
+           <p> Le bataillon d'Edmond quitte <placeName ref="#Metzervisse">Metzervisse</placeName> par la Moselle. </p>
            <date when="1940-05-25">25 mai 1940. </date>
         </item>
         <item xml:id="d8">
-           <p> Le bataillon touche le renfort. Départ pour Amanvillers</p>
+           <p> Le bataillon touche le renfort. Départ pour <placeName ref="#Amanvillers">Amanvillers</placeName></p>
            <date when="1940-05-26">26 mai 1940. </date>
         </item>
         <item xml:id="d9">
@@ -521,11 +521,11 @@
            <date when="1940-05"> mai 1940.</date>
         </item>
         <item xml:id="d10">
-           <p> Arrivé en train du bataillon à proximité d'Epernay après de longs détours en raison des bombardements. </p>
+           <p> Arrivé en train du bataillon à proximité d'<placeName ref="#Epernay">Epernay</placeName> après de longs détours en raison des bombardements. </p>
            <date when="1940-05-27"> 27 mai 1940. </date>
         </item>
         <item xml:id="d11">
-           <p> Départ d'Epernay par les autobus réquisitionnés de la S.T.C.R.P. </p>
+           <p> Départ d'<placeName ref="#Epernay">Epernay</placeName> par les autobus réquisitionnés de la <roleName ref="#STCRP">S.T.C.R.P</roleName>. </p>
            <date when="1940-05-30"> 30 mai 1940.</date>
         </item>
         <item xml:id="d12">
@@ -533,35 +533,35 @@
            <date when="1940-05-31"> 31 mai 1940. </date>
         </item>
         <item xml:id="d13">
-           <p> Le bataillon quitte le bois pour se rendre à Rethel. </p>
+           <p> Le bataillon quitte le bois pour se rendre à <placeName ref="#Rethel">Rethel</placeName>. </p>
            <date when="1940-06-01"> 1 juin 1940</date>
         </item>
         <item xml:id="d14">
-           <p> A Rethel Edmond rencontre des camarades et apprends la mort de Jean François</p>
+           <p> A <placeName ref="#Rethel">Rethel</placeName> Edmond rencontre des camarades et apprends la mort de <persName ref="#Jean_François">Jean François</persName></p>
            <date when="1940-06-06"> 6 juin 1940 </date>
         </item>
         <item xml:id="d15">
-           <p> A Rethel Edmond rencontre des camarades et apprends la mort de Jean François (Edmond hésite avec la date précédente). </p>
+           <p> A <placeName ref="#Rethel">Rethel</placeName> Edmond rencontre des camarades et apprends la mort de <persName ref="#Jean_François">Jean François</persName> (Edmond hésite avec la date précédente). </p>
            <date when="1940-06-07"> 7 juin 1940 </date>
         </item>
         <item xml:id="d16">
-           <p> Bombardement massif de Rethel par l'aviation allemande.</p>
+           <p> Bombardement massif de <placeName ref="#Rethel">Rethel</placeName> par l'aviation allemande.</p>
            <date when="1940-06-09"> 9 juin 1940. </date>
         </item>
         <item xml:id="d17">
-           <p> Le bataillon reçoit l'ordre de se replier vers Reims. </p>
+           <p> Le bataillon reçoit l'ordre de se replier vers <placeName ref="#Reims">Reims</placeName>. </p>
            <date when="1940-06-10"> 10 juin 1940. </date>
         </item>
         <item xml:id="d18">
-           <p> Le bataillon d'Edmond est fait prisonnier dans la plaine de Reims.</p>
+           <p> Le bataillon d'Edmond est fait prisonnier dans la plaine de <placeName ref="#Reims">Reims</placeName>.</p>
            <date when="1940-06-10"> 10 juin 1940 (au soir)</date>
         </item>
         <item xml:id="d19">
-           <p> Le bataillon d'Edmond, captif, est convoyé par train vers la Belgique. Ils débarquent à Bertix ce jour. </p>
+           <p> Le bataillon d'Edmond, captif, est convoyé par train vers la <placeName ref="#Belgique">Belgique</placeName>. Ils débarquent à <placeName ref="#Bertrix">Bertix</placeName> ce jour. </p>
            <date when="1940-06-15"> 15 juin 1940.</date>
         </item>
         <item xml:id="d20">
-           <p> Départ d'Edmond, captif, du camp de Bertix vers les camps de travail pour prisonniers en Prusse Orientale. </p>
+           <p> Départ d'Edmond, captif, du camp de <placeName ref="#Bertrix">Bertix</placeName> vers les camps de travail pour prisonniers en <placeName ref="#Prusse_Orientale">Prusse Orientale</placeName>. </p>
            <date when="1940-06-22"> 22 juin 1940. </date>
         </item>
      </list>
