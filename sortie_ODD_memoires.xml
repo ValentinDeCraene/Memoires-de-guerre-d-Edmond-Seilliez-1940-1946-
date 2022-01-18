@@ -22,7 +22,11 @@
    <text>
       <body>
          <div1> 
-            <p>DOCUMENTATION</p>
+            <p>DOCUMENTATION A REMPLIR 
+            
+            
+            
+            </p>
          </div1>
          <div1>
             <schemaSpec ident="oddbyexample" start="TEI ">
@@ -213,7 +217,25 @@
                   </attDef>
                </attList>
             </elementSpec>
+<!-- MODIFICATION ODD ICI, à compléter et modifier > cas délicat, le mieux serait peut-être encore de ne rien contraindre ! -->
             <elementSpec ident="persName" mode="change">
+               <gloss> Séquence des éléments contenus dans l'élément persName</gloss>
+               <desc> 
+                  L'élément persName peut contenir les éléments surname et forename (dans le corps
+                  du texte) ou les éléments forename et surname, dans cet ordre (dans l'index des personnes).
+               </desc>
+               <content>
+                 <alternate> 
+                    <sequence preserveOrder="true">
+                     <elementRef key="surname" minOccurs="0" maxOccurs="1"/>
+                       <elementRef key="forename" minOccurs="0" maxOccurs="1"/>
+                  </sequence>
+                 </alternate>
+                  <sequence>
+                     <elementRef key="forename" minOccurs="0" maxOccurs="1"/>
+                     <elementRef key="surname" minOccurs="0" maxOccurs="1"/>
+                  </sequence>
+               </content>
                <attList>
                   <attDef ident="facs" mode="delete"/>
                   <attDef ident="cert" mode="delete"/>
@@ -406,6 +428,19 @@
                </attList>
             </elementSpec>
             <elementSpec ident="location" mode="change">
+               <gloss>Séquence des éléments contenus dans l'élément location</gloss>
+               <desc> 
+                  L'élément location doit contenir, dans cet ordre afin de compléter les données
+                  de l'index des lieux, les éléments country, district, geo et note.
+               </desc>
+               <content>
+                  <sequence preserveOrder="true">
+                     <elementRef key="country" minOccurs="1" maxOccurs="1"/>
+                     <elementRef key="district" minOccurs="1" maxOccurs="1"/>
+                     <elementRef key="geo" minOccurs="1" maxOccurs="1"/>
+                     <elementRef key="note" minOccurs="0" maxOccurs="unbounded"/>
+                  </sequence>
+               </content>
                <attList>
                   <attDef ident="facs" mode="delete"/>
                   <attDef ident="cert" mode="delete"/>
@@ -422,6 +457,17 @@
                </attList>
             </elementSpec>
             <elementSpec ident="person" mode="change">
+               <gloss>Séquence des éléments contenus dans l'élément person</gloss>
+               <desc>
+                  L'élément person doit contenir, dans cet ordre afin de créer un index des noms,
+                  les éléments persName et note.  
+               </desc>
+               <content>
+                  <sequence preserveOrder="true">
+                     <elementRef key="persName" minOccurs="1" maxOccurs="1"/>
+                     <elementRef key="note" minOccurs="1" maxOccurs="1"/>
+                  </sequence>
+               </content>
                <attList>
                   <attDef ident="role" mode="delete"/>
                   <attDef ident="sex" mode="delete"/>
@@ -430,7 +476,19 @@
                   <attDef ident="cert" mode="delete"/>
                </attList>
             </elementSpec>
+<!-- MODIFICATION IMPORTANTE DE L'ODD ICI -->
             <elementSpec ident="place" mode="change">
+               <gloss>Séquence des éléments contenus dans l'élément place</gloss>
+               <desc xml:lang="fr">
+                  L'élément place (utilisé dans placeList afin de créer un index des lieux)
+                  doit contenir dans, cet ordre, les éléments placeName et location une seule fois.
+               </desc>
+               <content>
+                  <sequence preserveOrder="true">
+                     <elementRef key="placeName" minOccurs="1" maxOccurs="1"/>
+                     <elementRef key="location" minOccurs="1" maxOccurs="1"/>
+                  </sequence>
+               </content>
                <attList>
                   <attDef ident="facs" mode="delete"/>
                   <attDef ident="type" mode="delete"/>
@@ -723,7 +781,19 @@
                   </attDef>
                </attList>
             </elementSpec>
+<!-- MODIFICATION DE L'ODD ICI -->
             <elementSpec ident="item" mode="change">
+               <gloss> Séquence des éléments contenus dans l'élément item</gloss>
+               <desc xml:lang="fr">
+                  L'élément liste doit contenir, dans cet ordre (afin de compléter la
+                  chronologie dans un élément list) les éléments p et date une seule fois
+               </desc>
+               <content>
+                  <sequence preserveOrder="true">
+                     <elementRef key="p" minOccurs="1" maxOccurs="1"/>
+                     <elementRef key="date" minOccurs="1" maxOccurs="1"/>
+                  </sequence>
+               </content>
                <attList>
                   <attDef ident="facs" mode="delete"/>
                   <attDef ident="cert" mode="delete"/>
@@ -885,6 +955,17 @@
                </attList>
             </elementSpec>
             <elementSpec ident="surface" mode="change">
+               <gloss> Séquence d'éléments contenus dans l'élément surface</gloss>
+               <desc xml:lang="fr">
+                  L'élément surface doit contenir, dans cet ordre (afin de compléter le fac-similé),
+                  les élements graphic et zone.
+               </desc>
+               <content>
+                  <sequence preserveOrder="true">
+                     <elementRef key="graphic" minOccurs="1" maxOccurs="1"/>
+                     <elementRef key="zone" minOccurs="1" maxOccurs="1"/>
+                  </sequence>
+               </content>
                <attList>
                   <attDef ident="attachment" mode="delete"/>
                   <attDef ident="flipping" mode="delete"/>
