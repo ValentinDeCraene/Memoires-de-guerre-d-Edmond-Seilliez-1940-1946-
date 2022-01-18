@@ -247,6 +247,7 @@
                   </attDef>
                   <attDef ident="key" mode="delete"/>
                   <attDef ident="type" mode="delete"/>
+                  <attDef ident="ref" mode="change"/>
                </attList>
             </elementSpec>
             <elementSpec ident="surname" mode="change">
@@ -315,6 +316,7 @@
                      </valList>
                   </attDef>
                   <attDef ident="key" mode="delete"/>
+                  <attDef ident="ref" mode="change" usage="opt"/>
                   <attDef ident="type" mode="change" usage="opt">
                      <gloss> Type de nom de lieux mentionné</gloss>
                      <desc xml:id="fr">
@@ -391,7 +393,13 @@
                   <attDef ident="cert" mode="delete"/>
                </attList>
             </elementSpec>
+<!-- MODIFICATION DE L'ODD ICI : a confirmer -->
             <elementSpec ident="listOrg" mode="change">
+               <gloss>Elément contenu dans l'élément listOrg</gloss>
+               <desc> L'élement listOrg doit contenir l'élément org au moins une fois</desc>
+               <content>
+                  <elementRef key="org" minOccurs="1" maxOccurs="unbounded"/>
+               </content>
                <attList>
                   <attDef ident="facs" mode="delete"/>
                   <attDef ident="cert" mode="delete"/>
@@ -404,6 +412,11 @@
                </attList>
             </elementSpec>
             <elementSpec ident="listPerson" mode="change">
+               <gloss>Elément contenu dans l'élément listPerson</gloss>
+               <desc> L'élement listPerson doit contenir l'élément person au moins une fois</desc>
+               <content>
+                  <elementRef key="person" minOccurs="1" maxOccurs="unbounded"/>
+               </content>
                <attList>
                   <attDef ident="facs" mode="delete"/>
                   <attDef ident="cert" mode="delete"/>
@@ -693,7 +706,20 @@
                   <attDef ident="type" mode="delete"/>
                </attList>
             </elementSpec>
+<!-- MODIFICATION DE L'ODD ICI -->
             <elementSpec ident="choice" mode="change">
+               <gloss> Séquence des éléments au sein de l'élément choice</gloss>
+               <desc>
+                  L'élément choice doit contenir, dans cet ordre, les éléments sic et corr,
+                  une seule fois, afin d'indiquer les erreurs manifestes d'orthographe et
+                  de conjuguaison de l'auteur, qui sont ensuite corrigées.
+               </desc>
+               <content>
+                  <sequence preserveOrder="true">
+                     <elementRef key="sic" minOccurs="1" maxOccurs="1"/>
+                     <elementRef key="corr" minOccurs="1" maxOccurs="1"/>
+                  </sequence>
+               </content>
                <attList>
                   <attDef ident="facs" mode="delete"/>
                   <attDef ident="cert" mode="delete"/>
@@ -707,12 +733,15 @@
                   <attDef ident="type" mode="delete"/>
                </attList>
             </elementSpec>
+<!-- MODIFICATION DE L'ODD ICI A COMPLÉTER POUR INDIQUER UNE SÉQUENCE DE VALEUR POUR WHEN-->            
             <elementSpec ident="date" mode="change">
                <attList>
                   <attDef ident="facs" mode="delete"/>
                   <attDef ident="cert" mode="delete"/>
                   <attDef ident="key" mode="delete"/>
                   <attDef ident="type" mode="delete"/>
+                  <attDef ident="ref" mode="change" usage="req"/>
+                  <attDef ident="when" mode="change" usage="req"/>
                </attList>
             </elementSpec>
             <elementSpec ident="time" mode="change">
@@ -949,6 +978,11 @@
             <classRef key="att.global.facs"/>
             <moduleRef key="transcr" include="facsimile surface zone"/>
             <elementSpec ident="facsimile" mode="change">
+               <gloss>Elément contenu dans l'élément facsimile</gloss>
+               <desc> L'élement facsimile doit contenir l'élément surface au moins une fois</desc>
+               <content>
+                  <elementRef key="surface" minOccurs="1" maxOccurs="unbounded"/>
+               </content>
                <attList>
                   <attDef ident="facs" mode="delete"/>
                   <attDef ident="cert" mode="delete"/>
