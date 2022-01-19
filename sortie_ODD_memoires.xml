@@ -712,13 +712,20 @@
                <desc>
                   L'élément choice doit contenir, dans cet ordre, les éléments sic et corr,
                   une seule fois, afin d'indiquer les erreurs manifestes d'orthographe et
-                  de conjuguaison de l'auteur, qui sont ensuite corrigées.
+                  de conjuguaison de l'auteur, qui sont ensuite corrigées ou les éléments abbr
+                  et expan pour indiquer la résolution d'une abbréviation.
                </desc>
                <content>
-                  <sequence preserveOrder="true">
+                 <alternate> 
+                    <sequence preserveOrder="true">
                      <elementRef key="sic" minOccurs="1" maxOccurs="1"/>
                      <elementRef key="corr" minOccurs="1" maxOccurs="1"/>
                   </sequence>
+                  <sequence preserveOrder="true">
+                     <elementRef key="abbr" minOccurs="1" maxOccurs="1"/>
+                     <elementRef key="expan" minOccurs="1" maxOccurs="1"/>
+                  </sequence>
+                 </alternate>
                </content>
                <attList>
                   <attDef ident="facs" mode="delete"/>
@@ -740,8 +747,8 @@
                   <attDef ident="cert" mode="delete"/>
                   <attDef ident="key" mode="delete"/>
                   <attDef ident="type" mode="delete"/>
-                  <attDef ident="ref" mode="change" usage="req"/>
-                  <attDef ident="when" mode="change" usage="req"/>
+                  <attDef ident="ref" mode="change" usage="opt"/>
+                  <attDef ident="when" mode="change" usage="opt"/>
                </attList>
             </elementSpec>
             <elementSpec ident="time" mode="change">

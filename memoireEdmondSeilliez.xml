@@ -2,6 +2,7 @@
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="out/sortie_ODD_memoires.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
      
@@ -229,7 +230,7 @@
                     <forename>Paul</forename> 
                     <surname>Lamorille</surname>
                  </persName>
-                 <note> Gendre de <persName ref="#Lourme">Lourme</persName>, rencontré à la caserne 
+                 <note> Gendre de <persName ref="#Lourme"><surname>Lourme</surname></persName>, rencontré à la caserne 
                     des <roleName ref="#gardes_mobiles">gardes-mobiles</roleName> 
                     de <placeName ref="#Charleville">Charleville</placeName>. 
                  </note>
@@ -239,7 +240,7 @@
                     <forename></forename>
                     <surname>Lourme</surname>
                  </persName>
-                 <note> Beau-père de <persName ref="#Paul_Lamorille">Paul Lamorille</persName>, rencontré à la caserne 
+                 <note> Beau-père de <persName ref="#Paul_Lamorille"><forename>Paul</forename> <surname>Lamorille</surname></persName>, rencontré à la caserne 
                     des <roleName ref="#gardes_mobiles">gardes-mobiles</roleName> 
                     de <placeName ref="#Charleville">Charleville</placeName>.
                  </note>
@@ -457,6 +458,8 @@
                  <placeName>  Belgique </placeName>
                  <location>
                     <country key="BL"> Belgique</country>
+                    <district>Non précisé</district>
+                    <geo> Non précisé</geo>
                  </location>
               </place>
               <place xml:id="Prusse_Orientale">
@@ -464,6 +467,7 @@
                  <location>
                     <country key="AL"> Allemagne</country>
                     <district type="province"> Province de Prusse-Orientale </district>
+                    <geo>Non précisé</geo>
                     <note> Province faisant théorique partie de l'Etat Libre de Prusse, elle est occupée et administrée par l'Allemagne en 1940. Territoire de transfert
                            des soldats captifs entre 1940 et début 1941.
                     </note>
@@ -473,6 +477,8 @@
                  <placeName> canal de l'Aisne</placeName>
                  <location>
                     <country key="Fr"> France </country>
+                    <district> Aisne et Marne</district>
+                    <geo>Non précisé</geo>
                     <note> Canal de 58 km reliant l'Aisne à la Marne.</note>
                  </location>
               </place>
@@ -537,11 +543,11 @@
            <date when="1940-06-01"> 1 juin 1940</date>
         </item>
         <item xml:id="d14">
-           <p> A <placeName ref="#Rethel">Rethel</placeName> Edmond rencontre des camarades et apprends la mort de <persName ref="#Jean_François">Jean François</persName></p>
+           <p> A <placeName ref="#Rethel">Rethel</placeName> Edmond rencontre des camarades et apprends la mort de <persName ref="#Jean_François"><forename>Jean</forename> <surname>François</surname></persName></p>
            <date when="1940-06-06"> 6 juin 1940 </date>
         </item>
         <item xml:id="d15">
-           <p> A <placeName ref="#Rethel">Rethel</placeName> Edmond rencontre des camarades et apprends la mort de <persName ref="#Jean_François">Jean François</persName> (Edmond hésite avec la date précédente). </p>
+           <p> A <placeName ref="#Rethel">Rethel</placeName> Edmond rencontre des camarades et apprends la mort de <persName ref="#Jean_François"><forename>Jean</forename> <surname>François</surname></persName> (Edmond hésite avec la date précédente). </p>
            <date when="1940-06-07"> 7 juin 1940 </date>
         </item>
         <item xml:id="d16">
@@ -718,8 +724,8 @@
                une <offset>petite gare de la Marne à <measure>13 KM</measure> d'<placeName ref="#Epernay"> Epernay </placeName></offset>. On va <lb/>
                cantonner à X - je mets X car je ne me souviens plus du nom <lb/>
                du patelin. On <choice><sic> restes </sic><corr> reste </corr></choice>  3 jours dans ce village. Je  n'<choice><sic> ait </sic><corr> ai </corr></choice> plus <lb/>
-               d'argent sur moi et j'empruntes <choice> <abbr type="monnaie"> 50 f.</abbr> <expan> 50 francs </expan></choice> à mon copain <persName ref="#Gustave_Royer"> <forename>Gustave</forename> <lb/>
-               <surname>Royer</surname> </persName>. Nous achetons des oeufs, et nous faisons faire une bonne <lb/>
+               d'argent sur moi et j'empruntes <choice> <abbr type="monnaie"> 50 f.</abbr> <expan> 50 francs </expan></choice> à mon copain <persName ref="#Gustave_Royer"> <forename>Gustave</forename> <surname>Royer</surname> </persName> <lb/>
+               Nous achetons des oeufs, et nous faisons faire une bonne <lb/>
                omelette dans une maison. Et ensuite nous buvons quelques <lb/>
                bouteilles de champagne, car il n'est pas très cher ici. Le <lb/>
                <date ref="#d11" when="1940-05-30"> 30 mai 1940 </date> à 7 H 30 du soir on <choice><sic>embarques</sic><corr> embarque </corr></choice> dans des <lb/>
