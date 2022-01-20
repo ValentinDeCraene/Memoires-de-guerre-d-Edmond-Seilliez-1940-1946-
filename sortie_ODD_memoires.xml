@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en"
+      xmlns:s="http://purl.ocl.org/dsdl/schematron">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -217,7 +218,7 @@
                   </attDef>
                </attList>
             </elementSpec>
-<!-- MODIFICATION ODD ICI, à compléter et modifier > cas délicat, le mieux serait peut-être encore de ne rien contraindre ! -->
+<!-- MODIFICATION ODD ICI, CAS COMPLIQUÉ MAIS VALIDÉ -->
             <elementSpec ident="persName" mode="change">
                <gloss> Séquence des éléments contenus dans l'élément persName</gloss>
                <desc> 
@@ -393,7 +394,7 @@
                   <attDef ident="cert" mode="delete"/>
                </attList>
             </elementSpec>
-<!-- MODIFICATION DE L'ODD ICI : a confirmer -->
+<!-- MODIFICATION DE L'ODD ICI -->
             <elementSpec ident="listOrg" mode="change">
                <gloss>Elément contenu dans l'élément listOrg</gloss>
                <desc> L'élement listOrg doit contenir l'élément org au moins une fois</desc>
@@ -655,7 +656,6 @@
                   </attDef>
                </attList>
             </elementSpec>
-<!-- MODIFICATION DE L'ODD A FAIRE ICI ? -->
             <elementSpec ident="foreign" mode="change">
                <attList>
                   <attDef ident="facs" mode="delete"/>
@@ -740,7 +740,8 @@
                   <attDef ident="type" mode="delete"/>
                </attList>
             </elementSpec>
-<!-- MODIFICATION DE L'ODD ICI A COMPLÉTER POUR INDIQUER UNE SÉQUENCE DE VALEUR POUR WHEN-->            
+<!-- MODIFICATION DE L'ODD ICI A COMPLÉTER POUR INDIQUER UNE SÉQUENCE DE VALEUR POUR WHEN
+               when et ref en valeur optionnelle voire recommandée-->            
             <elementSpec ident="date" mode="change">
                <attList>
                   <attDef ident="facs" mode="delete"/>
@@ -817,19 +818,35 @@
                   </attDef>
                </attList>
             </elementSpec>
-<!-- MODIFICATION DE L'ODD ICI -->
+<!-- A CONFIRMER ! MODIFICATION DE L'ODD ICI => schematron à confirmer et compléter avec la regex ici ! -->
             <elementSpec ident="item" mode="change">
                <gloss> Séquence des éléments contenus dans l'élément item</gloss>
                <desc xml:lang="fr">
-                  L'élément liste doit contenir, dans cet ordre (afin de compléter la
+                  L'élément list doit contenir, dans cet ordre (afin de compléter la
                   chronologie dans un élément list) les éléments p et date une seule fois
                </desc>
-               <content>
+               <constraintSpec ident="xml:idVal" scheme="schematron">
+                  <constraint>
+                     <s:rule context="tei:TEI/standOff/list/item">
+                        <s:assert test="@xml:id">
+                           L'élément list dans le standOff doit contenir un élément item ayant pour
+                           attribut xml:id
+                        </s:assert>
+                     </s:rule>
+                     <s:rule context="tei:item[@xml:id]">
+                        <s:assert test="matches(@xml:id,'^d\d+$')">
+                        L'élément list doit posséder un élément item dont l'attribut
+                        xml:id est la valeur se présente sous la forme suivant : dN où N est un chiffre.
+                        </s:assert>
+                     </s:rule>
+                  </constraint>
+               </constraintSpec>
+               <!--<content>
                   <sequence preserveOrder="true">
                      <elementRef key="p" minOccurs="1" maxOccurs="1"/>
                      <elementRef key="date" minOccurs="1" maxOccurs="1"/>
                   </sequence>
-               </content>
+               </content>-->
                <attList>
                   <attDef ident="facs" mode="delete"/>
                   <attDef ident="cert" mode="delete"/>
@@ -1019,7 +1036,63 @@
                   <attDef ident="type" mode="delete"/>
                </attList>
             </elementSpec>
+<!--MODIFICATION DE L'ENCODAGE AVEC SCHEMATRON POUR CONTRAINDRE LA VALEUR DES ATTRIBUTS DE ZONE -->               
             <elementSpec ident="zone" mode="change">
+               <constraintSpec scheme="schematron" ident="ulxRequired">
+                  <constraint>
+                     <s:rule context="tei:TEI/facsimile/surface/zone">
+                        <s:assert test="@xml:id">
+                           L'attribut xml:id doit être renseigné.
+                        </s:assert>
+                     </s:rule>
+                     <s:rule context="tei:TEI/facsimile/surface/zone">
+                        <s:assert test="@ulx">
+                           L'attribut ulx doit être renseigné.
+                        </s:assert>
+                     </s:rule>
+                     <s:rule context="tei:TEI/facsimile/surface/zone">
+                        <s:assert test="@uly">
+                           L'attribut uly doit être renseigné.
+                        </s:assert>
+                     </s:rule>
+                     <s:rule context="tei:TEI/facsimile/surface/zone">
+                        <s:assert test="@lrx">
+                           L'attribut rlx doit être renseigné.
+                        </s:assert>
+                     </s:rule>
+                     <s:rule context="tei:TEI/facsimile/surface/zone">
+                        <s:assert test="@rly">
+                           L'attribut rly doit être renseigné.
+                        </s:assert>
+                     </s:rule>
+                     <s:rule context="tei:zone[@xml:id]">
+                        <s:assert test="matches(@xml:id, 'p[1-29]+')"> '@xml:id='p[1-19]+' 
+                           La valeur de l'attribut xml:id doit correspondre à pN où N est
+                           un nombre compris entre 1 et 19.
+                        </s:assert>
+                     </s:rule>
+                     <s:rule context="tei:zone[@ulx]">
+                        <s:assert test="matches(@ulx, '[0-9]?')"> '@ulx [0-9]?' 
+                           La valeur de l'attribut ulx doit correspondre à une séquence de chiffres.
+                        </s:assert>
+                     </s:rule>
+                     <s:rule context="tei:zone[@uly]">
+                        <s:assert test="matches(@uly, '[0-9]?')"> '@uly [0-9]?' 
+                           La valeur de l'attribut uly doit correspondre à une séquence de chiffres.
+                        </s:assert>
+                     </s:rule>
+                     <s:rule context="tei:zone[@lrx]">
+                        <s:assert test="matches(@lrx, '[0-9]?')"> '@lrx [0-9]?' 
+                           La valeur de l'attribut lrx doit correspondre à une séquence de chiffres.
+                        </s:assert>
+                     </s:rule>
+                     <s:rule context="tei:zone[@lry]">
+                        <s:assert test="matches(@lry, '[0-9]?')"> '@lry [0-9]?' 
+                           La valeur de l'attribut lry doit correspondre à une séquence de chiffres.
+                        </s:assert>
+                     </s:rule>
+                  </constraint>
+               </constraintSpec>
                <attList>
                   <attDef ident="facs" mode="delete"/>
                   <attDef ident="cert" mode="delete"/>
@@ -1033,9 +1106,16 @@
                </attList>
             </classSpec>
             <!--Checking module linking-->
+<!-- MODIFICATION DE L'ODD ICI -->               
             <moduleRef key="linking" include="standOff"/>
-       <!-- MODIFIER ODD ICI POUR CONTRAINDRE UTILISATION DE L'ÉLÉMENT LIST DANS STANDOFF pour chronologie -->
             <elementSpec ident="standOff" mode="change">
+               <gloss> Element list dans l'élément standOff </gloss>
+               <desc>L'élément standOff doit contenir un élément list présent au minimum
+               une fois
+               </desc>
+               <content>
+                     <elementRef key="list" minOccurs="1" maxOccurs="unbounded"/>
+               </content>
                <attList>
                   <attDef ident="facs" mode="delete"/>
                   <attDef ident="cert" mode="delete"/>
