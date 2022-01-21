@@ -1,1455 +1,1600 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en"
-      xmlns:s="http://purl.ocl.org/dsdl/schematron">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xmlns:s="http://purl.ocl.org/dsdl/schematron">
    <teiHeader>
       <fileDesc>
          <titleStmt>
             <title type="main">Guide d'encodage du <emph rend="italic">Carnet des mémoires de guerre
-               d'Edmond Seilliez (1940-1946)</emph></title>
+                  d'Edmond Seilliez (1940-1946)</emph></title>
             <title type="sub">Schéma créé avec Oddbyexample</title>
          </titleStmt>
          <publicationStmt>
-            <p>Edition et encodage en accord avec Alain Seilliez, fils de l'auteur, par Valentin De Craene, arrière-petit-fils de l'auteur
-               à partir dudit carnet, archive privée.
-            </p>
+            <p>Edition et encodage en accord avec Alain Seilliez, fils de l'auteur, par Valentin De
+               Craene, arrière-petit-fils de l'auteur à partir dudit carnet, archive privée. </p>
          </publicationStmt>
          <sourceDesc>
-            <p>Derivé de <ref target="https://www.tei-c.org/Vault/P5/current/xml/tei/odd/p5subset.xml">comme ODD de base</ref> à la suite  de l'analyse d'un fichier suivant:
-               /home/valentin/Documents/Projet_TEI/
-            </p>
+            <p>Derivé de <ref
+                  target="https://www.tei-c.org/Vault/P5/current/xml/tei/odd/p5subset.xml">comme ODD
+                  de base</ref> à la suite de l'analyse d'un fichier suivant:
+               /home/valentin/Documents/Projet_TEI/ </p>
          </sourceDesc>
       </fileDesc>
    </teiHeader>
    <text>
       <body>
-         <div1> 
-            <head>
-               Guide et documentation d'encodage du <emph rend="italic">Carnet des mémoires de guerre
-               d'Edmond Seilliez (1940-1946)</emph>, écrit par Edmond Seilliez, entre 1940 et 1946.
-            </head>
-            <p>
-               Cette documentation a pour objectif de présenter les particularités de la source
-               et de ce récit de guerre qui ont mené à une série de choix d'encodages permettant non
-               seulement une exploitation des métadonnées, mais aussi une mise en perspective scientifique
-               de l'extrait proposé. Il nous semble nécessaire dans un premier temps de présenter briévement
-               la source afin de mieux en saisir les spécificités et les enjeux défis inhérent à notre encodage.
-           </p>
-           <p>
-              En premier lieu, notre source se présente sous la forme d'un carnet de récit, retraçant les déplacements
-              d'Edmond Seilliez, soldat monté au front au début de la campagne de France en mai 1940. Il s'agit d'une
-              source privée, ce qui a impliqué un traitement spécifique des métadonnées dans le <gi>teiHeader</gi>, détaillé
-              plus bas. Le récit personnel de l'auteur des combats s'établit a posterio, ce qui permet à Edmond d'établir
-              non seulement une chronologie des événements, combats et périodes de captivité, qui ont rythmé sont existence entre 1940 et 1946 (date
-              à laquelle il rentre, libre, dans son bourg natal). C'est pour cette raison que cette source nous a semblé un support
-              pertinent pour l'encodage des réseaux de relations de l'auteur à un ensemble de personnages (camarades, supérieurs hiérarchiques,
-              ennemis), de lieux (villes et villages traversés, espaces des combats ou de captivité) ou d'organisation. Cet encodage
-              nous a donc permis d'établir un ensemble d'index et une chronologie qui sont venus enrichir le teiHeader ou, le cas échéant,
-              un élément standOff. Si l'ennumération des dates et des lieux est au coeur du récit, la personnalité de l'auteur transparaît
-              au détour de commentaires et de précisions. C'est pourquoi, nous avons décidé d'encoder de manière détaillée ces
-              saisies de la personnalité de l'auteur, permettant, toutes proportions gardées, une analyse relevant de l'histoire des
-              mentalités. En outre, la source encodée est ici un extrait représentant environ un tiers du carnet au total. Cette situation
-              nous a donc poussé à établir des règles suffisament strictes pour préserver la cohérence de l'encodage, mais ponctuellement plus ouvertes
-              pour faire correspondre certains éléments ou attributs à la suite de la source. Ce caractère ambivalent de la source et du récit, 
-              tour à tour quasi télégraphique et objectif, puis personnel, nous a donc poussé à établir un ensemble de règles d'encodage cohérent que nous 
-              nous proposons de commenter ci dessous au cours de trois parties:
-              <list>
-                 <item>En premier lieu, nous revenons sur les choix d'encodage dans le <gi>teiHeader</gi>, au service de l'exploitation des métadonnées.</item>
-                 <item>Ensuite, nous nous concentrons plus spécifiquement sur les choix d'encodages contraints par la structure et la matérialité de la source.</item>
-                 <item>Enfin, nous explicitons les choix d'encodage des réseaux de personnages et de dates, afin de permettre une possible
-                       exploitation scientifique de la source.</item>
-              </list>
-           </p>
+         <div1>
+            <head> Guide et documentation d'encodage du <emph rend="italic">Carnet des mémoires de
+                  guerre d'Edmond Seilliez (1940-1946)</emph>, écrit par Edmond Seilliez, entre 1940
+               et 1946. </head>
+            <p> Cette documentation a pour objectif de présenter les particularités de la source et
+               de ce récit de guerre qui ont mené à une série de choix d'encodages permettant non
+               seulement une exploitation des métadonnées, mais aussi une mise en perspective
+               scientifique de l'extrait proposé. Il nous semble nécessaire dans un premier temps de
+               présenter briévement la source afin de mieux en saisir les spécificités et les enjeux
+               défis inhérent à notre encodage. </p>
+            <p> En premier lieu, notre source se présente sous la forme d'un carnet de récit,
+               retraçant les déplacements d'Edmond Seilliez, soldat monté au front au début de la
+               campagne de France en mai 1940. Il s'agit d'une source privée, ce qui a impliqué un
+               traitement spécifique des métadonnées dans le <gi>teiHeader</gi>, détaillé plus bas.
+               Le récit personnel de l'auteur des combats s'établit a posterio, ce qui permet à
+               Edmond d'établir non seulement une chronologie des événements, combats et périodes de
+               captivité, qui ont rythmé sont existence entre 1940 et 1946 (date à laquelle il
+               rentre, libre, dans son bourg natal). C'est pour cette raison que cette source nous a
+               semblé un support pertinent pour l'encodage des réseaux de relations de l'auteur à un
+               ensemble de personnages (camarades, supérieurs hiérarchiques, ennemis), de lieux
+               (villes et villages traversés, espaces des combats ou de captivité) ou
+               d'organisation. Cet encodage nous a donc permis d'établir un ensemble d'index et une
+               chronologie qui sont venus enrichir le teiHeader ou, le cas échéant, un élément
+               standOff. Si l'ennumération des dates et des lieux est au coeur du récit, la
+               personnalité de l'auteur transparaît au détour de commentaires et de précisions.
+               C'est pourquoi, nous avons décidé d'encoder de manière détaillée ces saisies de la
+               personnalité de l'auteur, permettant, toutes proportions gardées, une analyse
+               relevant de l'histoire des mentalités. En outre, la source encodée est ici un extrait
+               représentant environ un tiers du carnet au total. Cette situation nous a donc poussé
+               à établir des règles suffisament strictes pour préserver la cohérence de l'encodage,
+               mais ponctuellement plus ouvertes pour faire correspondre certains éléments ou
+               attributs à la suite de la source. Ce caractère ambivalent de la source et du récit,
+               tour à tour quasi télégraphique et objectif, puis personnel, nous a donc poussé à
+               établir un ensemble de règles d'encodage cohérent que nous nous proposons de
+               commenter ci dessous au cours de trois parties: <list>
+                  <item>En premier lieu, nous revenons sur les choix d'encodage dans le
+                        <gi>teiHeader</gi>, au service de l'exploitation des métadonnées.</item>
+                  <item>Ensuite, nous nous concentrons plus spécifiquement sur les choix d'encodages
+                     contraints par la structure et la matérialité de la source.</item>
+                  <item>Enfin, nous explicitons les choix d'encodage des réseaux de personnages et
+                     de dates, afin de permettre une possible exploitation scientifique de la
+                     source.</item>
+               </list>
+            </p>
             <div2>
-               <head> Le <gi>teiHeader</gi> au service de l'exploitation des métadonnées de la source.</head>
-               <p> Le <gi>teiHeader</gi> permet, grâce à sa fonction première d'organisation et présentation des métadonnées,
-                  une exploitation de la source tant par le chercheur en quête d'éléments contextuels, que pour les langages machines capables
-                  d'extraire et compiler des données. Dès lors, renseigner les métadonnées les plus précises sur le carnet et la teneur du récit
-                  a été un premier enjeu auquel notre encodage s'est confronté. Comme nous l'avons évoqué dans l'introduction de notre propos, le caractère
-                  privé et inédit de cette source a impliqué un compromis dans l'encodage.</p>
+               <head> Le <gi>teiHeader</gi> au service de l'exploitation des métadonnées de la
+                  source.</head>
+               <p> Le <gi>teiHeader</gi> permet, grâce à sa fonction première d'organisation et
+                  présentation des métadonnées, une exploitation de la source tant par le chercheur
+                  en quête d'éléments contextuels, que pour les langages machines capables
+                  d'extraire et compiler des données. Dès lors, renseigner les métadonnées les plus
+                  précises sur le carnet et la teneur du récit a été un premier enjeu auquel notre
+                  encodage s'est confronté. Comme nous l'avons évoqué dans l'introduction de notre
+                  propos, le caractère privé et inédit de cette source a impliqué un compromis dans
+                  l'encodage.</p>
                <div3>
-                  <head>Encoder les métadonnées d'une source privée: un compromis entre description archivistique et respect du document.</head>
-                  <p>
-                     Ces enjeux et cette tension se sont critallisés dans le renseignement des métadonnées au sein du <gi>sourceDesc</gi>.
-                     En effet, cet éléments autorise le renseignement de nombreuses métadonnées archivistiques que nous ne pouvions que partiellement
-                     renseigner à propos de la source. Dès lors, nous avons fait le choix de renseigner le plus précisément ces métadonnées lorsque
-                     cela était possible, au sein des éléments adéquats, et en prose dans un élément <gi>p</gi> dans les autres cas. L'exemple de l'élément
-                     <gi>physDesc</gi> est tout à fait révélateur de notre choix d'encodage. Nous avons décidé d'indiquer les éléments
-                     <gi>objectDesc</gi>, <gi>handDesc</gi> et <gi>bindingDesc</gi> afin de proposer renseigner les métadonnées codicologiques,
-                     et paléographiques de la source. Au sein de ces éléments nous avons du opter, pour la majeure partie, pour une description en
-                     prose, puisque les données concernant notre sources n'était parfois pas assez précis pour remplir fidélement les éléments de niveau
-                     inférieurs. Par exemple, pour le <gi>handDesc</gi>, nous avons décidé de combiner la balise et la prose avec un élément <gi>p</gi>.
-                  </p>
-                  <p>
-                     De manière plus exhaustive, indiquons que les métadonnées sur l'édition et la publication du texte ont été renseignées respectivement
-                     dans les éléments <gi>editionStmt</gi> puis <gi>publicationStmt</gi>. Notre source étant privée, nous eu recours à une présentation des données
-                     sous forme de prose au sein d'un élément <gi>p</gi>.
-                     Ensuite, le <gi>sourceDesc</gi> concentre une part importante des métadonnées descriptives de notre source. Nous avons jugé utile d'indiquer
-                     les éléments matériels de celle-ci dans les balises <gi>objectDesc</gi>, <gi>layoutDesc</gi>, <gi>handDesc</gi>, et <gi>bindingDesc</gi>.
-                     Puisque l'auteur mentionne, à de très rares occasions certe, des toponymes ou termes techniques en allemand et en anglais,
-                     nous avons indiqué l'usage de langues étrangères dans le <gi>profileDesc</gi>, au sein des éléments <gi>langUsage</gi> et <gi>language</gi>.
-                     Les attribut @<att>ident</att> et @<att>usage</att> (contenant une valeur en pourcentage, relative à l'entièreté du texte) permettent de garder une idée de la
-                     répartition et de l'utilisation des langues.
-                     Ces première métadonnées contextuelles renseignées, l'essentiel de notre travail dans le <gi>teiHeader</gi> a été de créer les index de personnes, lieux et
-                     organisations.
-                     
-                  </p>
+                  <head>Encoder les métadonnées d'une source privée: un compromis entre description
+                     archivistique et respect du document.</head>
+                  <p> Ces enjeux et cette tension se sont critallisés dans le renseignement des
+                     métadonnées au sein du <gi>sourceDesc</gi>. En effet, cet éléments autorise le
+                     renseignement de nombreuses métadonnées archivistiques que nous ne pouvions que
+                     partiellement renseigner à propos de la source. Dès lors, nous avons fait le
+                     choix de renseigner le plus précisément ces métadonnées lorsque cela était
+                     possible, au sein des éléments adéquats, et en prose dans un élément <gi>p</gi>
+                     dans les autres cas. L'exemple de l'élément <gi>physDesc</gi> est tout à fait
+                     révélateur de notre choix d'encodage. Nous avons décidé d'indiquer les éléments
+                        <gi>objectDesc</gi>, <gi>handDesc</gi> et <gi>bindingDesc</gi> afin de
+                     proposer renseigner les métadonnées codicologiques, et paléographiques de la
+                     source. Au sein de ces éléments nous avons du opter, pour la majeure partie,
+                     pour une description en prose, puisque les données concernant notre sources
+                     n'était parfois pas assez précis pour remplir fidélement les éléments de niveau
+                     inférieurs. Par exemple, pour le <gi>handDesc</gi>, nous avons décidé de
+                     combiner la balise et la prose avec un élément <gi>p</gi>. </p>
+                  <p> De manière plus exhaustive, indiquons que les métadonnées sur l'édition et la
+                     publication du texte ont été renseignées respectivement dans les éléments
+                        <gi>editionStmt</gi> puis <gi>publicationStmt</gi>. Notre source étant
+                     privée, nous eu recours à une présentation des données sous forme de prose au
+                     sein d'un élément <gi>p</gi>. Ensuite, le <gi>sourceDesc</gi> concentre une
+                     part importante des métadonnées descriptives de notre source. Nous avons jugé
+                     utile d'indiquer les éléments matériels de celle-ci dans les balises
+                        <gi>objectDesc</gi>, <gi>layoutDesc</gi>, <gi>handDesc</gi>, et
+                        <gi>bindingDesc</gi>. Puisque l'auteur mentionne, à de très rares occasions
+                     certe, des toponymes ou termes techniques en allemand et en anglais, nous avons
+                     indiqué l'usage de langues étrangères dans le <gi>profileDesc</gi>, au sein des
+                     éléments <gi>langUsage</gi> et <gi>language</gi>. Les attribut
+                        @<att>ident</att> et @<att>usage</att> (contenant une valeur en pourcentage,
+                     relative à l'entièreté du texte) permettent de garder une idée de la
+                     répartition et de l'utilisation des langues. Ces première métadonnées
+                     contextuelles renseignées, l'essentiel de notre travail dans le
+                        <gi>teiHeader</gi> a été de créer les index de personnes, lieux et
+                     organisations. </p>
                </div3>
                <div3>
-                  <head>Les index de personnes, de lieux et d'organisation ou l'enjeu de la normalisation des données.</head>
-                  <p>
-                     Comme nous l'avons explicité dans l'introduction de notre documentation, un des objectif scientifique de cet encodage a été de proposer
-                     une analyse des réseaux de personnages et de lieux mentionnés par un personnage ordinaire. Pour ce faire, nous avons procédé à la réalisation
-                     de trois index au sein de <gi>teiHeader</gi>
+                  <head>Les index de personnes, de lieux et d'organisation ou l'enjeu de la
+                     normalisation des données.</head>
+                  <p> Comme nous l'avons explicité dans l'introduction de notre documentation, un
+                     des objectif scientifique de cet encodage a été de proposer une analyse des
+                     réseaux de personnages et de lieux mentionnés par un personnage ordinaire. Pour
+                     ce faire, nous avons procédé à la réalisation de trois index au sein de
+                        <gi>teiHeader</gi>
                   </p>
-                  <p>
-                     Tout d'abord, l'index des organisations militaires et des sociétés rencontrées ou mentionnées par l'auteur a été réalisé au sein du <gi>particDesc</gi>
-                     dans un élément <gi>listOrg</gi>. Ce choix a été fait en accord avec les TEIguidelines puisque nous trouvons l'exemple suivant :
-                     <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                  <p> Tout d'abord, l'index des organisations militaires et des sociétés rencontrées
+                     ou mentionnées par l'auteur a été réalisé au sein du <gi>particDesc</gi> dans
+                     un élément <gi>listOrg</gi>. Ce choix a été fait en accord avec les
+                     TEIguidelines puisque nous trouvons l'exemple suivant : <egXML
+                        xmlns="http://www.tei-c.org/ns/Examples">
                         <listOrg>
-                        <head>Libyans</head>
-                        <org>
-                           <orgName>Adyrmachidae</orgName>
-                           <desc>These people have, in most points, the same customs as the Egyptians, but
-                              use the costume of the Libyans. Their women wear on each leg a ring made of
-                              bronze [...]</desc>
-                        </org>
+                           <head>Libyans</head>
+                           <org>
+                              <orgName>Adyrmachidae</orgName>
+                              <desc>These people have, in most points, the same customs as the
+                                 Egyptians, but use the costume of the Libyans. Their women wear on
+                                 each leg a ring made of bronze [...]</desc>
+                           </org>
                         </listOrg>
-                     </egXML>
-                     Cet exemple nous a semblé correspondre à notre besoin de d'indiquer le nom de l'organisation (avec l'élément <gi>orgName</gi>), tout en complétant un certain nombre de données,
-                     comme la nature de celle-ci. Pour ce faire, nous avons eu recours à l'élément <gi>note</gi>, très persif, qui accepte une description en prose de l'organisation. Afin d'indexer les
-                     organisations citées par Edmond Seilliez, nous avons initié un système de renvoi avec l'ajout d'un attribut <att>xml:id</att> à l'élément englobant <gi>org</gi>. Dans cet index, destiné
-                     principalement aux chercheurs s'intéressant aux organisations militaires et sociétés réquisitionnées en temps de guerre, nous avons décidé de développer les accronymes
-                     et les abbréviations gardées par l'auteur dans le corps du texte. De ce fait, nous avons eu recours à l'élément <gi>expan</gi> pour encoder ce procédé.
-                     Notons qu'il aurait été possible de créer cet index plus loin dans un élément <gi>standOff</gi>. Notre choix se justifie par le fait que les index des organisations croise parfois dans le corps
-                     du texte celui des personnes.
-                  </p>
-                  <p>
-                     L'index des personnes a été un part importante de notre travail dans le <gi>teiHeader</gi> et a amené une réflexion concernant non seulement l'encodage,
-                     mais aussi sa restriction dans l'ODD ci-après. En effet, comme le veut l'usage consacré, nous avons réalisé notre index des personnes mentionnées dans le
-                     <gi>particDesc</gi>, car celles-ci ont toutes, à divers dégrés, une interaction avec l'auteur. Chaque personne est encodée dans un élément <gi>person</gi> dont l'attribut <att>xml:id</att> permet l'indexation.
-                     Au sein de cet élément, l'élément <gi>persName</gi> permet de renseigner les noms (<gi>surname</gi>) et prénoms(<gi>forename</gi>) des personnes. Un indice de certitude de l'identité de la personne a été renseigné
-                     avec l'usage de l'attribut <att>cert</att>, lorsque nous avions suffisament d'éléments contextuels pour proposer une hypothèse. Notre index des personnes est complété par un élément
-                     <gi>note</gi> (au sein de <gi>persName</gi>) permettant d'indiquer avec un texte libre les relations entretenus entre l'auteur et ce personnage.
-                  </p>
-                  <p>
-                     Nous avons appliqué un procédé identique pour la réalisation de l'index des lieux, cette fois ci au sein d'un élément <gi>settingDesc</gi>. Chaque lieu est répertorié
-                     dans un élément <gi>place</gi> (contenu lui même dans l'élément englobant <gi>listPlace</gi>). Nous avons fait le choix de renseigner un maximum de métadonnées concernant ces lieux,
-                     puisqu'ils sont représentatifs des déplacements forcés ou subis d'un soldat ordinaire en 1940. L'objectif sous-jacent étant de pouvoir proposer une cartograĥie
-                     de l'itinérance et de la captivité de l'auteur. Par conséquent, nous avons utilisé l'élément <gi>location</gi> permettant de renseigner de nombreuses métadonnées
-                     sur les lieux mentionnés grâce aux éléments :
-                     <list>
-                        <item> <gi>country</gi> </item>
+                     </egXML> Cet exemple nous a semblé correspondre à notre besoin de d'indiquer le
+                     nom de l'organisation (avec l'élément <gi>orgName</gi>), tout en complétant un
+                     certain nombre de données, comme la nature de celle-ci. Pour ce faire, nous
+                     avons eu recours à l'élément <gi>note</gi>, très persif, qui accepte une
+                     description en prose de l'organisation. Afin d'indexer les organisations citées
+                     par Edmond Seilliez, nous avons initié un système de renvoi avec l'ajout d'un
+                     attribut <att>xml:id</att> à l'élément englobant <gi>org</gi>. Dans cet index,
+                     destiné principalement aux chercheurs s'intéressant aux organisations
+                     militaires et sociétés réquisitionnées en temps de guerre, nous avons décidé de
+                     développer les accronymes et les abbréviations gardées par l'auteur dans le
+                     corps du texte. De ce fait, nous avons eu recours à l'élément <gi>expan</gi>
+                     pour encoder ce procédé. Notons qu'il aurait été possible de créer cet index
+                     plus loin dans un élément <gi>standOff</gi>. Notre choix se justifie par le
+                     fait que les index des organisations croise parfois dans le corps du texte
+                     celui des personnes. </p>
+                  <p> L'index des personnes a été un part importante de notre travail dans le
+                        <gi>teiHeader</gi> et a amené une réflexion concernant non seulement
+                     l'encodage, mais aussi sa restriction dans l'ODD ci-après. En effet, comme le
+                     veut l'usage consacré, nous avons réalisé notre index des personnes mentionnées
+                     dans le <gi>particDesc</gi>, car celles-ci ont toutes, à divers dégrés, une
+                     interaction avec l'auteur. Chaque personne est encodée dans un élément
+                        <gi>person</gi> dont l'attribut <att>xml:id</att> permet l'indexation. Au
+                     sein de cet élément, l'élément <gi>persName</gi> permet de renseigner les noms
+                        (<gi>surname</gi>) et prénoms(<gi>forename</gi>) des personnes. Un indice de
+                     certitude de l'identité de la personne a été renseigné avec l'usage de
+                     l'attribut <att>cert</att>, lorsque nous avions suffisament d'éléments
+                     contextuels pour proposer une hypothèse. Notre index des personnes est complété
+                     par un élément <gi>note</gi> (au sein de <gi>persName</gi>) permettant
+                     d'indiquer avec un texte libre les relations entretenus entre l'auteur et ce
+                     personnage. </p>
+                  <p> Nous avons appliqué un procédé identique pour la réalisation de l'index des
+                     lieux, cette fois ci au sein d'un élément <gi>settingDesc</gi>. Chaque lieu est
+                     répertorié dans un élément <gi>place</gi> (contenu lui même dans l'élément
+                     englobant <gi>listPlace</gi>). Nous avons fait le choix de renseigner un
+                     maximum de métadonnées concernant ces lieux, puisqu'ils sont représentatifs des
+                     déplacements forcés ou subis d'un soldat ordinaire en 1940. L'objectif
+                     sous-jacent étant de pouvoir proposer une cartograĥie de l'itinérance et de la
+                     captivité de l'auteur. Par conséquent, nous avons utilisé l'élément
+                        <gi>location</gi> permettant de renseigner de nombreuses métadonnées sur les
+                     lieux mentionnés grâce aux éléments : <list>
+                        <item>
+                           <gi>country</gi>
+                        </item>
                         <item><gi>district</gi></item>
                         <item><gi>geo</gi></item>
                         <item><gi>note</gi></item>
-                     </list>
-                     L'élément <gi>geo</gi> contient les coordonnées géographiques terrestres universelles, conforme à la norme NF EN ISO 6709, afin de permettre une meilleur extraction des données
-                     et interopérabilité.
-                     Un des enjeux majeurs de la création de cet index des lieux a été de contraindre la présence de cette liste d'éléments et de leur utilisation. Comme indiqué plus loin dans l'ODD, nous avons fait le choix
-                     d'une "contrainte d'existence" de ces éléments, sans en limiter précisément le contenu, puisque dans la suite du carnet, il est possible que d'autres métadonnées
-                     soient intéressantes à renseigner. Une fois les index constitués, il nous a semblé intéressant de produire une chronologie des événements, puisque l'auteur retrace méthodiquement
-                     le déroulé des événements, de sa montée au front jusqu'à sa capture.
-                  </p>
+                     </list> L'élément <gi>geo</gi> contient les coordonnées géographiques
+                     terrestres universelles, conforme à la norme NF EN ISO 6709, afin de permettre
+                     une meilleur extraction des données et interopérabilité. Un des enjeux majeurs
+                     de la création de cet index des lieux a été de contraindre la présence de cette
+                     liste d'éléments et de leur utilisation. Comme indiqué plus loin dans l'ODD,
+                     nous avons fait le choix d'une "contrainte d'existence" de ces éléments, sans
+                     en limiter précisément le contenu, puisque dans la suite du carnet, il est
+                     possible que d'autres métadonnées soient intéressantes à renseigner. Une fois
+                     les index constitués, il nous a semblé intéressant de produire une chronologie
+                     des événements, puisque l'auteur retrace méthodiquement le déroulé des
+                     événements, de sa montée au front jusqu'à sa capture. </p>
                </div3>
                <div3>
                   <head>Une chronologie dans le standOff, ou les limites du teiHeader</head>
-                  <p>
-                     Pour mener à bien la réalisation de cette chronologie, nous avons fait le choix de la développer indépendement du <gi>teiHeader</gi> dans l'élément <gi>standOff</gi>.
-                     En effet, rappelons que l'élément <gi>particDesc</gi> n'acceptent pas d'éléments satisfaisant pour réaliser une chronologie. A cet égard, de manière plus globale, la TEI ne semble
-                     pas proposer de jeu de balises spécialement dédiés à l'établissement d'une chronologie. L'élément <gi>timeline</gi>, au premier abord intéressant, ne peut être utilisé que pour créer
-                     un lien entre un point dans le temps et un élément de dialogue dans un texte, comme l'indique l'exemple tiré des TEIguidelines:
-                     <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                  <p> Pour mener à bien la réalisation de cette chronologie, nous avons fait le
+                     choix de la développer indépendement du <gi>teiHeader</gi> dans l'élément
+                        <gi>standOff</gi>. En effet, rappelons que l'élément <gi>particDesc</gi>
+                     n'acceptent pas d'éléments satisfaisant pour réaliser une chronologie. A cet
+                     égard, de manière plus globale, la TEI ne semble pas proposer de jeu de balises
+                     spécialement dédiés à l'établissement d'une chronologie. L'élément
+                        <gi>timeline</gi>, au premier abord intéressant, ne peut être utilisé que
+                     pour créer un lien entre un point dans le temps et un élément de dialogue dans
+                     un texte, comme l'indique l'exemple tiré des TEIguidelines: <egXML
+                        xmlns="http://www.tei-c.org/ns/Examples">
                         <timeline xml:id="TL01" unit="ms">
                            <when xml:id="TL-w0" absolute="11:30:00"/>
-                           <when xml:id="TL-w1" interval="unknown"
-                              since="#TL-w0"/>
-                           <when xml:id="TL-w2" interval="100"
-                              since="#TL-w1"/>
-                           <when xml:id="TL-w3" interval="200"
-                              since="#TL-w2"/>
-                           <when xml:id="TL-w4" interval="150"
-                              since="#TL-w3"/>
-                           <when xml:id="TL-w5" interval="250"
-                              since="#TL-w4"/>
-                           <when xml:id="TL-w6" interval="100"
-                              since="#TL-w5"/>
+                           <when xml:id="TL-w1" interval="unknown" since="#TL-w0"/>
+                           <when xml:id="TL-w2" interval="100" since="#TL-w1"/>
+                           <when xml:id="TL-w3" interval="200" since="#TL-w2"/>
+                           <when xml:id="TL-w4" interval="150" since="#TL-w3"/>
+                           <when xml:id="TL-w5" interval="250" since="#TL-w4"/>
+                           <when xml:id="TL-w6" interval="100" since="#TL-w5"/>
                         </timeline>
-                     </egXML>
-                     C'est pour ces raisons que nous avons eu recours au <gi>standOff</gi>, un élément en dehors du teiHeader, permettant un enrichissement des données textuelles
-                     du document TEI produit. Puisque le <gi>standOff</gi> accepte la présence d'un élément <gi>list</gi>, nous avons pu réaliser notre chronologie en intégrant les éléments
-                     <gi>p</gi> et <gi>date</gi>, donnant respectivement des informations sur la description de l'événement et sa date précise.
-                     En conséquence, à la suite de la réalisation de ces index, nous avons pu nous consacrer pleinement à encoder les éléments structurels de notre source.
-                  </p>
+                     </egXML> C'est pour ces raisons que nous avons eu recours au <gi>standOff</gi>,
+                     un élément en dehors du teiHeader, permettant un enrichissement des données
+                     textuelles du document TEI produit. Puisque le <gi>standOff</gi> accepte la
+                     présence d'un élément <gi>list</gi>, nous avons pu réaliser notre chronologie
+                     en intégrant les éléments <gi>p</gi> et <gi>date</gi>, donnant respectivement
+                     des informations sur la description de l'événement et sa date précise. En
+                     conséquence, à la suite de la réalisation de ces index, nous avons pu nous
+                     consacrer pleinement à encoder les éléments structurels de notre source. </p>
                </div3>
             </div2>
-            <div2> 
+            <div2>
                <head>Structure et matérialité de la source : un minimalisme signifiant.</head>
-               <p>
-                  Dans un second temps, il nous a fallut faire des choix d'encodage concernant la matérialité de notre source et le respect de la structure du récit.
-                  L'encodage de l'extrait a impliqué un encodage minimaliste mais signifiant d'un point de vue structurel.
-               </p>
+               <p> Dans un second temps, il nous a fallut faire des choix d'encodage concernant la
+                  matérialité de notre source et le respect de la structure du récit. L'encodage de
+                  l'extrait a impliqué un encodage minimaliste mais signifiant d'un point de vue
+                  structurel. </p>
                <div3>
                   <head> Une structure logique minimaliste mais signifiante.</head>
-                  <p>
-                     Rappelons que le texte que nous avons encodé est un extrait d'un récit plus long, puisque nous avons encodé 20 pages sur un total de 53.
-                     Cette situation entraine donc un découpage de l'oeuvre simple et une structure minimale. Nous avons cependant décidé d'isoler le propos introductif
-                     de l'auteur dans lequel il présente briévement le récit et indique qu'il a perdu son carnet de mémoires a propos de la période précédente. Ce
-                     paragraphe, clairement distinct dans la source et séparé du reste du récit par une double ligne tracée au crayon de bois a donc été encodé dans
-                     un élément <gi>front</gi>, comprenant une <gi>div</gi> dont l'attribut <att>type</att> ("<val>notes_introductives</val>") permet de mettre en valeur cette séparation tant logique que physique
-                     dans la source. A cet égard, cette séparation matérielle de l'introduction a été encodée en utilisant l'attribut rend de l'élément lb, dans la mesure où
-                     cette séparation structurelle est significative.
-                     Le reste de l'extrait a quant à lui a été encodé dans une strucutre minimale au sein de l'élément <gi>body</gi>, dans une division unique marquée par la balise
-                     <gi>div</gi>. Ce choix s'explique par la volonté de respecter la structure matérielle de l'oeuvre qui, dans son entiéreté, se présente comme une entité intellectuelle
-                     spécifique et unie. La rupture dans le récit que représente la capture de l'auteur et le départ pour la Prusse Orientale nous a donc poussé
-                     à limiter notre encodage jusqu'à cet élément en particulier.
-                  </p>
+                  <p> Rappelons que le texte que nous avons encodé est un extrait d'un récit plus
+                     long, puisque nous avons encodé 20 pages sur un total de 53. Cette situation
+                     entraine donc un découpage de l'oeuvre simple et une structure minimale. Nous
+                     avons cependant décidé d'isoler le propos introductif de l'auteur dans lequel
+                     il présente briévement le récit et indique qu'il a perdu son carnet de mémoires
+                     a propos de la période précédente. Ce paragraphe, clairement distinct dans la
+                     source et séparé du reste du récit par une double ligne tracée au crayon de
+                     bois a donc été encodé dans un élément <gi>front</gi>, comprenant une
+                        <gi>div</gi> dont l'attribut <att>type</att>
+                        ("<val>notes_introductives</val>") permet de mettre en valeur cette
+                     séparation tant logique que physique dans la source. A cet égard, cette
+                     séparation matérielle de l'introduction a été encodée en utilisant l'attribut
+                     rend de l'élément lb, dans la mesure où cette séparation structurelle est
+                     significative. Le reste de l'extrait a quant à lui a été encodé dans une
+                     strucutre minimale au sein de l'élément <gi>body</gi>, dans une division unique
+                     marquée par la balise <gi>div</gi>. Ce choix s'explique par la volonté de
+                     respecter la structure matérielle de l'oeuvre qui, dans son entiéreté, se
+                     présente comme une entité intellectuelle spécifique et unie. La rupture dans le
+                     récit que représente la capture de l'auteur et le départ pour la Prusse
+                     Orientale nous a donc poussé à limiter notre encodage jusqu'à cet élément en
+                     particulier. </p>
                </div3>
                <div3>
-                  <head>
-                     Encodage typographique et respect de la matérialité de la source.
-                  </head>
-                  <p>
-                     Ensuite, nous avons fait le choix de proposer un encodage respectant la structure matérielle de notre source, tant à l'échelle du carnet dans son ensemble,
-                     qu'au niveau des pages et lignes. Pour cela, nous avons eu recours à l'utilisation tout à fait classique des éléments autofermants <gi>pb</gi> et <gi>lb</gi>,
-                     indiquant respectivement le début d'une nouvelle page et d'une nouvelle ligne. Nous avons de même numéroté les pages en utilisant les attributs <att>n</att> et <att>facs</att> 
-                     afin de pouvoir créer un système de renvoi entre les <gi>zones</gi> définies dans les éléments <gi>surface</gi> et les pages en question en lien avec l'élément <gi>facsimile</gi>.
-                     Nous avons donc ici adopté un encodage minimaliste du découpage matérielle de la source, ce qui est néanmoins porteur de sens dans la mesure où l'écriture de l'auteur fut
-                     en partie contrainte par le format de la source. En effet, ce format a vraisemblablement poussé l'auteur a une économie de mots, expliquant le caractère
-                     parfois télégraphique du récit. C'est bel et bien cette hypothèse que notre encodage a tenté de retranscrire.
-                     Cependant, l'encodage de la structure logique et matérielle de l'extrait ne sauraient être décorélés du coeur de la source: le récit et la représentation de
-                     la guerre et des réseaux par un soldat ordinaire.
+                  <head> Encodage typographique et respect de la matérialité de la source. </head>
+                  <p> Ensuite, nous avons fait le choix de proposer un encodage respectant la
+                     structure matérielle de notre source, tant à l'échelle du carnet dans son
+                     ensemble, qu'au niveau des pages et lignes. Pour cela, nous avons eu recours à
+                     l'utilisation tout à fait classique des éléments autofermants <gi>pb</gi> et
+                        <gi>lb</gi>, indiquant respectivement le début d'une nouvelle page et d'une
+                     nouvelle ligne. Nous avons de même numéroté les pages en utilisant les
+                     attributs <att>n</att> et <att>facs</att> afin de pouvoir créer un système de
+                     renvoi entre les <gi>zones</gi> définies dans les éléments <gi>surface</gi> et
+                     les pages en question en lien avec l'élément <gi>facsimile</gi>. Nous avons
+                     donc ici adopté un encodage minimaliste du découpage matérielle de la source,
+                     ce qui est néanmoins porteur de sens dans la mesure où l'écriture de l'auteur
+                     fut en partie contrainte par le format de la source. En effet, ce format a
+                     vraisemblablement poussé l'auteur a une économie de mots, expliquant le
+                     caractère parfois télégraphique du récit. C'est bel et bien cette hypothèse que
+                     notre encodage a tenté de retranscrire. Cependant, l'encodage de la structure
+                     logique et matérielle de l'extrait ne sauraient être décorrélés du coeur de la
+                     source: le récit et la représentation de la guerre et des réseaux par un soldat
+                     ordinaire. </p>
+               </div3>
+               <div3>
+                  <head> Abbréviations, correction et perspective d'édition du texte.</head>
+                  <p> Du point de vue typographique, nous avons fait une série de choix concernant
+                     les abbréviations et les erreurs manifestes qui ont été motivées par une
+                     perspective d'utilisation dans un cadre scientifique, voire éditorial, de notre
+                     encodage. En effet, nous avons décidé de garder les abbréviations présentent
+                     dans le corps du texte et de les développer dans les index du
+                        <gi>teiHeader</gi>, comme nous l'avons mentionné plus haut. Concernant les
+                     fautes de conjugaison manifeste de l'auteur, nous avons décidé de les signaler
+                     et de les corriger avec la séquence d'élément <gi>choice</gi>, <gi>sic</gi> et
+                        <gi>corr</gi>, comme le montre l'exemple suivant: <egXML
+                        xmlns="http://www.tei-c.org/ns/Examples"> On <choice><sic> roules
+                              </sic><corr> roule </corr></choice> presque toute la nuit <lb/>
+                     </egXML> Nous avons opté pour ce choix d'encodage dans la mesure où nous
+                     estimons que ces fautes de conjugaison sont porteuses de sens. Effectivement,
+                     l'auteur était avant la guerre secrétaire chez un clerc de notaire dans son
+                     village natal, ce qui nous porte à croire qu'il faisait preuve d'une bonne
+                     maitrise du français. Néanmoins, le moment de l'écriture prend place à peine
+                     plus d'un demi-siècle après les réformes orthographiques majeures des années
+                     1880. Dès lors, à la suite des historiens de l'éducation et des spécialistes
+                     d'éditions des mémoires de guerre, nous avons décidé de procéder à un encodage
+                     relativement lourd de ces fautes. L'idée sous-jacente étant de pouvoir signaler
+                     à un scientifique s'intéressant à la diffusion de l'apprentissage de la
+                     conjugaison dans les classes populaires et moyennes naissantes à l'époque les
+                     fautes encore commises dans les années 1940. </p>
+               </div3>
+            </div2>
+            <div2>
+               <head> Le récit de guerre d'un soldat ordinaire: encoder et exploiter les données
+                  liées à la représentation des temps de guerre. </head>
+               <p> </p>
+               <div3>
+                  <head> Encoder et exploiter les réseaux de relations personnelles de
+                     l'auteur-soldat. </head>
+                  <p> Comme nous l'avons évoqué dans la description du <gi>teiHeader</gi>,
+                     l'encodage et la mise en exergue des relations entretenues entre l'auteur et
+                     les personnes ou organisations mentionnées se trouve au coeur de notre source.
+                     Si nous avons pu réaliser des index, il nous a biensûr fallut encoder les noms
+                     de personnes et d'organisations dans le corps du texte. Nous avons procédé à un
+                     encodage relativement classique en utilisant les éléments <gi>persName</gi>,
+                     incluant lorsque cela était possible les éléments plus précis que sont le
+                        <gi>surname</gi> et <gi>forename</gi> pour indiquer respectivement les noms
+                     et prénoms. L'élément englobant persName contient obligatoirement un attribut
+                        <att>ref</att> permettant de le référencer au sein de l'index correspondant
+                     dans le <gi>teiHeader</gi>. Voici un exemple classique pour l'encodage des noms
+                     de personnes: <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                        <persName ref="#Jean_Merlin">
+                           <forename>Jean</forename>
+                           <surname>Merlin</surname>
+                        </persName>
+                     </egXML> Un procédé similaire a été appliqué à l'encodage des institutions et
+                     organisation militaires ou civiles mentionnées par l'auteur. Nous avons eu
+                     recours dans ce cas à l'élément <gi>orgName</gi>, associé lui aussi à un
+                     attribut <att>ref</att>. Afin de gagner en précision quant au type
+                     d'organisation encodée, nous avons ajouté à cet élément un second attribut
+                        <att>type</att>. Ce choix s'explique par le caractère permissif de
+                     l'attribut <att>type</att> qui accepte comme valeur une chaîne de caractère.
+                     Nous avons fait le choix dans cette ODD de restreindre les valeurs acceptées
+                     par l'attribut <att>type</att> à "<val>société</val>" ou
+                        "<val>organisation_militaire</val>", puisque cette partition entre le monde
+                     militaire et la société civile est présente en filigrane dans le récit de
+                     l'auteur. Ces personnes et ces divers groupent semblent cependant étroitement
+                     associées dans le récit à un rapport complexe à l'espace. </p>
+               </div3>
+               <div3>
+                  <head> Encoder et exploiter un rapport personnel à l'espace. </head>
+                  <p> C'est effectivement cette représentation de l'espace qui fut un élément de
+                     réflexion plus complexe lors de l'encodage de texte. Effectivement, nous avous
+                     pu repérer deux paradigmes de rapport à l'espace dans les écrits d'Edmond. En
+                     premier lieu, il fait preuve d'une connaissance géographique relativement
+                     précise des lieux qu'il arpente au long de son périple. Si cette énumération
+                     précise des territoires est vraisemblablement liée au fait que l'écriture est
+                     rétrospective, notre approche dans l'encodage a du se conformer à cette
+                     situation. Ainsi, nous avons encoder les toponymes avérés par le biais d'un
+                     élément <gi>placeName</gi> dont l'attribut <att>ref</att> permet l'indexation
+                     en lien avec le teiHeader. Dans cette perspective, il nous a semblé judicieux
+                     d'inclure dans le placeName les renseignements complémentaires et brefs fournit
+                     par l'auteur, comme le montre l'exemple ci dessous: <egXML
+                        xmlns="http://www.tei-c.org/ns/Examples">
+                        <placeName ref="#Semécourt"> Semécourt (Moselle) </placeName>
+                     </egXML> Soulignons un cas problématique, celui du village dit de Capsilliers,
+                     mentionné par l'auteur au détour d'une étape de son bataillon, qui s'avère être
+                     un toponyme non élucidé. Nous pensons qu'il s'agit en réalité d'un lieu dit que
+                     nous n'avons néanmoins pas pu localiser sur une carte contemporaine. Nous avons
+                     donc ajouté, pour ce cas précis, un indicateur de certitude avec l'attribut
+                        <att>cert</att> et sa valeur basse ("<val>low</val>"): <egXML
+                        xmlns="http://www.tei-c.org/ns/Examples">
+                        <placeName ref="#Capsilliers" cert="low"> Capsillers</placeName>
+                     </egXML> Qui plus est, cette impression générale d'une bonne connaissance
+                     géographique des espaces parcourus par l'auteur se note par la mention des
+                     distances précises entre deux étapes. L'encodage de la mesure des distances a
+                     été réalisé par l'utilisation de l'élément <gi>measure</gi> qui permet
+                     d'indiquer une distance mesurée dans une unité spécifique, entre deux points.
+                     Par exemple, nous trouvons dans notre encodage: <egXML
+                        xmlns="http://www.tei-c.org/ns/Examples"> nous quittons le bois de
+                           <placeName ref="#Budling"> Budling </placeName> pour <placeName
+                           ref="#Metzervisse"> Metzervisse </placeName> qui est <lb/> à <measure> 8
+                           KM </measure>de là. </egXML>
+                  </p>
+                  <p> Cependant, un autre paradigme de rapport à l'espace, plus diffus et relatif,
+                     est notable et a fait l'objet d'un encodage spécifique. Lorsque l'auteur
+                     mentionne une distance relative et peu précise d'une entité entre deux repères
+                     spatiaux, nous avons eu recours à l'élément <gi>offset</gi>. D'après les
+                     guidelines, cet élément indique la situation relative d'un espace (ou d'un
+                     événement) par rapport à un repère spatial (ou temporel donc). Il se
+                     différencie nettement de l'élément measure puisqu'il repose une perception et
+                     une représentation de l'espace, ce qui est tout à fait le cas dans le passage
+                     suivant par exemple: <egXML xmlns="http://www.tei-c.org/ns/Examples"> [...]pour
+                        aller dans un <offset>bois à <placeName ref="#Budling"> Budling
+                           </placeName></offset>
+                     </egXML> Finalement, ce double rapport à l'espace se retrouve aussi dans la
+                     mention du temps dans le récit de l'auteur. </p>
+               </div3>
+               <div3>
+                  <head> Encoder et exploiter une représentation du temps. </head>
+                  <p> Dans un dernier temps, notre encodage s'est attaché à retranscrire d'une part
+                     la chronologie fine des événements que propose l'auteur et d'autre part une
+                     description plus personnelle du temps subit. Nous avons donc encodé les
+                     mentions précises des dates par le biais de l'élément <gi>date</gi> auquel nous
+                     avons associé deux attributs : <att>ref</att> pour permettre l'indexation dans
+                     le teiHeader et <att>when</att>. L'attribut when permet dans notre encodage
+                     d'expliciter la date mentionnée par l'auteur. Nous nous sommes donc efforcés de
+                     reconstituer la date suivant les recommandations de la norme ISO 8601,
+                     préconisant une normalisation sur ce modèle : AAAA-MM-JJ. Par exemple: <egXML
+                        xmlns="http://www.tei-c.org/ns/Examples"> Le <date ref="#d6"
+                           when="1940-05-24"> 24 mai </date> dans l'après-midi [...] </egXML> Ce
+                     choix de reconstitution de la date dans l'attibut <att>when</att> doit se
+                     comprendre dans la perspective de fournir au chercheur une possibilité
+                     d'exploitation automatique d'une chronologie fine des combats vécus par un
+                     soldat ordinaire lors de la campagne de France en 1940. </p>
+                  <p> De même, tout comme le rapport de l'auteur à l'espace, son rapport au temps
+                     s'avère par moment plus diffus et relatif. Afin d'encoder ce phénomène, nous
+                     avons eu recours à l'élément <gi>time</gi> qui fournit, d'après les
+                     TEIguidelines, un moyen d'encoder une expression relative à un moment de la
+                     journée, dans n'importe quel format. Dans notre encodage, la permissivité de
+                     l'élément <gi>time</gi> à été mis au service de la représentation d'un moment
+                     ou d'un point temporel mentionné par l'auteur. Certe, l'élément <gi>offset</gi>
+                     aurait pu lui aussi être utilisé (à l'instar de la représentation de l'espace),
+                     mais l'élément time présente l'avantage de fournir une repère au sein de la
+                     journée, ce qui le cas dans chacun des cas que nous avons rencontré. Voici une
+                     illustration de notre choix d'encodage: <egXML
+                        xmlns="http://www.tei-c.org/ns/Examples"> Il est environ <time> 10 H du
+                           matin </time>
+                        <lb/> on sort aussi du tunnel. </egXML>
                   </p>
                </div3>
             </div2>
             <div2>
-               <head>
-                  Le récit de guerre d'un soldat ordinaire: encoder et exploiter les données liées à la représentation des temps de guerre.
-               </head>
-               <p>
-                  
-               </p>
-               <div3>
-                  <head>
-                     Encoder et exploiter les réseaux de relations personnelle de l'auteur-soldat.
-                  </head>
-                  <p>
-                     
-                  </p>
-               </div3>
-               <div3>
-                  <head>
-                     Encoder et exploiter un rapport personnel à l'espace.
-                  </head>
-                  <p>
-                     
-                  </p>
-               </div3>
-               <div3>
-                  <head>
-                     Encoder et exploiter une représentation du temps.
-                  </head>
-                  <p>
-                     
-                  </p>
-               </div3>
+               <head> Conclusion et possibilité de mise en valeur du travail d'encodage.</head>
+               <p> En conclusion, nos choix d'encodage ont été motivés par la volonté d'enrichir le
+                  texte d'un ensemble de métadonnées exploitables par des historiens. C'est pourquoi
+                  le travail d'indexation au sein du teiHeader a été une part majeure de notre
+                  travail. Cette indexation permettrait donc d'analyser non seulement l'inscription
+                  d'un soldat ordinaire dans un réseau complexe de personnes, de lieux et
+                  d'organisations. Qui plus est, nous nous sommes attachés à retranscrire la manière
+                  dont l'auteur se représente les espaces et le temps des combats, de la garnison et
+                  des déplacements forcés par le contexte militaire. Dans une dernière analyse,
+                  notre encodage fait preuve d'un compromis entre respect de la matérialité de la
+                  source et utilisation par des chercheurs s'intéressant plus spécifiquement aux
+                  métadonnées. </p>
             </div2>
          </div1>
          <div1>
             <schemaSpec ident="oddbyexample" start="TEI ">
-            <moduleRef key="tei"/>
-            <!--Checking module textcrit-->
-            <classRef key="att.textCritical"/>
-            <classRef key="model.rdgLike"/>
-            <classRef key="model.rdgPart"/>
-            <classSpec ident="att.textCritical" type="atts" mode="change">
-               <attList>
-                  <attDef ident="type" mode="delete"/>
-                  <attDef ident="cause" mode="delete"/>
-                  <attDef ident="varSeq" mode="delete"/>
-                  <attDef ident="require" mode="delete"/>
-               </attList>
-            </classSpec>
-            <!--Checking module msdescription-->
-            <classRef key="model.physDescPart"/>
-            <moduleRef key="msdescription"
-                       include="msDesc material msIdentifier repository msContents summary physDesc objectDesc supportDesc support condition layoutDesc layout handDesc bindingDesc binding"/>
-            <elementSpec ident="msDesc" mode="change">
-               <attList>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="cert" mode="delete"/>
-                  <attDef ident="type" mode="delete"/>
-                  <attDef ident="status" mode="change">
-                     <valList mode="add" type="closed">
-                        <valItem ident="draft"/>
-                     </valList>
-                  </attDef>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="material" mode="change">
-               <attList>
-                  <attDef ident="function" mode="delete"/>
-                  <attDef ident="target" mode="delete"/>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="cert" mode="delete"/>
-                  <attDef ident="key" mode="delete"/>
-                  <attDef ident="ref" mode="delete"/>
-                  <attDef ident="type" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="msIdentifier" mode="change">
-               <attList>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="cert" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="repository" mode="change">
-               <attList>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="cert" mode="delete"/>
-                  <attDef ident="key" mode="delete"/>
-                  <attDef ident="ref" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="msContents" mode="change">
-               <attList>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="cert" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="summary" mode="change">
-               <attList>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="cert" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="physDesc" mode="change">
-               <attList>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="cert" mode="delete"/>
-               </attList>
-            </elementSpec>
-<!-- MODIFICATION ET COMMENTAIRES DE L'ODD ICI POUR OBJET DESC -->              
-            <elementSpec ident="objectDesc" mode="change">
-               <attList>
-                  <attDef ident="form" mode="change" usage="req">
-                     <gloss>Manifestation matérielle de la source encodée</gloss>
-                     <desc xml:lang="fr">
-                        L'attribut @form ne peut prendre que la valeur "carnet",
-                        car la source encodée est un unique exemplaire.
-                     </desc>
-                     <datatype minOccurs="1" maxOccurs="1">
-                        <dataRef key="teidata.text"></dataRef>
-                     </datatype>
-                     <valList mode="add" type="closed">
-                        <valItem ident="carnet"/>
-                     </valList>
-                  </attDef>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="cert" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="supportDesc" mode="change">
-               <attList>
-                  <attDef ident="material" mode="change" usage="req">
-                     <gloss>Matière du support d'écriture de la source.</gloss>
-                     <desc xml:lang="fr">
-                        L'attribut @material ne peut prendre que la valeur "papier",
-                        car la source unique encodée présente une unité codicologique
-                        dans son support d'écriture, à savoir du papier.
-                     </desc>
-                     <valList mode="add" type="closed">
-                        <valItem ident="papier"/>
-                     </valList>
-                  </attDef>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="cert" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="support" mode="change">
-               <attList>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="cert" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="condition" mode="change">
-               <attList>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="cert" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="layoutDesc" mode="change">
-               <attList>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="cert" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="layout" mode="change">
-               <attList>
-                  <attDef ident="columns" mode="delete"/>
-                  <attDef ident="streams" mode="delete"/>
-                  <attDef ident="ruledLines" mode="delete"/>
-                  <attDef ident="writtenLines" mode="delete"/>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="cert" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="handDesc" mode="change">
-               <attList>
-                  <attDef ident="hands" mode="delete"/>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="cert" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="bindingDesc" mode="change">
-               <attList>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="cert" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="binding" mode="change">
-               <attList>
-                  <attDef ident="contemporary" mode="delete"/>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="cert" mode="delete"/>
-                  <attDef ident="when" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <!--Checking module namesdates-->
-            <classRef key="model.persNamePart"/>
-            <moduleRef key="namesdates"
-                       include="orgName persName surname forename roleName placeName country settlement district offset geo listOrg listPerson listPlace location org person place"/>
-<!-- MODIFICATION DE L'ODD ICI -->            
+               <moduleRef key="tei"/>
+               <!--Checking module textcrit-->
+               <classRef key="att.textCritical"/>
+               <classRef key="model.rdgLike"/>
+               <classRef key="model.rdgPart"/>
+               <classSpec ident="att.textCritical" type="atts" mode="change">
+                  <attList>
+                     <attDef ident="type" mode="delete"/>
+                     <attDef ident="cause" mode="delete"/>
+                     <attDef ident="varSeq" mode="delete"/>
+                     <attDef ident="require" mode="delete"/>
+                  </attList>
+               </classSpec>
+               <!--Checking module msdescription-->
+               <classRef key="model.physDescPart"/>
+               <moduleRef key="msdescription"
+                  include="msDesc material msIdentifier repository msContents summary physDesc objectDesc supportDesc support condition layoutDesc layout handDesc bindingDesc binding"/>
+               <elementSpec ident="msDesc" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                     <attDef ident="type" mode="delete"/>
+                     <attDef ident="status" mode="change">
+                        <valList mode="add" type="closed">
+                           <valItem ident="draft"/>
+                        </valList>
+                     </attDef>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="material" mode="change">
+                  <attList>
+                     <attDef ident="function" mode="delete"/>
+                     <attDef ident="target" mode="delete"/>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                     <attDef ident="key" mode="delete"/>
+                     <attDef ident="ref" mode="delete"/>
+                     <attDef ident="type" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="msIdentifier" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="repository" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                     <attDef ident="key" mode="delete"/>
+                     <attDef ident="ref" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="msContents" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="summary" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="physDesc" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <!-- MODIFICATION ET COMMENTAIRES DE L'ODD ICI POUR OBJET DESC -->
+               <elementSpec ident="objectDesc" mode="change">
+                  <attList>
+                     <attDef ident="form" mode="change" usage="req">
+                        <gloss>Manifestation matérielle de la source encodée</gloss>
+                        <desc xml:lang="fr"> L'attribut @form ne peut prendre que la valeur
+                           "carnet", car la source encodée est un unique exemplaire. </desc>
+                        <datatype minOccurs="1" maxOccurs="1">
+                           <dataRef key="teidata.text"/>
+                        </datatype>
+                        <valList mode="add" type="closed">
+                           <valItem ident="carnet"/>
+                        </valList>
+                     </attDef>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="supportDesc" mode="change">
+                  <attList>
+                     <attDef ident="material" mode="change" usage="req">
+                        <gloss>Matière du support d'écriture de la source.</gloss>
+                        <desc xml:lang="fr"> L'attribut @material ne peut prendre que la valeur
+                           "papier", car la source unique encodée présente une unité codicologique
+                           dans son support d'écriture, à savoir du papier. </desc>
+                        <valList mode="add" type="closed">
+                           <valItem ident="papier"/>
+                        </valList>
+                     </attDef>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="support" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="condition" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="layoutDesc" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="layout" mode="change">
+                  <attList>
+                     <attDef ident="columns" mode="delete"/>
+                     <attDef ident="streams" mode="delete"/>
+                     <attDef ident="ruledLines" mode="delete"/>
+                     <attDef ident="writtenLines" mode="delete"/>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="handDesc" mode="change">
+                  <attList>
+                     <attDef ident="hands" mode="delete"/>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="bindingDesc" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="binding" mode="change">
+                  <attList>
+                     <attDef ident="contemporary" mode="delete"/>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                     <attDef ident="when" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <!--Checking module namesdates-->
+               <classRef key="model.persNamePart"/>
+               <moduleRef key="namesdates"
+                  include="orgName persName surname forename roleName placeName country settlement district offset geo listOrg listPerson listPlace location org person place"/>
+               <!-- MODIFICATION DE L'ODD ICI -->
                <elementSpec ident="orgName" mode="change">
-               <attList>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="when" mode="delete"/>
-                  <attDef ident="full" mode="change">
-                     <valList mode="add" type="closed">
-                        <valItem ident="yes"/>
-                     </valList>
-                  </attDef>
-                  <attDef ident="key" mode="delete"/>
-                  <attDef ident="type" mode="change" usage="rec">
-                     <gloss>Organisations mentionnées dans la source.</gloss>
-                     <desc> L'attribut @type ne peut prendre qu'une seule des valeurs suivantes,
-                     car ceux sont les seuls types d'organisations mentionnés dans la source.</desc>
-                     <datatype minOccurs="1" maxOccurs="1">
-                        <dataRef key="tei.name"/>
-                     </datatype>
-                     <valList mode="add" type="closed">
-                        <valItem ident="corps_armées"/>
-                        <valItem ident="société"/>
-                     </valList>
-                  </attDef>
-               </attList>
-            </elementSpec>
-<!-- MODIFICATION ODD ICI, CAS COMPLIQUÉ MAIS VALIDÉ -->
-            <elementSpec ident="persName" mode="change">
-               <gloss> Séquence des éléments contenus dans l'élément persName</gloss>
-               <desc> 
-                  L'élément persName peut contenir les éléments surname et forename (dans le corps
-                  du texte) ou les éléments forename et surname, dans cet ordre (dans l'index des personnes).
-               </desc>
-               <content>
-                 <alternate> 
-                    <sequence preserveOrder="true">
-                     <elementRef key="surname" minOccurs="0" maxOccurs="1"/>
-                       <elementRef key="forename" minOccurs="0" maxOccurs="1"/>
-                  </sequence>
-                 </alternate>
-                  <sequence>
-                     <elementRef key="forename" minOccurs="0" maxOccurs="1"/>
-                     <elementRef key="surname" minOccurs="0" maxOccurs="1"/>
-                  </sequence>
-               </content>
-               <attList>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="cert" mode="delete"/>
-                  <attDef ident="when" mode="delete"/>
-                  <attDef ident="full" mode="change">
-                     <valList mode="add" type="closed">
-                        <valItem ident="yes"/>
-                     </valList>
-                  </attDef>
-                  <attDef ident="key" mode="delete"/>
-                  <attDef ident="type" mode="delete"/>
-                  <attDef ident="ref" mode="change"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="surname" mode="change">
-               <attList>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="full" mode="change">
-                     <valList mode="add" type="closed">
-                        <valItem ident="yes"/>
-                     </valList>
-                  </attDef>
-                  <attDef ident="key" mode="delete"/>
-                  <attDef ident="ref" mode="delete"/>
-                  <attDef ident="type" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="forename" mode="change">
-               <attList>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="cert" mode="delete"/>
-                  <attDef ident="full" mode="change">
-                     <valList mode="add" type="closed">
-                        <valItem ident="yes"/>
-                     </valList>
-                  </attDef>
-                  <attDef ident="key" mode="delete"/>
-                  <attDef ident="ref" mode="delete"/>
-                  <attDef ident="type" mode="delete"/>
-               </attList>
-            </elementSpec>
-<!-- MODIFICATION DE L'ODD ICI -->               
-            <elementSpec ident="roleName" mode="change">
-               <attList>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="cert" mode="delete"/>
-                  <attDef ident="full" mode="change">
-                     <valList mode="add" type="closed">
-                        <valItem ident="yes"/>
-                     </valList>
-                  </attDef>
-                  <attDef ident="key" mode="delete"/>
-                  <attDef ident="type" mode="change" usage="rec">
-                     <gloss>Type de role ou grade militaire associé à un personnage</gloss>
-                     <desc xml:lang="fr">
-                        L'attribut @type est recommandé et doit contenir indiquer le grade ou role
-                        militaire du personnage mentionné. La liste des valeurs reste semi-ouverte
-                        dans la mesure où, dans le reste de la narration, l'auteur est en mesure de
-                        rencontrer d'autres responsables militaires.
-                     </desc>
-                     <datatype minOccurs="0" maxOccurs="unbounded">
-                        <dataRef key="teidata.text"/>
-                     </datatype>
-                     <valList mode="add" type="semi">
-                        <valItem ident="officier"/>
-                     </valList>
-                  </attDef>
-               </attList>
-            </elementSpec>
-<!-- MODIFICATION DE L'ODD ICI -->               
-            <elementSpec ident="placeName" mode="change">
-               <attList>
-                  <attDef ident="when" mode="delete"/>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="full" mode="change">
-                     <valList mode="add" type="closed">
-                        <valItem ident="yes"/>
-                     </valList>
-                  </attDef>
-                  <attDef ident="key" mode="delete"/>
-                  <attDef ident="ref" mode="change" usage="opt"/>
-                  <attDef ident="type" mode="change" usage="opt">
-                     <gloss> Type de nom de lieux mentionné</gloss>
-                     <desc xml:id="fr">
-                        L'attribut @type peut contenir la valeur pays. L'usage est optionnel et
-                        la liste des valeurs est semi-ouverte car, dans le reste de la narration,
-                        l'auteur est suceptible de mentionné d'autres types de noms de lieux.
-                     </desc>
-                     <datatype minOccurs="0" maxOccurs="unbounded">
-                        <dataRef key="teidata.name"/>
-                     </datatype>
-                     <valList mode="add" type="open">
-                        <valItem ident="pays"/>
-                     </valList>
-                  </attDef>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="country" mode="change">
-               <attList>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="cert" mode="delete"/>
-                  <attDef ident="ref" mode="delete"/>
-                  <attDef ident="type" mode="delete"/>
-                  <attDef ident="when" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="settlement" mode="change">
-               <attList>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="cert" mode="delete"/>
-                  <attDef ident="key" mode="delete"/>
-                  <attDef ident="ref" mode="delete"/>
-                  <attDef ident="type" mode="delete"/>
-                  <attDef ident="when" mode="delete"/>
-               </attList>
-            </elementSpec>
-<!-- MODIFICATION IMPORTANTE POUR L'ODD ICI -->
-            <elementSpec ident="district" mode="change">
-               <attList>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="key" mode="delete"/>
-                  <attDef ident="ref" mode="delete"/>
-                  <attDef ident="type" mode="change">
-                     <desc xml:lang="fr">
-                        L'attribut @type doit contenir une des valeurs suivantes,
-                        correspondant aux types d'administrations territoriales 
-                        (régionales plutôt que nationales mentionnées dans l'élément country)
-                        rencontrées.
-                     </desc>
-                     <datatype minOccurs="1" maxOccurs="1">
-                        <dataRef key="teidata.name"/>
-                     </datatype>
-                     <valList mode="add" type="closed">
-                        <valItem ident="Land"/>
-                        <valItem ident="département"/>
-                        <valItem ident="province"/>
-                     </valList>
-                  </attDef>
-                  <attDef ident="when" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="offset" mode="change">
-               <attList>
-                  <attDef ident="when" mode="delete"/>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="cert" mode="delete"/>
-                  <attDef ident="key" mode="delete"/>
-                  <attDef ident="ref" mode="delete"/>
-                  <attDef ident="type" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="geo" mode="change">
-               <attList>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="cert" mode="delete"/>
-               </attList>
-            </elementSpec>
-<!-- MODIFICATION DE L'ODD ICI -->
-            <elementSpec ident="listOrg" mode="change">
-               <gloss>Elément contenu dans l'élément listOrg</gloss>
-               <desc> L'élement listOrg doit contenir l'élément org au moins une fois</desc>
-               <content>
-                  <elementRef key="org" minOccurs="1" maxOccurs="unbounded"/>
-               </content>
-               <attList>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="cert" mode="delete"/>
-                  <attDef ident="type" mode="delete"/>
-                  <attDef ident="default" mode="change">
-                     <valList mode="add" type="closed">
-                        <valItem ident="false"/>
-                     </valList>
-                  </attDef>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="listPerson" mode="change">
-               <gloss>Elément contenu dans l'élément listPerson</gloss>
-               <desc> L'élement listPerson doit contenir l'élément person au moins une fois</desc>
-               <content>
-                  <elementRef key="person" minOccurs="1" maxOccurs="unbounded"/>
-               </content>
-               <attList>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="cert" mode="delete"/>
-                  <attDef ident="type" mode="delete"/>
-                  <attDef ident="default" mode="change">
-                     <valList mode="add" type="closed">
-                        <valItem ident="false"/>
-                     </valList>
-                  </attDef>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="listPlace" mode="change">
-               <attList>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="cert" mode="delete"/>
-                  <attDef ident="type" mode="delete"/>
-                  <attDef ident="default" mode="change">
-                     <valList mode="add" type="closed">
-                        <valItem ident="false"/>
-                     </valList>
-                  </attDef>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="location" mode="change">
-               <gloss>Séquence des éléments contenus dans l'élément location</gloss>
-               <desc> 
-                  L'élément location doit contenir, dans cet ordre afin de compléter les données
-                  de l'index des lieux, les éléments country, district, geo et note.
-               </desc>
-               <content>
-                  <sequence preserveOrder="true">
-                     <elementRef key="country" minOccurs="1" maxOccurs="1"/>
-                     <elementRef key="district" minOccurs="1" maxOccurs="1"/>
-                     <elementRef key="geo" minOccurs="1" maxOccurs="1"/>
-                     <elementRef key="note" minOccurs="0" maxOccurs="unbounded"/>
-                  </sequence>
-               </content>
-               <attList>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="cert" mode="delete"/>
-                  <attDef ident="type" mode="delete"/>
-                  <attDef ident="when" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="org" mode="change">
-               <attList>
-                  <attDef ident="role" mode="delete"/>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="cert" mode="delete"/>
-                  <attDef ident="type" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="person" mode="change">
-               <gloss>Séquence des éléments contenus dans l'élément person</gloss>
-               <desc>
-                  L'élément person doit contenir, dans cet ordre afin de créer un index des noms,
-                  les éléments persName et note.  
-               </desc>
-               <content>
-                  <sequence preserveOrder="true">
-                     <elementRef key="persName" minOccurs="1" maxOccurs="1"/>
-                     <elementRef key="note" minOccurs="1" maxOccurs="1"/>
-                  </sequence>
-               </content>
-               <attList>
-                  <attDef ident="role" mode="delete"/>
-                  <attDef ident="sex" mode="delete"/>
-                  <attDef ident="age" mode="delete"/>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="cert" mode="delete"/>
-               </attList>
-            </elementSpec>
-<!-- MODIFICATION IMPORTANTE DE L'ODD ICI -->
-            <elementSpec ident="place" mode="change">
-               <gloss>Séquence des éléments contenus dans l'élément place</gloss>
-               <desc xml:lang="fr">
-                  L'élément place (utilisé dans placeList afin de créer un index des lieux)
-                  doit contenir dans, cet ordre, les éléments placeName et location une seule fois.
-               </desc>
-               <content>
-                  <sequence preserveOrder="true">
-                     <elementRef key="placeName" minOccurs="1" maxOccurs="1"/>
-                     <elementRef key="location" minOccurs="1" maxOccurs="1"/>
-                  </sequence>
-               </content>
-               <attList>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="type" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <!--Checking module dictionaries-->
-            <classRef key="att.lexicographic"/>
-            <classRef key="model.entryLike"/>
-            <classRef key="model.formPart"/>
-            <classRef key="model.gramPart"/>
-            <classRef key="model.lexicalRefinement"/>
-            <classRef key="model.morphLike"/>
-            <classRef key="model.ptrLike.form"/>
-            <classSpec ident="att.lexicographic" type="atts" mode="change">
-               <attList>
-                  <attDef ident="expand" mode="delete"/>
-                  <attDef ident="split" mode="delete"/>
-                  <attDef ident="value" mode="delete"/>
-                  <attDef ident="location" mode="delete"/>
-                  <attDef ident="mergedIn" mode="delete"/>
-                  <attDef ident="opt" mode="delete"/>
-               </attList>
-            </classSpec>
-            <!--Checking module tagdocs-->
-            <classRef key="att.combinable"/>
-            <classRef key="att.identified"/>
-            <classRef key="model.contentPart"/>
-            <classSpec ident="att.combinable" type="atts" mode="change">
-               <attList>
-                  <attDef ident="mode" mode="delete"/>
-               </attList>
-            </classSpec>
-            <classSpec ident="att.identified" type="atts" mode="change">
-               <attList>
-                  <attDef ident="ident" mode="delete"/>
-                  <attDef ident="predeclare" mode="delete"/>
-                  <attDef ident="module" mode="delete"/>
-               </attList>
-            </classSpec>
-            <classSpec ident="att.anchoring" type="atts" mode="change">
-               <attList>
-                  <attDef ident="targetEnd" mode="delete"/>
-               </attList>
-            </classSpec>
-            <classSpec ident="att.ascribed.directed" type="atts" mode="change">
-               <attList>
-                  <attDef ident="toWhom" mode="delete"/>
-               </attList>
-            </classSpec>
-            <classSpec ident="att.dimensions" type="atts" mode="change">
-               <attList>
-                  <attDef ident="unit" mode="delete"/>
-                  <attDef ident="quantity" mode="delete"/>
-                  <attDef ident="extent" mode="delete"/>
-                  <attDef ident="precision" mode="delete"/>
-                  <attDef ident="scope" mode="delete"/>
-               </attList>
-            </classSpec>
-            <classSpec ident="att.damaged" type="atts" mode="change">
-               <attList>
-                  <attDef ident="agent" mode="delete"/>
-                  <attDef ident="degree" mode="delete"/>
-                  <attDef ident="group" mode="delete"/>
-               </attList>
-            </classSpec>
-            <classSpec ident="att.datable.w3c" type="atts" mode="change">
-               <attList>
-                  <attDef ident="notBefore" mode="delete"/>
-                  <attDef ident="notAfter" mode="delete"/>
-                  <attDef ident="from" mode="delete"/>
-                  <attDef ident="to" mode="delete"/>
-               </attList>
-            </classSpec>
-            <classSpec ident="att.datable" type="atts" mode="change">
-               <attList>
-                  <attDef ident="calendar" mode="delete"/>
-                  <attDef ident="period" mode="delete"/>
-               </attList>
-            </classSpec>
-            <classSpec ident="att.global.responsibility" type="atts" mode="change">
-               <attList>
-                  <attDef ident="resp" mode="delete"/>
-               </attList>
-            </classSpec>
-            <classSpec ident="att.editLike" type="atts" mode="change">
-               <attList>
-                  <attDef ident="evidence" mode="delete"/>
-               </attList>
-            </classSpec>
-            <classSpec ident="att.media" type="atts" mode="change">
-               <attList>
-                  <attDef ident="scale" mode="delete"/>
-               </attList>
-            </classSpec>
-            <classSpec ident="att.interpLike" type="atts" mode="change">
-               <attList>
-                  <attDef ident="inst" mode="delete"/>
-               </attList>
-            </classSpec>
-            <classSpec ident="att.naming" type="atts" mode="change">
-               <attList>
-                  <attDef ident="role" mode="delete"/>
-                  <attDef ident="nymRef" mode="delete"/>
-               </attList>
-            </classSpec>
-            <classSpec ident="att.typed" type="atts" mode="change">
-               <attList>
-                  <attDef ident="subtype" mode="delete"/>
-               </attList>
-            </classSpec>
-            <classSpec ident="att.pointing.group" type="atts" mode="change">
-               <attList>
-                  <attDef ident="domains" mode="delete"/>
-                  <attDef ident="targFunc" mode="delete"/>
-               </attList>
-            </classSpec>
-            <classSpec ident="att.segLike" type="atts" mode="change">
-               <attList>
-                  <attDef ident="function" mode="delete"/>
-               </attList>
-            </classSpec>
-            <classSpec ident="att.timed" type="atts" mode="change">
-               <attList>
-                  <attDef ident="start" mode="delete"/>
-                  <attDef ident="end" mode="delete"/>
-               </attList>
-            </classSpec>
-            <classSpec ident="att.transcriptional" type="atts" mode="change">
-               <attList>
-                  <attDef ident="status" mode="delete"/>
-                  <attDef ident="cause" mode="delete"/>
-                  <attDef ident="seq" mode="delete"/>
-               </attList>
-            </classSpec>
-            <classSpec ident="att.personal" type="atts" mode="change">
-               <attList>
-                  <attDef ident="sort" mode="delete"/>
-               </attList>
-            </classSpec>
-            <!--Checking module core-->
-            <moduleRef key="core"
-                       include="p foreign distinct sic corr choice measure date time abbr expan list item note graphic pb lb author respStmt resp title"/>
-            <elementSpec ident="p" mode="change">
-               <attList>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="cert" mode="delete"/>
-                  <attDef ident="part" mode="change">
-                     <valList mode="add" type="closed">
-                        <valItem ident="N"/>
-                     </valList>
-                  </attDef>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="foreign" mode="change">
-               <attList>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="cert" mode="delete"/>
-               </attList>
-            </elementSpec>
-<!-- MODIFICATION DE L'ODD ICI MAIS PROBLÈME DE RÉPÉTITION DES DONNÉES -->    
-            <elementSpec ident="distinct" mode="change">
-               <attList>
-                  <attDef ident="type" mode="change">
-                     <valList mode="add" type="closed">
-                        <valItem ident="vocabulaire_militaire"/>
-                     </valList>
-                  </attDef>
-                  <attDef ident="time" mode="delete"/>
-                  <attDef ident="space" mode="delete"/>
-                  <attDef ident="social" mode="delete"/>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="cert" mode="delete"/>
-                  <attDef ident="type" mode="change" usage="rec">
-                     <gloss> Type de valeur possible pour l'élément distinct</gloss>
-                     <desc> 
-                        L'attribut @type peut prendre comme valeur "vocabulaire_militaire".
-                        Cette valeur est recommandée car il s'agit d'un champs sémantique spécifique
-                        employé par l'auteur pour qualifier divers éléments. La liste des valeurs reste
-                        semi-ouverte car il est possible d'autres champs sémantiques distincts plus loin dans
-                        la narration.
-                     </desc>
-                     <datatype minOccurs="0" maxOccurs="1">
-                        <dataRef key="teidata.text"/>
-                     </datatype>
-                     <valList mode="add" type="semi">
-                        <valItem ident="vocabulaire_militaire"/>
-                     </valList>
-                  </attDef>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="sic" mode="change">
-               <attList>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="cert" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="corr" mode="change">
-               <attList>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="cert" mode="delete"/>
-                  <attDef ident="type" mode="delete"/>
-               </attList>
-            </elementSpec>
-<!-- MODIFICATION DE L'ODD ICI -->
-            <elementSpec ident="choice" mode="change">
-               <gloss> Séquence des éléments au sein de l'élément choice</gloss>
-               <desc>
-                  L'élément choice doit contenir, dans cet ordre, les éléments sic et corr,
-                  une seule fois, afin d'indiquer les erreurs manifestes d'orthographe et
-                  de conjuguaison de l'auteur, qui sont ensuite corrigées ou les éléments abbr
-                  et expan pour indiquer la résolution d'une abbréviation.
-               </desc>
-               <content>
-                 <alternate> 
-                    <sequence preserveOrder="true">
-                     <elementRef key="sic" minOccurs="1" maxOccurs="1"/>
-                     <elementRef key="corr" minOccurs="1" maxOccurs="1"/>
-                  </sequence>
-                  <sequence preserveOrder="true">
-                     <elementRef key="abbr" minOccurs="1" maxOccurs="1"/>
-                     <elementRef key="expan" minOccurs="1" maxOccurs="1"/>
-                  </sequence>
-                 </alternate>
-               </content>
-               <attList>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="cert" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="measure" mode="change">
-               <attList>
-                  <attDef ident="type" mode="delete"/>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="cert" mode="delete"/>
-                  <attDef ident="type" mode="delete"/>
-               </attList>
-            </elementSpec>
-<!-- MODIFICATION DE L'ODD ICI A COMPLÉTER POUR INDIQUER UNE SÉQUENCE DE VALEUR POUR WHEN
-               when et ref en valeur optionnelle voire recommandée-->            
-            <elementSpec ident="date" mode="change">
-               <attList>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="cert" mode="delete"/>
-                  <attDef ident="key" mode="delete"/>
-                  <attDef ident="type" mode="delete"/>
-                  <attDef ident="ref" mode="change" usage="opt"/>
-                  <attDef ident="when" mode="change" usage="opt"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="time" mode="change">
-               <attList>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="cert" mode="delete"/>
-                  <attDef ident="when" mode="delete"/>
-                  <attDef ident="key" mode="delete"/>
-                  <attDef ident="ref" mode="delete"/>
-                  <attDef ident="type" mode="delete"/>
-               </attList>
-            </elementSpec>
-<!-- MODIFICATION DE L'ODD ICI -->
-            <elementSpec ident="abbr" mode="change">
-               <attList>
-                  <attDef ident="type" mode="change" usage="opt">
-                     <gloss> Type(s) possibile(s) pour l'élément abbr</gloss>
-                     <desc xml:lang="fr">
-                        L'attribut @type est optionnel et peut prendre comme valeur
-                        "monnaie". La liste des valeurs restent ouvertes car il est
-                        possible que, dans la suite de la narration, d'autres abbréviations
-                        doivent recevoir un autre type.
-                     </desc>
-                     <valList mode="add" type="open">
-                        <valItem ident="monnaie"/>
-                     </valList>
-                  </attDef>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="cert" mode="delete"/>
-                  <attDef ident="type" mode="change">
-                     <valList mode="add" type="closed">
-                        <valItem ident="monnaie"/>
-                     </valList>
-                  </attDef>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="expan" mode="change">
-               <attList>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="cert" mode="delete"/>
-               </attList>
-            </elementSpec>
-<!-- MODIFICATION DE L'ODD ICI, même problème ici de répétition des données ! -->               
-            <elementSpec ident="list" mode="change">
-               <attList>
-                  <attDef ident="type" mode="change" usage="req">
-                     <gloss>Type obligatoire de l'élément liste.</gloss>
-                     <desc xml:lang="fr">
-                        L'attribut @type de l'élément list doit prendre comme valeur
-                        "chronologie", puisqu'il s'agit de la manière adoptée dans l'encodage
-                        pour réaliser une chronologie fine des événements du récit.
-                     </desc>
-                     <datatype minOccurs="1" maxOccurs="1">
-                        <dataRef key="teidata.text"/>
-                     </datatype>
-                     <valList mode="add" type="closed">
-                        <valItem ident="chronologie"/>
-                     </valList>
-                  </attDef>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="cert" mode="delete"/>
-                  <attDef ident="type" mode="change">
-                     <valList mode="add" type="closed">
-                        <valItem ident="chronologie"/>
-                     </valList>
-                  </attDef>
-               </attList>
-            </elementSpec>
-<!-- A CONFIRMER ! MODIFICATION DE L'ODD ICI => schematron à confirmer et compléter avec la regex ici ! -->
-            <elementSpec ident="item" mode="change">
-               <gloss> Séquence des éléments contenus dans l'élément item</gloss>
-               <desc xml:lang="fr">
-                  L'élément list doit contenir, dans cet ordre (afin de compléter la
-                  chronologie dans un élément list) les éléments p et date une seule fois
-               </desc>
-               <constraintSpec ident="xml:idVal" scheme="schematron">
-                  <constraint>
-                     <s:rule context="tei:TEI/standOff/list/item">
-                        <s:assert test="@xml:id">
-                           L'élément list dans le standOff doit contenir un élément item ayant pour
-                           attribut xml:id
-                        </s:assert>
-                     </s:rule>
-                     <s:rule context="tei:item[@xml:id]">
-                        <s:assert test="matches(@xml:id,'=\'d[0-9]\'*')">
-                        L'élément list doit posséder un élément item dont l'attribut
-                        xml:id est la valeur se présente sous la forme suivant : dN où N est un chiffre.
-                        </s:assert>
-                     </s:rule>
-                  </constraint>
-               </constraintSpec>
-               <!--<content>
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="when" mode="delete"/>
+                     <attDef ident="full" mode="change">
+                        <valList mode="add" type="closed">
+                           <valItem ident="yes"/>
+                        </valList>
+                     </attDef>
+                     <attDef ident="key" mode="delete"/>
+                     <attDef ident="type" mode="change" usage="rec">
+                        <gloss>Organisations mentionnées dans la source.</gloss>
+                        <desc> L'attribut @type ne peut prendre qu'une seule des valeurs suivantes,
+                           car ceux sont les seuls types d'organisations mentionnés dans la
+                           source.</desc>
+                        <datatype minOccurs="1" maxOccurs="1">
+                           <dataRef key="tei.name"/>
+                        </datatype>
+                        <valList mode="add" type="closed">
+                           <valItem ident="corps_armées"/>
+                           <valItem ident="société"/>
+                        </valList>
+                     </attDef>
+                  </attList>
+               </elementSpec>
+               <!-- MODIFICATION ODD ICI, CAS COMPLIQUÉ MAIS VALIDÉ -->
+               <elementSpec ident="persName" mode="change">
+                  <gloss> Séquence des éléments contenus dans l'élément persName</gloss>
+                  <desc> L'élément persName peut contenir les éléments surname et forename (dans le
+                     corps du texte) ou les éléments forename et surname, dans cet ordre (dans
+                     l'index des personnes). </desc>
+                  <content>
+                     <alternate>
+                        <sequence preserveOrder="true">
+                           <elementRef key="surname" minOccurs="0" maxOccurs="1"/>
+                           <elementRef key="forename" minOccurs="0" maxOccurs="1"/>
+                        </sequence>
+                     </alternate>
+                     <sequence>
+                        <elementRef key="forename" minOccurs="0" maxOccurs="1"/>
+                        <elementRef key="surname" minOccurs="0" maxOccurs="1"/>
+                     </sequence>
+                  </content>
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                     <attDef ident="when" mode="delete"/>
+                     <attDef ident="full" mode="change">
+                        <valList mode="add" type="closed">
+                           <valItem ident="yes"/>
+                        </valList>
+                     </attDef>
+                     <attDef ident="key" mode="delete"/>
+                     <attDef ident="type" mode="delete"/>
+                     <attDef ident="ref" mode="change"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="surname" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="full" mode="change">
+                        <valList mode="add" type="closed">
+                           <valItem ident="yes"/>
+                        </valList>
+                     </attDef>
+                     <attDef ident="key" mode="delete"/>
+                     <attDef ident="ref" mode="delete"/>
+                     <attDef ident="type" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="forename" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                     <attDef ident="full" mode="change">
+                        <valList mode="add" type="closed">
+                           <valItem ident="yes"/>
+                        </valList>
+                     </attDef>
+                     <attDef ident="key" mode="delete"/>
+                     <attDef ident="ref" mode="delete"/>
+                     <attDef ident="type" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <!-- MODIFICATION DE L'ODD ICI -->
+               <elementSpec ident="roleName" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                     <attDef ident="full" mode="change">
+                        <valList mode="add" type="closed">
+                           <valItem ident="yes"/>
+                        </valList>
+                     </attDef>
+                     <attDef ident="key" mode="delete"/>
+                     <attDef ident="type" mode="change" usage="rec">
+                        <gloss>Type de role ou grade militaire associé à un personnage</gloss>
+                        <desc xml:lang="fr"> L'attribut @type est recommandé et doit contenir
+                           indiquer le grade ou role militaire du personnage mentionné. La liste des
+                           valeurs reste semi-ouverte dans la mesure où, dans le reste de la
+                           narration, l'auteur est en mesure de rencontrer d'autres responsables
+                           militaires. </desc>
+                        <datatype minOccurs="0" maxOccurs="unbounded">
+                           <dataRef key="teidata.text"/>
+                        </datatype>
+                        <valList mode="add" type="semi">
+                           <valItem ident="officier"/>
+                        </valList>
+                     </attDef>
+                  </attList>
+               </elementSpec>
+               <!-- MODIFICATION DE L'ODD ICI -->
+               <elementSpec ident="placeName" mode="change">
+                  <attList>
+                     <attDef ident="when" mode="delete"/>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="full" mode="change">
+                        <valList mode="add" type="closed">
+                           <valItem ident="yes"/>
+                        </valList>
+                     </attDef>
+                     <attDef ident="key" mode="delete"/>
+                     <attDef ident="ref" mode="change" usage="opt"/>
+                     <attDef ident="type" mode="change" usage="opt">
+                        <gloss> Type de nom de lieux mentionné</gloss>
+                        <desc xml:id="fr"> L'attribut @type peut contenir la valeur pays. L'usage
+                           est optionnel et la liste des valeurs est semi-ouverte car, dans le reste
+                           de la narration, l'auteur est suceptible de mentionné d'autres types de
+                           noms de lieux. </desc>
+                        <datatype minOccurs="0" maxOccurs="unbounded">
+                           <dataRef key="teidata.name"/>
+                        </datatype>
+                        <valList mode="add" type="open">
+                           <valItem ident="pays"/>
+                        </valList>
+                     </attDef>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="country" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                     <attDef ident="ref" mode="delete"/>
+                     <attDef ident="type" mode="delete"/>
+                     <attDef ident="when" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="settlement" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                     <attDef ident="key" mode="delete"/>
+                     <attDef ident="ref" mode="delete"/>
+                     <attDef ident="type" mode="delete"/>
+                     <attDef ident="when" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <!-- MODIFICATION IMPORTANTE POUR L'ODD ICI -->
+               <elementSpec ident="district" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="key" mode="delete"/>
+                     <attDef ident="ref" mode="delete"/>
+                     <attDef ident="type" mode="change">
+                        <desc xml:lang="fr"> L'attribut @type doit contenir une des valeurs
+                           suivantes, correspondant aux types d'administrations territoriales
+                           (régionales plutôt que nationales mentionnées dans l'élément country)
+                           rencontrées. </desc>
+                        <datatype minOccurs="1" maxOccurs="1">
+                           <dataRef key="teidata.name"/>
+                        </datatype>
+                        <valList mode="add" type="closed">
+                           <valItem ident="Land"/>
+                           <valItem ident="département"/>
+                           <valItem ident="province"/>
+                        </valList>
+                     </attDef>
+                     <attDef ident="when" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="offset" mode="change">
+                  <attList>
+                     <attDef ident="when" mode="delete"/>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                     <attDef ident="key" mode="delete"/>
+                     <attDef ident="ref" mode="delete"/>
+                     <attDef ident="type" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="geo" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <!-- MODIFICATION DE L'ODD ICI -->
+               <elementSpec ident="listOrg" mode="change">
+                  <gloss>Elément contenu dans l'élément listOrg</gloss>
+                  <desc> L'élement listOrg doit contenir l'élément org au moins une fois</desc>
+                  <content>
+                     <elementRef key="org" minOccurs="1" maxOccurs="unbounded"/>
+                  </content>
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                     <attDef ident="type" mode="delete"/>
+                     <attDef ident="default" mode="change">
+                        <valList mode="add" type="closed">
+                           <valItem ident="false"/>
+                        </valList>
+                     </attDef>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="listPerson" mode="change">
+                  <gloss>Elément contenu dans l'élément listPerson</gloss>
+                  <desc> L'élement listPerson doit contenir l'élément person au moins une
+                     fois</desc>
+                  <content>
+                     <elementRef key="person" minOccurs="1" maxOccurs="unbounded"/>
+                  </content>
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                     <attDef ident="type" mode="delete"/>
+                     <attDef ident="default" mode="change">
+                        <valList mode="add" type="closed">
+                           <valItem ident="false"/>
+                        </valList>
+                     </attDef>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="listPlace" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                     <attDef ident="type" mode="delete"/>
+                     <attDef ident="default" mode="change">
+                        <valList mode="add" type="closed">
+                           <valItem ident="false"/>
+                        </valList>
+                     </attDef>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="location" mode="change">
+                  <gloss>Séquence des éléments contenus dans l'élément location</gloss>
+                  <desc> L'élément location doit contenir, dans cet ordre afin de compléter les
+                     données de l'index des lieux, les éléments country, district, geo et note. </desc>
+                  <content>
+                     <sequence preserveOrder="true">
+                        <elementRef key="country" minOccurs="1" maxOccurs="1"/>
+                        <elementRef key="district" minOccurs="1" maxOccurs="1"/>
+                        <elementRef key="geo" minOccurs="1" maxOccurs="1"/>
+                        <elementRef key="note" minOccurs="0" maxOccurs="unbounded"/>
+                     </sequence>
+                  </content>
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                     <attDef ident="type" mode="delete"/>
+                     <attDef ident="when" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="org" mode="change">
+                  <attList>
+                     <attDef ident="role" mode="delete"/>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                     <attDef ident="type" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="person" mode="change">
+                  <gloss>Séquence des éléments contenus dans l'élément person</gloss>
+                  <desc> L'élément person doit contenir, dans cet ordre afin de créer un index des
+                     noms, les éléments persName et note. </desc>
+                  <content>
+                     <sequence preserveOrder="true">
+                        <elementRef key="persName" minOccurs="1" maxOccurs="1"/>
+                        <elementRef key="note" minOccurs="1" maxOccurs="1"/>
+                     </sequence>
+                  </content>
+                  <attList>
+                     <attDef ident="role" mode="delete"/>
+                     <attDef ident="sex" mode="delete"/>
+                     <attDef ident="age" mode="delete"/>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <!-- MODIFICATION IMPORTANTE DE L'ODD ICI -->
+               <elementSpec ident="place" mode="change">
+                  <gloss>Séquence des éléments contenus dans l'élément place</gloss>
+                  <desc xml:lang="fr"> L'élément place (utilisé dans placeList afin de créer un
+                     index des lieux) doit contenir dans, cet ordre, les éléments placeName et
+                     location une seule fois. </desc>
+                  <content>
+                     <sequence preserveOrder="true">
+                        <elementRef key="placeName" minOccurs="1" maxOccurs="1"/>
+                        <elementRef key="location" minOccurs="1" maxOccurs="1"/>
+                     </sequence>
+                  </content>
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="type" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <!--Checking module dictionaries-->
+               <classRef key="att.lexicographic"/>
+               <classRef key="model.entryLike"/>
+               <classRef key="model.formPart"/>
+               <classRef key="model.gramPart"/>
+               <classRef key="model.lexicalRefinement"/>
+               <classRef key="model.morphLike"/>
+               <classRef key="model.ptrLike.form"/>
+               <classSpec ident="att.lexicographic" type="atts" mode="change">
+                  <attList>
+                     <attDef ident="expand" mode="delete"/>
+                     <attDef ident="split" mode="delete"/>
+                     <attDef ident="value" mode="delete"/>
+                     <attDef ident="location" mode="delete"/>
+                     <attDef ident="mergedIn" mode="delete"/>
+                     <attDef ident="opt" mode="delete"/>
+                  </attList>
+               </classSpec>
+               <!--Checking module tagdocs-->
+               <classRef key="att.combinable"/>
+               <classRef key="att.identified"/>
+               <classRef key="model.contentPart"/>
+               <classSpec ident="att.combinable" type="atts" mode="change">
+                  <attList>
+                     <attDef ident="mode" mode="delete"/>
+                  </attList>
+               </classSpec>
+               <classSpec ident="att.identified" type="atts" mode="change">
+                  <attList>
+                     <attDef ident="ident" mode="delete"/>
+                     <attDef ident="predeclare" mode="delete"/>
+                     <attDef ident="module" mode="delete"/>
+                  </attList>
+               </classSpec>
+               <classSpec ident="att.anchoring" type="atts" mode="change">
+                  <attList>
+                     <attDef ident="targetEnd" mode="delete"/>
+                  </attList>
+               </classSpec>
+               <classSpec ident="att.ascribed.directed" type="atts" mode="change">
+                  <attList>
+                     <attDef ident="toWhom" mode="delete"/>
+                  </attList>
+               </classSpec>
+               <classSpec ident="att.dimensions" type="atts" mode="change">
+                  <attList>
+                     <attDef ident="unit" mode="delete"/>
+                     <attDef ident="quantity" mode="delete"/>
+                     <attDef ident="extent" mode="delete"/>
+                     <attDef ident="precision" mode="delete"/>
+                     <attDef ident="scope" mode="delete"/>
+                  </attList>
+               </classSpec>
+               <classSpec ident="att.damaged" type="atts" mode="change">
+                  <attList>
+                     <attDef ident="agent" mode="delete"/>
+                     <attDef ident="degree" mode="delete"/>
+                     <attDef ident="group" mode="delete"/>
+                  </attList>
+               </classSpec>
+               <classSpec ident="att.datable.w3c" type="atts" mode="change">
+                  <attList>
+                     <attDef ident="notBefore" mode="delete"/>
+                     <attDef ident="notAfter" mode="delete"/>
+                     <attDef ident="from" mode="delete"/>
+                     <attDef ident="to" mode="delete"/>
+                  </attList>
+               </classSpec>
+               <classSpec ident="att.datable" type="atts" mode="change">
+                  <attList>
+                     <attDef ident="calendar" mode="delete"/>
+                     <attDef ident="period" mode="delete"/>
+                  </attList>
+               </classSpec>
+               <classSpec ident="att.global.responsibility" type="atts" mode="change">
+                  <attList>
+                     <attDef ident="resp" mode="delete"/>
+                  </attList>
+               </classSpec>
+               <classSpec ident="att.editLike" type="atts" mode="change">
+                  <attList>
+                     <attDef ident="evidence" mode="delete"/>
+                  </attList>
+               </classSpec>
+               <classSpec ident="att.media" type="atts" mode="change">
+                  <attList>
+                     <attDef ident="scale" mode="delete"/>
+                  </attList>
+               </classSpec>
+               <classSpec ident="att.interpLike" type="atts" mode="change">
+                  <attList>
+                     <attDef ident="inst" mode="delete"/>
+                  </attList>
+               </classSpec>
+               <classSpec ident="att.naming" type="atts" mode="change">
+                  <attList>
+                     <attDef ident="role" mode="delete"/>
+                     <attDef ident="nymRef" mode="delete"/>
+                  </attList>
+               </classSpec>
+               <classSpec ident="att.typed" type="atts" mode="change">
+                  <attList>
+                     <attDef ident="subtype" mode="delete"/>
+                  </attList>
+               </classSpec>
+               <classSpec ident="att.pointing.group" type="atts" mode="change">
+                  <attList>
+                     <attDef ident="domains" mode="delete"/>
+                     <attDef ident="targFunc" mode="delete"/>
+                  </attList>
+               </classSpec>
+               <classSpec ident="att.segLike" type="atts" mode="change">
+                  <attList>
+                     <attDef ident="function" mode="delete"/>
+                  </attList>
+               </classSpec>
+               <classSpec ident="att.timed" type="atts" mode="change">
+                  <attList>
+                     <attDef ident="start" mode="delete"/>
+                     <attDef ident="end" mode="delete"/>
+                  </attList>
+               </classSpec>
+               <classSpec ident="att.transcriptional" type="atts" mode="change">
+                  <attList>
+                     <attDef ident="status" mode="delete"/>
+                     <attDef ident="cause" mode="delete"/>
+                     <attDef ident="seq" mode="delete"/>
+                  </attList>
+               </classSpec>
+               <classSpec ident="att.personal" type="atts" mode="change">
+                  <attList>
+                     <attDef ident="sort" mode="delete"/>
+                  </attList>
+               </classSpec>
+               <!--Checking module core-->
+               <moduleRef key="core"
+                  include="p foreign distinct sic corr choice measure date time abbr expan list item note graphic pb lb author respStmt resp title"/>
+               <elementSpec ident="p" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                     <attDef ident="part" mode="change">
+                        <valList mode="add" type="closed">
+                           <valItem ident="N"/>
+                        </valList>
+                     </attDef>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="foreign" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <!-- MODIFICATION DE L'ODD ICI MAIS PROBLÈME DE RÉPÉTITION DES DONNÉES -->
+               <elementSpec ident="distinct" mode="change">
+                  <attList>
+                     <attDef ident="type" mode="change">
+                        <valList mode="add" type="closed">
+                           <valItem ident="vocabulaire_militaire"/>
+                        </valList>
+                     </attDef>
+                     <attDef ident="time" mode="delete"/>
+                     <attDef ident="space" mode="delete"/>
+                     <attDef ident="social" mode="delete"/>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                     <attDef ident="type" mode="change" usage="rec">
+                        <gloss> Type de valeur possible pour l'élément distinct</gloss>
+                        <desc> L'attribut @type peut prendre comme valeur "vocabulaire_militaire".
+                           Cette valeur est recommandée car il s'agit d'un champs sémantique
+                           spécifique employé par l'auteur pour qualifier divers éléments. La liste
+                           des valeurs reste semi-ouverte car il est possible d'autres champs
+                           sémantiques distincts plus loin dans la narration. </desc>
+                        <datatype minOccurs="0" maxOccurs="1">
+                           <dataRef key="teidata.text"/>
+                        </datatype>
+                        <valList mode="add" type="semi">
+                           <valItem ident="vocabulaire_militaire"/>
+                        </valList>
+                     </attDef>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="sic" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="corr" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                     <attDef ident="type" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <!-- MODIFICATION DE L'ODD ICI -->
+               <elementSpec ident="choice" mode="change">
+                  <gloss> Séquence des éléments au sein de l'élément choice</gloss>
+                  <desc> L'élément choice doit contenir, dans cet ordre, les éléments sic et corr,
+                     une seule fois, afin d'indiquer les erreurs manifestes d'orthographe et de
+                     conjuguaison de l'auteur, qui sont ensuite corrigées ou les éléments abbr et
+                     expan pour indiquer la résolution d'une abbréviation. </desc>
+                  <content>
+                     <alternate>
+                        <sequence preserveOrder="true">
+                           <elementRef key="sic" minOccurs="1" maxOccurs="1"/>
+                           <elementRef key="corr" minOccurs="1" maxOccurs="1"/>
+                        </sequence>
+                        <sequence preserveOrder="true">
+                           <elementRef key="abbr" minOccurs="1" maxOccurs="1"/>
+                           <elementRef key="expan" minOccurs="1" maxOccurs="1"/>
+                        </sequence>
+                     </alternate>
+                  </content>
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="measure" mode="change">
+                  <attList>
+                     <attDef ident="type" mode="delete"/>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                     <attDef ident="type" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <!-- MODIFICATION DE L'ODD ICI A COMPLÉTER POUR INDIQUER UNE SÉQUENCE DE VALEUR POUR WHEN
+               when et ref en valeur optionnelle voire recommandée-->
+               <elementSpec ident="date" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                     <attDef ident="key" mode="delete"/>
+                     <attDef ident="type" mode="delete"/>
+                     <attDef ident="ref" mode="change" usage="opt"/>
+                     <attDef ident="when" mode="change" usage="opt"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="time" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                     <attDef ident="when" mode="delete"/>
+                     <attDef ident="key" mode="delete"/>
+                     <attDef ident="ref" mode="delete"/>
+                     <attDef ident="type" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <!-- MODIFICATION DE L'ODD ICI -->
+               <elementSpec ident="abbr" mode="change">
+                  <attList>
+                     <attDef ident="type" mode="change" usage="opt">
+                        <gloss> Type(s) possibile(s) pour l'élément abbr</gloss>
+                        <desc xml:lang="fr"> L'attribut @type est optionnel et peut prendre comme
+                           valeur "monnaie". La liste des valeurs restent ouvertes car il est
+                           possible que, dans la suite de la narration, d'autres abbréviations
+                           doivent recevoir un autre type. </desc>
+                        <valList mode="add" type="open">
+                           <valItem ident="monnaie"/>
+                        </valList>
+                     </attDef>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                     <attDef ident="type" mode="change">
+                        <valList mode="add" type="closed">
+                           <valItem ident="monnaie"/>
+                        </valList>
+                     </attDef>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="expan" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <!-- MODIFICATION DE L'ODD ICI, même problème ici de répétition des données ! -->
+               <elementSpec ident="list" mode="change">
+                  <attList>
+                     <attDef ident="type" mode="change" usage="req">
+                        <gloss>Type obligatoire de l'élément liste.</gloss>
+                        <desc xml:lang="fr"> L'attribut @type de l'élément list doit prendre comme
+                           valeur "chronologie", puisqu'il s'agit de la manière adoptée dans
+                           l'encodage pour réaliser une chronologie fine des événements du récit. </desc>
+                        <datatype minOccurs="1" maxOccurs="1">
+                           <dataRef key="teidata.text"/>
+                        </datatype>
+                        <valList mode="add" type="closed">
+                           <valItem ident="chronologie"/>
+                        </valList>
+                     </attDef>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                     <attDef ident="type" mode="change">
+                        <valList mode="add" type="closed">
+                           <valItem ident="chronologie"/>
+                        </valList>
+                     </attDef>
+                  </attList>
+               </elementSpec>
+               <!-- A CONFIRMER ! MODIFICATION DE L'ODD ICI => schematron à confirmer et compléter avec la regex ici ! -->
+               <elementSpec ident="item" mode="change">
+                  <gloss> Séquence des éléments contenus dans l'élément item</gloss>
+                  <desc xml:lang="fr"> L'élément list doit contenir, dans cet ordre (afin de
+                     compléter la chronologie dans un élément list) les éléments p et date une seule
+                     fois </desc>
+                  <constraintSpec ident="xml:idVal" scheme="schematron">
+                     <constraint>
+                        <s:rule context="tei:TEI/standOff/list/item">
+                           <s:assert test="@xml:id"> L'élément list dans le standOff doit contenir
+                              un élément item ayant pour attribut xml:id </s:assert>
+                        </s:rule>
+                        <s:rule context="tei:item[@xml:id]">
+                           <s:assert test="matches(@xml:id,'=\'d[0-9]\'*')"> L'élément list doit
+                              posséder un élément item dont l'attribut xml:id est la valeur se
+                              présente sous la forme suivant : dN où N est un chiffre. </s:assert>
+                        </s:rule>
+                     </constraint>
+                  </constraintSpec>
+                  <!--<content>
                   <sequence preserveOrder="true">
                      <elementRef key="p" minOccurs="1" maxOccurs="1"/>
                      <elementRef key="date" minOccurs="1" maxOccurs="1"/>
                   </sequence>
                </content>-->
-               <attList>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="cert" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="note" mode="change">
-               <attList>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="type" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="graphic" mode="change">
-               <attList>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="cert" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="pb" mode="change">
-               <attList>
-                  <attDef ident="cert" mode="delete"/>
-                  <attDef ident="type" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="lb" mode="change">
-               <attList>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="cert" mode="delete"/>
-                  <attDef ident="type" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="author" mode="change">
-               <attList>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="cert" mode="delete"/>
-                  <attDef ident="key" mode="delete"/>
-                  <attDef ident="ref" mode="delete"/>
-                  <attDef ident="when" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="respStmt" mode="change">
-               <attList>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="cert" mode="delete"/>
-                  <attDef ident="key" mode="delete"/>
-                  <attDef ident="ref" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="resp" mode="change">
-               <attList>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="cert" mode="delete"/>
-                  <attDef ident="key" mode="delete"/>
-                  <attDef ident="ref" mode="delete"/>
-                  <attDef ident="when" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="title" mode="change">
-               <attList>
-                  <attDef ident="level" mode="delete"/>
-                  <attDef ident="type" mode="delete"/>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="cert" mode="delete"/>
-                  <attDef ident="type" mode="delete"/>
-                  <attDef ident="key" mode="delete"/>
-                  <attDef ident="ref" mode="delete"/>
-                  <attDef ident="when" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <!--Checking module figures-->
-            <!--Checking module header-->
-            <moduleRef key="header"
-                       include="teiHeader fileDesc titleStmt editionStmt edition extent publicationStmt sourceDesc profileDesc langUsage language"/>
-            <elementSpec ident="teiHeader" mode="change">
-               <attList>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="cert" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="fileDesc" mode="change">
-               <attList>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="cert" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="titleStmt" mode="change">
-               <attList>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="cert" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="editionStmt" mode="change">
-               <attList>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="cert" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="edition" mode="change">
-               <attList>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="cert" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="extent" mode="change">
-               <attList>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="cert" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="publicationStmt" mode="change">
-               <attList>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="cert" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="sourceDesc" mode="change">
-               <attList>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="cert" mode="delete"/>
-                  <attDef ident="default" mode="change">
-                     <valList mode="add" type="closed">
-                        <valItem ident="false"/>
-                     </valList>
-                  </attDef>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="profileDesc" mode="change">
-               <attList>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="cert" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="langUsage" mode="change">
-               <attList>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="cert" mode="delete"/>
-                  <attDef ident="default" mode="change">
-                     <valList mode="add" type="closed">
-                        <valItem ident="false"/>
-                     </valList>
-                  </attDef>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="language" mode="change">
-               <attList>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="cert" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <!--Checking module gaiji-->
-            <!--Checking module verse-->
-            <!--Checking module transcr-->
-            <classRef key="att.coordinated"/>
-            <classRef key="att.global.facs"/>
-            <moduleRef key="transcr" include="facsimile surface zone"/>
-            <elementSpec ident="facsimile" mode="change">
-               <gloss>Elément contenu dans l'élément facsimile</gloss>
-               <desc> L'élement facsimile doit contenir l'élément surface au moins une fois</desc>
-               <content>
-                  <elementRef key="surface" minOccurs="1" maxOccurs="unbounded"/>
-               </content>
-               <attList>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="cert" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="surface" mode="change">
-               <gloss> Séquence d'éléments contenus dans l'élément surface</gloss>
-               <desc xml:lang="fr">
-                  L'élément surface doit contenir, dans cet ordre (afin de compléter le fac-similé),
-                  les élements graphic et zone.
-               </desc>
-               <content>
-                  <sequence preserveOrder="true">
-                     <elementRef key="graphic" minOccurs="1" maxOccurs="1"/>
-                     <elementRef key="zone" minOccurs="1" maxOccurs="1"/>
-                  </sequence>
-               </content>
-               <attList>
-                  <attDef ident="attachment" mode="delete"/>
-                  <attDef ident="flipping" mode="delete"/>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="cert" mode="delete"/>
-                  <attDef ident="ulx" mode="delete"/>
-                  <attDef ident="uly" mode="delete"/>
-                  <attDef ident="lrx" mode="delete"/>
-                  <attDef ident="lry" mode="delete"/>
-                  <attDef ident="type" mode="delete"/>
-               </attList>
-            </elementSpec>
-<!--MODIFICATION DE L'ENCODAGE AVEC SCHEMATRON POUR CONTRAINDRE LA VALEUR DES ATTRIBUTS DE ZONE -->               
-            <elementSpec ident="zone" mode="change">
-               <constraintSpec scheme="schematron" ident="ulxRequired">
-                  <constraint>
-                     <s:rule context="tei:TEI/facsimile/surface/zone">
-                        <s:assert test="@xml:id">
-                           L'attribut xml:id doit être renseigné.
-                        </s:assert>
-                     </s:rule>
-                     <s:rule context="tei:TEI/facsimile/surface/zone">
-                        <s:assert test="@ulx">
-                           L'attribut ulx doit être renseigné.
-                        </s:assert>
-                     </s:rule>
-                     <s:rule context="tei:TEI/facsimile/surface/zone">
-                        <s:assert test="@uly">
-                           L'attribut uly doit être renseigné.
-                        </s:assert>
-                     </s:rule>
-                     <s:rule context="tei:TEI/facsimile/surface/zone">
-                        <s:assert test="@lrx">
-                           L'attribut rlx doit être renseigné.
-                        </s:assert>
-                     </s:rule>
-                     <s:rule context="tei:TEI/facsimile/surface/zone">
-                        <s:assert test="@rly">
-                           L'attribut rly doit être renseigné.
-                        </s:assert>
-                     </s:rule>
-                     <s:rule context="tei:zone[@xml:id]">
-                        <s:assert test="matches(@xml:id, 'p[1-29]+')"> '@xml:id='p[1-19]+' 
-                           La valeur de l'attribut xml:id doit correspondre à pN où N est
-                           un nombre compris entre 1 et 19.
-                        </s:assert>
-                     </s:rule>
-                     <s:rule context="tei:zone[@ulx]">
-                        <s:assert test="matches(@ulx, '[0-9]?')"> '@ulx [0-9]?' 
-                           La valeur de l'attribut ulx doit correspondre à une séquence de chiffres.
-                        </s:assert>
-                     </s:rule>
-                     <s:rule context="tei:zone[@uly]">
-                        <s:assert test="matches(@uly, '[0-9]?')"> '@uly [0-9]?' 
-                           La valeur de l'attribut uly doit correspondre à une séquence de chiffres.
-                        </s:assert>
-                     </s:rule>
-                     <s:rule context="tei:zone[@lrx]">
-                        <s:assert test="matches(@lrx, '[0-9]?')"> '@lrx [0-9]?' 
-                           La valeur de l'attribut lrx doit correspondre à une séquence de chiffres.
-                        </s:assert>
-                     </s:rule>
-                     <s:rule context="tei:zone[@lry]">
-                        <s:assert test="matches(@lry, '[0-9]?')"> '@lry [0-9]?' 
-                           La valeur de l'attribut lry doit correspondre à une séquence de chiffres.
-                        </s:assert>
-                     </s:rule>
-                  </constraint>
-               </constraintSpec>
-               <attList>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="cert" mode="delete"/>
-                  <attDef ident="type" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <classSpec ident="att.coordinated" type="atts" mode="change">
-               <attList>
-                  <attDef ident="start" mode="delete"/>
-                  <attDef ident="points" mode="delete"/>
-               </attList>
-            </classSpec>
-            <!--Checking module linking-->
-<!-- MODIFICATION DE L'ODD ICI -->               
-            <moduleRef key="linking" include="standOff"/>
-            <elementSpec ident="standOff" mode="change">
-               <gloss> Element list dans l'élément standOff </gloss>
-               <desc>L'élément standOff doit contenir un élément list présent au minimum
-               une fois
-               </desc>
-               <content>
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="note" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="type" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="graphic" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="pb" mode="change">
+                  <attList>
+                     <attDef ident="cert" mode="delete"/>
+                     <attDef ident="type" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="lb" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                     <attDef ident="type" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="author" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                     <attDef ident="key" mode="delete"/>
+                     <attDef ident="ref" mode="delete"/>
+                     <attDef ident="when" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="respStmt" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                     <attDef ident="key" mode="delete"/>
+                     <attDef ident="ref" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="resp" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                     <attDef ident="key" mode="delete"/>
+                     <attDef ident="ref" mode="delete"/>
+                     <attDef ident="when" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="title" mode="change">
+                  <attList>
+                     <attDef ident="level" mode="delete"/>
+                     <attDef ident="type" mode="delete"/>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                     <attDef ident="type" mode="delete"/>
+                     <attDef ident="key" mode="delete"/>
+                     <attDef ident="ref" mode="delete"/>
+                     <attDef ident="when" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <!--Checking module figures-->
+               <!--Checking module header-->
+               <moduleRef key="header"
+                  include="teiHeader fileDesc titleStmt editionStmt edition extent publicationStmt sourceDesc profileDesc langUsage language"/>
+               <elementSpec ident="teiHeader" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="fileDesc" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="titleStmt" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="editionStmt" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="edition" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="extent" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="publicationStmt" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="sourceDesc" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                     <attDef ident="default" mode="change">
+                        <valList mode="add" type="closed">
+                           <valItem ident="false"/>
+                        </valList>
+                     </attDef>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="profileDesc" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="langUsage" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                     <attDef ident="default" mode="change">
+                        <valList mode="add" type="closed">
+                           <valItem ident="false"/>
+                        </valList>
+                     </attDef>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="language" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <!--Checking module gaiji-->
+               <!--Checking module verse-->
+               <!--Checking module transcr-->
+               <classRef key="att.coordinated"/>
+               <classRef key="att.global.facs"/>
+               <moduleRef key="transcr" include="facsimile surface zone"/>
+               <elementSpec ident="facsimile" mode="change">
+                  <gloss>Elément contenu dans l'élément facsimile</gloss>
+                  <desc> L'élement facsimile doit contenir l'élément surface au moins une
+                     fois</desc>
+                  <content>
+                     <elementRef key="surface" minOccurs="1" maxOccurs="unbounded"/>
+                  </content>
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="surface" mode="change">
+                  <gloss> Séquence d'éléments contenus dans l'élément surface</gloss>
+                  <desc xml:lang="fr"> L'élément surface doit contenir, dans cet ordre (afin de
+                     compléter le fac-similé), les élements graphic et zone. </desc>
+                  <content>
+                     <sequence preserveOrder="true">
+                        <elementRef key="graphic" minOccurs="1" maxOccurs="1"/>
+                        <elementRef key="zone" minOccurs="1" maxOccurs="1"/>
+                     </sequence>
+                  </content>
+                  <attList>
+                     <attDef ident="attachment" mode="delete"/>
+                     <attDef ident="flipping" mode="delete"/>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                     <attDef ident="ulx" mode="delete"/>
+                     <attDef ident="uly" mode="delete"/>
+                     <attDef ident="lrx" mode="delete"/>
+                     <attDef ident="lry" mode="delete"/>
+                     <attDef ident="type" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <!--MODIFICATION DE L'ENCODAGE AVEC SCHEMATRON POUR CONTRAINDRE LA VALEUR DES ATTRIBUTS DE ZONE -->
+               <elementSpec ident="zone" mode="change">
+                  <constraintSpec scheme="schematron" ident="ulxRequired">
+                     <constraint>
+                        <s:rule context="tei:TEI/facsimile/surface/zone">
+                           <s:assert test="@xml:id"> L'attribut xml:id doit être renseigné.
+                           </s:assert>
+                        </s:rule>
+                        <s:rule context="tei:TEI/facsimile/surface/zone">
+                           <s:assert test="@ulx"> L'attribut ulx doit être renseigné. </s:assert>
+                        </s:rule>
+                        <s:rule context="tei:TEI/facsimile/surface/zone">
+                           <s:assert test="@uly"> L'attribut uly doit être renseigné. </s:assert>
+                        </s:rule>
+                        <s:rule context="tei:TEI/facsimile/surface/zone">
+                           <s:assert test="@lrx"> L'attribut rlx doit être renseigné. </s:assert>
+                        </s:rule>
+                        <s:rule context="tei:TEI/facsimile/surface/zone">
+                           <s:assert test="@rly"> L'attribut rly doit être renseigné. </s:assert>
+                        </s:rule>
+                        <s:rule context="tei:zone[@xml:id]">
+                           <s:assert test="matches(@xml:id, 'p[1-29]+')"> '@xml:id='p[1-19]+' La
+                              valeur de l'attribut xml:id doit correspondre à pN où N est un nombre
+                              compris entre 1 et 19. </s:assert>
+                        </s:rule>
+                        <s:rule context="tei:zone[@ulx]">
+                           <s:assert test="matches(@ulx, '[0-9]?')"> '@ulx [0-9]?' La valeur de
+                              l'attribut ulx doit correspondre à une séquence de chiffres.
+                           </s:assert>
+                        </s:rule>
+                        <s:rule context="tei:zone[@uly]">
+                           <s:assert test="matches(@uly, '[0-9]?')"> '@uly [0-9]?' La valeur de
+                              l'attribut uly doit correspondre à une séquence de chiffres.
+                           </s:assert>
+                        </s:rule>
+                        <s:rule context="tei:zone[@lrx]">
+                           <s:assert test="matches(@lrx, '[0-9]?')"> '@lrx [0-9]?' La valeur de
+                              l'attribut lrx doit correspondre à une séquence de chiffres.
+                           </s:assert>
+                        </s:rule>
+                        <s:rule context="tei:zone[@lry]">
+                           <s:assert test="matches(@lry, '[0-9]?')"> '@lry [0-9]?' La valeur de
+                              l'attribut lry doit correspondre à une séquence de chiffres.
+                           </s:assert>
+                        </s:rule>
+                     </constraint>
+                  </constraintSpec>
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                     <attDef ident="type" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <classSpec ident="att.coordinated" type="atts" mode="change">
+                  <attList>
+                     <attDef ident="start" mode="delete"/>
+                     <attDef ident="points" mode="delete"/>
+                  </attList>
+               </classSpec>
+               <!--Checking module linking-->
+               <!-- MODIFICATION DE L'ODD ICI -->
+               <moduleRef key="linking" include="standOff"/>
+               <elementSpec ident="standOff" mode="change">
+                  <gloss> Element list dans l'élément standOff </gloss>
+                  <desc>L'élément standOff doit contenir un élément list présent au minimum une fois </desc>
+                  <content>
                      <elementRef key="list" minOccurs="1" maxOccurs="unbounded"/>
-               </content>
-               <attList>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="cert" mode="delete"/>
-                  <attDef ident="type" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <!--Checking module analysis-->
-            <classRef key="att.linguistic"/>
-            <classSpec ident="att.linguistic" type="atts" mode="change">
-               <attList>
-                  <attDef ident="lemma" mode="delete"/>
-                  <attDef ident="lemmaRef" mode="delete"/>
-                  <attDef ident="pos" mode="delete"/>
-                  <attDef ident="msd" mode="delete"/>
-                  <attDef ident="join" mode="delete"/>
-               </attList>
-            </classSpec>
-            <!--Checking module textstructure-->
-            <moduleRef key="textstructure" include="TEI text body div front"/>
-            <elementSpec ident="TEI" mode="change">
-               <attList>
-                  <attDef ident="version" mode="delete"/>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="cert" mode="delete"/>
-                  <attDef ident="type" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="text" mode="change">
-               <attList>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="cert" mode="delete"/>
-                  <attDef ident="type" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="body" mode="change">
-               <attList>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="cert" mode="delete"/>
-               </attList>
-            </elementSpec>
-<!-- MODIFICATION DE L'ODD ICI -->
-            <elementSpec ident="div" mode="change">
-               <attList>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="cert" mode="delete"/>
-                  <attDef ident="org" mode="change">
-                     <valList mode="add" type="closed">
-                        <valItem ident="uniform"/>
-                     </valList>
-                  </attDef>
-                  <attDef ident="sample" mode="change">
-                     <valList mode="add" type="closed">
-                        <valItem ident="complete"/>
-                     </valList>
-                  </attDef>
-                  <attDef ident="part" mode="change">
-                     <valList mode="add" type="closed">
-                        <valItem ident="N"/>
-                     </valList>
-                  </attDef>
-                  <attDef ident="type" mode="change" usage="rec">
-                     <desc xml:lang="fr"> Types recommandés pour l'éléments div</desc>
-                     <gloss>
-                        L'attribut @type accepte comme valeurs recommandées "extrait"
-                        et "notes_introductives", afin de caractériser la structure de
-                        la source encodée.
-                     </gloss>
-                     <datatype minOccurs="0" maxOccurs="unbounded">
-                        <dataRef key="teidata.text"/>
-                     </datatype>
-                     <valList mode="add" type="closed">
-                        <valItem ident="extrait"/>
-                        <valItem ident="notes_introductives"/>
-                     </valList>
-                  </attDef>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="front" mode="change">
-               <attList>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="cert" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <!--Checking module corpus-->
-            <moduleRef key="corpus" include="particDesc settingDesc"/>
-            <elementSpec ident="particDesc" mode="change">
-               <attList>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="cert" mode="delete"/>
-                  <attDef ident="default" mode="change">
-                     <valList mode="add" type="closed">
-                        <valItem ident="false"/>
-                     </valList>
-                  </attDef>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="settingDesc" mode="change">
-               <attList>
-                  <attDef ident="facs" mode="delete"/>
-                  <attDef ident="cert" mode="delete"/>
-                  <attDef ident="default" mode="change">
-                     <valList mode="add" type="closed">
-                        <valItem ident="false"/>
-                     </valList>
-                  </attDef>
-               </attList>
-            </elementSpec>
-         </schemaSpec>
-        </div1>
+                  </content>
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                     <attDef ident="type" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <!--Checking module analysis-->
+               <classRef key="att.linguistic"/>
+               <classSpec ident="att.linguistic" type="atts" mode="change">
+                  <attList>
+                     <attDef ident="lemma" mode="delete"/>
+                     <attDef ident="lemmaRef" mode="delete"/>
+                     <attDef ident="pos" mode="delete"/>
+                     <attDef ident="msd" mode="delete"/>
+                     <attDef ident="join" mode="delete"/>
+                  </attList>
+               </classSpec>
+               <!--Checking module textstructure-->
+               <moduleRef key="textstructure" include="TEI text body div front"/>
+               <elementSpec ident="TEI" mode="change">
+                  <attList>
+                     <attDef ident="version" mode="delete"/>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                     <attDef ident="type" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="text" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                     <attDef ident="type" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="body" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <!-- MODIFICATION DE L'ODD ICI -->
+               <elementSpec ident="div" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                     <attDef ident="org" mode="change">
+                        <valList mode="add" type="closed">
+                           <valItem ident="uniform"/>
+                        </valList>
+                     </attDef>
+                     <attDef ident="sample" mode="change">
+                        <valList mode="add" type="closed">
+                           <valItem ident="complete"/>
+                        </valList>
+                     </attDef>
+                     <attDef ident="part" mode="change">
+                        <valList mode="add" type="closed">
+                           <valItem ident="N"/>
+                        </valList>
+                     </attDef>
+                     <attDef ident="type" mode="change" usage="rec">
+                        <desc xml:lang="fr"> Types recommandés pour l'éléments div</desc>
+                        <gloss> L'attribut @type accepte comme valeurs recommandées "extrait" et
+                           "notes_introductives", afin de caractériser la structure de la source
+                           encodée. </gloss>
+                        <datatype minOccurs="0" maxOccurs="unbounded">
+                           <dataRef key="teidata.text"/>
+                        </datatype>
+                        <valList mode="add" type="closed">
+                           <valItem ident="extrait"/>
+                           <valItem ident="notes_introductives"/>
+                        </valList>
+                     </attDef>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="front" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <!--Checking module corpus-->
+               <moduleRef key="corpus" include="particDesc settingDesc"/>
+               <elementSpec ident="particDesc" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                     <attDef ident="default" mode="change">
+                        <valList mode="add" type="closed">
+                           <valItem ident="false"/>
+                        </valList>
+                     </attDef>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="settingDesc" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="cert" mode="delete"/>
+                     <attDef ident="default" mode="change">
+                        <valList mode="add" type="closed">
+                           <valItem ident="false"/>
+                        </valList>
+                     </attDef>
+                  </attList>
+               </elementSpec>
+            </schemaSpec>
+         </div1>
       </body>
    </text>
 </TEI>

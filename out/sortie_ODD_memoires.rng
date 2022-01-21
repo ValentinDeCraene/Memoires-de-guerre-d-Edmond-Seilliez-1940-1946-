@@ -5,7 +5,7 @@
          xmlns="http://relaxng.org/ns/structure/1.0"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2022-01-20T12:10:42Z. .
+Schema generated from ODD source 2022-01-21T10:05:51Z. .
 TEI Edition: Version 4.3.0. Last updated on
         31st August 2021, revision b4f72b1ff
 TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.3.0/
@@ -2249,19 +2249,16 @@ Sample values include: 1] monnaie</a:documentation>
                  xmlns="http://www.tei-c.org/ns/1.0"
                  xmlns:s="http://purl.ocl.org/dsdl/schematron"
                  context="tei:TEI/standOff/list/item">
-            <s:assert test="@xml:id">
-                           L'élément list dans le standOff doit contenir un élément item ayant pour
-                           attribut xml:id
-                        </s:assert>
+            <s:assert test="@xml:id"> L'élément list dans le standOff doit contenir
+                              un élément item ayant pour attribut xml:id </s:assert>
          </s:rule>
          <s:rule xmlns:rng="http://relaxng.org/ns/structure/1.0"
                  xmlns="http://www.tei-c.org/ns/1.0"
                  xmlns:s="http://purl.ocl.org/dsdl/schematron"
                  context="tei:item[@xml:id]">
-            <s:assert test="matches(@xml:id,'=\'d[0-9]\'*')">
-                        L'élément list doit posséder un élément item dont l'attribut
-                        xml:id est la valeur se présente sous la forme suivant : dN où N est un chiffre.
-                        </s:assert>
+            <s:assert test="matches(@xml:id,'=\'d[0-9]\'*')"> L'élément list doit
+                              posséder un élément item dont l'attribut xml:id est la valeur se
+                              présente sous la forme suivant : dN où N est un chiffre. </s:assert>
          </s:rule>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
@@ -4648,91 +4645,81 @@ Sample values include: 1] pays</a:documentation>
                  xmlns="http://www.tei-c.org/ns/1.0"
                  xmlns:s="http://purl.ocl.org/dsdl/schematron"
                  context="tei:TEI/facsimile/surface/zone">
-            <s:assert test="@xml:id">
-                           L'attribut xml:id doit être renseigné.
-                        </s:assert>
+            <s:assert test="@xml:id"> L'attribut xml:id doit être renseigné.
+                           </s:assert>
          </s:rule>
          <s:rule xmlns:xi="http://www.w3.org/2001/XInclude"
                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
                  xmlns="http://www.tei-c.org/ns/1.0"
                  xmlns:s="http://purl.ocl.org/dsdl/schematron"
                  context="tei:TEI/facsimile/surface/zone">
-            <s:assert test="@ulx">
-                           L'attribut ulx doit être renseigné.
-                        </s:assert>
+            <s:assert test="@ulx"> L'attribut ulx doit être renseigné. </s:assert>
          </s:rule>
          <s:rule xmlns:xi="http://www.w3.org/2001/XInclude"
                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
                  xmlns="http://www.tei-c.org/ns/1.0"
                  xmlns:s="http://purl.ocl.org/dsdl/schematron"
                  context="tei:TEI/facsimile/surface/zone">
-            <s:assert test="@uly">
-                           L'attribut uly doit être renseigné.
-                        </s:assert>
+            <s:assert test="@uly"> L'attribut uly doit être renseigné. </s:assert>
          </s:rule>
          <s:rule xmlns:xi="http://www.w3.org/2001/XInclude"
                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
                  xmlns="http://www.tei-c.org/ns/1.0"
                  xmlns:s="http://purl.ocl.org/dsdl/schematron"
                  context="tei:TEI/facsimile/surface/zone">
-            <s:assert test="@lrx">
-                           L'attribut rlx doit être renseigné.
-                        </s:assert>
+            <s:assert test="@lrx"> L'attribut rlx doit être renseigné. </s:assert>
          </s:rule>
          <s:rule xmlns:xi="http://www.w3.org/2001/XInclude"
                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
                  xmlns="http://www.tei-c.org/ns/1.0"
                  xmlns:s="http://purl.ocl.org/dsdl/schematron"
                  context="tei:TEI/facsimile/surface/zone">
-            <s:assert test="@rly">
-                           L'attribut rly doit être renseigné.
-                        </s:assert>
+            <s:assert test="@rly"> L'attribut rly doit être renseigné. </s:assert>
          </s:rule>
          <s:rule xmlns:xi="http://www.w3.org/2001/XInclude"
                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
                  xmlns="http://www.tei-c.org/ns/1.0"
                  xmlns:s="http://purl.ocl.org/dsdl/schematron"
                  context="tei:zone[@xml:id]">
-            <s:assert test="matches(@xml:id, 'p[1-29]+')"> '@xml:id='p[1-19]+' 
-                           La valeur de l'attribut xml:id doit correspondre à pN où N est
-                           un nombre compris entre 1 et 19.
-                        </s:assert>
+            <s:assert test="matches(@xml:id, 'p[1-29]+')"> '@xml:id='p[1-19]+' La
+                              valeur de l'attribut xml:id doit correspondre à pN où N est un nombre
+                              compris entre 1 et 19. </s:assert>
          </s:rule>
          <s:rule xmlns:xi="http://www.w3.org/2001/XInclude"
                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
                  xmlns="http://www.tei-c.org/ns/1.0"
                  xmlns:s="http://purl.ocl.org/dsdl/schematron"
                  context="tei:zone[@ulx]">
-            <s:assert test="matches(@ulx, '[0-9]?')"> '@ulx [0-9]?' 
-                           La valeur de l'attribut ulx doit correspondre à une séquence de chiffres.
-                        </s:assert>
+            <s:assert test="matches(@ulx, '[0-9]?')"> '@ulx [0-9]?' La valeur de
+                              l'attribut ulx doit correspondre à une séquence de chiffres.
+                           </s:assert>
          </s:rule>
          <s:rule xmlns:xi="http://www.w3.org/2001/XInclude"
                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
                  xmlns="http://www.tei-c.org/ns/1.0"
                  xmlns:s="http://purl.ocl.org/dsdl/schematron"
                  context="tei:zone[@uly]">
-            <s:assert test="matches(@uly, '[0-9]?')"> '@uly [0-9]?' 
-                           La valeur de l'attribut uly doit correspondre à une séquence de chiffres.
-                        </s:assert>
+            <s:assert test="matches(@uly, '[0-9]?')"> '@uly [0-9]?' La valeur de
+                              l'attribut uly doit correspondre à une séquence de chiffres.
+                           </s:assert>
          </s:rule>
          <s:rule xmlns:xi="http://www.w3.org/2001/XInclude"
                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
                  xmlns="http://www.tei-c.org/ns/1.0"
                  xmlns:s="http://purl.ocl.org/dsdl/schematron"
                  context="tei:zone[@lrx]">
-            <s:assert test="matches(@lrx, '[0-9]?')"> '@lrx [0-9]?' 
-                           La valeur de l'attribut lrx doit correspondre à une séquence de chiffres.
-                        </s:assert>
+            <s:assert test="matches(@lrx, '[0-9]?')"> '@lrx [0-9]?' La valeur de
+                              l'attribut lrx doit correspondre à une séquence de chiffres.
+                           </s:assert>
          </s:rule>
          <s:rule xmlns:xi="http://www.w3.org/2001/XInclude"
                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
                  xmlns="http://www.tei-c.org/ns/1.0"
                  xmlns:s="http://purl.ocl.org/dsdl/schematron"
                  context="tei:zone[@lry]">
-            <s:assert test="matches(@lry, '[0-9]?')"> '@lry [0-9]?' 
-                           La valeur de l'attribut lry doit correspondre à une séquence de chiffres.
-                        </s:assert>
+            <s:assert test="matches(@lry, '[0-9]?')"> '@lry [0-9]?' La valeur de
+                              l'attribut lry doit correspondre à une séquence de chiffres.
+                           </s:assert>
          </s:rule>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
@@ -5242,11 +5229,9 @@ Sample values include: 1] pays</a:documentation>
          </optional>
          <optional>
             <attribute name="type">
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(
-                        L'attribut @type accepte comme valeurs recommandées "extrait"
-                        et "notes_introductives", afin de caractériser la structure de
-                        la source encodée.
-                     ) Types recommandés pour l'éléments div</a:documentation>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">( L'attribut @type accepte comme valeurs recommandées "extrait" et
+                           "notes_introductives", afin de caractériser la structure de la source
+                           encodée. ) Types recommandés pour l'éléments div</a:documentation>
                <list>
                   <zeroOrMore>
                      <choice>
