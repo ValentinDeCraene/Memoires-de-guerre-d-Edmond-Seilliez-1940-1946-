@@ -90,7 +90,7 @@
                      choix de renseigner le plus précisément ces métadonnées lorsque cela était
                      possible, au sein des éléments adéquats, et en prose dans un élément <gi>p</gi>
                      dans les autres cas. L'exemple de l'élément <gi>physDesc</gi> est tout à fait
-                     révélateur de notre choix d'encodage. Nous avons décidé d'indiquer les éléments
+                     révélateur de notre choix d'encodage. Nous avons décidé d'utiliser les éléments
                         <gi>objectDesc</gi>, <gi>handDesc</gi> et <gi>bindingDesc</gi> afin de
                      renseigner les métadonnées codicologiques, et paléographiques de la source. Au
                      sein de ces éléments nous avons du opter, pour la majeure partie, pour une
@@ -160,8 +160,9 @@
                      avons décidé de compléter les informations concernant ces organisations en
                      renseignant un certain nombre de données, comme la nature de celle-ci. Pour ce
                      faire, nous avons eu recours à l'élément <gi>note</gi>, très persif, qui
-                     accepte une description en prose de l'organisation. Afin d'indexer les
-                     organisations citées par Edmond Seilliez, nous avons initié un système de
+                     accepte une description en prose de l'organisation.
+                     </p>
+                     <p>Afin d'indexer les organisations citées par Edmond Seilliez, nous avons initié un système de
                      renvoi avec l'ajout d'un attribut <att>xml:id</att> à l'élément englobant
                         <gi>org</gi>. Dans cet index, destiné principalement aux chercheurs
                      s'intéressant aux organisations militaires et sociétés réquisitionnées en temps
@@ -222,7 +223,10 @@
                         <specDesc key="district"/>
                         <specDesc key="geo"/>
                         <specDesc key="note"/>
-                     </specList> L'élément <gi>geo</gi> contient les coordonnées géographiques
+                     </specList> 
+                     Précision que l'élément country doit prendre un attribut key dont la valeur correspond
+                     aux clés désignant les Etats suivant la norme ISO 3166.
+                     L'élément <gi>geo</gi> contient les coordonnées géographiques
                      terrestres universelles, conforme à la norme NF EN ISO 6709, afin de permettre
                      une meilleur extraction des données et interopérabilité. Un des enjeux majeurs
                      de la création de cet index des lieux a été de contraindre la présence de cette
@@ -236,7 +240,7 @@
                </div3>
                <div3>
                   <head>Une chronologie dans le <gi>standOff</gi>, ou les limites du
-                        <gi>teiHeader</gi></head>
+                        <gi>teiHeader</gi> ? </head>
                   <p> Pour mener à bien la réalisation de cette chronologie, nous avons fait le
                      choix de la développer indépendement du <gi>teiHeader</gi> dans l'élément
                         <gi>standOff</gi>. En effet, rappelons que l'élément <gi>particDesc</gi>
@@ -336,7 +340,7 @@
                      par un soldat ordinaire. </p>
                </div3>
                <div3>
-                  <head> Abbréviations, correction et perspective d'édition du texte.</head>
+                  <head> Abbréviations, corrections et perspectives d'édition du texte.</head>
                   <p> Du point de vue typographique, nous avons fait une série de choix concernant
                      les abbréviations et les erreurs manifestes qui ont été motivées par une
                      perspective d'utilisation dans un cadre scientifique, voire éditorial, de notre
@@ -459,7 +463,7 @@
                      sommes donc efforcés de reconstituer la date suivant les recommandations de la
                      norme ISO 8601, préconisant une normalisation sur ce modèle : AAAA-MM-JJ. Par
                      exemple: <egXML xmlns="http://www.tei-c.org/ns/Examples"> Le <date ref="#d6"
-                           when="1940-05-24"> 24 mai </date> dans l'après-midi [...] </egXML>. Ce
+                           when="1940-05-24"> 24 mai </date> dans l'après-midi [...] </egXML> Ce
                      choix de reconstitution de la date dans l'attibut <att>when</att> doit se
                      comprendre dans la perspective de fournir au chercheur une possibilité
                      d'exploitation automatique d'une chronologie fine des combats vécus par un
@@ -475,8 +479,7 @@
                      présente l'avantage de fournir une repère au sein de la journée, ce qui le cas
                      dans chacun des cas que nous avons rencontré. Voici une illustration de notre
                      choix d'encodage: <egXML xmlns="http://www.tei-c.org/ns/Examples"> Il est
-                        environ <time> 10 H du matin </time>
-                        <lb/> on sort aussi du tunnel. </egXML>
+                        environ <time> 10 H du matin </time> on sort aussi du tunnel. </egXML>
                   </p>
                </div3>
             </div2>
