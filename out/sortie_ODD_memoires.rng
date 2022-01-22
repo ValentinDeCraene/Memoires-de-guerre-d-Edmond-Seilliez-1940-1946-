@@ -5,7 +5,7 @@
          xmlns="http://relaxng.org/ns/structure/1.0"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2022-01-21T15:01:16Z. .
+Schema generated from ODD source 2022-01-22T10:07:18Z. .
 TEI Edition: Version 4.3.0. Last updated on
         31st August 2021, revision b4f72b1ff
 TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.3.0/
@@ -1864,7 +1864,7 @@ The element indicated by @spanTo (<sch:value-of select="@spanTo"/>) must follow 
          <ref name="att.global.source.attribute.source"/>
          <optional>
             <attribute name="type">
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">( Type de valeur possible pour l'élément distinct) L'attribut @type peut prendre comme valeur "vocabulaire_militaire". Cette valeur est recommandée car il s'agit d'un champs sémantique spécifique employé par l'auteur pour qualifier divers éléments. La liste des valeurs reste semi-ouverte car il est possible d'autres champs sémantiques distincts plus loin dans la narration. </a:documentation>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">( Mot ou expression linguistiquement distinct.) indique un mot ou une expression appartenant à un champs sémantique spécifique et distinct de la prose classique de l'auteur (vocabulaire militaire). </a:documentation>
                <data type="string"/>
             </attribute>
          </optional>
@@ -1924,7 +1924,7 @@ The element indicated by @spanTo (<sch:value-of select="@spanTo"/>) must follow 
    </define>
    <define name="choice">
       <element name="choice">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">( Séquence des éléments au sein de l'élément choice) L'élément choice doit contenir, dans cet ordre, les éléments sic et corr, une seule fois, afin d'indiquer les erreurs manifestes d'orthographe et de conjuguaison de l'auteur, qui sont ensuite corrigées ou les éléments abbr et expan pour indiquer la résolution d'une abbréviation.  [3.5. Simple Editorial Changes]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">( Choix et alternatives possibles dans l'encodage.) contient une séquence d'élément indiquant un choix dans l'encodage et l'édition de la source (ici, correction de certaines fautes manifestes).  [3.5. Simple Editorial Changes]</a:documentation>
          <choice>
             <group>
                <ref name="sic"/>
@@ -2124,7 +2124,7 @@ Measures]</a:documentation>
          <ref name="att.global.source.attribute.source"/>
          <optional>
             <attribute name="type">
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">( Type(s) possibile(s) pour l'élément abbr) L'attribut @type est optionnel et peut prendre comme valeur "monnaie". La liste des valeurs restent ouvertes car il est possible que, dans la suite de la narration, d'autres abbréviations doivent recevoir un autre type. 
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">( Abréviation ou un acronyme.) indique la présence d'un acronyme d'une organisation ou d'une abréviation, résolus dans l'index concerné. 
 Sample values include: 1] monnaie</a:documentation>
                <data type="token">
                   <param name="pattern">[^\p{C}\p{Z}]+</param>
@@ -2232,7 +2232,7 @@ Sample values include: 1] monnaie</a:documentation>
          <ref name="att.global.source.attribute.source"/>
          <ref name="att.sortable.attributes"/>
          <attribute name="type">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Type obligatoire de l'élément liste.) L'attribut @type de l'élément list doit prendre comme valeur "chronologie", puisqu'il s'agit de la manière adoptée dans l'encodage pour réaliser une chronologie fine des événements du récit. </a:documentation>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Liste d'item ordonnés) contient une suite ordonnée d'éléments, permettant de réaliser une chronologie des événements mentionnés. </a:documentation>
             <choice>
                <value>chronologie</value>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
@@ -2243,7 +2243,7 @@ Sample values include: 1] monnaie</a:documentation>
    </define>
    <define name="item">
       <element name="item">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">( Séquence des éléments contenus dans l'élément item) L'élément list doit contenir, dans cet ordre (afin de compléter la chronologie dans un élément list) les éléments p et date une seule fois  [3.8. Lists 2.6. The Revision Description]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">( Elément d'une liste) contient un élément d'une liste. Dans notre cas, chaque item correspond aux information concernant un événement mentionné par l'auteur.  [3.8. Lists 2.6. The Revision Description]</a:documentation>
          <ref name="macro.specialPara"/>
          <s:rule xmlns:rng="http://relaxng.org/ns/structure/1.0"
                  xmlns="http://www.tei-c.org/ns/1.0"
@@ -2891,7 +2891,7 @@ Elements 7.2.5. Speech Contents]</a:documentation>
          <ref name="att.global.change.attribute.change"/>
          <ref name="att.global.source.attribute.source"/>
          <attribute name="form">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Manifestation matérielle de la source encodée) L'attribut @form ne peut prendre que la valeur "carnet", car la source encodée est un unique exemplaire. </a:documentation>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Manifestation matérielle de la source encodée) contient les métadonnées concernant la matérialité du support de la source. </a:documentation>
             <choice>
                <value>carnet</value>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
@@ -2938,7 +2938,7 @@ Elements 7.2.5. Speech Contents]</a:documentation>
          <ref name="att.global.change.attribute.change"/>
          <ref name="att.global.source.attribute.source"/>
          <attribute name="material">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Matière du support d'écriture de la source.) L'attribut @material ne peut prendre que la valeur "papier", car la source unique encodée présente une unité codicologique dans son support d'écriture, à savoir du papier. </a:documentation>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Matière du support d'écriture de la source.) a short project-defined name for the material composing the majority of the support</a:documentation>
             <choice>
                <value>papier</value>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
@@ -3406,7 +3406,7 @@ Elements 7.2.5. Speech Contents]</a:documentation>
          </optional>
          <optional>
             <attribute name="type">
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Organisations mentionnées dans la source.) L'attribut @type ne peut prendre qu'une seule des valeurs suivantes, car ceux sont les seuls types d'organisations mentionnés dans la source.</a:documentation>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Nom et informations sur les organisations mentionnées.) contient les métadonnées permettant d'identifier les organisations militaires et civiles mentionnées par l'auteur. </a:documentation>
                <choice>
                   <value>corps_armées</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
@@ -3420,7 +3420,7 @@ Elements 7.2.5. Speech Contents]</a:documentation>
    </define>
    <define name="persName">
       <element name="persName">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">( Séquence des éléments contenus dans l'élément persName) L'élément persName peut contenir les éléments surname et forename (dans le corps du texte) ou les éléments forename et surname, dans cet ordre (dans l'index des personnes).  [13.2.1. Personal Names]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">( Nom et informations sur les organisations mentionnées. ) contient une séquence ds métadonnées permettant d'identifier les personnes mentionnées par l'auteur.  [13.2.1. Personal Names]</a:documentation>
          <choice>
             <group>
                <optional>
@@ -3603,7 +3603,7 @@ Elements 7.2.5. Speech Contents]</a:documentation>
          </optional>
          <optional>
             <attribute name="type">
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Type de role ou grade militaire associé à un personnage) L'attribut @type est recommandé et doit contenir indiquer le grade ou role militaire du personnage mentionné. La liste des valeurs reste semi-ouverte dans la mesure où, dans le reste de la narration, l'auteur est en mesure de rencontrer d'autres responsables militaires. 
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">( Rôle et grade associé à un personnage) contient les informations relatives au rôle militaire ou civil tenu par une personne (grade militaire notamment). 
 Suggested values include: 1] officier</a:documentation>
                <list>
                   <zeroOrMore>
@@ -3678,7 +3678,7 @@ Suggested values include: 1] officier</a:documentation>
          </optional>
          <optional>
             <attribute name="type">
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">( Type de nom de lieux mentionné) L'attribut @type peut contenir la valeur pays. L'usage est optionnel et la liste des valeurs est semi-ouverte car, dans le reste de la narration, l'auteur est suceptible de mentionné d'autres types de noms de lieux. 
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">( Noms et informations sur les toponymes rencontrés.) contient les informations et métadonnées sur les territoires, lieux et toponymes mentionnés par l'auteur. 
 Sample values include: 1] pays</a:documentation>
                <list>
                   <zeroOrMore>
@@ -3802,7 +3802,7 @@ Sample values include: 1] pays</a:documentation>
          <ref name="att.datable.custom.attribute.datingMethod"/>
          <optional>
             <attribute name="type">
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">L'attribut @type doit contenir une des valeurs suivantes, correspondant aux types d'administrations territoriales (régionales plutôt que nationales mentionnées dans l'élément country) rencontrées. </a:documentation>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">( Nom et informationss sur les régions sous-étatiques.) contient les informations et métadonnées sur les organisations sous-étatiques mentionnées par l'auteur (régions, Lander, provinces) </a:documentation>
                <choice>
                   <value>Land</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
@@ -3883,7 +3883,7 @@ Sample values include: 1] pays</a:documentation>
    </define>
    <define name="listOrg">
       <element name="listOrg">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Elément contenu dans l'élément listOrg) L'élement listOrg doit contenir l'élément org au moins une fois [13.2.2. Organizational Names]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Liste des organisations mentionnées) contient une liste des organisations civiles et militaires.  [13.2.2. Organizational Names]</a:documentation>
          <oneOrMore>
             <ref name="org"/>
          </oneOrMore>
@@ -3922,7 +3922,7 @@ Sample values include: 1] pays</a:documentation>
    </define>
    <define name="listPerson">
       <element name="listPerson">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Elément contenu dans l'élément listPerson) L'élement listPerson doit contenir l'élément person au moins une fois [13.3.2. The Person Element 15.2. Contextual Information 2.4. The Profile Description 15.3.2. Declarable Elements]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Liste des personnes rencontrées) contient une liste des personnes mentionnées.  [13.3.2. The Person Element 15.2. Contextual Information 2.4. The Profile Description 15.3.2. Declarable Elements]</a:documentation>
          <oneOrMore>
             <ref name="person"/>
          </oneOrMore>
@@ -4018,7 +4018,7 @@ Sample values include: 1] pays</a:documentation>
    </define>
    <define name="location">
       <element name="location">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Séquence des éléments contenus dans l'élément location) L'élément location doit contenir, dans cet ordre afin de compléter les données de l'index des lieux, les éléments country, district, geo et note.  [13.3.4. Places]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Situation géographique d'un lieu.) contient les informations et métadonnées permettant la localisation des lieux et espaces indexés.  [13.3.4. Places]</a:documentation>
          <group>
             <ref name="country"/>
             <ref name="district"/>
@@ -4117,7 +4117,7 @@ Sample values include: 1] pays</a:documentation>
    </define>
    <define name="person">
       <element name="person">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Séquence des éléments contenus dans l'élément person) L'élément person doit contenir, dans cet ordre afin de créer un index des noms, les éléments persName et note.  [13.3.2. The Person Element 15.2.2. The Participant Description]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Entité personnelle unique.) contient l'ensemble des métadonnées concernant une des personnes indexées.  [13.3.2. The Person Element 15.2.2. The Participant Description]</a:documentation>
          <group>
             <ref name="persName"/>
             <ref name="note"/>
@@ -4147,7 +4147,7 @@ Sample values include: 1] pays</a:documentation>
    </define>
    <define name="place">
       <element name="place">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Séquence des éléments contenus dans l'élément place) L'élément place (utilisé dans placeList afin de créer un index des lieux) doit contenir dans, cet ordre, les éléments placeName et location une seule fois.  [13.3.4. Places]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Lieu ou toponyme unique) contient l'ensemble des informations et métadonnées concernant un lieu ou toponyme unique et clairement identifié.  [13.3.4. Places]</a:documentation>
          <group>
             <ref name="placeName"/>
             <ref name="location"/>
@@ -4572,7 +4572,7 @@ Sample values include: 1] pays</a:documentation>
    </define>
    <define name="facsimile">
       <element name="facsimile">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Elément contenu dans l'élément facsimile) L'élement facsimile doit contenir l'élément surface au moins une fois [11.1. Digital Facsimiles]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Représentation de la source écrite sous forme d'images numérisées.) contient les éléments et informations permettant de relier les pages encodées de la source écrite à une numérisation.  [11.1. Digital Facsimiles]</a:documentation>
          <oneOrMore>
             <ref name="surface"/>
          </oneOrMore>
@@ -4600,7 +4600,7 @@ Sample values include: 1] pays</a:documentation>
    </define>
    <define name="surface">
       <element name="surface">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">( Séquence d'éléments contenus dans l'élément surface) L'élément surface doit contenir, dans cet ordre (afin de compléter le fac-similé), les élements graphic et zone.  [11.1. Digital Facsimiles 11.2.2. Embedded Transcription]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">( Surface rectangulaire de la source numérisée.) contient les points permettant de spatialiser la surface des numérisations, pour les relier avec les pages correspondantes.  [11.1. Digital Facsimiles 11.2.2. Embedded Transcription]</a:documentation>
          <group>
             <ref name="graphic"/>
             <ref name="zone"/>
@@ -4834,7 +4834,7 @@ Sample values include: 1] pays</a:documentation>
    </define>
    <define name="standOff">
       <element name="standOff">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">( Element list dans l'élément standOff ) L'élément standOff doit contenir un élément list présent au minimum une fois  [16.10. The standOff Container]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">( Conteneur pour informations contextuelles  ) contient des éléments et informations en dehors des métadonnées du teiHeader. En l'occurence, contient les éléments essentiels à l'établissement de notre chronologie.  [16.10. The standOff Container]</a:documentation>
          <oneOrMore>
             <ref name="list"/>
          </oneOrMore>
@@ -5229,9 +5229,7 @@ Sample values include: 1] pays</a:documentation>
          </optional>
          <optional>
             <attribute name="type">
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">( L'attribut @type accepte comme valeurs recommandées "extrait" et
-                           "notes_introductives", afin de caractériser la structure de la source
-                           encodée. ) Types recommandés pour l'éléments div</a:documentation>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">characterizes the element in some sense, using any convenient classification scheme or typology.</a:documentation>
                <list>
                   <zeroOrMore>
                      <choice>

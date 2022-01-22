@@ -30,13 +30,13 @@
                de ce récit de guerre qui ont mené à une série de choix d'encodages permettant non
                seulement une exploitation des métadonnées, mais aussi une mise en perspective
                scientifique de l'extrait proposé. Il nous semble nécessaire dans un premier temps de
-               présenter briévement la source afin de mieux en saisir les spécificités et les enjeux
+               présenter brièvement la source afin de mieux en saisir les spécificités et les enjeux
                inhérent à notre encodage. </p>
             <p> En premier lieu, notre source se présente sous la forme d'un carnet de récit,
                retraçant les déplacements d'Edmond Seilliez, soldat monté au front au début de la
                campagne de France en mai 1940. Il s'agit d'une source privée, ce qui a impliqué un
                traitement spécifique des métadonnées dans le <gi>teiHeader</gi>, détaillé plus bas.
-               Le récit personnel des combats s'établit a posterio, ce qui permet à l'auteur
+               Le récit personnel des combats s'établit a posteriori, ce qui permet à l'auteur
                d'établir une chronologie des événements, combats et périodes de captivité qui ont
                rythmé sont existence entre 1940 et 1946 (date à laquelle il rentre, libre, dans son
                bourg natal). C'est pour cette raison que cette source nous a semblé être un support
@@ -45,13 +45,13 @@
                (villes et villages traversés, espaces des combats ou de captivité) ou
                d'organisations. Cet encodage nous a donc permis d'établir un ensemble d'index et une
                chronologie qui sont venus enrichir le <gi>teiHeader</gi> ou, le cas échéant, un
-               élément indépendant : le <gi>standOff</gi>. Si l'ennumération des dates et des lieux
+               élément indépendant : le <gi>standOff</gi>. Si l'énumération des dates et des lieux
                est au coeur du récit, la personnalité de l'auteur transparaît au détour de
                commentaires et de précisions. C'est pourquoi, nous avons décidé d'encoder de manière
                détaillée ces saillies de la personnalité de l'auteur, permettant, toutes proportions
                gardées, une analyse relevant de l'histoire des mentalités et des représentations. En
                outre, la source encodée est ici un extrait, représentant environ un tiers du carnet
-               au total. Cette situation nous a donc poussé à établir des règles suffisament
+               au total. Cette situation nous a donc poussé à établir des règles suffisamment
                strictes pour préserver la cohérence de l'encodage, mais ponctuellement plus ouvertes
                pour faire correspondre certains éléments ou attributs aux besoins que nous pourrions
                rencontrer dans la suite de la source. Ce caractère ambivalent du récit et du style
@@ -83,7 +83,7 @@
                <div3>
                   <head>Encoder les métadonnées d'une source privée: un compromis entre description
                      archivistique et respect du document.</head>
-                  <p> Ces enjeux et cette tension se sont critallisés dans le renseignement des
+                  <p> Ces enjeux et cette tension se sont cristallisés dans le renseignement des
                      métadonnées au sein du <gi>sourceDesc</gi>. En effet, cet éléments autorise le
                      renseignement de nombreuses métadonnées archivistiques que nous ne pouvions que
                      partiellement renseigner à propos de la source. Dès lors, nous avons fait le
@@ -95,7 +95,7 @@
                      renseigner les métadonnées codicologiques, et paléographiques de la source. Au
                      sein de ces éléments nous avons du opter, pour la majeure partie, pour une
                      description en prose, puisque les données concernant notre sources n'était
-                     parfois pas assez précis pour remplir fidélement les éléments de niveau
+                     parfois pas assez précis pour remplir fidèlement les éléments de niveau
                      inférieurs. Par exemple, pour le <gi>handDesc</gi>, nous avons décidé de
                      combiner la balise et la prose avec un élément <gi>p</gi>: <egXML
                         xmlns="http://www.tei-c.org/ns/Examples">
@@ -159,14 +159,14 @@
                      clairement identifiées, au sein de l'élément <gi>listOrg</gi>. De plus, nous
                      avons décidé de compléter les informations concernant ces organisations en
                      renseignant un certain nombre de données, comme la nature de celle-ci. Pour ce
-                     faire, nous avons eu recours à l'élément <gi>note</gi>, très persif, qui
+                     faire, nous avons eu recours à l'élément <gi>note</gi>, très permissif, qui
                      accepte une description en prose de l'organisation.
                      </p>
                      <p>Afin d'indexer les organisations citées par Edmond Seilliez, nous avons initié un système de
                      renvoi avec l'ajout d'un attribut <att>xml:id</att> à l'élément englobant
                         <gi>org</gi>. Dans cet index, destiné principalement aux chercheurs
                      s'intéressant aux organisations militaires et sociétés réquisitionnées en temps
-                     de guerre, nous avons décidé de développer les accronymes et les abbréviations
+                     de guerre, nous avons décidé de développer les acronymes et les abréviations
                      gardées par l'auteur dans le corps du texte. De ce fait, nous avons eu recours
                      à l'élément <gi>expan</gi> pour encoder ce procédé. Notons qu'il aurait été
                      possible de créer cet index plus loin dans un élément <gi>standOff</gi>. Notre
@@ -189,12 +189,12 @@
                      processus d'encodage, mais aussi au cours de sa restriction dans l'ODD
                      ci-après. En effet, comme le veut l'usage consacré, nous avons réalisé notre
                      index des personnes mentionnées dans le <gi>particDesc</gi>, car celles-ci ont
-                     toutes, à divers dégrés, une interaction avec l'auteur. Chaque personne est
+                     toutes, à divers degrés, une interaction avec l'auteur. Chaque personne est
                      encodée dans un élément <gi>person</gi> dont l'attribut <att>xml:id</att>
                      permet l'indexation. Au sein de cet élément, l'élément <gi>persName</gi> permet
                      de renseigner les noms (<gi>surname</gi>) et prénoms(<gi>forename</gi>) des
                      personnes. Un indice de certitude de l'identité de la personne a été renseigné
-                     avec l'usage de l'attribut <att>cert</att>, lorsque nous avions suffisament
+                     avec l'usage de l'attribut <att>cert</att>, lorsque nous avions suffisamment
                      d'éléments contextuels pour proposer une hypothèse. Notre index des personnes
                      est complété par un élément <gi>note</gi> (au sein de <gi>persName</gi>)
                      permettant d'indiquer avec un texte libre les relations entretenus entre
@@ -215,7 +215,7 @@
                      englobant <gi>listPlace</gi>). Nous avons fait le choix de renseigner un
                      maximum de métadonnées concernant ces lieux, puisqu'ils sont représentatifs des
                      déplacements forcés ou subis d'un soldat ordinaire en 1940. L'objectif
-                     sous-jacent étant de pouvoir proposer une cartograĥie de l'itinérance et de la
+                     sous-jacent étant de pouvoir proposer une cartographie de l'itinérance et de la
                      captivité de l'auteur. Par conséquent, nous avons utilisé l'élément
                         <gi>location</gi> permettant de renseigner de nombreuses métadonnées sur les
                      lieux mentionnés grâce aux éléments : <specList>
@@ -242,7 +242,7 @@
                   <head>Une chronologie dans le <gi>standOff</gi>, ou les limites du
                         <gi>teiHeader</gi> ? </head>
                   <p> Pour mener à bien la réalisation de cette chronologie, nous avons fait le
-                     choix de la développer indépendement du <gi>teiHeader</gi> dans l'élément
+                     choix de la développer indépendamment du <gi>teiHeader</gi> dans l'élément
                         <gi>standOff</gi>. En effet, rappelons que l'élément <gi>particDesc</gi>
                      n'acceptent pas d'éléments satisfaisant pour réaliser une chronologie. A cet
                      égard, de manière plus globale, la TEI ne semble pas proposer de jeu de balises
@@ -292,7 +292,7 @@
                      long, puisque nous avons encodé 20 pages sur un total de 53, soit un total
                      d'environ 20 000 mots. Cette situation entraine donc un découpage de l'oeuvre
                      simple et une structure minimale. Nous avons cependant décidé d'isoler le
-                     propos introductif de l'auteur dans lequel il présente briévement le récit et
+                     propos introductif de l'auteur dans lequel il présente brièvement le récit et
                      indique qu'il a perdu son carnet de mémoires a propos de la période précédente.
                      Ce paragraphe, clairement distinct dans la source et séparé du reste du récit
                      par une double ligne tracée au crayon de bois a donc été encodé dans un élément
@@ -308,10 +308,10 @@
                      </egXML> A cet égard, cette séparation matérielle de l'introduction a été
                      encodée en utilisant l'attribut <att>rend</att> de l'élément <gi>lb</gi>, dans
                      la mesure où cette séparation structurelle est significative. Le reste de
-                     l'extrait a quant à lui a été encodé dans une strucutre minimale au sein de
+                     l'extrait a quant à lui a été encodé dans une structure minimale au sein de
                      l'élément <gi>body</gi>, dans une division unique marquée par la balise
                         <gi>div</gi>. Ce choix s'explique par la volonté de respecter la structure
-                     logique de l'oeuvre qui, dans son entiéreté, se présente comme une entité
+                     logique de l'oeuvre qui, dans son entièreté, se présente comme une entité
                      intellectuelle spécifique et unie. La rupture dans le récit que représente la
                      capture de l'auteur et le départ pour la Prusse Orientale nous a donc poussé à
                      limiter notre encodage jusqu'à cet élément en particulier. </p>
@@ -340,11 +340,11 @@
                      par un soldat ordinaire. </p>
                </div3>
                <div3>
-                  <head> Abbréviations, corrections et perspectives d'édition du texte.</head>
+                  <head> Abréviations, corrections et perspectives d'édition du texte.</head>
                   <p> Du point de vue typographique, nous avons fait une série de choix concernant
-                     les abbréviations et les erreurs manifestes qui ont été motivées par une
+                     les abréviations et les erreurs manifestes qui ont été motivées par une
                      perspective d'utilisation dans un cadre scientifique, voire éditorial, de notre
-                     encodage. En effet, nous avons décidé de garder les abbréviations présentent
+                     encodage. En effet, nous avons décidé de garder les abréviations présentent
                      dans le corps du texte et de les développer dans les index du
                         <gi>teiHeader</gi>, comme nous l'avons mentionné plus haut. Concernant les
                      fautes de conjugaison manifeste de l'auteur, nous avons décidé de les signaler
@@ -376,7 +376,7 @@
                   <p> Comme nous l'avons évoqué dans la description du <gi>teiHeader</gi>,
                      l'encodage et la mise en exergue des relations entretenues entre l'auteur et
                      les personnes, ou organisations mentionnées, se trouve au coeur de notre
-                     source. Si nous avons pu réaliser des index, il nous a biensûr fallut encoder
+                     source. Si nous avons pu réaliser des index, il nous a bien sûr fallut encoder
                      les noms de personnes et d'organisations dans le corps du texte. Nous avons
                      procédé à un encodage relativement classique en utilisant les éléments
                         <gi>persName</gi>, incluant lorsque cela était possible les éléments plus
@@ -407,7 +407,7 @@
                <div3>
                   <head> Encoder et exploiter un rapport personnel à l'espace. </head>
                   <p> C'est effectivement cette représentation de l'espace qui fut un élément de
-                     réflexion plus complexe lors de l'encodage de texte. Effectivement, nous avous
+                     réflexion plus complexe lors de l'encodage de texte. Effectivement, nous avons
                      pu repérer deux paradigmes de rapport à l'espace dans les écrits d'Edmond. En
                      premier lieu, il fait preuve d'une connaissance géographique relativement
                      précise des lieux qu'il arpente au long de son périple. Si cette énumération
@@ -421,7 +421,7 @@
                      dessous: <egXML xmlns="http://www.tei-c.org/ns/Examples">
                         <placeName ref="#Semécourt"> Semécourt (Moselle) </placeName>
                      </egXML>. Soulignons un cas problématique, celui du village dit de
-                     "Capsillier"s, mentionné par l'auteur au détour d'une étape de son bataillon,
+                     "Capsilliers", mentionné par l'auteur au détour d'une étape de son bataillon,
                      qui s'avère être un toponyme non élucidé. Nous pensons qu'il s'agit en réalité
                      d'un lieu dit que nous n'avons néanmoins pas pu localiser sur une carte IGN
                      contemporaine. Nous avons donc ajouté, pour ce cas précis, un indicateur de
@@ -464,7 +464,7 @@
                      norme ISO 8601, préconisant une normalisation sur ce modèle : AAAA-MM-JJ. Par
                      exemple: <egXML xmlns="http://www.tei-c.org/ns/Examples"> Le <date ref="#d6"
                            when="1940-05-24"> 24 mai </date> dans l'après-midi [...] </egXML> Ce
-                     choix de reconstitution de la date dans l'attibut <att>when</att> doit se
+                     choix de reconstitution de la date dans l'attribut <att>when</att> doit se
                      comprendre dans la perspective de fournir au chercheur une possibilité
                      d'exploitation automatique d'une chronologie fine des combats vécus par un
                      soldat ordinaire lors de la campagne de France en 1940. De même, tout comme le
@@ -474,7 +474,7 @@
                      d'encoder une expression relative à un moment de la journée, dans n'importe
                      quel format. Dans notre encodage, la permissivité de l'élément <gi>time</gi> à
                      été mis au service de la représentation d'un moment ou d'un point temporel
-                     mentionné par l'auteur. Certe, l'élément <gi>offset</gi> aurait pu lui aussi
+                     mentionné par l'auteur. Certes, l'élément <gi>offset</gi> aurait pu lui aussi
                      être utilisé (à l'instar de la représentation de l'espace), mais l'élément time
                      présente l'avantage de fournir une repère au sein de la journée, ce qui le cas
                      dans chacun des cas que nous avons rencontré. Voici une illustration de notre
@@ -578,8 +578,9 @@
                   <attList>
                      <attDef ident="form" mode="change" usage="req">
                         <gloss>Manifestation matérielle de la source encodée</gloss>
-                        <desc xml:lang="fr"> L'attribut @form ne peut prendre que la valeur
-                           "carnet", car la source encodée est un unique exemplaire. </desc>
+                        <desc xml:lang="fr"> 
+                           contient les métadonnées concernant la matérialité du support de la source.
+                        </desc>
                         <datatype minOccurs="1" maxOccurs="1">
                            <dataRef key="teidata.text"/>
                         </datatype>
@@ -595,9 +596,6 @@
                   <attList>
                      <attDef ident="material" mode="change" usage="req">
                         <gloss>Matière du support d'écriture de la source.</gloss>
-                        <desc xml:lang="fr"> L'attribut @material ne peut prendre que la valeur
-                           "papier", car la source unique encodée présente une unité codicologique
-                           dans son support d'écriture, à savoir du papier. </desc>
                         <valList mode="add" type="closed">
                            <valItem ident="papier"/>
                         </valList>
@@ -671,10 +669,11 @@
                      </attDef>
                      <attDef ident="key" mode="delete"/>
                      <attDef ident="type" mode="change" usage="rec">
-                        <gloss>Organisations mentionnées dans la source.</gloss>
-                        <desc> L'attribut @type ne peut prendre qu'une seule des valeurs suivantes,
-                           car ceux sont les seuls types d'organisations mentionnés dans la
-                           source.</desc>
+                        <gloss>Nom et informations sur les organisations mentionnées.</gloss>
+                        <desc> 
+                           contient les métadonnées permettant d'identifier les organisations militaires et civiles
+                           mentionnées par l'auteur.
+                        </desc>
                         <datatype minOccurs="1" maxOccurs="1">
                            <dataRef key="tei.name"/>
                         </datatype>
@@ -687,10 +686,10 @@
                </elementSpec>
                <!-- MODIFICATION ODD ICI, CAS COMPLIQUÉ MAIS VALIDÉ -->
                <elementSpec ident="persName" mode="change">
-                  <gloss> Séquence des éléments contenus dans l'élément persName</gloss>
-                  <desc> L'élément persName peut contenir les éléments surname et forename (dans le
-                     corps du texte) ou les éléments forename et surname, dans cet ordre (dans
-                     l'index des personnes). </desc>
+                  <gloss> Nom et informations sur les organisations mentionnées. </gloss>
+                  <desc> contient une séquence ds métadonnées permettant d'identifier les personnes
+                     mentionnées par l'auteur. 
+                  </desc>
                   <content>
                      <alternate>
                         <sequence preserveOrder="true">
@@ -756,12 +755,10 @@
                      </attDef>
                      <attDef ident="key" mode="delete"/>
                      <attDef ident="type" mode="change" usage="rec">
-                        <gloss>Type de role ou grade militaire associé à un personnage</gloss>
-                        <desc xml:lang="fr"> L'attribut @type est recommandé et doit contenir
-                           indiquer le grade ou role militaire du personnage mentionné. La liste des
-                           valeurs reste semi-ouverte dans la mesure où, dans le reste de la
-                           narration, l'auteur est en mesure de rencontrer d'autres responsables
-                           militaires. </desc>
+                        <gloss> Rôle et grade associé à un personnage</gloss>
+                        <desc xml:lang="fr"> contient les informations relatives au rôle militaire ou civil tenu
+                        par une personne (grade militaire notamment).
+                        </desc>
                         <datatype minOccurs="0" maxOccurs="unbounded">
                            <dataRef key="teidata.text"/>
                         </datatype>
@@ -784,11 +781,10 @@
                      <attDef ident="key" mode="delete"/>
                      <attDef ident="ref" mode="change" usage="opt"/>
                      <attDef ident="type" mode="change" usage="opt">
-                        <gloss> Type de nom de lieux mentionné</gloss>
-                        <desc xml:id="fr"> L'attribut @type peut contenir la valeur pays. L'usage
-                           est optionnel et la liste des valeurs est semi-ouverte car, dans le reste
-                           de la narration, l'auteur est suceptible de mentionné d'autres types de
-                           noms de lieux. </desc>
+                        <gloss> Noms et informations sur les toponymes rencontrés.</gloss>
+                        <desc xml:id="fr"> contient les informations et métadonnées sur les territoires, lieux et toponymes
+                        mentionnés par l'auteur.
+                        </desc>
                         <datatype minOccurs="0" maxOccurs="unbounded">
                            <dataRef key="teidata.name"/>
                         </datatype>
@@ -824,10 +820,10 @@
                      <attDef ident="key" mode="delete"/>
                      <attDef ident="ref" mode="delete"/>
                      <attDef ident="type" mode="change">
-                        <desc xml:lang="fr"> L'attribut @type doit contenir une des valeurs
-                           suivantes, correspondant aux types d'administrations territoriales
-                           (régionales plutôt que nationales mentionnées dans l'élément country)
-                           rencontrées. </desc>
+                        <gloss> Nom et informationss sur les régions sous-étatiques.</gloss>
+                        <desc xml:lang="fr"> contient les informations et métadonnées sur les organisations
+                        sous-étatiques mentionnées par l'auteur (régions, Lander, provinces)
+                        </desc>
                         <datatype minOccurs="1" maxOccurs="1">
                            <dataRef key="teidata.name"/>
                         </datatype>
@@ -858,8 +854,9 @@
                </elementSpec>
                <!-- MODIFICATION DE L'ODD ICI -->
                <elementSpec ident="listOrg" mode="change">
-                  <gloss>Elément contenu dans l'élément listOrg</gloss>
-                  <desc> L'élement listOrg doit contenir l'élément org au moins une fois</desc>
+                  <gloss>Liste des organisations mentionnées</gloss>
+                  <desc xml:lang="fr"> contient une liste des organisations civiles et militaires.
+                  </desc>
                   <content>
                      <elementRef key="org" minOccurs="1" maxOccurs="unbounded"/>
                   </content>
@@ -875,9 +872,8 @@
                   </attList>
                </elementSpec>
                <elementSpec ident="listPerson" mode="change">
-                  <gloss>Elément contenu dans l'élément listPerson</gloss>
-                  <desc> L'élement listPerson doit contenir l'élément person au moins une
-                     fois</desc>
+                  <gloss>Liste des personnes rencontrées</gloss>
+                  <desc xml:lang="fr"> contient une liste des personnes mentionnées. </desc>
                   <content>
                      <elementRef key="person" minOccurs="1" maxOccurs="unbounded"/>
                   </content>
@@ -905,9 +901,10 @@
                   </attList>
                </elementSpec>
                <elementSpec ident="location" mode="change">
-                  <gloss>Séquence des éléments contenus dans l'élément location</gloss>
-                  <desc> L'élément location doit contenir, dans cet ordre afin de compléter les
-                     données de l'index des lieux, les éléments country, district, geo et note. </desc>
+                  <gloss>Situation géographique d'un lieu.</gloss>
+                  <desc> contient les informations et métadonnées permettant la localisation des lieux
+                     et espaces indexés.
+                  </desc>
                   <content>
                      <sequence preserveOrder="true">
                         <elementRef key="country" minOccurs="1" maxOccurs="1"/>
@@ -932,9 +929,10 @@
                   </attList>
                </elementSpec>
                <elementSpec ident="person" mode="change">
-                  <gloss>Séquence des éléments contenus dans l'élément person</gloss>
-                  <desc> L'élément person doit contenir, dans cet ordre afin de créer un index des
-                     noms, les éléments persName et note. </desc>
+                  <gloss>Entité personnelle unique.</gloss>
+                  <desc xml:lang="fr"> contient l'ensemble des métadonnées concernant une des
+                     personnes indexées.
+                  </desc>
                   <content>
                      <sequence preserveOrder="true">
                         <elementRef key="persName" minOccurs="1" maxOccurs="1"/>
@@ -951,10 +949,10 @@
                </elementSpec>
                <!-- MODIFICATION IMPORTANTE DE L'ODD ICI -->
                <elementSpec ident="place" mode="change">
-                  <gloss>Séquence des éléments contenus dans l'élément place</gloss>
-                  <desc xml:lang="fr"> L'élément place (utilisé dans placeList afin de créer un
-                     index des lieux) doit contenir dans, cet ordre, les éléments placeName et
-                     location une seule fois. </desc>
+                  <gloss>Lieu ou toponyme unique</gloss>
+                  <desc xml:lang="fr"> contient l'ensemble des informations et métadonnées concernant
+                  un lieu ou toponyme unique et clairement identifié.
+                  </desc>
                   <content>
                      <sequence preserveOrder="true">
                         <elementRef key="placeName" minOccurs="1" maxOccurs="1"/>
@@ -1134,12 +1132,10 @@
                      <attDef ident="facs" mode="delete"/>
                      <attDef ident="cert" mode="delete"/>
                      <attDef ident="type" mode="change" usage="rec">
-                        <gloss> Type de valeur possible pour l'élément distinct</gloss>
-                        <desc> L'attribut @type peut prendre comme valeur "vocabulaire_militaire".
-                           Cette valeur est recommandée car il s'agit d'un champs sémantique
-                           spécifique employé par l'auteur pour qualifier divers éléments. La liste
-                           des valeurs reste semi-ouverte car il est possible d'autres champs
-                           sémantiques distincts plus loin dans la narration. </desc>
+                        <gloss> Mot ou expression linguistiquement distinct.</gloss>
+                        <desc> indique un mot ou une expression appartenant à un champs sémantique
+                           spécifique et distinct de la prose classique de l'auteur (vocabulaire militaire).
+                        </desc>
                         <datatype minOccurs="0" maxOccurs="1">
                            <dataRef key="teidata.text"/>
                         </datatype>
@@ -1164,11 +1160,10 @@
                </elementSpec>
                <!-- MODIFICATION DE L'ODD ICI -->
                <elementSpec ident="choice" mode="change">
-                  <gloss> Séquence des éléments au sein de l'élément choice</gloss>
-                  <desc> L'élément choice doit contenir, dans cet ordre, les éléments sic et corr,
-                     une seule fois, afin d'indiquer les erreurs manifestes d'orthographe et de
-                     conjuguaison de l'auteur, qui sont ensuite corrigées ou les éléments abbr et
-                     expan pour indiquer la résolution d'une abbréviation. </desc>
+                  <gloss> Choix et alternatives possibles dans l'encodage.</gloss>
+                  <desc> contient une séquence d'élément indiquant un choix dans l'encodage et l'édition de la source
+                     (ici, correction de certaines fautes manifestes).
+                  </desc>
                   <content>
                      <alternate>
                         <sequence preserveOrder="true">
@@ -1220,11 +1215,10 @@
                <elementSpec ident="abbr" mode="change">
                   <attList>
                      <attDef ident="type" mode="change" usage="opt">
-                        <gloss> Type(s) possibile(s) pour l'élément abbr</gloss>
-                        <desc xml:lang="fr"> L'attribut @type est optionnel et peut prendre comme
-                           valeur "monnaie". La liste des valeurs restent ouvertes car il est
-                           possible que, dans la suite de la narration, d'autres abbréviations
-                           doivent recevoir un autre type. </desc>
+                        <gloss> Abréviation ou un acronyme.</gloss>
+                        <desc xml:lang="fr"> indique la présence d'un acronyme d'une organisation ou
+                        d'une abréviation, résolus dans l'index concerné.
+                        </desc>
                         <valList mode="add" type="open">
                            <valItem ident="monnaie"/>
                         </valList>
@@ -1248,10 +1242,10 @@
                <elementSpec ident="list" mode="change">
                   <attList>
                      <attDef ident="type" mode="change" usage="req">
-                        <gloss>Type obligatoire de l'élément liste.</gloss>
-                        <desc xml:lang="fr"> L'attribut @type de l'élément list doit prendre comme
-                           valeur "chronologie", puisqu'il s'agit de la manière adoptée dans
-                           l'encodage pour réaliser une chronologie fine des événements du récit. </desc>
+                        <gloss>Liste d'item ordonnés</gloss>
+                        <desc xml:lang="fr"> contient une suite ordonnée d'éléments, permettant de
+                        réaliser une chronologie des événements mentionnés.
+                        </desc>
                         <datatype minOccurs="1" maxOccurs="1">
                            <dataRef key="teidata.text"/>
                         </datatype>
@@ -1270,10 +1264,10 @@
                </elementSpec>
                <!-- A CONFIRMER ! MODIFICATION DE L'ODD ICI => schematron à confirmer et compléter avec la regex ici ! -->
                <elementSpec ident="item" mode="change">
-                  <gloss> Séquence des éléments contenus dans l'élément item</gloss>
-                  <desc xml:lang="fr"> L'élément list doit contenir, dans cet ordre (afin de
-                     compléter la chronologie dans un élément list) les éléments p et date une seule
-                     fois </desc>
+                  <gloss> Elément d'une liste</gloss>
+                  <desc xml:lang="fr"> contient un élément d'une liste. Dans notre cas, chaque item correspond aux
+                  information concernant un événement mentionné par l'auteur.
+                  </desc>
                   <constraintSpec ident="xml:idVal" scheme="schematron">
                      <constraint>
                         <s:rule context="tei:TEI/standOff/list/item">
@@ -1448,9 +1442,10 @@
                <classRef key="att.global.facs"/>
                <moduleRef key="transcr" include="facsimile surface zone"/>
                <elementSpec ident="facsimile" mode="change">
-                  <gloss>Elément contenu dans l'élément facsimile</gloss>
-                  <desc> L'élement facsimile doit contenir l'élément surface au moins une
-                     fois</desc>
+                  <gloss>Représentation de la source écrite sous forme d'images numérisées.</gloss>
+                  <desc> contient les éléments et informations permettant de relier les pages encodées de la source
+                  écrite à une numérisation.
+                  </desc>
                   <content>
                      <elementRef key="surface" minOccurs="1" maxOccurs="unbounded"/>
                   </content>
@@ -1460,9 +1455,10 @@
                   </attList>
                </elementSpec>
                <elementSpec ident="surface" mode="change">
-                  <gloss> Séquence d'éléments contenus dans l'élément surface</gloss>
-                  <desc xml:lang="fr"> L'élément surface doit contenir, dans cet ordre (afin de
-                     compléter le fac-similé), les élements graphic et zone. </desc>
+                  <gloss> Surface rectangulaire de la source numérisée.</gloss>
+                  <desc xml:lang="fr"> contient les points permettant de spatialiser la surface des numérisations,
+                  pour les relier avec les pages correspondantes.
+                  </desc>
                   <content>
                      <sequence preserveOrder="true">
                         <elementRef key="graphic" minOccurs="1" maxOccurs="1"/>
@@ -1544,8 +1540,10 @@
                <!-- MODIFICATION DE L'ODD ICI -->
                <moduleRef key="linking" include="standOff"/>
                <elementSpec ident="standOff" mode="change">
-                  <gloss> Element list dans l'élément standOff </gloss>
-                  <desc>L'élément standOff doit contenir un élément list présent au minimum une fois </desc>
+                  <gloss> Conteneur pour informations contextuelles  </gloss>
+                  <desc> contient des éléments et informations en dehors des métadonnées du teiHeader. En
+                  l'occurence, contient les éléments essentiels à l'établissement de notre chronologie.
+                  </desc>
                   <content>
                      <elementRef key="list" minOccurs="1" maxOccurs="unbounded"/>
                   </content>
@@ -1610,10 +1608,6 @@
                         </valList>
                      </attDef>
                      <attDef ident="type" mode="change" usage="rec">
-                        <desc xml:lang="fr"> Types recommandés pour l'éléments div</desc>
-                        <gloss> L'attribut @type accepte comme valeurs recommandées "extrait" et
-                           "notes_introductives", afin de caractériser la structure de la source
-                           encodée. </gloss>
                         <datatype minOccurs="0" maxOccurs="unbounded">
                            <dataRef key="teidata.text"/>
                         </datatype>
