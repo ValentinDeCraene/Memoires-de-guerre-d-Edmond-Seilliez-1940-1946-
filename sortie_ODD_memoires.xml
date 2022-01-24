@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xmlns:s="http://purl.ocl.org/dsdl/schematron">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron" xmlns:rng="http://relaxng.org/ns/structure/1.0">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -27,11 +27,11 @@
                   guerre d'Edmond Seilliez (1940-1946)</emph>, écrit par Edmond Seilliez, entre 1940
                et 1946. </head>
             <p> Cette documentation a pour objectif de présenter les particularités de la source et
-               de ce récit de guerre qui ont mené à une série de choix d'encodages permettant non
+               de ce récit de guerre qui ont menées à une série de choix d'encodages permettant non
                seulement une exploitation des métadonnées, mais aussi une mise en perspective
                scientifique de l'extrait proposé. Il nous semble nécessaire dans un premier temps de
                présenter brièvement la source afin de mieux en saisir les spécificités et les enjeux
-               inhérent à notre encodage. </p>
+               inhérents à notre encodage. </p>
             <p> En premier lieu, notre source se présente sous la forme d'un carnet de récit,
                retraçant les déplacements d'Edmond Seilliez, soldat monté au front au début de la
                campagne de France en mai 1940. Il s'agit d'une source privée, ce qui a impliqué un
@@ -573,7 +573,7 @@
                      <attDef ident="cert" mode="delete"/>
                   </attList>
                </elementSpec>
-               <!-- MODIFICATION ET COMMENTAIRES DE L'ODD ICI POUR OBJET DESC -->
+<!-- MODIFICATION ET COMMENTAIRES DE L'ODD ICI POUR OBJET DESC -->
                <elementSpec ident="objectDesc" mode="change">
                   <attList>
                      <attDef ident="form" mode="change" usage="req">
@@ -657,7 +657,7 @@
                <classRef key="model.persNamePart"/>
                <moduleRef key="namesdates"
                   include="orgName persName surname forename roleName placeName country settlement district offset geo listOrg listPerson listPlace location org person place"/>
-               <!-- MODIFICATION DE L'ODD ICI -->
+<!-- MODIFICATION DE L'ODD ICI -->
                <elementSpec ident="orgName" mode="change">
                   <attList>
                      <attDef ident="facs" mode="delete"/>
@@ -675,7 +675,7 @@
                            mentionnées par l'auteur.
                         </desc>
                         <datatype minOccurs="1" maxOccurs="1">
-                           <dataRef key="tei.name"/>
+                           <dataRef key="tei.text"/>
                         </datatype>
                         <valList mode="add" type="closed">
                            <valItem ident="corps_armées"/>
@@ -684,7 +684,7 @@
                      </attDef>
                   </attList>
                </elementSpec>
-               <!-- MODIFICATION ODD ICI, CAS COMPLIQUÉ MAIS VALIDÉ -->
+<!-- MODIFICATION ODD ICI, CAS COMPLIQUÉ MAIS VALIDÉ -->
                <elementSpec ident="persName" mode="change">
                   <gloss> Nom et informations sur les organisations mentionnées. </gloss>
                   <desc> contient une séquence ds métadonnées permettant d'identifier les personnes
@@ -743,7 +743,7 @@
                      <attDef ident="type" mode="delete"/>
                   </attList>
                </elementSpec>
-               <!-- MODIFICATION DE L'ODD ICI -->
+<!-- MODIFICATION DE L'ODD ICI -->
                <elementSpec ident="roleName" mode="change">
                   <attList>
                      <attDef ident="facs" mode="delete"/>
@@ -768,7 +768,7 @@
                      </attDef>
                   </attList>
                </elementSpec>
-               <!-- MODIFICATION DE L'ODD ICI -->
+<!-- MODIFICATION DE L'ODD ICI -->
                <elementSpec ident="placeName" mode="change">
                   <attList>
                      <attDef ident="when" mode="delete"/>
@@ -786,7 +786,7 @@
                         mentionnés par l'auteur.
                         </desc>
                         <datatype minOccurs="0" maxOccurs="unbounded">
-                           <dataRef key="teidata.name"/>
+                           <dataRef key="teidata.text"/>
                         </datatype>
                         <valList mode="add" type="open">
                            <valItem ident="pays"/>
@@ -813,7 +813,7 @@
                      <attDef ident="when" mode="delete"/>
                   </attList>
                </elementSpec>
-               <!-- MODIFICATION IMPORTANTE POUR L'ODD ICI -->
+<!-- MODIFICATION IMPORTANTE POUR L'ODD ICI -->
                <elementSpec ident="district" mode="change">
                   <attList>
                      <attDef ident="facs" mode="delete"/>
@@ -825,7 +825,7 @@
                         sous-étatiques mentionnées par l'auteur (régions, Lander, provinces)
                         </desc>
                         <datatype minOccurs="1" maxOccurs="1">
-                           <dataRef key="teidata.name"/>
+                           <dataRef key="teidata.text"/>
                         </datatype>
                         <valList mode="add" type="closed">
                            <valItem ident="Land"/>
@@ -852,7 +852,7 @@
                      <attDef ident="cert" mode="delete"/>
                   </attList>
                </elementSpec>
-               <!-- MODIFICATION DE L'ODD ICI -->
+<!-- MODIFICATION DE L'ODD ICI -->
                <elementSpec ident="listOrg" mode="change">
                   <gloss>Liste des organisations mentionnées</gloss>
                   <desc xml:lang="fr"> contient une liste des organisations civiles et militaires.
@@ -947,7 +947,7 @@
                      <attDef ident="cert" mode="delete"/>
                   </attList>
                </elementSpec>
-               <!-- MODIFICATION IMPORTANTE DE L'ODD ICI -->
+<!-- MODIFICATION IMPORTANTE DE L'ODD ICI -->
                <elementSpec ident="place" mode="change">
                   <gloss>Lieu ou toponyme unique</gloss>
                   <desc xml:lang="fr"> contient l'ensemble des informations et métadonnées concernant
@@ -1118,7 +1118,7 @@
                      <attDef ident="cert" mode="delete"/>
                   </attList>
                </elementSpec>
-               <!-- MODIFICATION DE L'ODD ICI MAIS PROBLÈME DE RÉPÉTITION DES DONNÉES -->
+<!-- MODIFICATION DE L'ODD ICI MAIS PROBLÈME DE RÉPÉTITION DES DONNÉES -->
                <elementSpec ident="distinct" mode="change">
                   <attList>
                      <attDef ident="type" mode="change">
@@ -1158,7 +1158,7 @@
                      <attDef ident="type" mode="delete"/>
                   </attList>
                </elementSpec>
-               <!-- MODIFICATION DE L'ODD ICI -->
+<!-- MODIFICATION DE L'ODD ICI -->
                <elementSpec ident="choice" mode="change">
                   <gloss> Choix et alternatives possibles dans l'encodage.</gloss>
                   <desc> contient une séquence d'élément indiquant un choix dans l'encodage et l'édition de la source
@@ -1189,7 +1189,7 @@
                      <attDef ident="type" mode="delete"/>
                   </attList>
                </elementSpec>
-               <!-- MODIFICATION DE L'ODD ICI A COMPLÉTER POUR INDIQUER UNE SÉQUENCE DE VALEUR POUR WHEN
+<!-- MODIFICATION DE L'ODD ICI A COMPLÉTER POUR INDIQUER UNE SÉQUENCE DE VALEUR POUR WHEN
                when et ref en valeur optionnelle voire recommandée-->
                <elementSpec ident="date" mode="change">
                   <attList>
@@ -1211,7 +1211,7 @@
                      <attDef ident="type" mode="delete"/>
                   </attList>
                </elementSpec>
-               <!-- MODIFICATION DE L'ODD ICI -->
+<!-- MODIFICATION DE L'ODD ICI -->
                <elementSpec ident="abbr" mode="change">
                   <attList>
                      <attDef ident="type" mode="change" usage="opt">
@@ -1238,7 +1238,7 @@
                      <attDef ident="cert" mode="delete"/>
                   </attList>
                </elementSpec>
-               <!-- MODIFICATION DE L'ODD ICI, même problème ici de répétition des données ! -->
+<!-- MODIFICATION DE L'ODD ICI, même problème ici de répétition des données ! -->
                <elementSpec ident="list" mode="change">
                   <attList>
                      <attDef ident="type" mode="change" usage="req">
@@ -1268,25 +1268,25 @@
                   <desc xml:lang="fr"> contient un élément d'une liste. Dans notre cas, chaque item correspond aux
                   information concernant un événement mentionné par l'auteur.
                   </desc>
-                  <constraintSpec ident="xml:idVal" scheme="schematron">
-                     <constraint>
-                        <s:rule context="tei:TEI/standOff/list/item">
-                           <s:assert test="@xml:id"> L'élément list dans le standOff doit contenir
-                              un élément item ayant pour attribut xml:id </s:assert>
-                        </s:rule>
-                        <s:rule context="tei:item[@xml:id]">
-                           <s:assert test="matches(@xml:id,'=\'d[0-9]\'*')"> L'élément list doit
-                              posséder un élément item dont l'attribut xml:id est la valeur se
-                              présente sous la forme suivant : dN où N est un chiffre. </s:assert>
-                        </s:rule>
-                     </constraint>
-                  </constraintSpec>
-                  <!--<content>
+                  <content>
                   <sequence preserveOrder="true">
                      <elementRef key="p" minOccurs="1" maxOccurs="1"/>
                      <elementRef key="date" minOccurs="1" maxOccurs="1"/>
                   </sequence>
-               </content>-->
+                  </content>
+                  <constraintSpec ident="xml:idVal" scheme="schematron">
+                     <constraint>
+                        <s:rule context="tei:item">
+                           <s:assert test="@xml:id"> L'élément list doit contenir
+                              un élément item ayant pour attribut xml:id </s:assert>
+                        </s:rule>
+                        <s:rule context="tei:item[@xml:id]">
+                           <s:assert test="matches(@xml:id,'^d\d+')"> La valeur de 
+                              l'attribut xml:id doit se présenter sous la forme suivante : dN où N est un chiffre. </s:assert>
+                        </s:rule>
+                     </constraint>
+                  </constraintSpec>
+
                   <attList>
                      <attDef ident="facs" mode="delete"/>
                      <attDef ident="cert" mode="delete"/>
@@ -1477,7 +1477,7 @@
                      <attDef ident="type" mode="delete"/>
                   </attList>
                </elementSpec>
-               <!--MODIFICATION DE L'ENCODAGE AVEC SCHEMATRON POUR CONTRAINDRE LA VALEUR DES ATTRIBUTS DE ZONE -->
+<!--MODIFICATION DE L'ENCODAGE AVEC SCHEMATRON POUR CONTRAINDRE LA VALEUR DES ATTRIBUTS DE ZONE -->
                <elementSpec ident="zone" mode="change">
                   <constraintSpec scheme="schematron" ident="ulxRequired">
                      <constraint>
@@ -1498,27 +1498,27 @@
                            <s:assert test="@rly"> L'attribut rly doit être renseigné. </s:assert>
                         </s:rule>
                         <s:rule context="tei:zone[@xml:id]">
-                           <s:assert test="matches(@xml:id, 'p[1-29]+')"> '@xml:id='p[1-19]+' La
+                           <s:assert test="matches(@xml:id, '^p\d+')">  La
                               valeur de l'attribut xml:id doit correspondre à pN où N est un nombre
                               compris entre 1 et 19. </s:assert>
                         </s:rule>
                         <s:rule context="tei:zone[@ulx]">
-                           <s:assert test="matches(@ulx, '[0-9]?')"> '@ulx [0-9]?' La valeur de
+                           <s:assert test="matches(@ulx, '^\d+')"> La valeur de
                               l'attribut ulx doit correspondre à une séquence de chiffres.
                            </s:assert>
                         </s:rule>
                         <s:rule context="tei:zone[@uly]">
-                           <s:assert test="matches(@uly, '[0-9]?')"> '@uly [0-9]?' La valeur de
+                           <s:assert test="matches(@uly, '^\d+')"> La valeur de
                               l'attribut uly doit correspondre à une séquence de chiffres.
                            </s:assert>
                         </s:rule>
                         <s:rule context="tei:zone[@lrx]">
-                           <s:assert test="matches(@lrx, '[0-9]?')"> '@lrx [0-9]?' La valeur de
+                           <s:assert test="matches(@lrx, '^\d+')"> La valeur de
                               l'attribut lrx doit correspondre à une séquence de chiffres.
                            </s:assert>
                         </s:rule>
                         <s:rule context="tei:zone[@lry]">
-                           <s:assert test="matches(@lry, '[0-9]?')"> '@lry [0-9]?' La valeur de
+                           <s:assert test="matches(@lry, '^\d+')"> La valeur de
                               l'attribut lry doit correspondre à une séquence de chiffres.
                            </s:assert>
                         </s:rule>
@@ -1537,7 +1537,7 @@
                   </attList>
                </classSpec>
                <!--Checking module linking-->
-               <!-- MODIFICATION DE L'ODD ICI -->
+<!-- MODIFICATION DE L'ODD ICI -->
                <moduleRef key="linking" include="standOff"/>
                <elementSpec ident="standOff" mode="change">
                   <gloss> Conteneur pour informations contextuelles  </gloss>
@@ -1587,7 +1587,7 @@
                      <attDef ident="cert" mode="delete"/>
                   </attList>
                </elementSpec>
-               <!-- MODIFICATION DE L'ODD ICI -->
+<!-- MODIFICATION DE L'ODD ICI -->
                <elementSpec ident="div" mode="change">
                   <attList>
                      <attDef ident="facs" mode="delete"/>

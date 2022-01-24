@@ -5,7 +5,7 @@
          xmlns="http://relaxng.org/ns/structure/1.0"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2022-01-22T10:07:18Z. .
+Schema generated from ODD source 2022-01-24T18:24:00Z. .
 TEI Edition: Version 4.3.0. Last updated on
         31st August 2021, revision b4f72b1ff
 TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.3.0/
@@ -211,9 +211,9 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.3.0/
             id="oddbyexample-att.datable.w3c-att-datable-w3c-when-constraint-rule-1">
       <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                 xmlns:xi="http://www.w3.org/2001/XInclude"
-                xmlns:rng="http://relaxng.org/ns/structure/1.0"
                 xmlns="http://www.tei-c.org/ns/1.0"
-                xmlns:s="http://purl.ocl.org/dsdl/schematron"
+                xmlns:s="http://purl.oclc.org/dsdl/schematron"
+                xmlns:rng="http://relaxng.org/ns/structure/1.0"
                 context="tei:*[@when]">
          <sch:report test="@notBefore|@notAfter|@from|@to" role="nonfatal">The @when attribute cannot be used with any other att.datable.w3c attributes.</sch:report>
       </sch:rule>
@@ -222,9 +222,9 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.3.0/
             id="oddbyexample-att.datable.w3c-att-datable-w3c-from-constraint-rule-2">
       <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                 xmlns:xi="http://www.w3.org/2001/XInclude"
-                xmlns:rng="http://relaxng.org/ns/structure/1.0"
                 xmlns="http://www.tei-c.org/ns/1.0"
-                xmlns:s="http://purl.ocl.org/dsdl/schematron"
+                xmlns:s="http://purl.oclc.org/dsdl/schematron"
+                xmlns:rng="http://relaxng.org/ns/structure/1.0"
                 context="tei:*[@from]">
          <sch:report test="@notBefore" role="nonfatal">The @from and @notBefore attributes cannot be used together.</sch:report>
       </sch:rule>
@@ -233,9 +233,9 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.3.0/
             id="oddbyexample-att.datable.w3c-att-datable-w3c-to-constraint-rule-3">
       <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                 xmlns:xi="http://www.w3.org/2001/XInclude"
-                xmlns:rng="http://relaxng.org/ns/structure/1.0"
                 xmlns="http://www.tei-c.org/ns/1.0"
-                xmlns:s="http://purl.ocl.org/dsdl/schematron"
+                xmlns:s="http://purl.oclc.org/dsdl/schematron"
+                xmlns:rng="http://relaxng.org/ns/structure/1.0"
                 context="tei:*[@to]">
          <sch:report test="@notAfter" role="nonfatal">The @to and @notAfter attributes cannot be used together.</sch:report>
       </sch:rule>
@@ -563,9 +563,9 @@ Suggested values include: 1] m (metre); 2] kg (kilogram); 3] s (second); 4] Hz (
             id="oddbyexample-att.measurement-att-measurement-unitRef-constraint-rule-4">
       <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                 xmlns:xi="http://www.w3.org/2001/XInclude"
-                xmlns:rng="http://relaxng.org/ns/structure/1.0"
                 xmlns="http://www.tei-c.org/ns/1.0"
-                xmlns:s="http://purl.ocl.org/dsdl/schematron"
+                xmlns:s="http://purl.oclc.org/dsdl/schematron"
+                xmlns:rng="http://relaxng.org/ns/structure/1.0"
                 context="tei:*[@unitRef]">
          <sch:report test="@unit" role="info">The @unit attribute may be unnecessary when @unitRef is present.</sch:report>
       </sch:rule>
@@ -618,9 +618,9 @@ Suggested values include: 1] top; 2] bottom; 3] margin; 4] opposite; 5] overleaf
             id="oddbyexample-att.typed-subtypeTyped-constraint-rule-5">
       <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                 xmlns:xi="http://www.w3.org/2001/XInclude"
-                xmlns:rng="http://relaxng.org/ns/structure/1.0"
                 xmlns="http://www.tei-c.org/ns/1.0"
-                xmlns:s="http://purl.ocl.org/dsdl/schematron"
+                xmlns:s="http://purl.oclc.org/dsdl/schematron"
+                xmlns:rng="http://relaxng.org/ns/structure/1.0"
                 context="tei:*[@subtype]">
          <sch:assert test="@type">The <sch:name/> element should not be categorized in detail with @subtype unless also categorized in general with @type</sch:assert>
       </sch:rule>
@@ -649,9 +649,9 @@ Suggested values include: 1] top; 2] bottom; 3] margin; 4] opposite; 5] overleaf
             id="oddbyexample-att.pointing-targetLang-targetLang-constraint-rule-6">
       <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                 xmlns:xi="http://www.w3.org/2001/XInclude"
-                xmlns:rng="http://relaxng.org/ns/structure/1.0"
                 xmlns="http://www.tei-c.org/ns/1.0"
-                xmlns:s="http://purl.ocl.org/dsdl/schematron"
+                xmlns:s="http://purl.oclc.org/dsdl/schematron"
+                xmlns:rng="http://relaxng.org/ns/structure/1.0"
                 context="tei:*[not(self::tei:schemaSpec)][@targetLang]">
          <sch:assert test="@target">@targetLang should only be used on <sch:name/> if @target is specified.</sch:assert>
       </sch:rule>
@@ -741,9 +741,9 @@ Suggested values include: 1] top; 2] bottom; 3] margin; 4] opposite; 5] overleaf
             id="oddbyexample-att.spanning-spanTo-spanTo-2-constraint-rule-7">
       <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                 xmlns:xi="http://www.w3.org/2001/XInclude"
-                xmlns:rng="http://relaxng.org/ns/structure/1.0"
                 xmlns="http://www.tei-c.org/ns/1.0"
-                xmlns:s="http://purl.ocl.org/dsdl/schematron"
+                xmlns:s="http://purl.oclc.org/dsdl/schematron"
+                xmlns:rng="http://relaxng.org/ns/structure/1.0"
                 context="tei:*[@spanTo]">
          <sch:assert test="id(substring(@spanTo,2)) and following::*[@xml:id=substring(current()/@spanTo,2)]">
 The element indicated by @spanTo (<sch:value-of select="@spanTo"/>) must follow the current element <sch:name/>
@@ -1764,8 +1764,8 @@ The element indicated by @spanTo (<sch:value-of select="@spanTo"/>) must follow 
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="oddbyexample-p-abstractModel-structure-p-constraint-report-5">
             <rule context="tei:p">
-               <report xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                       xmlns:s="http://purl.ocl.org/dsdl/schematron"
+               <report xmlns:s="http://purl.oclc.org/dsdl/schematron"
+                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
                        test="not(ancestor::tei:floatingText) and (ancestor::tei:p or ancestor::tei:ab)          and not(parent::tei:exemplum                |parent::tei:item                |parent::tei:note                |parent::tei:q                |parent::tei:quote                |parent::tei:remarks                |parent::tei:said                |parent::tei:sp                |parent::tei:stage                |parent::tei:cell                |parent::tei:figure                )">
         Abstract model violation: Paragraphs may not occur inside other paragraphs or ab elements.
       </report>
@@ -1774,8 +1774,8 @@ The element indicated by @spanTo (<sch:value-of select="@spanTo"/>) must follow 
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="oddbyexample-p-abstractModel-structure-l-constraint-report-6">
             <rule context="tei:p">
-               <report xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                       xmlns:s="http://purl.ocl.org/dsdl/schematron"
+               <report xmlns:s="http://purl.oclc.org/dsdl/schematron"
+                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
                        test="(ancestor::tei:l or ancestor::tei:lg) and not(parent::tei:figure or parent::tei:note or ancestor::tei:floatingText)">
         Abstract model violation: Lines may not contain higher-level structural elements such as div, p, or ab, unless p is a child of figure or note, or is a descendant of floatingText.
       </report>
@@ -2205,9 +2205,9 @@ Sample values include: 1] monnaie</a:documentation>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="oddbyexample-list-gloss-list-must-have-labels-constraint-rule-8">
             <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      xmlns:rng="http://relaxng.org/ns/structure/1.0"
                       xmlns="http://www.tei-c.org/ns/1.0"
-                      xmlns:s="http://purl.ocl.org/dsdl/schematron"
+                      xmlns:s="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:rng="http://relaxng.org/ns/structure/1.0"
                       context="tei:list[@type='gloss']">
                <sch:assert test="tei:label">The content of a "gloss" list should include a sequence of one or more pairs of a label element followed by an item element</sch:assert>
             </sch:rule>
@@ -2244,22 +2244,27 @@ Sample values include: 1] monnaie</a:documentation>
    <define name="item">
       <element name="item">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">( Elément d'une liste) contient un élément d'une liste. Dans notre cas, chaque item correspond aux information concernant un événement mentionné par l'auteur.  [3.8. Lists 2.6. The Revision Description]</a:documentation>
-         <ref name="macro.specialPara"/>
-         <s:rule xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                 xmlns="http://www.tei-c.org/ns/1.0"
-                 xmlns:s="http://purl.ocl.org/dsdl/schematron"
-                 context="tei:TEI/standOff/list/item">
-            <s:assert test="@xml:id"> L'élément list dans le standOff doit contenir
+         <group>
+            <ref name="p"/>
+            <ref name="date"/>
+         </group>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="oddbyexample-item-xmlidVal-constraint-rule-9">
+            <s:rule xmlns="http://www.tei-c.org/ns/1.0"
+                    xmlns:s="http://purl.oclc.org/dsdl/schematron"
+                    xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                    context="tei:item">
+               <s:assert test="@xml:id"> L'élément list doit contenir
                               un élément item ayant pour attribut xml:id </s:assert>
-         </s:rule>
-         <s:rule xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                 xmlns="http://www.tei-c.org/ns/1.0"
-                 xmlns:s="http://purl.ocl.org/dsdl/schematron"
-                 context="tei:item[@xml:id]">
-            <s:assert test="matches(@xml:id,'=\'d[0-9]\'*')"> L'élément list doit
-                              posséder un élément item dont l'attribut xml:id est la valeur se
-                              présente sous la forme suivant : dN où N est un chiffre. </s:assert>
-         </s:rule>
+            </s:rule>
+            <s:rule xmlns="http://www.tei-c.org/ns/1.0"
+                    xmlns:s="http://purl.oclc.org/dsdl/schematron"
+                    xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                    context="tei:item[@xml:id]">
+               <s:assert test="matches(@xml:id,'^d\d+')"> La valeur de 
+                              l'attribut xml:id doit se présenter sous la forme suivante : dN où N est un chiffre. </s:assert>
+            </s:rule>
+         </pattern>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
@@ -2703,8 +2708,8 @@ Elements 7.2.5. Speech Contents]</a:documentation>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="oddbyexample-msIdentifier-msId_minimal-constraint-report-7">
             <rule context="tei:msIdentifier">
-               <report xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                       xmlns:s="http://purl.ocl.org/dsdl/schematron"
+               <report xmlns:s="http://purl.oclc.org/dsdl/schematron"
+                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
                        test="not(parent::tei:msPart) and (local-name(*[1])='idno' or local-name(*[1])='altIdentifier' or normalize-space(.)='')">An msIdentifier must contain either a repository or location.</report>
             </rule>
          </pattern>
@@ -3682,7 +3687,7 @@ Suggested values include: 1] officier</a:documentation>
 Sample values include: 1] pays</a:documentation>
                <list>
                   <zeroOrMore>
-                     <data type="Name"/>
+                     <data type="string"/>
                   </zeroOrMore>
                </list>
             </attribute>
@@ -4640,87 +4645,90 @@ Sample values include: 1] pays</a:documentation>
                <ref name="model.linePart"/>
             </choice>
          </zeroOrMore>
-         <s:rule xmlns:xi="http://www.w3.org/2001/XInclude"
-                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                 xmlns="http://www.tei-c.org/ns/1.0"
-                 xmlns:s="http://purl.ocl.org/dsdl/schematron"
-                 context="tei:TEI/facsimile/surface/zone">
-            <s:assert test="@xml:id"> L'attribut xml:id doit être renseigné.
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="oddbyexample-zone-ulxRequired-constraint-rule-11">
+            <s:rule xmlns:xi="http://www.w3.org/2001/XInclude"
+                    xmlns="http://www.tei-c.org/ns/1.0"
+                    xmlns:s="http://purl.oclc.org/dsdl/schematron"
+                    xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                    context="tei:TEI/facsimile/surface/zone">
+               <s:assert test="@xml:id"> L'attribut xml:id doit être renseigné.
                            </s:assert>
-         </s:rule>
-         <s:rule xmlns:xi="http://www.w3.org/2001/XInclude"
-                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                 xmlns="http://www.tei-c.org/ns/1.0"
-                 xmlns:s="http://purl.ocl.org/dsdl/schematron"
-                 context="tei:TEI/facsimile/surface/zone">
-            <s:assert test="@ulx"> L'attribut ulx doit être renseigné. </s:assert>
-         </s:rule>
-         <s:rule xmlns:xi="http://www.w3.org/2001/XInclude"
-                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                 xmlns="http://www.tei-c.org/ns/1.0"
-                 xmlns:s="http://purl.ocl.org/dsdl/schematron"
-                 context="tei:TEI/facsimile/surface/zone">
-            <s:assert test="@uly"> L'attribut uly doit être renseigné. </s:assert>
-         </s:rule>
-         <s:rule xmlns:xi="http://www.w3.org/2001/XInclude"
-                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                 xmlns="http://www.tei-c.org/ns/1.0"
-                 xmlns:s="http://purl.ocl.org/dsdl/schematron"
-                 context="tei:TEI/facsimile/surface/zone">
-            <s:assert test="@lrx"> L'attribut rlx doit être renseigné. </s:assert>
-         </s:rule>
-         <s:rule xmlns:xi="http://www.w3.org/2001/XInclude"
-                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                 xmlns="http://www.tei-c.org/ns/1.0"
-                 xmlns:s="http://purl.ocl.org/dsdl/schematron"
-                 context="tei:TEI/facsimile/surface/zone">
-            <s:assert test="@rly"> L'attribut rly doit être renseigné. </s:assert>
-         </s:rule>
-         <s:rule xmlns:xi="http://www.w3.org/2001/XInclude"
-                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                 xmlns="http://www.tei-c.org/ns/1.0"
-                 xmlns:s="http://purl.ocl.org/dsdl/schematron"
-                 context="tei:zone[@xml:id]">
-            <s:assert test="matches(@xml:id, 'p[1-29]+')"> '@xml:id='p[1-19]+' La
+            </s:rule>
+            <s:rule xmlns:xi="http://www.w3.org/2001/XInclude"
+                    xmlns="http://www.tei-c.org/ns/1.0"
+                    xmlns:s="http://purl.oclc.org/dsdl/schematron"
+                    xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                    context="tei:TEI/facsimile/surface/zone">
+               <s:assert test="@ulx"> L'attribut ulx doit être renseigné. </s:assert>
+            </s:rule>
+            <s:rule xmlns:xi="http://www.w3.org/2001/XInclude"
+                    xmlns="http://www.tei-c.org/ns/1.0"
+                    xmlns:s="http://purl.oclc.org/dsdl/schematron"
+                    xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                    context="tei:TEI/facsimile/surface/zone">
+               <s:assert test="@uly"> L'attribut uly doit être renseigné. </s:assert>
+            </s:rule>
+            <s:rule xmlns:xi="http://www.w3.org/2001/XInclude"
+                    xmlns="http://www.tei-c.org/ns/1.0"
+                    xmlns:s="http://purl.oclc.org/dsdl/schematron"
+                    xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                    context="tei:TEI/facsimile/surface/zone">
+               <s:assert test="@lrx"> L'attribut rlx doit être renseigné. </s:assert>
+            </s:rule>
+            <s:rule xmlns:xi="http://www.w3.org/2001/XInclude"
+                    xmlns="http://www.tei-c.org/ns/1.0"
+                    xmlns:s="http://purl.oclc.org/dsdl/schematron"
+                    xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                    context="tei:TEI/facsimile/surface/zone">
+               <s:assert test="@rly"> L'attribut rly doit être renseigné. </s:assert>
+            </s:rule>
+            <s:rule xmlns:xi="http://www.w3.org/2001/XInclude"
+                    xmlns="http://www.tei-c.org/ns/1.0"
+                    xmlns:s="http://purl.oclc.org/dsdl/schematron"
+                    xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                    context="tei:zone[@xml:id]">
+               <s:assert test="matches(@xml:id, '^p\d+')">  La
                               valeur de l'attribut xml:id doit correspondre à pN où N est un nombre
                               compris entre 1 et 19. </s:assert>
-         </s:rule>
-         <s:rule xmlns:xi="http://www.w3.org/2001/XInclude"
-                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                 xmlns="http://www.tei-c.org/ns/1.0"
-                 xmlns:s="http://purl.ocl.org/dsdl/schematron"
-                 context="tei:zone[@ulx]">
-            <s:assert test="matches(@ulx, '[0-9]?')"> '@ulx [0-9]?' La valeur de
+            </s:rule>
+            <s:rule xmlns:xi="http://www.w3.org/2001/XInclude"
+                    xmlns="http://www.tei-c.org/ns/1.0"
+                    xmlns:s="http://purl.oclc.org/dsdl/schematron"
+                    xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                    context="tei:zone[@ulx]">
+               <s:assert test="matches(@ulx, '^\d+')"> La valeur de
                               l'attribut ulx doit correspondre à une séquence de chiffres.
                            </s:assert>
-         </s:rule>
-         <s:rule xmlns:xi="http://www.w3.org/2001/XInclude"
-                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                 xmlns="http://www.tei-c.org/ns/1.0"
-                 xmlns:s="http://purl.ocl.org/dsdl/schematron"
-                 context="tei:zone[@uly]">
-            <s:assert test="matches(@uly, '[0-9]?')"> '@uly [0-9]?' La valeur de
+            </s:rule>
+            <s:rule xmlns:xi="http://www.w3.org/2001/XInclude"
+                    xmlns="http://www.tei-c.org/ns/1.0"
+                    xmlns:s="http://purl.oclc.org/dsdl/schematron"
+                    xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                    context="tei:zone[@uly]">
+               <s:assert test="matches(@uly, '^\d+')"> La valeur de
                               l'attribut uly doit correspondre à une séquence de chiffres.
                            </s:assert>
-         </s:rule>
-         <s:rule xmlns:xi="http://www.w3.org/2001/XInclude"
-                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                 xmlns="http://www.tei-c.org/ns/1.0"
-                 xmlns:s="http://purl.ocl.org/dsdl/schematron"
-                 context="tei:zone[@lrx]">
-            <s:assert test="matches(@lrx, '[0-9]?')"> '@lrx [0-9]?' La valeur de
+            </s:rule>
+            <s:rule xmlns:xi="http://www.w3.org/2001/XInclude"
+                    xmlns="http://www.tei-c.org/ns/1.0"
+                    xmlns:s="http://purl.oclc.org/dsdl/schematron"
+                    xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                    context="tei:zone[@lrx]">
+               <s:assert test="matches(@lrx, '^\d+')"> La valeur de
                               l'attribut lrx doit correspondre à une séquence de chiffres.
                            </s:assert>
-         </s:rule>
-         <s:rule xmlns:xi="http://www.w3.org/2001/XInclude"
-                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                 xmlns="http://www.tei-c.org/ns/1.0"
-                 xmlns:s="http://purl.ocl.org/dsdl/schematron"
-                 context="tei:zone[@lry]">
-            <s:assert test="matches(@lry, '[0-9]?')"> '@lry [0-9]?' La valeur de
+            </s:rule>
+            <s:rule xmlns:xi="http://www.w3.org/2001/XInclude"
+                    xmlns="http://www.tei-c.org/ns/1.0"
+                    xmlns:s="http://purl.oclc.org/dsdl/schematron"
+                    xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                    context="tei:zone[@lry]">
+               <s:assert test="matches(@lry, '^\d+')"> La valeur de
                               l'attribut lry doit correspondre à une séquence de chiffres.
                            </s:assert>
-         </s:rule>
+            </s:rule>
+         </pattern>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
@@ -4839,13 +4847,13 @@ Sample values include: 1] pays</a:documentation>
             <ref name="list"/>
          </oneOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="oddbyexample-standOff-nested_standOff_should_be_typed-constraint-assert-5">
+                  id="oddbyexample-standOff-nested_standOff_should_be_typed-constraint-assert-17">
             <rule context="tei:standOff">
                <sch:assert xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                            xmlns:xi="http://www.w3.org/2001/XInclude"
-                           xmlns:rng="http://relaxng.org/ns/structure/1.0"
                            xmlns="http://www.tei-c.org/ns/1.0"
-                           xmlns:s="http://purl.ocl.org/dsdl/schematron"
+                           xmlns:s="http://purl.oclc.org/dsdl/schematron"
+                           xmlns:rng="http://relaxng.org/ns/structure/1.0"
                            test="@type or not(ancestor::tei:standOff)">This
       <sch:name/> element must have a @type attribute, since it is
       nested inside a <sch:name/>
@@ -4894,21 +4902,21 @@ Sample values include: 1] pays</a:documentation>
             </choice>
          </group>
          <sch:ns xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
                  xmlns="http://www.tei-c.org/ns/1.0"
-                 xmlns:s="http://purl.ocl.org/dsdl/schematron"
+                 xmlns:s="http://purl.oclc.org/dsdl/schematron"
+                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
                  prefix="tei"
                  uri="http://www.tei-c.org/ns/1.0"/>
          <sch:ns xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
                  xmlns="http://www.tei-c.org/ns/1.0"
-                 xmlns:s="http://purl.ocl.org/dsdl/schematron"
+                 xmlns:s="http://purl.oclc.org/dsdl/schematron"
+                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
                  prefix="xs"
                  uri="http://www.w3.org/2001/XMLSchema"/>
          <sch:ns xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
                  xmlns="http://www.tei-c.org/ns/1.0"
-                 xmlns:s="http://purl.ocl.org/dsdl/schematron"
+                 xmlns:s="http://purl.oclc.org/dsdl/schematron"
+                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
                  prefix="rng"
                  uri="http://relaxng.org/ns/structure/1.0"/>
          <ref name="att.global.attribute.xmlid"/>
@@ -5157,8 +5165,8 @@ Sample values include: 1] pays</a:documentation>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="oddbyexample-div-abstractModel-structure-l-constraint-report-8">
             <rule context="tei:div">
-               <report xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                       xmlns:s="http://purl.ocl.org/dsdl/schematron"
+               <report xmlns:s="http://purl.oclc.org/dsdl/schematron"
+                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
                        test="(ancestor::tei:l or ancestor::tei:lg) and not(ancestor::tei:floatingText)">
         Abstract model violation: Lines may not contain higher-level structural elements such as div, unless div is a descendant of floatingText.
       </report>
@@ -5167,8 +5175,8 @@ Sample values include: 1] pays</a:documentation>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="oddbyexample-div-abstractModel-structure-p-constraint-report-9">
             <rule context="tei:div">
-               <report xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                       xmlns:s="http://purl.ocl.org/dsdl/schematron"
+               <report xmlns:s="http://purl.oclc.org/dsdl/schematron"
+                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
                        test="(ancestor::tei:p or ancestor::tei:ab) and not(ancestor::tei:floatingText)">
         Abstract model violation: p and ab may not contain higher-level structural elements such as div, unless div is a descendant of floatingText.
       </report>
