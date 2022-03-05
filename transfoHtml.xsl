@@ -111,16 +111,28 @@
         </nav>
         </xsl:variable>
         
+<!--        Insertion des métadonnées du teiHeader par le biais de cette présentation succinte dans la page d'accueil.--> 
+       
         <xsl:result-document href="{$path_homepage}" method="html" indent="yes">
             <html>
                 <xsl:copy-of select="$head"/>
                 <body>
                     <xsl:copy-of select="$nav_bar"/>
                         <div>
-                            <p>Bienvenue dans ce projet d'édition numérique du
-                                <i>Carnet des mémoires de guerre d'Edmond Seilliez (1940-1946)</i> .</p>
-                            <p>
+                            <h1 style="text-align: center; padding: 20px;">Bienvenue dans ce projet d'édition numérique du
+                                <i>Carnet des mémoires de guerre d'Edmond Seilliez (1940-1946)</i> .</h1>
+                            <p style="text-align: center">
                                 <xsl:value-of select="//edition"/>
+                            </p>
+                            <p>
+                                <h2 style="text-align: center; padding: 10px;">Présentation de la source.</h2>
+                                <ul style="text-align: left">
+                                    <li>Titre :<it><xsl:value-of select="$title"/></it></li>
+                                    <li> Résumé :<xsl:value-of select="//summary"/></li>
+                                    <li>Lieu de conservation : <xsl:value-of select="concat(//settlement, ',', //repository)"/>.</li>
+                                    <li>Analyse codicologique : <xsl:value-of select="concat(//supportDesc, //layoutDesc, //bindingDesc)"/></li>
+                                    <li> Analyse paléographique : <xsl:value-of select="//handDesc"/></li>
+                                </ul>
                             </p>
                     </div>
                 </body>
