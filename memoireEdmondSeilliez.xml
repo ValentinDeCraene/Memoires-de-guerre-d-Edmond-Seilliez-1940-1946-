@@ -43,7 +43,7 @@
                         L'écriture manuscrite est cursive et régulière. Le style est simple, quasi télégraphique, laissant néanmoins
                         transparaître les relations d'amitié, de camaraderie ou de subordination de l'auteur avec les nombreux personnages mentionnés.
                         L'extrait encodé se présente comme une unité narrative et intellectuelle à part entière puisqu'elle raconte
-                        la période des combats précédent sa captivité en Prusse-Orientale. Cet épisode de l'acheminement vers les camps
+                        la période des combats précédant sa captivité en Prusse-Orientale. Cet épisode de l'acheminement vers les camps
                         de détention en Prusse Orientale s'affirme effectivement comme une rupture de fond, puisqu'à partir de ce moment
                         l'auteur s'attache à transmettre son ressenti personnel et sa peur. Cette rupture justifie donc ce choix d'encoder à part
                         entière ce passage.
@@ -117,7 +117,7 @@
                  <note> <expan>152e Régiment d'Infanterie de l'armée de terre</expan>, stationné à Colmar depuis 1919. Régiment traditionnel de l'Alsace depuis le XIXe siècle.</note>
               </org>
               <org xml:id="gardes_mobiles">
-                 <orgName> gardes mobiles </orgName>
+                 <orgName cert='medium'> gardes mobiles </orgName>
                  <note> <expan>Garde nationale Mobile</expan>, corps militaire auxiliaire de l'armée française stationné dans les places fortes et villes. Préfigure les réservitstes contemporains.
                         Il s'agit ici probablement du Régiment des Ardennes.
                  </note>
@@ -880,7 +880,7 @@
                doit partir. Ca nous <choice><sic>embêtes</sic><corr>embête</corr></choice>, on s'y <choice><sic>habituais</sic><corr>habituait</corr></choice>. On <choice><sic> essayes </sic><corr> essaie </corr></choice> de <lb/>
                se camoufler, pas moyen. et nous quittons <placeName ref="#Trèves">Trèves</placeName> le <date ref="#d20" when="1940-06-22"> samedi <lb/>
                22 juin 1940</date> dans <time>l'après-midi vers 3 H 30 </time> et ce qui nous <lb/>
-               chagrine c'est que nous savons que le convoi par pour la <lb/>
+               chagrine c'est que nous savons que le convoi part pour la <lb/>
                <placeName ref="#Prusse_Orientale" type="pays"> Prusse Orientale. </placeName>
             </p>
          </div>
