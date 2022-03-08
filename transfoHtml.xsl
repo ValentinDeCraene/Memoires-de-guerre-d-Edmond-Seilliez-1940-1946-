@@ -50,7 +50,10 @@
             <xsl:value-of select="./@xml:id"/>
         </xsl:variable>
         <xsl:variable name="footer">
-            <footer class="text-center text-white" style="background-color: #f1f1f1;">
+            <br/>
+            <br/>
+            <br/>
+            <footer class="text-center text-white fixed-bottom" style="background-color: #f1f1f1;">
                 <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
                     <p>Valentin De Craene - 2022</p>
                 </div>
@@ -251,7 +254,7 @@
                 </body>
                 <xsl:copy-of select="$footer"/>
             </html>
-        </xsl:result-document>ù
+        </xsl:result-document>
         
         <xsl:result-document href="{$path_chrono}" method="html" indent="yes">
             <html>
@@ -276,7 +279,7 @@
                     <xsl:copy-of select="$nav_bar"/>
                     <div class="container">
                         <xsl:element name="div">
-                            <xsl:apply-templates select="//text" mode="sic"/>
+                            <xsl:apply-templates select="//div" mode="sic"/>
                         </xsl:element>
                         
                     </div>
@@ -294,7 +297,6 @@
                         <xsl:element name="div">
                             <xsl:apply-templates select="//text" mode="corr"/>
                         </xsl:element>
-                        
                     </div>
                 </body>
                 <xsl:copy-of select="$footer"/>
@@ -343,7 +345,7 @@
             </html>
         </xsl:result-document>
         
-        
+        <xsl:apply-templates/>
     </xsl:template>
 
 
@@ -351,14 +353,93 @@
 <!--    Template des modes permettant d'afficher une sortie du texte correspondate d'une part
     au texte original, et d'autre part au texte corrigé.-->
     
+    
+    
     <xsl:template match="choice" mode="sic">
-        <xsl:value-of select="sic/text()"/>
+        <xsl:value-of select="sic"/>
     </xsl:template>
 
     <xsl:template match="choice" mode="corr">
-        <xsl:value-of select="corr/text()"/>
+        <xsl:value-of select="corr"/>
     </xsl:template>
     
+    <xsl:template match="foreign" mode="#all">
+        <xsl:element name="i">
+            <xsl:value-of select="."/>
+        </xsl:element>
+        <xsl:apply-templates/>
+    </xsl:template>
+    
+    <xsl:template match="placeName" mode="#all">
+        <xsl:variable name="witfile">
+            <xsl:value-of select="replace(base-uri(.), 'memoireEdmondSeilliez.xml', '')"/>
+        </xsl:variable>
+        <xsl:variable name="path_lieux_index">
+            <xsl:value-of select="concat($witfile, 'html/indexlieux', '.html')"/>
+        </xsl:variable>
+        <xsl:element name="a">
+            <xsl:attribute name="href">
+                <xsl:value-of select="$path_lieux_index"/>
+            </xsl:attribute>
+            <xsl:apply-templates/>
+        </xsl:element>
+    </xsl:template>
+    
+    <xsl:template match="persName" mode="#all">
+        <xsl:variable name="witfile">
+            <xsl:value-of select="replace(base-uri(.), 'memoireEdmondSeilliez.xml', '')"/>
+        </xsl:variable>
+        <xsl:variable name="path_pers_index">
+            <xsl:value-of select="concat($witfile, 'html/indexpersos', '.html')"/>
+        </xsl:variable>
+        <xsl:element name="a">
+            <xsl:attribute name="href">
+                <xsl:value-of select="$path_pers_index"/>
+            </xsl:attribute>
+            <xsl:apply-templates/>
+        </xsl:element>
+    </xsl:template>
+    
+    <xsl:template match="orgName" mode="#all">
+        <xsl:variable name="witfile">
+            <xsl:value-of select="replace(base-uri(.), 'memoireEdmondSeilliez.xml', '')"/>
+        </xsl:variable>
+        <xsl:variable name="path_orga_index">
+            <xsl:value-of select="concat($witfile, 'html/indexorga', '.html')"/>
+        </xsl:variable>
+        <xsl:element name="a">
+            <xsl:attribute name="href">
+                <xsl:value-of select="$path_orga_index"/>
+            </xsl:attribute>
+            <xsl:apply-templates/>
+        </xsl:element>
+    </xsl:template>
+    
+    <xsl:template match="date" mode="#all">
+        <xsl:variable name="witfile">
+            <xsl:value-of select="replace(base-uri(.), 'memoireEdmondSeilliez.xml', '')"/>
+        </xsl:variable>
+        <xsl:variable name="path_chrono">
+            <xsl:value-of select="concat($witfile, 'html/chrono', '.html')"/>
+        </xsl:variable>
+        <xsl:element name="a">
+            <xsl:attribute name="href">
+                <xsl:value-of select="$path_chrono"/>
+            </xsl:attribute>
+            <xsl:apply-templates/>
+        </xsl:element>
+    </xsl:template>
+    
+    <xsl:template match="pb" mode="#all">
+        <br>
+            <p style="text-align: center; padding: 10px;">
+            <xsl:value-of select="pb"/>
+            -- page n°  <xsl:value-of select="@n"/>  --</p>
+        </br>
+        <br>
+            <xsl:value-of select="."/>
+        </br>
+    </xsl:template>
     
 <!--    Templates appellés ci-dessus-->
 

@@ -491,51 +491,51 @@
      <list type="chronologie">
         <item xml:id="d1">
            <p> Cantonnement d'Edmond aux avant-postes.</p>
-           <date when="1940-04"> Avril 1940</date>
+           <date when="1940-04"> Avril 1940 </date>
         </item>
         <item xml:id="d2">
            <p> Permission d'Edmond, retour temporaire à <placeName ref="#Pernes">Pernes-en-Artois</placeName>. </p>
-           <date when="1940-04-21"> 21 avril 1940.</date>
+           <date when="1940-04-21"> 21 avril 1940 </date>
         </item>
         <item xml:id="d3">
            <p> Date de fin de la permission d'Edmond, départ de <placeName ref="#Pernes">Pernes-en-Artois</placeName>. </p>
-           <date when="1940-04-27"> 27 avril 1940. </date>
+           <date when="1940-04-27"> 27 avril 1940 </date>
         </item>
         <item xml:id="d4">
            <p> Retour d'Edmond à <placeName ref="#Capsilliers">Capsilliers</placeName> et réintégration de son bataillon.</p>
-           <date when="1940-04-29"> 29 avril 1940.</date>
+           <date when="1940-04-29"> 29 avril 1940 </date>
         </item>
         <item xml:id="d5">
            <p> Bataillon d'Edmond en alerte, premiers passages des avions allemands, départ d'<placeName ref="#Inglange">Inglange</placeName>. </p>
-           <date when="1940-05-10"> 10 mai 1940.</date>
+           <date when="1940-05-10"> 10 mai 1940 </date>
         </item>
         <item xml:id="d6">
            <p> Départ du bois de <placeName ref="#Budling">Budling</placeName> pour <placeName ref="#Metzervisse">Metzervisse</placeName>.</p>
-           <date when="1940-05-24"> 24 mai 1940. </date>
+           <date when="1940-05-24"> 24 mai 1940 </date>
         </item>
         <item xml:id="d7">
            <p> Le bataillon d'Edmond quitte <placeName ref="#Metzervisse">Metzervisse</placeName> par la Moselle. </p>
-           <date when="1940-05-25">25 mai 1940. </date>
+           <date when="1940-05-25">25 mai 1940 </date>
         </item>
         <item xml:id="d8">
            <p> Le bataillon touche le renfort. Départ pour <placeName ref="#Amanvillers">Amanvillers</placeName></p>
-           <date when="1940-05-26">26 mai 1940. </date>
+           <date when="1940-05-26">26 mai 1940 </date>
         </item>
         <item xml:id="d9">
            <p> Evocation d'une précédente étape par Edmond durant le mois de mai. </p>
-           <date when="1940-05"> mai 1940.</date>
+           <date when="1940-05"> mai 1940</date>
         </item>
         <item xml:id="d10">
            <p> Arrivé en train du bataillon à proximité d'<placeName ref="#Epernay">Epernay</placeName> après de longs détours en raison des bombardements. </p>
-           <date when="1940-05-27"> 27 mai 1940. </date>
+           <date when="1940-05-27"> 27 mai 1940 </date>
         </item>
         <item xml:id="d11">
            <p> Départ d'<placeName ref="#Epernay">Epernay</placeName> par les autobus réquisitionnés de la <roleName ref="#STCRP">S.T.C.R.P</roleName>. </p>
-           <date when="1940-05-30"> 30 mai 1940.</date>
+           <date when="1940-05-30"> 30 mai 1940 </date>
         </item>
         <item xml:id="d12">
            <p> Arrivée en autobus du bataillon dans les Ardennes. </p>
-           <date when="1940-05-31"> 31 mai 1940. </date>
+           <date when="1940-05-31"> 31 mai 1940 </date>
         </item>
         <item xml:id="d13">
            <p> Le bataillon quitte le bois pour se rendre à <placeName ref="#Rethel">Rethel</placeName>. </p>
@@ -551,11 +551,11 @@
         </item>
         <item xml:id="d16">
            <p> Bombardement massif de <placeName ref="#Rethel">Rethel</placeName> par l'aviation allemande.</p>
-           <date when="1940-06-09"> 9 juin 1940. </date>
+           <date when="1940-06-09"> 9 juin 1940 </date>
         </item>
         <item xml:id="d17">
            <p> Le bataillon reçoit l'ordre de se replier vers <placeName ref="#Reims">Reims</placeName>. </p>
-           <date when="1940-06-10"> 10 juin 1940. </date>
+           <date when="1940-06-10"> 10 juin 1940 </date>
         </item>
         <item xml:id="d18">
            <p> Le bataillon d'Edmond est fait prisonnier dans la plaine de <placeName ref="#Reims">Reims</placeName>.</p>
@@ -563,11 +563,11 @@
         </item>
         <item xml:id="d19">
            <p> Le bataillon d'Edmond, captif, est convoyé par train vers la <placeName ref="#Belgique">Belgique</placeName>. Ils débarquent à <placeName ref="#Bertrix">Bertix</placeName> ce jour. </p>
-           <date when="1940-06-15"> 15 juin 1940.</date>
+           <date when="1940-06-15"> 15 juin 1940</date>
         </item>
         <item xml:id="d20">
            <p> Départ d'Edmond, captif, du camp de <placeName ref="#Bertrix">Bertix</placeName> vers les camps de travail pour prisonniers en <placeName ref="#Prusse_Orientale">Prusse Orientale</placeName>. </p>
-           <date when="1940-06-22"> 22 juin 1940. </date>
+           <date when="1940-06-22"> 22 juin 1940 </date>
         </item>
      </list>
 
