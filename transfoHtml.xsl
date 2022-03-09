@@ -53,9 +53,11 @@
             <br/>
             <br/>
             <br/>
-            <footer class="text-center text-white fixed-bottom" style="background-color: #f1f1f1;">
-                <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-                    <p>Valentin De Craene - 2022</p>
+            <footer class="text-center text-dark fixed-bottom footer-transparent">
+                <div class="text-center p-1" style="background-color: rgba(0, 0, 0, 0.8);">
+                    <p class="text-light">Valentin De Craene - 2022 : <a class="text-light"
+                        href="https://twitter.com/VDCrne" target="_blank"
+                        >Twitter</a> - <a class="text-light" href="https://github.com/ValentinDeCraene" target="_blank">Github</a></p>
                 </div>
             </footer>
         </xsl:variable>
@@ -149,7 +151,7 @@
                 <body>
                     <xsl:copy-of select="$nav_bar"/>
                     <div>
-                        <h1>Index des personnes</h1>
+                        <h1 class="text-center">Index des personnes</h1>
                         <ul>
                             <xsl:for-each select=".//listPerson/person">
                                 <li class="p-3">
@@ -188,7 +190,7 @@
                 <body>
                     <xsl:copy-of select="$nav_bar"/>
                     <div>
-                        <h1>Index des lieux</h1>
+                        <h1 class="text-center">Index des lieux</h1>
                         <ul>
                             <xsl:for-each select=".//listPlace/place">
                                 <li class="p-3">
@@ -225,7 +227,7 @@
                 <body>
                     <xsl:copy-of select="$nav_bar"/>
                     <div>
-                        <h1>Index des organisations</h1>
+                        <h1 class="text-center">Index des organisations</h1>
                         <ul>
                             <xsl:for-each select=".//listOrg/org">
                                 <li class="p-3">
@@ -278,7 +280,7 @@
                 <xsl:copy-of select="$head"/>
                 <body>
                     <xsl:copy-of select="$nav_bar"/>
-                    <div class="container col-sm-10">
+                    <div class="container col-sm-5 text-justify">
                         <header> 
                             <h1 class="text-center">
                                 <xsl:value-of select="$title"/>
@@ -300,14 +302,14 @@
                 <xsl:copy-of select="$head"/>
                 <body>
                     <xsl:copy-of select="$nav_bar"/>
-                    <div class="container">
+                    <div class="container col-sm-5 text-justify">
                         <header> 
                             <h1 class="text-center">
                                 <xsl:value-of select="$title"/>
                             </h1>
                         </header>
                         <br/>
-                        <div>
+                        <div class="text-justify">
                             <xsl:apply-templates select="//text" mode="corr"/>
                         </div>
                     </div>
