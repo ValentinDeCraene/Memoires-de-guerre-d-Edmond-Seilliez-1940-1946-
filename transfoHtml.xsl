@@ -152,7 +152,7 @@
                         <h1>Index des personnes</h1>
                         <ul>
                             <xsl:for-each select=".//listPerson/person">
-                                <li>
+                                <li class="p-3">
                                     <xsl:choose>
                                         <xsl:when test="persName/surname[@cert = 'low'] or persName/forename[@cert = 'low']">
                                             <xsl:value-of
@@ -191,7 +191,7 @@
                         <h1>Index des lieux</h1>
                         <ul>
                             <xsl:for-each select=".//listPlace/place">
-                                <li>
+                                <li class="p-3">
                                     <xsl:attribute name="n">
                                         <xsl:number count="." format="1"/>
                                     </xsl:attribute>
@@ -228,7 +228,7 @@
                         <h1>Index des organisations</h1>
                         <ul>
                             <xsl:for-each select=".//listOrg/org">
-                                <li>
+                                <li class="p-3">
                                     <xsl:attribute name="n">
                                         <xsl:number count="." format="1"/>
                                     </xsl:attribute>
@@ -263,8 +263,8 @@
                 <body>
                     <xsl:copy-of select="$nav_bar"/>
                     <div>
-                        <h1>Chronologie</h1>
-                        <ul>
+                        <h1 class="text-center">Chronologie</h1>
+                        <ul class="text-justified">
                             <xsl:call-template name="chronologie"/>
                         </ul>
                     </div>
@@ -278,16 +278,16 @@
                 <xsl:copy-of select="$head"/>
                 <body>
                     <xsl:copy-of select="$nav_bar"/>
-                    <div class="container">
+                    <div class="container col-sm-10">
                         <header> 
                             <h1 class="text-center">
                                 <xsl:value-of select="$title"/>
                             </h1>
                         </header>
                         <br/>
-                        <xsl:element name="div">
+                        <div class="container">
                             <xsl:apply-templates select="//div" mode="sic"/>
-                        </xsl:element>
+                        </div>
                         
                     </div>
                 </body>
@@ -307,9 +307,9 @@
                             </h1>
                         </header>
                         <br/>
-                        <xsl:element name="div">
+                        <div>
                             <xsl:apply-templates select="//text" mode="corr"/>
-                        </xsl:element>
+                        </div>
                     </div>
                 </body>
                 <xsl:copy-of select="$footer"/>
@@ -506,7 +506,7 @@
     
     <xsl:template name="chronologie">
         <xsl:for-each select=".//list/item">
-            <li>
+            <li class="p-3">
                 <xsl:attribute name="n">
                     <xsl:number count="." format="1"/>
                 </xsl:attribute>
