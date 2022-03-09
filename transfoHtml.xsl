@@ -171,7 +171,7 @@
                                             <xsl:text>L'identité de cette personne est certaine. </xsl:text>
                                         </xsl:otherwise>
                                     </xsl:choose>
-                                    <xsl:text>Nombre d'occurences : </xsl:text>
+                                    <xsl:text> Occurences aux pages suivantes : </xsl:text>
                                     <xsl:call-template name="person"/>
                                 </li>
                             </xsl:for-each>
@@ -208,7 +208,7 @@
                                             <xsl:text> L'emplacement de ce lieu est certain. </xsl:text>
                                         </xsl:otherwise>
                                     </xsl:choose>
-                                    <xsl:text> Nombre d'occurences : </xsl:text>
+                                    <xsl:text> Occurences aux pages suivantes : </xsl:text>
                                     <xsl:call-template name="place"/>
                                 </li>
                             </xsl:for-each>
@@ -246,6 +246,7 @@
                                             <xsl:text> L'identité de cette organisation est certaine. </xsl:text>
                                         </xsl:otherwise>
                                     </xsl:choose>
+                                   <xsl:text>Occurences aux pages suivantes : </xsl:text> 
                                     <xsl:call-template name="org"/>
                                 </li>
                             </xsl:for-each>
@@ -278,6 +279,12 @@
                 <body>
                     <xsl:copy-of select="$nav_bar"/>
                     <div class="container">
+                        <header> 
+                            <h1 class="text-center">
+                                <xsl:value-of select="$title"/>
+                            </h1>
+                        </header>
+                        <br/>
                         <xsl:element name="div">
                             <xsl:apply-templates select="//div" mode="sic"/>
                         </xsl:element>
@@ -294,6 +301,12 @@
                 <body>
                     <xsl:copy-of select="$nav_bar"/>
                     <div class="container">
+                        <header> 
+                            <h1 class="text-center">
+                                <xsl:value-of select="$title"/>
+                            </h1>
+                        </header>
+                        <br/>
                         <xsl:element name="div">
                             <xsl:apply-templates select="//text" mode="corr"/>
                         </xsl:element>
@@ -448,21 +461,27 @@
         <xsl:variable name="idPerson">
             <xsl:value-of select="@xml:id"/>
         </xsl:variable>
-            <xsl:for-each select="ancestor::TEI//body//persName[replace(@ref, '#','')=$idPerson]">
-                <xsl:value-of select="count(//p/preceding-sibling::persName) + 1"/>
-                <xsl:choose>
-                    <xsl:when test="position() = last()">.</xsl:when>
-                    <xsl:otherwise>, </xsl:otherwise>
-                </xsl:choose>
-            </xsl:for-each>
+                <xsl:for-each
+                    select="ancestor::TEI//body/div/p/persName[replace(@ref, '#', '')= $idPerson]">
+                        <xsl:value-of
+                            select="parent::p/@n"/>
+                    <xsl:choose>
+            <xsl:when test="position() = last()">.</xsl:when>
+            <xsl:otherwise>, </xsl:otherwise>
+        </xsl:choose>
+                 </xsl:for-each>
+
     </xsl:template>
+    
 
     <xsl:template name="place">
         <xsl:variable name="idPlace">
             <xsl:value-of select="@xml:id"/>
         </xsl:variable>
-        <xsl:for-each select="ancestor::TEI//body//placeName[replace(@ref, '#','')=$idPlace]">
-            <xsl:value-of select="count(//p/preceding-sibling::placeName) + 1"/>
+        <xsl:for-each
+            select="ancestor::TEI//body/div/p/placeName[replace(@ref, '#', '')= $idPlace]">
+            <xsl:value-of
+                select="parent::p/@n" />
             <xsl:choose>
                 <xsl:when test="position() = last()">.</xsl:when>
                 <xsl:otherwise>, </xsl:otherwise>
@@ -474,8 +493,10 @@
         <xsl:variable name="idOrg">
             <xsl:value-of select="@xml:id"/>
         </xsl:variable>
-        <xsl:for-each select="ancestor::TEI//body//orgName[replace(@ref, '#','')=$idOrg]">
-            <xsl:value-of select="count(//p/preceding-sibling::orgName) + 1"/>
+        <xsl:for-each
+            select="ancestor::TEI//body/div/p/orgName[replace(@ref, '#', '')= $idOrg]">
+            <xsl:value-of
+                select="parent::p/@n"/>
             <xsl:choose>
                 <xsl:when test="position() = last()">.</xsl:when>
                 <xsl:otherwise>, </xsl:otherwise>
@@ -493,5 +514,5 @@
             </li>
         </xsl:for-each>
     </xsl:template>
-
+    
 </xsl:stylesheet>
