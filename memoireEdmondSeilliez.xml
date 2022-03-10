@@ -155,8 +155,8 @@
               </person>
               <person xml:id="Rémy_Grimbert">
                  <persName> 
-                    <forename>Rémy</forename> 
-                    <surname>Grimbert</surname>
+                    <forename> Rémy</forename> 
+                    <surname> Grimbert</surname>
                  </persName>
                  <note> Connaissance d'Edmond Seilliez habitant à <placeName ref="#Amanvillers">Amanvillers</placeName>.</note>
               </person>
@@ -655,12 +655,13 @@
   <text>
       <front>
          <div type="notes_introductives">
-            <p> Mon premier carnet de notes ayant du être égaré - <lb/>
+            <p> 
+               <lb/>Mon premier carnet de notes ayant du être égaré - <lb/>
                <choice><sic>où</sic> <corr> ou </corr></choice> alors l'aurais-je laissé à <placeName ref="#Pernes"> Pernes </placeName>, à la <lb/>
                maison quand j'y suis retourné au mois d'<date> avril 1940 </date> <lb/>
                 - toujours est-il que j'ai confectionné un nouveau <lb/>
                carnet sur lequel je vais inscrire mes mémoires <lb/>
-               à partir du <date when="1940-04-21"> 21 avril 1940. </date> <lb rend="séparation_par_une_double_ligne"/>
+               à partir du <date when="1940-04-21"> 21 avril 1940. </date>
             </p>
          </div>
       </front>
@@ -669,13 +670,13 @@
          <div type="extrait">
             <pb n="1" facs="#p1"/>
               <p n="1">
-               Au <date ref="#d1" when="1940-04"> mois d'avril </date>, nous étions toujours aux avant-postes. <lb/>
+               <lb/>Au <date ref="#d1" when="1940-04"> mois d'avril </date>, nous étions toujours aux avant-postes. <lb/>
                Nous y montions 5 jours - et ensuite on descendait un peu <lb/>
-               à l'arrière pour 10 jours - dans un cantonnement où on <lb/>
+               à l'arrière pour 10 jours - dans un cantonnement où on
                  <pb n="2" facs="#2"/></p>
             
                
-               <p n="2">continuait à faire des travaux (tranchées, abris, ect). <lb/>
+               <p n="2"><lb/>continuait à faire des travaux (tranchées, abris, ect). <lb/>
                C'est donc le <date ref="#d2" when="1940-04-21"> 21 avril 1940 </date> que j'obtiens une permiss- <lb rend="hyphen"/>
                ion de 3 jours pour aller voir <persName ref="#Jean-Pierre"> <forename>Jean-Pierre</forename></persName> qui était <lb/>
                un peu souffrant. Nous étions dans un en cantonnement à <lb/>
@@ -684,9 +685,9 @@
                appréhension qu'on y allait pour 5 jours et 5 nuits. <lb/>
                Le <orgName type="corps_armées" ref="#Bataillon">Bataillon</orgName> y était remonté. Je suis <lb/>
                reparti de <placeName ref="#Pernes"> Pernes </placeName> le <date ref="#d3" when="1940-04-27"> 27 avril </date>. <choice><sic> J'ai rentré </sic> <corr> Je suis rentré</corr></choice> le <date ref="#d4" when="1940-04-29"> 29 </date> à <lb/>
-               <placeName ref="#Capsilliers" cert="low"> Capsillers</placeName>. Là nous sommes restés 2 <choice><sic>où</sic><corr> ou </corr></choice> 3 jours. Puis <lb/> <pb n="3" facs="#p3"/>
+               <placeName ref="#Capsilliers" cert="low"> Capsillers</placeName>. Là nous sommes restés 2 <choice><sic>où</sic><corr> ou </corr></choice> 3 jours. Puis <pb n="3" facs="#p3"/>
                </p>
-               <p n="3">nous sommes allés à <placeName ref="#Inglange"> Inglange </placeName> pour 10 jours. C'est là que <lb/>
+               <p n="3"><lb/>nous sommes allés à <placeName ref="#Inglange"> Inglange </placeName> pour 10 jours. C'est là que <lb/>
                le <orgName type="corps_armées" ref="#Bataillon"> Bataillon </orgName> était descendu en repos. D'<placeName ref="#Inglange"> Inglange </placeName> <choice><sic> est parti </sic><corr> sont partis </corr></choice> <lb/>
                les copains <persName ref="#Jean_Merlin"> <surname>Merlin</surname></persName> et autres pour travailler aux mines <lb/>
                comme affectés spéciaux. Et le <date ref="#d5" when="1940-05-10"> 10 mai </date> au matin nous étions <lb/>
@@ -695,9 +696,9 @@
                d'<placeName ref="#Inglange"> Inglange </placeName></offset>. Dans ce bois on y montait la garde de nuit et <lb/>
                jour, et on y faisaient des tranchées et des abris. On <lb/>
                s'attendait à partir d'un jour à l'autre. Et d'aller en <lb/>
-               renfort dans le Nord. Le <date ref="#d6" when="1940-05-24"> 24 mai </date> dans l'après-midi <lb/> <pb n="4" facs="#p4"/>
+               renfort dans le Nord. Le <date ref="#d6" when="1940-05-24"> 24 mai </date> dans l'après-midi <pb n="4" facs="#p4"/>
                </p>
-               <p n="4">nous quittons le bois de <placeName ref="#Budling"> Budling </placeName> pour <placeName ref="#Metzervisse"> Metzervisse </placeName> qui est <lb/>
+               <p n="4"><lb/>nous quittons le bois de <placeName ref="#Budling"> Budling </placeName> pour <placeName ref="#Metzervisse"> Metzervisse </placeName> qui est <lb/>
                à <measure> 8 KM </measure>de là. Et nous y cantonnons - une brave femme nous <lb/>
                donne un bidon de lait et le soir nous mangeons dans une <lb/>
                maison une bonne omelette. C'est là que j'ai rencontré <lb/>
@@ -707,9 +708,9 @@
                tout de suite pour avoir si <persName ref="#Raymond"> <forename>Raymond</forename> </persName> n'était pas là. Pas <lb/>
                de veine c'était la <orgName type="corps_armées" ref="#Bie"> 3e Bie </orgName>. Le <date ref="#d7" when="1940-05-25"> 25 mai </date>, départ de <placeName ref="#Metzervisse"> Metzervisse </placeName> <lb/>
                par <placeName ref="#Semécourt"> Semécourt (Moselle) </placeName> étape de <measure>30 KM</measure>. C'est là que le <lb/>
-               <orgName type="corps_armées" ref="#Bataillon"> Bataillon </orgName> touche le renfort. Le <date ref="#d8" when="1940-05-26"> dimanche 26 mai </date> départ <lb/> <pb n="5" facs="#p5"/>
+               <orgName type="corps_armées" ref="#Bataillon"> Bataillon </orgName> touche le renfort. Le <date ref="#d8" when="1940-05-26"> dimanche 26 mai </date> départ <pb n="5" facs="#p5"/>
                </p>
-               <p n="5">de <placeName ref="#Semécourt"> Semécourt</placeName> pour <placeName ref="#Amanvillers"> Amanvillers</placeName> où nous devons embarquer. <lb/>
+               <p n="5"><lb/>de <placeName ref="#Semécourt"> Semécourt</placeName> pour <placeName ref="#Amanvillers"> Amanvillers</placeName> où nous devons embarquer. <lb/>
                C'est dans ce patelin que <persName ref="#Rémy_Grimbert"> <forename>Rémy</forename> <surname>Grimbert</surname> </persName> habitait - nous <lb/>
                y étions déjà passés au mois de <date ref="#d9" when="1940-05"> Mai </date> - pour nous rendre à <placeName ref="#Sainte-Marie-aux-Chênes"> Ste-Marie-aux-chênes </placeName>. Et de là <persName ref="#Rémy_Grimbert"> <forename>Rémy</forename> <surname>Grimbert</surname> </persName> était <lb/>
                venu voir <persName ref="#Jean_Merlin"> <forename>Jean</forename> <surname>Merlin</surname> </persName>. Aussitôt arrivés à <placeName ref="#Amanvillers"> Amanvillers </placeName> <lb/>
@@ -718,9 +719,9 @@
                voir <persName ref="#Rémy_Grimbert"> <forename>Rémy</forename></persName>. Le train <choice><sic>démarres</sic><corr> démarre</corr></choice> à 8 H du soir. on ne sais pas <lb/>
                où on va, mais on sait qu'on va monter en lignes. On <lb/>
                <choice><sic> roules </sic><corr> roule </corr></choice> on <choice><sic> arrêtes </sic><corr> s'arrête</corr></choice> et on repart, pour enfin arriver le <lb/>
-               <date  ref="#d10" when="1940-05-27"> 27 </date> au soir à 8 H. Le train a dû faire de grands détours, <lb/> <pb n="6" facs="#p6"/>
+               <date  ref="#d10" when="1940-05-27"> 27 </date> au soir à 8 H. Le train a dû faire de grands détours, <pb n="6" facs="#p6"/>
                </p>
-               <p n="6">car les convois d'artillerie qui passaient par <placeName ref="#Vitry-le-François"> Vitry-le-François </placeName> <lb/>
+               <p n="6"><lb/>car les convois d'artillerie qui passaient par <placeName ref="#Vitry-le-François"> Vitry-le-François </placeName> <lb/>
                avaient été bombardés par les avions. On <choice><sic> débarques </sic><corr> débarque </corr></choice> donc dans <lb/>
                une <offset>petite gare de la Marne à <measure>13 KM</measure> d'<placeName ref="#Epernay"> Epernay </placeName></offset>. On va <lb/>
                cantonner à X - je mets X car je ne me souviens plus du nom <lb/>
@@ -730,9 +731,9 @@
                omelette dans une maison. Et ensuite nous buvons quelques <lb/>
                bouteilles de champagne, car il n'est pas très cher ici. Le <lb/>
                <date ref="#d11" when="1940-05-30"> 30 mai 1940 </date> à 7 H 30 du soir on <choice><sic>embarques</sic><corr> embarque </corr></choice> dans des <lb/>
-               autobus de la <orgName type="société" ref="#STCRP"> S.T.C.R.P </orgName>. On <choice><sic> roules </sic><corr> roule </corr></choice> presque toute la nuit <lb/> <pb n="7" facs="#p7"/>
+               autobus de la <orgName type="société" ref="#STCRP"> S.T.C.R.P </orgName>. On <choice><sic> roules </sic><corr> roule </corr></choice> presque toute la nuit <pb n="7" facs="#p7"/>
                </p>
-               <p n="7">et on <choice><sic> arrives </sic><corr> arrive </corr></choice> le <date ref="#d12" when="1940-05-31"> 31 </date> à 4 H du matin à <placeName ref="#Elincourt"> Elincourt </placeName>, petit village <lb/>
+               <p n="7"><lb/>et on <choice><sic> arrives </sic><corr> arrive </corr></choice> le <date ref="#d12" when="1940-05-31"> 31 </date> à 4 H du matin à <placeName ref="#Elincourt"> Elincourt </placeName>, petit village <lb/>
                des Ardennes, déja bien touché par de récents bombardements. <lb/>
                On <choice><sic> couches </sic><corr> couche </corr></choice> le soir dans un bois à quelques kilomètres <lb/>
                d'<placeName ref="#Elincourt"> Elincourt </placeName>, en attendant le lendemain car on doit monter <lb/>
@@ -742,9 +743,9 @@
                nuit. Des maisons brûlent par ici - par là - on <choice><sic> entends </sic><corr> entend </corr> </choice> les <lb/>
                diffuseurs allemands. Notre <orgName type="corps_armées" ref="#Cie"> Cie </orgName> doit prendre ses positions <lb/>
                tout à fait en amont. On doit passer le <placeName ref="#canal"> canal de l'Aisne </placeName>
-               puis une autre rivière. On <choice><sic> prends </sic><corr> prend </corr></choice> position dans une <lb/><pb n="8" facs="#p8"/>
+               puis une autre rivière. On <choice><sic> prends </sic><corr> prend </corr></choice> position dans une <pb n="8" facs="#p8"/>
                </p>
-               <p n="8">grande usine qui avait déja subit de sérieux bombardements. <lb/>
+               <p n="8"> <lb/>grande usine qui avait déja subit de sérieux bombardements. <lb/>
                Nous serons là un peu en sécuritié, car nous avons au <lb/>
                dessus de nos têtes plusieurs plafonds en béton. Nous prenons <lb/>
                la garde nuit et de jour chacun son tour. Un fusil mitrailleur <lb/>
@@ -754,9 +755,9 @@
                et que l'on croit toujours à une attaque - heureusement <lb/>
                que l'on n'est pas privé pour la nourriture et la boisson. <lb/>
                On <choice><sic> trouves </sic><corr> trouve </corr> </choice> dans les maisons abandonnées des lapins et des <lb/>
-               poules, des légumes, des conserves, et on fait un peu de <lb/> <pb n="9" facs="#p9"/>
+               poules, des légumes, des conserves, et on fait un peu de <pb n="9" facs="#p9"/>
                </p>
-               <p n="9">popote nous même, rien que pour le groupe - soit une <lb/>
+               <p n="9"><lb/>popote nous même, rien que pour le groupe - soit une <lb/>
                douzaine. Nous avons trouvé un dépôt avec plus de <lb/>
                300 bouteilles de champagne, et du vin vieux. Je n'<choice><sic> ait </sic><corr> ai </corr></choice> <lb/>
                jamais bu autant de champagne de ma vie qu'à <placeName ref="#Rethel"> Rethel </placeName>. J'ai vu 2 <lb/>
@@ -766,9 +767,9 @@
                un pont, et on passait dans l'eau jusqu'à 50 cm avec les bidons <lb/>
                et les <distinct type="vocabulaire_militaire"> bouteillons </distinct>. Un <time> soir </time> le <date ref="#d14" when="1940-06-06"> 6 </date> ou le <date ref="#d15" when="1940-06-07"> 7 </date> je vois <persName ref="#Joseph"> <forename>Joseph</forename> </persName> qui
                <choice><sic> m'apprends </sic><corr> m'apprend </corr></choice> la mort de notre copain <persName ref="#Jean_François"> <forename>Jean</forename> <surname>François</surname> </persName>. Il se trouve <lb/>
-               dans une cave avec plusieurs de ses copains et un bombarde- <lb rend="hyphen"/> <pb n="10" facs="#p10"/>
+               dans une cave avec plusieurs de ses copains et un bombarde- <pb n="10" facs="#p10"/>
                </p>
-               <p n="10">ment d'artillerie <choice><sic> fait </sic><corr> a fait </corr></choice> écrouler les murs sur ces pauvres <lb/>
+               <p n="10"><lb rend="hyphen"/>ment d'artillerie <choice><sic> fait </sic><corr> a fait </corr></choice> écrouler les murs sur ces pauvres <lb/>
                camarades - fait tué également le <roleName type="officier">sergent abbé</roleName> <persName ref="#Malequin"> <surname>Malequin</surname> </persName>. <lb/>
                Nous subissons dans <placeName ref="#Rethel"> Rethel </placeName> de gros bombardement d'ar-<lb rend="hyphen"/>
                tillerie, surtout celui du <date ref="#d16" when="1940-06-09"> 9 juin </date> au <time> matin à 4 H  </time> jusqu'au <lb/>
@@ -777,9 +778,9 @@
                on reçoit l'ordre de nous replier. La situation devient de <lb/>
                plus en plus grave pour nous, on laisse pas mal de <lb/>
                munitions sur place. On se replit donc à <measure>5 KM </measure>de <placeName ref="#Rethel"> Rethel </placeName> <lb/>
-               et tout le <orgName type="corps_armées" ref="#Bataillon"> Bataillon </orgName> s'engage en dessous d'un tunnel <lb/> <pb n="11" facs="#p11"/>
+               et tout le <orgName type="corps_armées" ref="#Bataillon"> Bataillon </orgName> s'engage en dessous d'un tunnel <pb n="11" facs="#p11"/>
                </p>
-               <p n="11">de 500 m de long. On fait là une pause de plusieurs <lb/>
+               <p n="11"><lb/>de 500 m de long. On fait là une pause de plusieurs <lb/>
                heures. Je me souviens avoir <choice><sic> dormit </sic><corr>dormi</corr></choice> un peu dans ce tunnel. <lb/>
                C'est là que j'ai vu <persName ref="#Joseph"> <forename>Joseph</forename> </persName> pour la dernière fois. Je n'<choice><sic> ait </sic><corr> ai </corr></choice><lb/>
                guère <choice><sic> eut </sic><corr> eu </corr></choice> le temps de lui parler. Il passait devant nous <lb/>
@@ -789,9 +790,9 @@
                Le <choice><abbr><roleName type="officier">Cdt</roleName> du Bon</abbr><expan> Commandant du Bataillon</expan></choice> <persName ref="#Boutmy"> <surname>Boutmy</surname> </persName> nous dit du calme et du <lb/>
                courage, et tout <choice><sic> iras </sic><corr> ira </corr></choice> bien. Il est environ <time> 10 H du matin </time> <lb/>
                on sort aussi du tunnel. Les obus pleuvent, les balles <lb/>
-               sifflent à mes oreilles. Prendre position dans ces conditions <lb/> <pb n="12" facs="#p12"/>
+               sifflent à mes oreilles. Prendre position dans ces conditions <pb n="12" facs="#p12"/>
                </p>
-               <p n="12">se n'est pas intéressant. Notre section s'installe dans un <lb/>
+               <p n="12"><lb/>se n'est pas intéressant. Notre section s'installe dans un <lb/>
                petit vallonnement où on <choice><sic> mets </sic><corr> met </corr></choice> les <distinct type="vocabulaire_militaire">fusils-mitrailleurs</distinct> en <lb/>
                batterie. Pour arriver au trou où on doit se mettre je <lb/>
                courais à demi penché pour pas qu'on m'apperçoive <lb/>
@@ -800,9 +801,9 @@
                tête. Quand tout à coup je me laisse tomber à terre aussitôt et je roules <lb/>
                comme un tonneau dans le trou pour rejoindre les <lb/>
                camarades qui s'y trouvaient déjà, je regardes sur <lb/>
-               moi, et je m'apperçois que ma <distinct type="vocabulaire_militaire">cartouchière gauche</distinct>  <lb/> <pb n="13" facs="#p13"/>
+               moi, et je m'apperçois que ma <distinct type="vocabulaire_militaire">cartouchière gauche</distinct>  <pb n="13" facs="#p13"/>
                </p>
-              <p n="13"> et mon masque à gaz avaient été traversés de part en part. <lb/>
+              <p n="13"><lb/> et mon masque à gaz avaient été traversés de part en part. <lb/>
                Mais je n'avais absoluement rien - je l'avais échappé belle. <lb/>
                On est resté là plusieurs heures, le fusil-mitrailleur tirait <lb/>
                sans arrêt. Les allemands en face de nous, dans la plaine <lb/>
@@ -812,9 +813,9 @@
                se sentait encerclés, et notre situation était critique. Il <lb/>
                était trop tard pour se débiner. Ceux qui ont voulu se <lb/>
                replier sur <placeName ref="#Perthes"> Perthes </placeName> à travers champs sont tombés morts <lb/>
-               ou blessés en se repliant. L'étau se refermait de plus en <lb/> <pb n="14" facs="#p14"/>
+               ou blessés en se repliant. L'étau se refermait de plus en <pb n="14" facs="#p14"/>
                </p>
-               <p n="14">plus. On sentait bien que nous allions être prisonniers. <lb/>
+               <p n="14"><lb/>plus. On sentait bien que nous allions être prisonniers. <lb/>
                Rien à faire - en attendant ce temps - je mange un morceau <lb/>
                sur le ravitaillement de la soupe qui était <choice><sic> arrivé </sic><corr> arrivée </corr></choice> le <time> matin </time> <lb/>
                et nous attendons que les allemands nous prennent. Ils s'avancent <lb/>
@@ -824,9 +825,9 @@
                l'après-midi</time>, nous sommes fait prisonnier. J'en <choice><sic> ait </sic><corr> ai </corr></choice> gros sur le
                coeur. Nous restons plusieurs heures sur le terrain. Nous <lb/>
                ramassons sur le terrain les blessés. Il fait une chaleur <lb/>
-               terrible. Les soldats allemands nous conduisent près de la <lb/> <pb n="15" facs="#p15"/>
+               terrible. Les soldats allemands nous conduisent près de la <pb n="15" facs="#p15"/>
                </p>
-               <p n="15">voie ferrée où se trouve une locomotive abandonnée. Et <lb/>
+               <p n="15"><lb/>voie ferrée où se trouve une locomotive abandonnée. Et <lb/>
                on <choice><sic> vides </sic><corr> vide </corr></choice> l'eau qui se trouve dans le <distinct type="vocabulaire_militaire">tender</distinct> pour boire et <lb/>
                pour les blessés. Un <choice> <abbr>  sg. ch.</abbr><expan> sergent chef </expan></choice> français qui ne voulait pas donner <lb/>
                son bidon d'eau se voit menacé d'un revolver par un <lb/>
@@ -836,9 +837,9 @@
                de leur porter leurs munitions et leurs armes en direction <lb/>
                de <placeName ref="#Perthes">Perthes</placeName>. Ils <choice><sic>essuyent</sic><corr>essuient</corr></choice> les balles et obus des français. Des <lb/>
                copain, nous les avons revus le <time> lendemain matin </time>, tous les <lb/>
-               prisonniers étant rassemblés nous partons pour cantonner <lb/> <pb n="16" facs="#p16"/>
+               prisonniers étant rassemblés nous partons pour cantonner <pb n="16" facs="#p16"/>
                </p>
-               <p n="16">dans la cour d'une grande maison près de <placeName ref="#Rethel"> Rethel </placeName> où <lb/>
+               <p n="16"><lb/>dans la cour d'une grande maison près de <placeName ref="#Rethel"> Rethel </placeName> où <lb/>
                nous passons la nuit dehors. Le <time> lendemain matin </time> au réveil <lb/>
                je retrouve mes copains <persName ref="#Gustave_Royer"> <surname>Royer</surname></persName>, <persName ref="#Tirant"> <surname>Tirant</surname> </persName> et autres, qui avaient <lb/>
                été prisonniers <time> la veille</time>, mais nous n'étions pas ensemble ce <lb/>
@@ -848,9 +849,9 @@
                où nous passons 2 nuits à la caserne des <orgName type="corps_armées" ref="#gardes_mobiles"> gardes mobiles</orgName>. Là je <lb/>
                vois <persName ref="#Paul_Lamorille"> <forename>Paul</forename> <surname>Lamorille</surname> </persName>, le gendre de <persName ref="#Lourme"> <surname>Lourme</surname> </persName> puis nous gagnons la <lb/>
                <placeName ref="#Belgique" type="pays"> Belgique </placeName> et, toujours à pied, nous faisons de longues <lb/>
-               étapes sans beaucoup nous reposer, sans beaucoup manger, <lb/> <pb n="17" facs="#p17"/>
+               étapes sans beaucoup nous reposer, sans beaucoup manger,<pb n="17" facs="#p17"/>
                </p>
-              <p n="17"> et nous souffrons surtout de la soif, et nous buvons bien souvent <lb/>
+              <p n="17"><lb/> et nous souffrons surtout de la soif, et nous buvons bien souvent <lb/>
                de l'eau qui n'est certes pas potable. Puis nous gagnons la <lb/>
                <placeName ref="#Belgique" type="pays"> Belgique </placeName> où les gens nous font bon accueil, et nous embarquons <lb/>
                le <date ref="#d19" when="1940-06-15"> 15 juin</date> à <time> midi </time> à <placeName ref="#Bertrix"> Bertrix</placeName> pour  arriver à <placeName ref="#Trèves"> Trèves </placeName> à <lb/>
@@ -860,9 +861,9 @@
                travailleurs allemands. Il est immense et bien agencé. Tous <lb/>
                les prisonniers qui y passent ne posent que 24 à 48 heures. <lb/>
                C'est dit-on un camp de passage, et ensuite on doit être dirigé <lb/>
-               sur un <foreign xml:lang="allemand"> stalag </foreign>. Aussi pour se retaper un peu on se <choice><sic> débrouilles </sic><corr> débrouille </corr></choice> <lb/> <pb n="18" facs="#p18"/>
+               sur un <foreign xml:lang="allemand"> stalag </foreign>. Aussi pour se retaper un peu on se <choice><sic> débrouilles </sic><corr> débrouille </corr></choice> <pb n="18" facs="#p18"/>
                </p>
-             <p n="18">  pour rester quelques jours, surtout que je n'<choice><sic> ait </sic><corr> ai </corr></choice> mal aux pieds <lb/>
+             <p n="18"><lb/> pour rester quelques jours, surtout que je n'<choice><sic> ait </sic><corr> ai </corr></choice> mal aux pieds <lb/>
                des suites des longues marches que nous avons faites.<lb/>
                <persName ref="#Gustave_Royer"> <surname>Royer</surname> </persName>, <persName ref="#Lesaut"><surname>Lesaut</surname></persName> et <persName ref="#Mollet"> <surname>Mollet</surname> </persName> travaillent aux casernes à faire <lb/>
                des corvées  en ville où ils rapportent un peu de pain. <lb/>
@@ -872,16 +873,16 @@
                pas mal. Il y a aussi une cantine où on peut aller boire <lb/>
                bière et vin, et acheter d'autres articles. Il y a du monde et il faut faire <lb/>
                la guerre. On n'y <choice><sic> rentres </sic><corr> rentre</corr></choice> d'ailleurs que 10 par 10. J'y <lb/>
-               suis allé qu'une seule fois, j'ai bu une verre de bierre et acheté <lb/> <pb n="19" facs="#p19"/>
+               suis allé qu'une seule fois, j'ai bu une verre de bierre et acheté <pb n="19" facs="#p19"/>
                </p>
-               <p n="19">un paquet de tabac. J'étais bien content, j'ai payé avec une <lb/>
+               <p n="19"><lb/>un paquet de tabac. J'étais bien content, j'ai payé avec une <lb/>
                pièce de <choice><abbr type="monnaie"> 20 f. </abbr><expan> 20 francs </expan></choice> et on m'a rendu quelques pièces de 10 <foreign xml:lang="allemand"> pfenning </foreign>. <lb/>
                Etant un jour à la corvée de patates, j'apperçois <persName ref="#Henri_Lemaire"> <forename>Henri</forename> <surname>Lemaire</surname> </persName> de <lb/>
                <placeName ref="#Pernes"> Pernes </placeName>. Je lui parle et le <time>soir</time> je le retrouve ainsi que <lb/>
                <persName ref="#Catelin"> <surname>Catelin</surname> </persName> de <placeName ref="#Tangry"> Tangry </placeName>. Puis il <choice><sic>arrives</sic><corr>arrive</corr></choice> un ordre que tout le monde <lb/>
                doit partir. Ca nous <choice><sic>embêtes</sic><corr>embête</corr></choice>, on s'y <choice><sic>habituais</sic><corr>habituait</corr></choice>. On <choice><sic> essayes </sic><corr> essaie </corr></choice> de <lb/>
-               se camoufler, pas moyen. et nous quittons <placeName ref="#Trèves">Trèves</placeName> le <date ref="#d20" when="1940-06-22"> samedi <lb/>
-               22 juin 1940</date> dans <time>l'après-midi vers 3 H 30 </time> et ce qui nous <lb/>
+                  se camoufler, pas moyen. et nous quittons <placeName ref="#Trèves">Trèves</placeName> le <date ref="#d20" when="1940-06-22"> samedi 22 juin 1940</date> <lb/>
+               dans <time>l'après-midi vers 3 H 30 </time> et ce qui nous <lb/>
                chagrine c'est que nous savons que le convoi part pour la <lb/>
                <placeName ref="#Prusse_Orientale" type="pays"> Prusse Orientale. </placeName>
             </p>

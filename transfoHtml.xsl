@@ -286,7 +286,7 @@
                 <xsl:copy-of select="$head"/>
                 <body>
                     <xsl:copy-of select="$nav_bar"/>
-                    <div class="container col-sm-5 text-justify">
+                    <div class="container col-lg-5 text-justify">
                         <header> 
                             <h1 class="text-center">
                                 <xsl:value-of select="$title"/>
@@ -531,6 +531,11 @@
         </xsl:element>
     </xsl:template>
     
+    <xsl:template match="lb" mode="#all">
+        <br/>
+        <xsl:number select="." level="any" format="1"/>
+        <xsl:text> - </xsl:text>
+    </xsl:template>
 
 </xsl:stylesheet>
 
