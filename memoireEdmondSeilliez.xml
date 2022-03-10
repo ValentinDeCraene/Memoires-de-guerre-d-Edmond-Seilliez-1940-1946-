@@ -89,36 +89,36 @@
            <listOrg>
               <org xml:id="Bataillon">
                  <orgName> Bataillon </orgName>
-                 <note> Bataillon de l'armée de terre à laquelle appartenait Edmond Seilliez, à savoir la 71e division d'infanterie </note>
+                 <note> Bataillon de l'armée de terre à laquelle appartenait Edmond Seilliez, à savoir la 71e division d'infanterie. </note>
               </org>
               <org xml:id="RALVF">
                  <orgName> 370e R.A.L.V.F  </orgName>
-                 <note> <expan>370eme Régiment d'Artillerie Lourde sur Voie Ferrée</expan>. Formation créée pour transporter sur voie ferrée l'artillerie "gros calibres" sur voie ferrée,
+                 <note> <expan> 370eme Régiment d'Artillerie Lourde sur Voie Ferrée</expan>. Formation créée pour transporter sur voie ferrée l'artillerie "gros calibres" sur voie ferrée,
                     afin de palier aux difficultés de transport par la route en temps de guerre.
                  </note>
               </org>
               <org xml:id="Bie">
                  <orgName cert="low"> 3e Bie </orgName>
-                 <note> <expan>3e Brigade d'Infanterie Légère</expan>. Manque de données contextuelles pour déterminer le corps d'armée à laquelle cette brigade appartient (probablement le 3e régime d'infanterie).</note>
+                 <note> <expan> 3e Brigade d'Infanterie Légère</expan>. Manque de données contextuelles pour déterminer le corps d'armée à laquelle cette brigade appartient (probablement le 3e régime d'infanterie).</note>
               </org>
               <org xml:id="Cie">
                  <orgName cert="low"> Cie </orgName>
-                 <note> <expan>Compagnie</expan> de l'armée de terre à laquelle appartient Joseph, l'ami d'Edmond Seilliez. Manque de données pour déterminer celle-ci avec précision.
+                 <note> <expan> Compagnie</expan> de l'armée de terre à laquelle appartient Joseph, l'ami d'Edmond Seilliez. Manque de données pour déterminer celle-ci avec précision.
                  </note>
               </org>
               <org xml:id="STCRP">
                  <orgName> S.T.C.R.P </orgName>
-                 <note> <expan>Société des Transports en Commun de la Région Parisienne</expan>. Société d'exploitation des transports en commun en activité entre 1921 et 1941,
+                 <note> <expan> Société des Transports en Commun de la Région Parisienne</expan>. Société d'exploitation des transports en commun en activité entre 1921 et 1941,
                         réquisitionnée pour le transport des soldats en 1940.
                  </note>
               </org>
               <org xml:id="Rgt">
                  <orgName> 152e Rgt </orgName>
-                 <note> <expan>152e Régiment d'Infanterie de l'armée de terre</expan>, stationné à Colmar depuis 1919. Régiment traditionnel de l'Alsace depuis le XIXe siècle.</note>
+                 <note> <expan> 152e Régiment d'Infanterie de l'armée de terre</expan>, stationné à Colmar depuis 1919. Régiment traditionnel de l'Alsace depuis le XIXe siècle.</note>
               </org>
               <org xml:id="gardes_mobiles">
-                 <orgName cert='medium'> gardes mobiles </orgName>
-                 <note> <expan>Garde nationale Mobile</expan>, corps militaire auxiliaire de l'armée française stationné dans les places fortes et villes. Préfigure les réservitstes contemporains.
+                 <orgName cert='medium'> Gardes mobiles </orgName>
+                 <note> <expan> Garde nationale Mobile</expan>, corps militaire auxiliaire de l'armée française stationné dans les places fortes et villes. Préfigure les réservitstes contemporains.
                         Il s'agit ici probablement du Régiment des Ardennes.
                  </note>
               </org>
@@ -144,7 +144,7 @@
                     <forename>Georges</forename> 
                     <surname>Gillet</surname>
                  </persName>
-                 <note> Rencontré par Edmond à <placeName ref="#Metzervisse">Metzervisse</placeName></note>
+                 <note> Rencontré par Edmond à <placeName ref="#Metzervisse">Metzervisse</placeName>.</note>
               </person>
               <person xml:id="Raymond">
                  <persName>
@@ -158,14 +158,14 @@
                     <forename>Rémy</forename> 
                     <surname>Grimbert</surname>
                  </persName>
-                 <note> Connaissance d'Edmond Seilliez habitant à <placeName ref="#Amanvillers">Amanvillers</placeName></note>
+                 <note> Connaissance d'Edmond Seilliez habitant à <placeName ref="#Amanvillers">Amanvillers</placeName>.</note>
               </person>
               <person xml:id="Gustave_Royer">
                  <persName> 
                     <forename>Gustave</forename> 
                     <surname>Royer</surname>
                  </persName>
-                 <note> un de ses "copains" retrouvé lors de sa capture à <placeName ref="#Rethel">Rethel</placeName></note>
+                 <note> Un de ses "copains" retrouvé lors de sa capture à <placeName ref="#Rethel">Rethel</placeName>.</note>
               </person>
               <person xml:id="Joseph">
                  <persName>
@@ -189,23 +189,23 @@
                     <forename></forename>
                     <surname>Malequin</surname>
                  </persName>
-                 <note> <roleName type="officier">Sergent-abbé</roleName> mort lors du bombardement de <placeName ref="#Rethel">Rethel</placeName>.
+                 <note> <roleName type="officier"> Sergent-abbé</roleName> mort lors du bombardement de <placeName ref="#Rethel">Rethel</placeName>.
                         Prénom inconnu.
                  </note>
               </person>
               <person xml:id="Boutmy">
                  <persName>
                     <forename></forename>
-                    <surname>Boutmy</surname>
+                    <surname> Boutmy</surname>
                  </persName>
-                 <note> <roleName type="officier">Commandant</roleName> du bataillon auquel appartenait Edmond. Prénom inconnu.</note>
+                 <note> <roleName type="officier"> Commandant</roleName> du bataillon auquel appartenait Edmond. Prénom inconnu.</note>
               </person>
               <person xml:id="Tirant">
                  <persName>
                     <forename></forename>
                     <surname>Tirant</surname>
                  </persName>
-                 <note>Un des amis de l'auteur rencontré lors de sa capture à <placeName ref="#Rethel">Rethel</placeName>.
+                 <note> Un des amis de l'auteur rencontré lors de sa capture à <placeName ref="#Rethel">Rethel</placeName>.
                  </note>
               </person>
               <person xml:id="Léonce_Huet">
@@ -288,38 +288,38 @@
                  </location>
               </place>
               <place xml:id="Kirschnaumen">
-                 <placeName> Kirschnaumen </placeName>
+                 <placeName> Kirschnaumen</placeName>
                  <location>
-                    <country key="FR"> France </country>
-                    <district type="département"> Moselle </district>
-                    <geo> 49° 23′ 54″ nord, 6° 26′ 06″ est </geo>
+                    <country key="FR"> France</country>
+                    <district type="département"> Moselle</district>
+                    <geo> 49° 23′ 54″ nord, 6° 26′ 06″ est</geo>
                     <note> Commune de cantonnement d'Edmond en avril 1940 </note>
                  </location>
               </place>
               <place xml:id="Capsilliers" cert="low">
-                 <placeName> Capsilliers  </placeName>
+                 <placeName> Capsilliers</placeName>
                  <location>
-                    <country key="FR"> France </country>
-                    <district type="département" cert="low"> Moselle </district>
-                    <geo> introuvable </geo>
-                    <note> Toponyme non élucidé. Il s'agit probablement d'un lieu-dit dont l'emplacement est indéterminé </note>
+                    <country key="FR"> France</country>
+                    <district type="département" cert="low"> Moselle</district>
+                    <geo> indéterminé</geo>
+                    <note> Toponyme non élucidé. Il s'agit probablement d'un lieu-dit dont l'emplacement est indéterminé. </note>
                  </location>
               </place>
               <place xml:id="Inglange">
-                 <placeName> Inglange </placeName>
+                 <placeName> Inglange</placeName>
                  <location>
-                    <country key="FR"> France </country>
-                    <district type="département"> Moselle </district>
-                    <geo> 49° 20′ 52″ nord, 6° 17′ 56″ est </geo>
+                    <country key="FR"> France</country>
+                    <district type="département"> Moselle</district>
+                    <geo> 49° 20′ 52″ nord, 6° 17′ 56″ est</geo>
                     <note> Ville de Moselle où Edmond et son bataillon stationne 10 jours en mai 1940. </note>
                  </location>
               </place>
               <place xml:id="Budling">
-                 <placeName> Budling </placeName>
+                 <placeName> Budling</placeName>
                  <location>
-                    <country key="FR"> France </country>
-                    <district type="département"> Moselle </district>
-                    <geo> 49° 20′ 51″ nord, 6° 21′ 23″ est  </geo>
+                    <country key="FR"> France</country>
+                    <district type="département"> Moselle</district>
+                    <geo> 49° 20′ 51″ nord, 6° 21′ 23″ est</geo>
                     <note> Localité proche d'Inglange. Le bataillon d'Edmond se cache dans un bois proche en mai 1940. </note>
                  </location>
               </place>
@@ -327,62 +327,62 @@
                  <placeName> Metzervisse</placeName>
                  <location>
                     <country key="FR"> France</country>
-                    <district type="département"> Moselle </district>
-                    <geo> 49° 18′ 57″ nord, 6° 17′ 11″ est </geo>
+                    <district type="département"> Moselle</district>
+                    <geo> 49° 18′ 57″ nord, 6° 17′ 11″ est</geo>
                     <note> Localité proche de Budling et Inglange. </note>
                  </location>
               </place>
               <place xml:id="Semécourt">
-                 <placeName> Semécourt </placeName>
+                 <placeName> Semécourt</placeName>
                  <location>
                     <country key="FR"> France</country>
-                    <district type="département"> Moselle </district>
-                    <geo> 49° 11′ 38″ nord, 6° 08′ 07″ est </geo>
+                    <district type="département"> Moselle</district>
+                    <geo> 49° 11′ 38″ nord, 6° 08′ 07″ est</geo>
                     <note> Etape du parcours du bataillon d'Edmond en Moselle. L'auteur précise la région entre parathèses.
                     Cela traduit vraisemblablement une volonté de désambiguiser le nom du lieu. </note>
                  </location>
               </place>
               <place xml:id="Amanvillers">
-                 <placeName> Amanvillers </placeName>
+                 <placeName> Amanvillers</placeName>
                  <location>
-                    <country key="FR"> France </country>
-                    <district type="département"> Moselle </district>
-                    <geo> 49° 10′ 03″ nord, 6° 02′ 37″ est </geo>
+                    <country key="FR"> France</country>
+                    <district type="département"> Moselle</district>
+                    <geo> 49° 10′ 03″ nord, 6° 02′ 37″ est</geo>
                     <note> Village où Edmond et son bataillon prennent le train pour rejoindre la ligne de front. </note>
                  </location>
               </place>
               <place xml:id="Sainte-Marie-aux-Chênes">
-                 <placeName> Sainte-Marie-aux-Chênes </placeName>
+                 <placeName> Sainte-Marie-aux-Chênes</placeName>
                  <location>
-                    <country key="FR"> France </country>
-                    <district type="département"> Moselle </district>
-                    <geo> 49° 11′ 32″ nord, 6° 00′ 11″ est </geo>
+                    <country key="FR"> France</country>
+                    <district type="département"> Moselle</district>
+                    <geo> 49° 11′ 32″ nord, 6° 00′ 11″ est</geo>
                     <note> Mentionné par Edmond comme étant une localité qu'il a déjà visité avant les combats.</note>
                  </location>
               </place>
               <place xml:id="Vitry-le-François">
-                 <placeName> Vitry-le-François </placeName>
+                 <placeName> Vitry-le-François</placeName>
                  <location>
-                    <country key="FR"> France </country>
-                    <district type="département"> Marne </district>
-                    <geo> 48° 43′ 32″ nord, 4° 35′ 07″ est </geo>
+                    <country key="FR"> France</country>
+                    <district type="département"> Marne</district>
+                    <geo> 48° 43′ 32″ nord, 4° 35′ 07″ est</geo>
                     <note> Gare par laquelle devaient transiter l'artillerie lourde française, qui fut d'après Edmond bombardée peu avant son passage. </note>
                  </location>
               </place>
               <place xml:id="Epernay">
-                 <placeName> Epernay </placeName>
+                 <placeName> Epernay</placeName>
                  <location>
-                    <country key="FR"> France </country>
+                    <country key="FR"> France</country>
                     <district type="département"> Marne</district>
-                    <geo> 49° 02′ 25″ nord, 3° 57′ 36″ est </geo>
+                    <geo> 49° 02′ 25″ nord, 3° 57′ 36″ est</geo>
                     <note> Ville mentionnée par Edmond comme repère géographique pour situer le village X dont il ne parvient pas à se souvenir.</note>
                  </location>
               </place>
               <place xml:id="Elincourt">
-                 <placeName> Elincourt </placeName>
+                 <placeName> Elincourt</placeName>
                  <location>
-                    <country key="FR"> France </country>
-                    <district type="département"> Nord </district>
+                    <country key="FR"> France</country>
+                    <district type="département"> Nord</district>
                     <geo> 50° 02′ 42″ nord, 3° 22′ 21″ est</geo>
                     <note> Village rural à la frontière administrative entre les département du Nord, de l'Aisne et des Ardennes, expliquant vraisemblablement l'approximation d'Edmond qui le situe
                            dans les Ardennes (à comprendre sûrement sous la plume de l'auteur comme "région" historique ou géographique).
@@ -390,65 +390,65 @@
                  </location>
               </place>
               <place xml:id="Rethel">
-                 <placeName> Rethel </placeName>
+                 <placeName> Rethel</placeName>
                  <location>
-                    <country key="FR"> France </country>
-                    <district type="département"> Ardennes </district>
-                    <geo> 49° 30′ 38″ nord, 4° 22′ 00″ est </geo>
+                    <country key="FR"> France</country>
+                    <district type="département"> Ardennes</district>
+                    <geo> 49° 30′ 38″ nord, 4° 22′ 00″ est</geo>
                     <note> Mentionné à plusieurs reprise. Espace des combats et des bombardements que relate Edmond. Il s'agit parfois de la ville précisement, parfois d'un espace
                     géographique moins clairement circonscrit.</note>
                  </location>
               </place>
               <place xml:id="Colmar">
-                 <placeName> Colmar </placeName>
+                 <placeName> Colmar</placeName>
                  <location>
-                    <country key="FR"> France </country>
-                    <district type="département"> Haut-Rhin </district>
-                    <geo> 48° 04′ 54″ nord, 7° 21′ 20″ est </geo>
+                    <country key="FR"> France</country>
+                    <district type="département"> Haut-Rhin</district>
+                    <geo> 48° 04′ 54″ nord, 7° 21′ 20″ est</geo>
                     <note> Mentionné par Edmond lors du remplacement du 152e Régiment d'Infanterie</note>
                  </location>
               </place>
               <place xml:id="Reims">
-                 <placeName> Reims </placeName>
+                 <placeName> Reims</placeName>
                  <location>
-                    <country key="FR"> France </country>
-                    <district type="département"> Marne </district>
-                    <geo> 49° 15′ 46″ nord, 4° 02′ 05″ est </geo>
+                    <country key="FR"> France</country>
+                    <district type="département"> Marne</district>
+                    <geo> 49° 15′ 46″ nord, 4° 02′ 05″ est</geo>
                     <note> Mentionné par Edmond comme direction générale empruntée par son bataillon lors de sa retraite.</note>
                  </location>
               </place>
               <place xml:id="Perthes">
-                 <placeName> Perthes  </placeName>
+                 <placeName> Perthes</placeName>
                  <location>
-                    <country key="FR"> France </country>
-                    <district type="département"> Haute-Marne </district>
-                    <geo> 48° 39′ 25″ nord, 4° 49′ 27″ est </geo>
+                    <country key="FR"> France</country>
+                    <district type="département"> Haute-Marne</district>
+                    <geo> 48° 39′ 25″ nord, 4° 49′ 27″ est</geo>
                     <note> Ville a proximité de laquelle le bataillon d'Edmond est capturé lors de leur retraite. </note>
                  </location>
               </place>
               <place xml:id="Charleville">
-                 <placeName> Charleville-Mézières </placeName>
+                 <placeName> Charleville-Mézières</placeName>
                  <location>
-                    <country key="FR"> France </country>
-                    <district type="département"> Ardennes </district>
-                    <geo> 49° 46′ 19″ nord, 4° 42′ 58″ est </geo>
+                    <country key="FR"> France</country>
+                    <district type="département"> Ardennes</district>
+                    <geo> 49° 46′ 19″ nord, 4° 42′ 58″ est</geo>
                     <note> Lieu de cantonnement d'Edmond, au sein de la caserne des gardes-mobiles.</note>
                  </location>
               </place>
               <place xml:id="Bertrix">
-                 <placeName> Bertrix </placeName>
+                 <placeName> Bertrix</placeName>
                  <location>
-                    <country key="BL"> Belgique </country>
-                    <district type="province"> Province du Luxembourg </district>
-                    <geo> 49° 51,25′ nord, 5° 15,2′ est </geo>
+                    <country key="BL"> Belgique</country>
+                    <district type="province"> Province du Luxembourg</district>
+                    <geo> 49° 51,25′ nord, 5° 15,2′ est</geo>
                     <note> Etape du train conduisant Edmond captif vers Trèves </note>
                  </location>
               </place>
                  <place xml:id="Trèves">
                  <placeName> Trèves (Trier)</placeName>
                  <location>
-                    <country key="AL"> Allemagne </country>
-                    <district type="Land"> Rhénanie-Palatinat </district>
+                    <country key="AL"> Allemagne</country>
+                    <district type="Land"> Rhénanie-Palatinat</district>
                     <geo> 49° 45′ 35″ nord, 6° 38′ 38″ est</geo>
                     <note> Edmond mentionne le nom allemand de la ville en plus du nom français (probablement une retranscription orale). </note>
                  </location>
@@ -457,27 +457,27 @@
                  <placeName>  Belgique </placeName>
                  <location>
                     <country key="BL"> Belgique</country>
-                    <district>Non précisé</district>
+                    <district> Non indiqué</district>
                     <geo> Non précisé</geo>
                  </location>
               </place>
               <place xml:id="Prusse_Orientale">
-                 <placeName> Prusse Orientale </placeName>
+                 <placeName> Prusse Orientale</placeName>
                  <location>
                     <country key="AL"> Allemagne</country>
-                    <district type="province"> Province de Prusse-Orientale </district>
-                    <geo>Non précisé</geo>
+                    <district type="province"> Province de Prusse-Orientale</district>
+                    <geo> Non précisé</geo>
                     <note> Province faisant théorique partie de l'Etat Libre de Prusse, elle est occupée et administrée par l'Allemagne en 1940. Territoire de transfert
                            des soldats captifs entre 1940 et début 1941.
                     </note>
                  </location>
               </place>
               <place xml:id="canal">
-                 <placeName> canal de l'Aisne</placeName>
+                 <placeName> Canal de l'Aisne</placeName>
                  <location>
-                    <country key="Fr"> France </country>
+                    <country key="Fr"> France</country>
                     <district> Aisne et Marne</district>
-                    <geo>Non précisé</geo>
+                    <geo> Non précisé</geo>
                     <note> Canal de 58 km reliant l'Aisne à la Marne.</note>
                  </location>
               </place>

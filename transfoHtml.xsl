@@ -41,7 +41,9 @@
         
         
         <xsl:variable name="title">
+            <i>
             <xsl:value-of select="//titleStmt/title/text()"/>
+                </i>
         </xsl:variable>
         <xsl:variable name="author">
             <xsl:value-of select="concat(//editionStmt//forename, //editionStmt//surname)"/>
@@ -124,19 +126,20 @@
                 <body>
                     <xsl:copy-of select="$nav_bar"/>
                         <div>
-                            <h1 style="text-align: center; padding: 20px;">Bienvenue dans ce projet d'édition numérique du
+                            <h1 class="container col-sm-10 text-center p-3">Bienvenue dans ce projet d'édition numérique du
                                 <i>Carnet des mémoires de guerre d'Edmond Seilliez (1940-1946)</i> .</h1>
                             <p style="text-align: center">
                                 <xsl:value-of select="//edition"/>
                             </p>
-                            <p>
-                                <h2 style="text-align: center; padding: 10px;">Présentation de la source.</h2>
-                                <ul style="text-align: left">
-                                    <li>Titre :<it><xsl:value-of select="$title"/></it></li>
-                                    <li> Résumé :<xsl:value-of select="//summary"/></li>
-                                    <li>Lieu de conservation : <xsl:value-of select="concat(//settlement, ',', //repository)"/>.</li>
-                                    <li>Analyse codicologique : <xsl:value-of select="concat(//supportDesc, //layoutDesc, //bindingDesc)"/></li>
-                                    <li> Analyse paléographique : <xsl:value-of select="//handDesc"/></li>
+                            <p class="container col-5 text-justify">
+                                <h2 class="m-4 text-center">Présentation de la source.</h2>
+                                <ul class="m-2 text-justify">
+                                    <li class="m-2 text-justify"><b>Titre</b> :<br/><i><xsl:value-of select="$title"/>.</i></li>
+                                    <li class="m-2 text-justify"> <b>Résumé</b> : <br/><xsl:value-of select="//summary"/></li>
+                                    <li class="m-2 text-justify"><b>Lieu de conservation</b> : <br/> <xsl:value-of select="concat(//settlement, ',', //repository)"/>.</li>
+                                    <li class="m-2 text-justify"><b>Analyse codicologique</b> : <br/> <xsl:value-of select="concat(//supportDesc, //layoutDesc, //bindingDesc)"/></li>
+                                    <li class="m-2 text-justify"><b>Analyse paléographique </b>: <br/> <xsl:value-of select="//handDesc"/></li>
+                                    <li class="m-2 text-justify"><b>Edition </b>: <br/> <xsl:value-of select="//resp"/> <xsl:value-of select="$author"/>, arrière petit-fils de l'auteur. Une ODD détaillée du projet se trouve à cette adresse : <a href="https://github.com/ValentinDeCraene/Memoires-de-guerre-d-Edmond-Seilliez-1940-1946-TEI-XSLT/blob/main/sortie_ODD_memoires.html">https://github.com/ValentinDeCraene/Memoires-de-guerre-d-Edmond-Seilliez-1940-1946-TEI-XSLT/blob/main/sortie_ODD_memoires.html</a></li>
                                 </ul>
                             </p>
                     </div>
@@ -152,8 +155,9 @@
                     <xsl:copy-of select="$nav_bar"/>
                     <div>
                         <h1 class="text-center">Index des personnes</h1>
-                        <ul>
+                        <ul style= "text-justify; padding-left: 110px;">
                             <xsl:for-each select=".//listPerson/person">
+                                <xsl:sort select="persName" order="ascending"/>
                                 <li class="p-3">
                                     <xsl:choose>
                                         <xsl:when test="persName/surname[@cert = 'low'] or persName/forename[@cert = 'low']">
@@ -170,7 +174,7 @@
                                             <xsl:value-of
                                                 select="concat(persName/forename, ' ', persName/surname, ':', descendant::note)"
                                             />
-                                            <xsl:text>L'identité de cette personne est certaine. </xsl:text>
+                                            <xsl:text> L'identité de cette personne est certaine. </xsl:text>
                                         </xsl:otherwise>
                                     </xsl:choose>
                                     <xsl:text> Occurences aux pages suivantes : </xsl:text>
@@ -191,8 +195,9 @@
                     <xsl:copy-of select="$nav_bar"/>
                     <div>
                         <h1 class="text-center">Index des lieux</h1>
-                        <ul>
+                        <ul style= "text-justify; padding-left: 110px;">
                             <xsl:for-each select=".//listPlace/place">
+                                <xsl:sort select="placeName" order="ascending"/>
                                 <li class="p-3">
                                     <xsl:attribute name="n">
                                         <xsl:number count="." format="1"/>
@@ -200,12 +205,12 @@
                                     <xsl:choose>
                                         <xsl:when test="@cert = 'low'">
                                             <xsl:value-of
-                                                select="concat(placeName, ':', location/country, ',', location/district, ',', location/geo, ',', location/note)"/>
+                                                select="concat(placeName, ':', location/country, ',', location/district, ',', location/geo, '.', location/note)"/>
                                             <xsl:text> Attention, l'exmplacement de ce toponyme est incertain. </xsl:text>
                                         </xsl:when>
                                         <xsl:otherwise>
                                             <xsl:value-of
-                                                select="concat(placeName, ':', location/country, ',', location/district, ',', location/geo, ',', location/note)"
+                                                select="concat(placeName, ':', location/country, ',', location/district, ',', location/geo, '.', location/note)"
                                             />
                                             <xsl:text> L'emplacement de ce lieu est certain. </xsl:text>
                                         </xsl:otherwise>
@@ -228,8 +233,9 @@
                     <xsl:copy-of select="$nav_bar"/>
                     <div>
                         <h1 class="text-center">Index des organisations</h1>
-                        <ul>
+                        <ul style= "text-justify; padding-left: 110px;">
                             <xsl:for-each select=".//listOrg/org">
+                                <xsl:sort select="orgName" order="ascending"/>
                                 <li class="p-3">
                                     <xsl:attribute name="n">
                                         <xsl:number count="." format="1"/>
@@ -338,21 +344,22 @@
                             <li>Proposer un index des personnages, des organisations et des relations que l'auteur a pu entretenir avec ceux-ci.</li>
                             <li>Proposer un index des espaces et des lieux parcourus par l'auteur dans le contexte militaire afin de fournir une analyse
                             de la représentation de l'espace des combats.</li>
-                            <li>Proposer une chronologie des événements</li>
+                            <li>Proposer une chronologie des événements.</li>
+                            <li> Une ODD détaillée du projet se trouve à cette adresse : <a href="https://github.com/ValentinDeCraene/Memoires-de-guerre-d-Edmond-Seilliez-1940-1946-TEI-XSLT/blob/main/sortie_ODD_memoires.html">https://github.com/ValentinDeCraene/Memoires-de-guerre-d-Edmond-Seilliez-1940-1946-TEI-XSLT/blob/main/sortie_ODD_memoires.html</a></li>
                         </ul>
                         <h2 style="text-align: center; padding: 10px;">Transformations XSL</h2>
                         <p>Les transformations XSL ont pour but de réaliser une sortie HTML depuis
                             l'encodage en XML. L'édition numérique se présente ainsi sous la forme
                             de plusieurs pages HTML :</p>
                         <ul>
-                            <li>Une page d'accueil</li>
-                            <li>La transcription facsimilaire du passage encodé</li>
-                            <li>La transcription corrigée du passage encodé</li>
-                            <li>L'index des personnages</li>
-                            <li>L'index des organisation</li>
-                            <li>L'index des noms de lieux</li>
+                            <li>Une page d'accueil.</li>
+                            <li>La transcription facsimilaire du passage encodé.</li>
+                            <li>La transcription corrigée du passage encodé.</li>
+                            <li>L'index des personnages.</li>
+                            <li>L'index des organisation.</li>
+                            <li>L'index des noms de lieux.</li>
                             <li>Une page retraçant la chronologie des événements, de la mobilisation d'Edmond Seilliez à sa capture et déportation en Prusse Orientale.</li>
-                            <li>Une page à propos donnant des informations sur le projet</li>
+                            <li>Une page à propos donnant des informations sur le projet.</li>
                         </ul>
                     </div>
                 </body>
@@ -517,4 +524,14 @@
         </xsl:for-each>
     </xsl:template>
     
+    
+    <xsl:template match="//body//p" mode="#all">
+        <xsl:element name="p">
+            <xsl:apply-templates mode="#current"/>
+        </xsl:element>
+    </xsl:template>
+    
+
 </xsl:stylesheet>
+
+
