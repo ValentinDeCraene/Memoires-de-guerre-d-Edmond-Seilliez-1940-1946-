@@ -62,7 +62,7 @@
                        </layoutDesc>
                     </objectDesc>
                     <handDesc>
-                       <p> l'écriture manuscrite est cursive et régulière, par une seule main. Le style est simple, quasi télégraphique, laissant néanmoins
+                       <p> L'écriture manuscrite est cursive et régulière, par une seule main. Le style est simple, quasi télégraphique, laissant néanmoins
                           transparaître les relations d'amitié, de camaraderie ou de subordination de l'auteur avec les nombreux personnages mentionnés. </p>
                     </handDesc>
                  <bindingDesc>
@@ -239,7 +239,7 @@
                     <forename></forename>
                     <surname>Lourme</surname>
                  </persName>
-                 <note> Beau-père de <persName ref="#Paul_Lamorille"><forename>Paul</forename> <surname>Lamorille</surname></persName>, rencontré à la caserne 
+                 <note> Beau-père de <persName ref="#Paul_Lamorille"><forename>Paul</forename><surname>Lamorille</surname></persName>, rencontré à la caserne 
                     des <roleName ref="#gardes_mobiles">gardes-mobiles</roleName> 
                     de <placeName ref="#Charleville">Charleville</placeName>.
                  </note>
@@ -542,11 +542,11 @@
            <date when="1940-06-01"> 1 juin 1940</date>
         </item>
         <item xml:id="d14">
-           <p> A <placeName ref="#Rethel">Rethel</placeName> Edmond rencontre des camarades et apprends la mort de <persName ref="#Jean_François"><forename>Jean</forename> <surname>François</surname></persName></p>
+           <p> A <placeName ref="#Rethel">Rethel</placeName> Edmond rencontre des camarades et apprends la mort de <persName ref="#Jean_François"><forename>Jean </forename> <surname>François</surname></persName></p>
            <date when="1940-06-06"> 6 juin 1940 </date>
         </item>
         <item xml:id="d15">
-           <p> A <placeName ref="#Rethel">Rethel</placeName> Edmond rencontre des camarades et apprends la mort de <persName ref="#Jean_François"><forename>Jean</forename> <surname>François</surname></persName> (Edmond hésite avec la date précédente). </p>
+           <p> A <placeName ref="#Rethel">Rethel</placeName> Edmond rencontre des camarades et apprends la mort de <persName ref="#Jean_François"><forename>Jean </forename> <surname>François</surname></persName> (Edmond hésite avec la date précédente). </p>
            <date when="1940-06-07"> 7 juin 1940 </date>
         </item>
         <item xml:id="d16">
@@ -877,7 +877,7 @@
                </p>
                <p n="19"><lb/>un paquet de tabac. J'étais bien content, j'ai payé avec une <lb/>
                pièce de <choice><abbr type="monnaie"> 20 f. </abbr><expan> 20 francs </expan></choice> et on m'a rendu quelques pièces de 10 <foreign xml:lang="allemand"> pfenning </foreign>. <lb/>
-               Etant un jour à la corvée de patates, j'apperçois <persName ref="#Henri_Lemaire"> <forename>Henri</forename> <surname>Lemaire</surname> </persName> de <lb/>
+               Etant un jour à la corvée de patates, j'apperçois <persName ref="#Henri_Lemaire"> <forename>Henri</forename> <surname> Lemaire</surname> </persName> de <lb/>
                <placeName ref="#Pernes"> Pernes </placeName>. Je lui parle et le <time>soir</time> je le retrouve ainsi que <lb/>
                <persName ref="#Catelin"> <surname>Catelin</surname> </persName> de <placeName ref="#Tangry"> Tangry </placeName>. Puis il <choice><sic>arrives</sic><corr>arrive</corr></choice> un ordre que tout le monde <lb/>
                doit partir. Ca nous <choice><sic>embêtes</sic><corr>embête</corr></choice>, on s'y <choice><sic>habituais</sic><corr>habituait</corr></choice>. On <choice><sic> essayes </sic><corr> essaie </corr></choice> de <lb/>

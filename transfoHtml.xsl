@@ -143,6 +143,15 @@
                                 </ul>
                             </p>
                     </div>
+                    <div class="container">
+                        <figure>
+                            <img align="center"
+                            src="/home/valentin/Documents/Projet_TEI/IMAGES/illustration_accueil.jpg"
+                            style="width: 80rem; height: auto; padding: 10 px"/>
+                        <figcaption style="text-align:center;">Numérisation du premier folio du carnet des
+                        mémoires d'Edmond Seilliez</figcaption>
+                        </figure>
+                    </div>
                 </body>
                 <xsl:copy-of select="$footer"/>
             </html>
@@ -296,7 +305,7 @@
                         <div class="container">
                             <xsl:apply-templates select="//div" mode="sic"/>
                         </div>
-                        
+
                     </div>
                 </body>
                 <xsl:copy-of select="$footer"/>
@@ -382,7 +391,9 @@
     </xsl:template>
 
     <xsl:template match="choice" mode="corr">
+        <b>
         <xsl:value-of select="corr"/>
+        </b>
     </xsl:template>
     
     <xsl:template match="foreign" mode="#all">
@@ -537,6 +548,11 @@
         <xsl:text> - </xsl:text>
     </xsl:template>
 
+    
+<!--    <xsl:template match="pb[@facs]" mode="#all">
+        <xsl:variable name="url" select=""/>
+    </xsl:template>-->
+    
 </xsl:stylesheet>
 
 
