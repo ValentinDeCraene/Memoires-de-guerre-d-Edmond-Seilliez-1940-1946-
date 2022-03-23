@@ -453,14 +453,6 @@
                     <note> Edmond mentionne le nom allemand de la ville en plus du nom français (probablement une retranscription orale). </note>
                  </location>
               </place>
-              <place xml:id="Belgique">
-                 <placeName>  Belgique </placeName>
-                 <location>
-                    <country key="BL"> Belgique</country>
-                    <district> Non indiqué</district>
-                    <geo> Non précisé</geo>
-                 </location>
-              </place>
               <place xml:id="Prusse_Orientale">
                  <placeName> Prusse Orientale</placeName>
                  <location>

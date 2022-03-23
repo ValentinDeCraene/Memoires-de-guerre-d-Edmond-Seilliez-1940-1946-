@@ -164,38 +164,72 @@
                     <xsl:copy-of select="$nav_bar"/>
                     <div>
                         <h1 class="text-center">Index des personnes</h1>
-                        <ul style= "text-justify; padding-left: 110px;">
+                        <ol style= "text-justify; padding-left: 110px;">
                             <xsl:for-each select=".//listPerson/person">
                                 <xsl:sort select="persName" order="ascending"/>
                                 <li class="p-3">
                                     <xsl:choose>
                                         <xsl:when test="persName/surname[@cert = 'low'] or persName/forename[@cert = 'low']">
-                                            <xsl:value-of
-                                                select="concat(persName/forename, ' ', persName/surname, ':', descendant::note)"/>
+                                            <ul>
+
+                                                <li>
+                                                    <b>
+                                                    <xsl:value-of
+                                                        select="concat('Nom: ', persName/surname)"/>
+                                                    </b>
+                                                </li>
+                                                
+                                                <li>
+                                                    <xsl:value-of
+                                                        select="concat('Prénom:', persName/forename)"/>
+                                                </li>
+                                                
+                                                <li>
+                                                    <xsl:value-of
+                                                        select="concat('Description:',descendant::note)"/>
+                                                </li>
+                                                <li>
                                             <xsl:text> Attention, l'identité de cette personne est incertaine. </xsl:text>
-                                        </xsl:when>
-                                        <xsl:when test="persName/surname[@cert = 'high']">
-                                            <xsl:value-of
-                                                select="concat(persName/forename, ' ', persName/surname, ':', descendant::note)"/>
-                                            <xsl:text> La certitude concernant l'identité de cette personne est plutôt élevée. </xsl:text>
+                                                </li>
+                                            </ul>
                                         </xsl:when>
                                         <xsl:otherwise>
-                                            <xsl:value-of
-                                                select="concat(persName/forename, ' ', persName/surname, ':', descendant::note)"
-                                            />
-                                            <xsl:text> L'identité de cette personne est certaine. </xsl:text>
+                                            <ul>
+                                                <li>
+                                                    <b>
+                                                    <xsl:value-of
+                                                        select="concat('Nom: ', persName/surname)"/>
+                                                    </b>
+                                                </li>
+                                                
+
+                                                <li>
+                                                    <xsl:value-of
+                                                        select="concat('Prénom:', persName/forename)"/>
+                                                </li>
+                                                    
+                                                <li>
+                                                    <xsl:value-of
+                                                        select="concat('Description:',descendant::note)"/>
+                                                </li>
+                                                <li>
+                                                    <xsl:text> Attention, l'identité de cette personne est incertaine. </xsl:text>
+                                                </li>
+                                                <li><xsl:text> Occurences aux pages suivantes : </xsl:text>
+                                    <xsl:call-template name="person"/></li>
+                                            </ul>
                                         </xsl:otherwise>
                                     </xsl:choose>
-                                    <xsl:text> Occurences aux pages suivantes : </xsl:text>
-                                    <xsl:call-template name="person"/>
+                                    
                                 </li>
                             </xsl:for-each>
-                        </ul>
+                        </ol>
                     </div>
                 </body>
                 <xsl:copy-of select="$footer"/>
             </html>
         </xsl:result-document>
+        
         
         <xsl:result-document href="{$path_lieux_index}" method="html" indent="yes">
             <html>
@@ -204,7 +238,7 @@
                     <xsl:copy-of select="$nav_bar"/>
                     <div>
                         <h1 class="text-center">Index des lieux</h1>
-                        <ul style= "text-justify; padding-left: 110px;">
+                        <ol style= "text-justify; padding-left: 110px;">
                             <xsl:for-each select=".//listPlace/place">
                                 <xsl:sort select="placeName" order="ascending"/>
                                 <li class="p-3">
@@ -213,22 +247,44 @@
                                     </xsl:attribute>
                                     <xsl:choose>
                                         <xsl:when test="@cert = 'low'">
+                                            <ul>
+                                                <b>
                                             <xsl:value-of
-                                                select="concat(placeName, ':', location/country, ',', location/district, ',', location/geo, '.', location/note)"/>
-                                            <xsl:text> Attention, l'exmplacement de ce toponyme est incertain. </xsl:text>
+                                                select="placeName"/></b>
+                                                <li>
+                                                    <xsl:value-of
+                                                        select="concat('Pays:', location/country, '. ')"/></li>
+                                                <li><xsl:value-of
+                                                    select="concat('Département ou province: ', location/district)"/></li>
+                                                <li><xsl:value-of
+                                                    select="concat('Coordonnées géographiques: ', location/geo)"/></li>
+                                                <li><xsl:value-of
+                                                    select="concat('Description :', location/note)"/></li>
+                                                <li>
+                                            <xsl:text> Attention, l'emplacement de ce toponyme est incertain. </xsl:text></li></ul>
                                         </xsl:when>
                                         <xsl:otherwise>
-                                            <xsl:value-of
-                                                select="concat(placeName, ':', location/country, ',', location/district, ',', location/geo, '.', location/note)"
-                                            />
-                                            <xsl:text> L'emplacement de ce lieu est certain. </xsl:text>
+                                            <ul>
+                                                    <b><xsl:value-of
+                                                        select="placeName"/></b>
+                                                <li>
+                                                    <xsl:value-of
+                                                        select="concat('Pays:', location/country, '. ')"/></li>
+                                                <li><xsl:value-of
+                                                    select="concat('Département ou province: ', location/district)"/></li>
+                                                <li><xsl:value-of
+                                                    select="concat('Coordonnées géographiques: ', location/geo)"/></li>
+                                                <li><xsl:value-of
+                                                    select="concat('Description :', location/note)"/></li>
+                                                <li>
+                                                   <xsl:text> L'emplacement de ce toponyme est certain. </xsl:text></li>
+                                                <li><xsl:text> Occurences aux pages suivantes : </xsl:text>
+                                                <xsl:call-template name="place"/></li></ul>
                                         </xsl:otherwise>
                                     </xsl:choose>
-                                    <xsl:text> Occurences aux pages suivantes : </xsl:text>
-                                    <xsl:call-template name="place"/>
                                 </li>
                             </xsl:for-each>
-                        </ul>
+                        </ol>
                     </div>
                 </body>
                 <xsl:copy-of select="$footer"/>
@@ -242,7 +298,7 @@
                     <xsl:copy-of select="$nav_bar"/>
                     <div>
                         <h1 class="text-center">Index des organisations</h1>
-                        <ul style= "text-justify; padding-left: 110px;">
+                        <ol style= "text-justify; padding-left: 110px;">
                             <xsl:for-each select=".//listOrg/org">
                                 <xsl:sort select="orgName" order="ascending"/>
                                 <li class="p-3">
@@ -251,23 +307,45 @@
                                     </xsl:attribute>
                                     <xsl:choose>
                                         <xsl:when test= "orgName[@cert = 'low']">
-                                            <xsl:value-of select="concat(orgName, ':', note)"/>
-                                            <xsl:text> Attention, l'identité de cette organisation est incertaine. </xsl:text>
-                                        </xsl:when>
-                                        <xsl:when test="orgName[@cert = 'medium']">
-                                            <xsl:value-of select="concat(orgName, ':', note)"/>
-                                            <xsl:text> Attention, l'identité de cette organisation est moyennement certaine. </xsl:text>
+                                            <ul>
+                                                    <b>
+                                                        Organisation mentionnée: "
+                                                    <xsl:value-of select="orgName"/>
+                                                        "
+                                                </b>
+                                                <li>
+                                                    <xsl:value-of select="note"/>
+                                                </li>
+                                                <li>
+                                                    <xsl:text> Attention, l'identité de cette organisation est incertaine. </xsl:text>
+                                                </li>
+                                                <li><xsl:text>Occurences aux pages suivantes : </xsl:text> 
+                                                    <xsl:call-template name="org"/></li>
+                                            </ul>
                                         </xsl:when>
                                         <xsl:otherwise>
-                                            <xsl:value-of select="concat(orgName, ':', note)"/>
-                                            <xsl:text> L'identité de cette organisation est certaine. </xsl:text>
+                                        <ul>
+                                            
+                                                <b>
+                                                    Organisation mentionnée : "
+                                                <xsl:value-of select="orgName"/>
+                                                    "
+                                                </b>
+                                            <li>
+                                                <xsl:value-of select="note"/>
+                                            </li>
+                                            <li>
+                                                <xsl:text> Attention, l'identité de cette organisation est incertaine. </xsl:text>
+                                            </li>
+                                        
+                                            <li><xsl:text> L'identité de cette organisation est certaine. </xsl:text></li>
+                                            <li><xsl:text>Occurences aux pages suivantes : </xsl:text> 
+                                            <xsl:call-template name="org"/></li></ul>
                                         </xsl:otherwise>
                                     </xsl:choose>
-                                   <xsl:text>Occurences aux pages suivantes : </xsl:text> 
-                                    <xsl:call-template name="org"/>
                                 </li>
                             </xsl:for-each>
-                        </ul>
+                        </ol>
                     </div>
                 </body>
                 <xsl:copy-of select="$footer"/>
@@ -281,9 +359,9 @@
                     <xsl:copy-of select="$nav_bar"/>
                     <div>
                         <h1 class="text-center">Chronologie</h1>
-                        <ul class="text-justified">
+                        <ol class="text-justified">
                             <xsl:call-template name="chronologie"/>
-                        </ul>
+                        </ol>
                     </div>
                 </body>
                 <xsl:copy-of select="$footer"/>
@@ -530,7 +608,16 @@
                 <xsl:attribute name="n">
                     <xsl:number count="." format="1"/>
                 </xsl:attribute>
-                <xsl:value-of select="concat(date, ':', p)"/>
+                <ul>
+                    <li>
+                        <b>
+                <xsl:value-of select="concat('Date de l''évenement : ', date)"/>
+                        </b>
+                    </li>
+                    <li>
+                        <xsl:value-of select="concat('Description: ', p)"/>
+                    </li>
+                </ul>
             </li>
         </xsl:for-each>
     </xsl:template>
@@ -549,10 +636,17 @@
     </xsl:template>
 
     
-<!--    <xsl:template match="pb[@facs]" mode="#all">
-        <xsl:variable name="url" select=""/>
-    </xsl:template>-->
     
+    <xsl:template match="pb[@facs]" mode="#all">
+
+    
+    <xsl:for-each select=".">
+       <xsl:variable name="url" select="//graphic/@url"/> 
+        <div>
+            <img src="{$url}"/>
+        </div>
+    </xsl:for-each>
+    </xsl:template>
 </xsl:stylesheet>
 
 
