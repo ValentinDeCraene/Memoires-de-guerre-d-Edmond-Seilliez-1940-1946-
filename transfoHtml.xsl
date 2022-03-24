@@ -186,26 +186,26 @@
                                         <xsl:when
                                             test="persName/surname[@cert = 'low'] or persName/forename[@cert = 'low']">
                                             <ul>
-
-
                                                 <b>
                                                   <xsl:value-of
                                                   select="concat('Nom: ', persName/surname)"/>
                                                 </b>
 
-
                                                 <li>
                                                   <xsl:value-of
-                                                  select="concat('Prénom:', persName/forename)"/>
+                                                  select="concat('Prénom: ', persName/forename)"/>
                                                 </li>
-
                                                 <li>
                                                   <xsl:value-of
-                                                  select="concat('Description:', descendant::note)"
+                                                  select="concat('Description: ', descendant::note)"
                                                   />
                                                 </li>
                                                 <li>
                                                   <xsl:text> Attention, l'identité de cette personne est incertaine. </xsl:text>
+                                                </li>
+                                                <li>
+                                                    <xsl:text> Occurences aux pages suivantes : </xsl:text>
+                                                    <xsl:call-template name="person"/>
                                                 </li>
                                             </ul>
                                         </xsl:when>
@@ -217,15 +217,15 @@
                                                 </b>
                                                 <li>
                                                   <xsl:value-of
-                                                  select="concat('Prénom:', persName/forename)"/>
+                                                  select="concat('Prénom: ', persName/forename)"/>
                                                 </li>
                                                 <li>
                                                   <xsl:value-of
-                                                  select="concat('Description:', descendant::note)"
+                                                  select="concat('Description: ', descendant::note)"
                                                   />
                                                 </li>
                                                 <li>
-                                                  <xsl:text> Attention, l'identité de cette personne est incertaine. </xsl:text>
+                                                  <xsl:text> L'identité de cette personne est certaine. </xsl:text>
                                                 </li>
                                                 <li>
                                                   <xsl:text> Occurences aux pages suivantes : </xsl:text>
@@ -419,6 +419,8 @@
                                 <xsl:value-of select="$title"/>
                             </h1>
                         </header>
+                        <br/>
+                        <h2 class="text-center"> Version originale de l'extrait.</h2>
                     </div>
                     <div class="container-sm col-4">
                         
@@ -487,7 +489,7 @@
                 <body>
                     <xsl:copy-of select="$nav_bar"/>
                     <div class="container">
-                        <h1 style="text-align: center; padding: 20px;">Projet d'édition numérique -
+                        <h1 style="text-align: center; padding: 20px;">Projet d'édition numérique
                             des <i> Mémoires de guerre d'Edmond Seilliez (1940-1946)</i>, édité par
                             Valentin De Craene, arrière-petit fils de l'auteur.</h1>
                         <h2 style="text-align: center; padding: 10px;">Encodage XML-TEI</h2>
@@ -557,7 +559,6 @@
         <xsl:element name="i">
             <xsl:value-of select="."/>
         </xsl:element>
-        <xsl:apply-templates/>
     </xsl:template>
 
     <xsl:template match="placeName" mode="#all">
@@ -629,6 +630,7 @@
         <br>
             <xsl:value-of select="."/>
         </br>
+        <xsl:call-template name="facsimile"/>
     </xsl:template>
 
     <!--    Templates appellés ci-dessus-->
@@ -705,9 +707,19 @@
     </xsl:template>
 
     <xsl:template match="lb" mode="#all">
-        <br/>
+        <br class="m-3"/>
+        <i>
         <xsl:number select="." level="any" format="1"/>
-        <xsl:text> - </xsl:text>
+        </i>
+        <span class="m-3"> - </span>
     </xsl:template>
+    
+    <xsl:template name="facsimile">
+        <xsl:for-each select="//pb/@n">
+            <xsl:variable name="url" select="facsimile//graphic/@url"/>
+                <img src="{$url}"/>
+        </xsl:for-each>
+    </xsl:template>
+    
 
 </xsl:stylesheet>
