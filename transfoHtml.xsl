@@ -188,7 +188,7 @@
                                             <ul>
                                                 <b>
                                                   <xsl:value-of
-                                                  select="concat('Nom: ', persName/surname)"/>
+                                                  select="persName/surname"/>
                                                 </b>
 
                                                 <li>
@@ -213,7 +213,7 @@
                                             <ul>
                                                 <b>
                                                   <xsl:value-of
-                                                  select="concat('Nom: ', persName/surname)"/>
+                                                  select="persName/surname"/>
                                                 </b>
                                                 <li>
                                                   <xsl:value-of
@@ -448,6 +448,8 @@
                         </header>
                         <br/>
                         <h2 class="text-center"> Version corrigée de l'extrait.</h2>
+                        <div class="container-sm col-4 text-center"> Les corrections effectuées par l'éditeur sont
+                        indiquées dans le corps du texte en <b>gras</b>, puis répertoriées dans le tableau au bas de la page.</div>
                         <div class="container-sm col-4">
                             <xsl:apply-templates select="//text" mode="corr"/>
                         </div>
@@ -457,10 +459,10 @@
                             <h2 class="text-center">
                                 Tableau indiquant les corrections dans l'extrait édité.
                             </h2>
-                            <table class="table table-bordered table-hover">
-                                <th class="thead-dark"> Graphie initiale</th>
-                                <th class="thead-dark"> Graphie corrigée</th>
-                                <th class="thead-dark">Occurence à la page n°</th>
+                            <table class="table table-bordered table-striped table-hover">
+                                <th class="table-dark"> Graphie initiale</th>
+                                <th class="table-dark"> Graphie corrigée</th>
+                                <th class="table-dark">Occurence à la page n°</th>
                                 <tbody>
                                     <xsl:for-each select="//choice/sic">
                                         
@@ -622,14 +624,10 @@
     </xsl:template>
 
     <xsl:template match="pb" mode="#all">
-
-        <br>
             <p style="text-align: center; padding: 10px;">
                 <xsl:value-of select="pb"/> -- page n° <xsl:value-of select="@n"/> -- </p>
-        </br>
-        <br>
+
             <xsl:value-of select="."/>
-        </br>
         <xsl:call-template name="facsimile"/>
     </xsl:template>
 

@@ -567,79 +567,79 @@
   
   <facsimile>
      <surface>
-        <graphic url='IMAGES/page1.png' width='3435.66666px' height='2408.66666px' />
-        <zone xml:id="p1" ulx="2069" uly="174" lrx="3397" lry="1311" />
+        <graphic url='/home/valentin/Documents/Projet_TEI/IMAGES/page1.png' width='846.66666px' height='736.66666px' />
+        <zone xml:id="p1" ulx="15" uly="23" lrx="830" lry="718" />
      </surface>
      <surface>
-        <graphic url='IMAGES/page2.png' width='846.66666px' height='736.66666px' />
+        <graphic url='/home/valentin/Documents/Projet_TEI/IMAGES/page2.png' width='846.66666px' height='736.66666px' />
         <zone xml:id="p2" ulx="15" uly="23" lrx="830" lry="718" />
      </surface>
      <surface>
-        <graphic url='IMAGES/page3.png' width='866.66666px' height='765.66666px' />
+        <graphic url='/home/valentin/Documents/Projet_TEI/IMAGES/page3.png' width='866.66666px' height='765.66666px' />
         <zone xml:id="p3" ulx="2" uly="11" lrx="857" lry="755" />
      </surface>
      <surface>
-        <graphic url='IMAGES/page4.png' width='974.66666px' height='788.66666px' />
+        <graphic url='/home/valentin/Documents/Projet_TEI/IMAGES/page4.png' width='974.66666px' height='788.66666px' />
         <zone xml:id="p4" ulx="22" uly="26" lrx="964" lry="776" />
      </surface>
      <surface>
-        <graphic url='IMAGES/page5.png' width='913.66666px' height='812.66666px' />
+        <graphic url='/home/valentin/Documents/Projet_TEI/IMAGES/page5.png' width='913.66666px' height='812.66666px' />
         <zone xml:id="p5" ulx="29" uly="30" lrx="905" lry="771" />
      </surface>
      <surface>
-        <graphic url='IMAGES/page6.png' width='927.66666px' height='762.66666px' />
+        <graphic url='/home/valentin/Documents/Projet_TEI/IMAGES/page6.png' width='927.66666px' height='762.66666px' />
         <zone xml:id="p6" ulx="10" uly="10" lrx="914" lry="731" />
      </surface>
      <surface>
-        <graphic url='IMAGES/page7.png' width='895.66666px' height='795.66666px' />
+        <graphic url='/home/valentin/Documents/Projet_TEI/IMAGES/page7.png' width='895.66666px' height='795.66666px' />
         <zone xml:id="p7" ulx="12" uly="15" lrx="894" lry="738" />
      </surface>
      <surface>
-        <graphic url='IMAGES/page8.png' width='925.66666px' height='756.66666px' />
+        <graphic url='/home/valentin/Documents/Projet_TEI/IMAGES/page8.png' width='925.66666px' height='756.66666px' />
         <zone xml:id="p8" ulx="20" uly="18" lrx="919" lry="730" />
      </surface>
      <surface>
-        <graphic url='IMAGES/page9.png' width='866.66666px' height='799.66666px' />
+        <graphic url='/home/valentin/Documents/Projet_TEI/IMAGES/page9.png' width='866.66666px' height='799.66666px' />
         <zone xml:id="p9" ulx="10" uly="18" lrx="857" lry="718" />
      </surface>
      <surface>
-        <graphic url='IMAGES/page10.png' width='889.66666px' height='744.66666px' />
+        <graphic url='/home/valentin/Documents/Projet_TEI/IMAGES/page10.png' width='889.66666px' height='744.66666px' />
         <zone xml:id="p10" ulx="10" uly="13" lrx="880" lry="698" />
      </surface>
      <surface>
-        <graphic url='IMAGES/page11.png' width='961.66666px' height='820.66666px' />
+        <graphic url='/home/valentin/Documents/Projet_TEI/IMAGES/page11.png' width='961.66666px' height='820.66666px' />
         <zone xml:id="p11" ulx="44" uly="26" lrx="959" lry="746" />
      </surface>
      <surface>
-        <graphic url='IMAGES/page12.png' width='866.66666px' height='758.66666px' />
+        <graphic url='/home/valentin/Documents/Projet_TEI/IMAGES/page12.png' width='866.66666px' height='758.66666px' />
         <zone xml:id="p12" ulx="10" uly="18" lrx="865" lry="715" />
      </surface>
      <surface>
-        <graphic url='IMAGES/page13.png' width='878.66666px' height='780.66666px' />
+        <graphic url='/home/valentin/Documents/Projet_TEI/IMAGES/page13.png' width='878.66666px' height='780.66666px' />
         <zone xml:id="p13" ulx="17" uly="25" lrx="874" lry="746" />
      </surface>
      <surface>
-        <graphic url='IMAGES/page14.png' width='901.66666px' height='744.66666px' />
+        <graphic url='/home/valentin/Documents/Projet_TEI/IMAGES/page14.png' width='901.66666px' height='744.66666px' />
         <zone xml:id="p14" ulx="14" uly="8" lrx="889" lry="716" />
      </surface>
      <surface>
-        <graphic url='IMAGES/page15.png' width='894.66666px' height='754.66666px' />
+        <graphic url='/home/valentin/Documents/Projet_TEI/IMAGES/page15.png' width='894.66666px' height='754.66666px' />
         <zone xml:id="p15" ulx="10" uly="30" lrx="892" lry="735" />
      </surface>
      <surface>
-        <graphic url='IMAGES/page16.png' width='906.66666px' height='786.66666px' />
+        <graphic url='/home/valentin/Documents/Projet_TEI/IMAGES/page16.png' width='906.66666px' height='786.66666px' />
         <zone xml:id="p16" ulx="19" uly="11" lrx="904" lry="743" />
      </surface>
      <surface>
-        <graphic url='IMAGES/page17.png' width='916.66666px' height='748.66666px' />
+        <graphic url='/home/valentin/Documents/Projet_TEI/IMAGES/page17.png' width='916.66666px' height='748.66666px' />
         <zone xml:id="p17" ulx="17" uly="10" lrx="910" lry="723" />
      </surface>
      <surface>
-        <graphic url='IMAGES/page18.png' width='929.66666px' height='806.66666px' />
+        <graphic url='/home/valentin/Documents/Projet_TEI/IMAGES/page18.png' width='929.66666px' height='806.66666px' />
         <zone xml:id="p18" ulx="15" uly="13" lrx="922" lry="775" />
      </surface>
      <surface>
-        <graphic url='IMAGES/page19.png' width='915.66666px' height='795.66666px' />
+        <graphic url='/home/valentin/Documents/Projet_TEI/IMAGES/page19.png' width='915.66666px' height='795.66666px' />
         <zone xml:id="p19" ulx="15" uly="15" lrx="914" lry="736" />
      </surface>
   </facsimile>
@@ -703,12 +703,12 @@
                <orgName type="corps_armées" ref="#Bataillon"> Bataillon </orgName> touche le renfort. Le <date ref="#d8" when="1940-05-26"> dimanche 26 mai </date> départ <pb n="5" facs="#p5"/>
                </p>
                <p n="5"><lb/>de <placeName ref="#Semécourt"> Semécourt</placeName> pour <placeName ref="#Amanvillers"> Amanvillers</placeName> où nous devons embarquer. <lb/>
-               C'est dans ce patelin que <persName ref="#Rémy_Grimbert"> <forename>Rémy</forename> <surname>Grimbert</surname> </persName> habitait - nous <lb/>
-               y étions déjà passés au mois de <date ref="#d9" when="1940-05"> Mai </date> - pour nous rendre à <placeName ref="#Sainte-Marie-aux-Chênes"> Ste-Marie-aux-chênes </placeName>. Et de là <persName ref="#Rémy_Grimbert"> <forename>Rémy</forename> <surname>Grimbert</surname> </persName> était <lb/>
+               C'est dans ce patelin que <persName ref="#Rémy_Grimbert"> <forename> Rémy</forename> <surname> Grimbert</surname> </persName> habitait - nous <lb/>
+               y étions déjà passés au mois de <date ref="#d9" when="1940-05"> Mai </date> - pour nous rendre à <placeName ref="#Sainte-Marie-aux-Chênes"> Ste-Marie-aux-chênes </placeName>. Et de là <persName ref="#Rémy_Grimbert"> <forename> Rémy</forename> <surname> Grimbert</surname> </persName> était <lb/>
                venu voir <persName ref="#Jean_Merlin"> <forename>Jean</forename> <surname>Merlin</surname> </persName>. Aussitôt arrivés à <placeName ref="#Amanvillers"> Amanvillers </placeName> <lb/>
                on se <choice><sic> diriges </sic><corr> dirige </corr></choice> sur les quais - où le train nous attend - et <lb/>
                on <choice><sic> embarques </sic><corr> embarque </corr></choice> aussitôt. Je n'<choice><sic> ait </sic><corr> ai </corr></choice> pas le temps d'aller <lb/>
-               voir <persName ref="#Rémy_Grimbert"> <forename>Rémy</forename></persName>. Le train <choice><sic>démarres</sic><corr> démarre</corr></choice> à 8 H du soir. on ne sais pas <lb/>
+               voir <persName ref="#Rémy_Grimbert"> <forename> Rémy</forename></persName>. Le train <choice><sic>démarres</sic><corr> démarre</corr></choice> à 8 H du soir. on ne sais pas <lb/>
                où on va, mais on sait qu'on va monter en lignes. On <lb/>
                <choice><sic> roules </sic><corr> roule </corr></choice> on <choice><sic> arrêtes </sic><corr> s'arrête</corr></choice> et on repart, pour enfin arriver le <lb/>
                <date  ref="#d10" when="1940-05-27"> 27 </date> au soir à 8 H. Le train a dû faire de grands détours, <pb n="6" facs="#p6"/>
@@ -873,7 +873,7 @@
                <placeName ref="#Pernes"> Pernes </placeName>. Je lui parle et le <time>soir</time> je le retrouve ainsi que <lb/>
                <persName ref="#Catelin"> <surname>Catelin</surname> </persName> de <placeName ref="#Tangry"> Tangry </placeName>. Puis il <choice><sic>arrives</sic><corr>arrive</corr></choice> un ordre que tout le monde <lb/>
                doit partir. Ca nous <choice><sic>embêtes</sic><corr>embête</corr></choice>, on s'y <choice><sic>habituais</sic><corr>habituait</corr></choice>. On <choice><sic> essayes </sic><corr> essaie </corr></choice> de <lb/>
-                  se camoufler, pas moyen. et nous quittons <placeName ref="#Trèves">Trèves</placeName> le <date ref="#d20" when="1940-06-22"> samedi 22 juin 1940</date> <lb/>
+                  se camoufler, pas moyen. et nous quittons <placeName ref="#Trèves">Trèves</placeName> le <date ref="#d20" when="1940-06-22"> 22 juin 1940</date> <lb/>
                dans <time>l'après-midi vers 3 H 30 </time> et ce qui nous <lb/>
                chagrine c'est que nous savons que le convoi part pour la <lb/>
                <placeName ref="#Prusse_Orientale" type="pays"> Prusse Orientale. </placeName>
