@@ -204,8 +204,8 @@
                                                   <xsl:text> Attention, l'identité de cette personne est incertaine. </xsl:text>
                                                 </li>
                                                 <li>
-                                                    <xsl:text> Occurences aux pages suivantes : </xsl:text>
-                                                    <xsl:call-template name="person"/>
+                                                    Occurences aux pages suivantes :
+                                               <xsl:call-template name="person"/>
                                                 </li>
                                             </ul>
                                         </xsl:when>
@@ -228,8 +228,9 @@
                                                   <xsl:text> L'identité de cette personne est certaine. </xsl:text>
                                                 </li>
                                                 <li>
-                                                  <xsl:text> Occurences aux pages suivantes : </xsl:text>
+                                                    Occurences aux pages suivantes:
                                                   <xsl:call-template name="person"/>
+                                                  
                                                 </li>
                                             </ul>
                                         </xsl:otherwise>
@@ -472,7 +473,6 @@
                                         <td><xsl:value-of select="ancestor::choice/corr"/></td>
                                         <td> 
                                             <xsl:value-of select="ancestor::p/@n"/> 
-                                        
                                         </td>
                                     </tr>
                                     </xsl:for-each>
@@ -628,7 +628,21 @@
                 <xsl:value-of select="pb"/> -- page n° <xsl:value-of select="@n"/> -- </p>
 
             <xsl:value-of select="."/>
-        <xsl:call-template name="facsimile"/>
+
+<!--            <xsl:variable name="url">
+                    <xsl:value-of select="//facsimile/surface/graphic/@url"/>
+            </xsl:variable>
+            
+            <xsl:choose>
+                <xsl:when test="pb/@n = $url">
+                    <img src="{url}"/>
+                </xsl:when>
+                <xsl:otherwise> </xsl:otherwise>
+            </xsl:choose>
+        
+        <img src="{$url}"/>
+        -->
+        <!--<xsl:call-template name="facsimile"/>-->
     </xsl:template>
 
     <!--    Templates appellés ci-dessus-->
@@ -712,12 +726,12 @@
         <span class="m-3"> - </span>
     </xsl:template>
     
-    <xsl:template name="facsimile">
+<!--    <xsl:template name="facsimile">
+        <xsl:variable name="url" select="facsimile//graphic/@url"/>
         <xsl:for-each select="//pb/@n">
-            <xsl:variable name="url" select="facsimile//graphic/@url"/>
                 <img src="{$url}"/>
         </xsl:for-each>
-    </xsl:template>
+    </xsl:template>-->
     
 
 </xsl:stylesheet>

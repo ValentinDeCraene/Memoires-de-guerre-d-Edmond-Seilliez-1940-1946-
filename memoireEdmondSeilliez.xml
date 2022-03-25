@@ -566,79 +566,79 @@
   </standOff>
   
   <facsimile>
-     <surface>
+     <surface n="1">
         <graphic url='/home/valentin/Documents/Projet_TEI/IMAGES/page1.png' width='846.66666px' height='736.66666px' />
         <zone xml:id="p1" ulx="15" uly="23" lrx="830" lry="718" />
      </surface>
-     <surface>
+     <surface n="2">
         <graphic url='/home/valentin/Documents/Projet_TEI/IMAGES/page2.png' width='846.66666px' height='736.66666px' />
         <zone xml:id="p2" ulx="15" uly="23" lrx="830" lry="718" />
      </surface>
-     <surface>
+     <surface n="3">
         <graphic url='/home/valentin/Documents/Projet_TEI/IMAGES/page3.png' width='866.66666px' height='765.66666px' />
         <zone xml:id="p3" ulx="2" uly="11" lrx="857" lry="755" />
      </surface>
-     <surface>
+     <surface n="4">
         <graphic url='/home/valentin/Documents/Projet_TEI/IMAGES/page4.png' width='974.66666px' height='788.66666px' />
         <zone xml:id="p4" ulx="22" uly="26" lrx="964" lry="776" />
      </surface>
-     <surface>
+     <surface n="5">
         <graphic url='/home/valentin/Documents/Projet_TEI/IMAGES/page5.png' width='913.66666px' height='812.66666px' />
         <zone xml:id="p5" ulx="29" uly="30" lrx="905" lry="771" />
      </surface>
-     <surface>
+     <surface n="6">
         <graphic url='/home/valentin/Documents/Projet_TEI/IMAGES/page6.png' width='927.66666px' height='762.66666px' />
         <zone xml:id="p6" ulx="10" uly="10" lrx="914" lry="731" />
      </surface>
-     <surface>
+     <surface n="7">
         <graphic url='/home/valentin/Documents/Projet_TEI/IMAGES/page7.png' width='895.66666px' height='795.66666px' />
         <zone xml:id="p7" ulx="12" uly="15" lrx="894" lry="738" />
      </surface>
-     <surface>
+     <surface n="8">
         <graphic url='/home/valentin/Documents/Projet_TEI/IMAGES/page8.png' width='925.66666px' height='756.66666px' />
         <zone xml:id="p8" ulx="20" uly="18" lrx="919" lry="730" />
      </surface>
-     <surface>
+     <surface n="9">
         <graphic url='/home/valentin/Documents/Projet_TEI/IMAGES/page9.png' width='866.66666px' height='799.66666px' />
         <zone xml:id="p9" ulx="10" uly="18" lrx="857" lry="718" />
      </surface>
-     <surface>
+     <surface n="10">
         <graphic url='/home/valentin/Documents/Projet_TEI/IMAGES/page10.png' width='889.66666px' height='744.66666px' />
         <zone xml:id="p10" ulx="10" uly="13" lrx="880" lry="698" />
      </surface>
-     <surface>
+     <surface n="11">
         <graphic url='/home/valentin/Documents/Projet_TEI/IMAGES/page11.png' width='961.66666px' height='820.66666px' />
         <zone xml:id="p11" ulx="44" uly="26" lrx="959" lry="746" />
      </surface>
-     <surface>
+     <surface n="12">
         <graphic url='/home/valentin/Documents/Projet_TEI/IMAGES/page12.png' width='866.66666px' height='758.66666px' />
         <zone xml:id="p12" ulx="10" uly="18" lrx="865" lry="715" />
      </surface>
-     <surface>
+     <surface n="13">
         <graphic url='/home/valentin/Documents/Projet_TEI/IMAGES/page13.png' width='878.66666px' height='780.66666px' />
         <zone xml:id="p13" ulx="17" uly="25" lrx="874" lry="746" />
      </surface>
-     <surface>
+     <surface n="14">
         <graphic url='/home/valentin/Documents/Projet_TEI/IMAGES/page14.png' width='901.66666px' height='744.66666px' />
         <zone xml:id="p14" ulx="14" uly="8" lrx="889" lry="716" />
      </surface>
-     <surface>
+     <surface n="15">
         <graphic url='/home/valentin/Documents/Projet_TEI/IMAGES/page15.png' width='894.66666px' height='754.66666px' />
         <zone xml:id="p15" ulx="10" uly="30" lrx="892" lry="735" />
      </surface>
-     <surface>
+     <surface n="16">
         <graphic url='/home/valentin/Documents/Projet_TEI/IMAGES/page16.png' width='906.66666px' height='786.66666px' />
         <zone xml:id="p16" ulx="19" uly="11" lrx="904" lry="743" />
      </surface>
-     <surface>
+     <surface n="17">
         <graphic url='/home/valentin/Documents/Projet_TEI/IMAGES/page17.png' width='916.66666px' height='748.66666px' />
         <zone xml:id="p17" ulx="17" uly="10" lrx="910" lry="723" />
      </surface>
-     <surface>
+     <surface n="18">
         <graphic url='/home/valentin/Documents/Projet_TEI/IMAGES/page18.png' width='929.66666px' height='806.66666px' />
         <zone xml:id="p18" ulx="15" uly="13" lrx="922" lry="775" />
      </surface>
-     <surface>
+     <surface n="19">
         <graphic url='/home/valentin/Documents/Projet_TEI/IMAGES/page19.png' width='915.66666px' height='795.66666px' />
         <zone xml:id="p19" ulx="15" uly="15" lrx="914" lry="736" />
      </surface>
