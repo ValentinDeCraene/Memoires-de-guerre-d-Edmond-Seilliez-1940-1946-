@@ -646,28 +646,24 @@
    
   <text>
       <front>
-         <div type="notes_introductives">
-            <p> 
+        
+      </front>
+
+      <body>
+         <div type="extrait"> 
+            <pb n="1" facs="#p1"/>
+            <p n="1">
                <lb/>Mon premier carnet de notes ayant du être égaré - <lb/>
                <choice><sic>où</sic> <corr> ou </corr></choice> alors l'aurais-je laissé à <placeName ref="#Pernes"> Pernes </placeName>, à la <lb/>
                maison quand j'y suis retourné au mois d'<date> avril 1940 </date> <lb/>
                 - toujours est-il que j'ai confectionné un nouveau <lb/>
                carnet sur lequel je vais inscrire mes mémoires <lb/>
                à partir du <date when="1940-04-21"> 21 avril 1940. </date>
-            </p>
-         </div>
-      </front>
-
-      <body>
-         <div type="extrait">
-            <pb n="1" facs="#p1"/>
-              <p n="1">
                <lb/>Au <date ref="#d1" when="1940-04"> mois d'avril </date>, nous étions toujours aux avant-postes. <lb/>
                Nous y montions 5 jours - et ensuite on descendait un peu <lb/>
                à l'arrière pour 10 jours - dans un cantonnement où on
                  <pb n="2" facs="#2"/></p>
             
-               
                <p n="2"><lb/>continuait à faire des travaux (tranchées, abris, ect). <lb/>
                C'est donc le <date ref="#d2" when="1940-04-21"> 21 avril 1940 </date> que j'obtiens une permiss- <lb rend="hyphen"/>
                ion de 3 jours pour aller voir <persName ref="#Jean-Pierre"> <forename>Jean-Pierre</forename></persName> qui était <lb/>

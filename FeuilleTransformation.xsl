@@ -423,14 +423,22 @@
                         <br/>
                         <h2 class="text-center"> Version originale de l'extrait.</h2>
                     </div>
-                    <div class="container-sm col-4">
-                        
-                        <br/>
-                        <div class="text-justify">
-                            <xsl:apply-templates select="//div" mode="sic"/>
+                    <div class="row">
+                        <div class="container-sm col-4">
+                            <xsl:apply-templates select="//text" mode="sic"/></div>
+                        <div class="col-4">
+                            <br/>
+                            <xsl:for-each select="//facsimile/surface">
+                                <xsl:variable name="url" select="graphic/@url"/>
+                                <p class="container-sm col-4 text-align-left">
+                                    <xsl:variable name="page"><xsl:value-of select="replace(graphic/@url, '/home/valentin/Documents/Projet_TEI/IMAGES/', '-- ')"/></xsl:variable>
+                                    <xsl:value-of select="replace($page, '.png', '-- ')"/>
+                                </p>
+                                <img src="{$url}" width="400px" height="420 px"/>
+                                
+                            </xsl:for-each>
                         </div>
-
-                    </div>
+                        </div>
                 </body>
                 <xsl:copy-of select="$footer"/>
             </html>
@@ -451,11 +459,25 @@
                         <h2 class="text-center"> Version corrigée de l'extrait.</h2>
                         <div class="container-sm col-4 text-center"> Les corrections effectuées par l'éditeur sont
                         indiquées dans le corps du texte en <b>gras</b>, puis répertoriées dans le tableau au bas de la page.</div>
-                        <div class="container-sm col-4">
-                            <xsl:apply-templates select="//text" mode="corr"/>
+                        <br/>
+                        <div class="row">
+                            <div class="container-sm col-4">
+                            <xsl:apply-templates select="//text" mode="corr"/></div>
+                                <div class="col-4">
+                                    <br/>
+                                    <xsl:for-each select="//facsimile/surface">
+                                    <xsl:variable name="url" select="graphic/@url"/>
+                                        <p class="container-sm col-4 text-align-left">
+                                        <xsl:variable name="page"><xsl:value-of select="replace(graphic/@url, '/home/valentin/Documents/Projet_TEI/IMAGES/', '-- ')"/></xsl:variable>
+                                        <xsl:value-of select="replace($page, '.png', '-- ')"/>
+                                        </p>
+                                    <img src="{$url}" width="400px" height="420 px"/>
+                                        
+                                    </xsl:for-each>
+                                </div>
                         </div>
                         
-                        <div class=" container col-5">
+                            <div class=" container col-5">
                             <br/>
                             <h2 class="text-center">
                                 Tableau indiquant les corrections dans l'extrait édité.
@@ -479,6 +501,8 @@
                                 </tbody>
                             </table>
                         </div>
+                    </div>
+                    <div>
                     </div>
                 </body>
                 <xsl:copy-of select="$footer"/>
@@ -624,25 +648,10 @@
     </xsl:template>
 
     <xsl:template match="pb" mode="#all">
-            <p style="text-align: center; padding: 10px;">
-                <xsl:value-of select="pb"/> -- page n° <xsl:value-of select="@n"/> -- </p>
-
+            <p style="text-align: center;">
+                <xsl:value-of select="pb"/> -- page n° <xsl:value-of select="@n"/> -- 
+            </p>
             <xsl:value-of select="."/>
-
-<!--            <xsl:variable name="url">
-                    <xsl:value-of select="//facsimile/surface/graphic/@url"/>
-            </xsl:variable>
-            
-            <xsl:choose>
-                <xsl:when test="pb/@n = $url">
-                    <img src="{url}"/>
-                </xsl:when>
-                <xsl:otherwise> </xsl:otherwise>
-            </xsl:choose>
-        
-        <img src="{$url}"/>
-        -->
-        <!--<xsl:call-template name="facsimile"/>-->
     </xsl:template>
 
     <!--    Templates appellés ci-dessus-->
@@ -713,9 +722,9 @@
 
 
     <xsl:template match="//body//p" mode="#all">
-        <xsl:element name="p">
+        <p>
             <xsl:apply-templates mode="#current"/>
-        </xsl:element>
+        </p>
     </xsl:template>
 
     <xsl:template match="lb" mode="#all">
@@ -726,12 +735,5 @@
         <span class="m-3"> - </span>
     </xsl:template>
     
-<!--    <xsl:template name="facsimile">
-        <xsl:variable name="url" select="facsimile//graphic/@url"/>
-        <xsl:for-each select="//pb/@n">
-                <img src="{$url}"/>
-        </xsl:for-each>
-    </xsl:template>-->
     
-
 </xsl:stylesheet>
