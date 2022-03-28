@@ -12,31 +12,31 @@
     <xsl:template match="/">
         <!-- On stocke le nom le chemin du fichier courant -->
         <xsl:variable name="witfile">
-            <xsl:value-of select="replace(base-uri(.), 'memoireEdmondSeilliez.xml', '')"/>
+            <xsl:value-of select="replace(base-uri(.), '.xml', '')"/>
         </xsl:variable>
         <xsl:variable name="path_homepage">
-            <xsl:value-of select="concat($witfile, 'html/homepage', '.html')"/>
+            <xsl:value-of select="concat($witfile, '_homepage', '.html')"/>
         </xsl:variable>
         <xsl:variable name="path_pers_index">
-            <xsl:value-of select="concat($witfile, 'html/indexpersos', '.html')"/>
+            <xsl:value-of select="concat($witfile, '_indexpersos', '.html')"/>
         </xsl:variable>
         <xsl:variable name="path_lieux_index">
-            <xsl:value-of select="concat($witfile, 'html/indexlieux', '.html')"/>
+            <xsl:value-of select="concat($witfile, '_indexlieux', '.html')"/>
         </xsl:variable>
         <xsl:variable name="path_orga_index">
-            <xsl:value-of select="concat($witfile, 'html/indexorga', '.html')"/>
+            <xsl:value-of select="concat($witfile, '_indexorga', '.html')"/>
         </xsl:variable>
         <xsl:variable name="path_chrono">
-            <xsl:value-of select="concat($witfile, 'html/chrono', '.html')"/>
+            <xsl:value-of select="concat($witfile, '_chrono', '.html')"/>
         </xsl:variable>
         <xsl:variable name="path_texte_facsimilaire">
-            <xsl:value-of select="concat($witfile, 'html/versionfacsimilaire', '.html')"/>
+            <xsl:value-of select="concat($witfile, '_versionfacsimilaire', '.html')"/>
         </xsl:variable>
         <xsl:variable name="path_texte_corrigé">
-            <xsl:value-of select="concat($witfile, 'html/versioncorrigee', '.html')"/>
+            <xsl:value-of select="concat($witfile, '_versioncorrigee', '.html')"/>
         </xsl:variable>
         <xsl:variable name="path_a_propos">
-            <xsl:value-of select="concat($witfile, 'html/apropos', '.html')"/>
+            <xsl:value-of select="concat($witfile, '_apropos', '.html')"/>
         </xsl:variable>
 
 
@@ -589,10 +589,10 @@
 
     <xsl:template match="placeName" mode="#all">
         <xsl:variable name="witfile">
-            <xsl:value-of select="replace(base-uri(.), 'memoireEdmondSeilliez.xml', '')"/>
+            <xsl:value-of select="replace(base-uri(.), '.xml', '')"/>
         </xsl:variable>
         <xsl:variable name="path_lieux_index">
-            <xsl:value-of select="concat($witfile, 'html/indexlieux', '.html')"/>
+            <xsl:value-of select="concat($witfile, '_indexlieux', '.html')"/>
         </xsl:variable>
         <xsl:element name="a">
             <xsl:attribute name="href">
@@ -604,10 +604,10 @@
 
     <xsl:template match="persName" mode="#all">
         <xsl:variable name="witfile">
-            <xsl:value-of select="replace(base-uri(.), 'memoireEdmondSeilliez.xml', '')"/>
+            <xsl:value-of select="replace(base-uri(.), '..xml', '')"/>
         </xsl:variable>
         <xsl:variable name="path_pers_index">
-            <xsl:value-of select="concat($witfile, 'html/indexpersos', '.html')"/>
+            <xsl:value-of select="concat($witfile, '_indexpersos', '.html')"/>
         </xsl:variable>
         <xsl:element name="a">
             <xsl:attribute name="href">
@@ -619,10 +619,10 @@
 
     <xsl:template match="orgName" mode="#all">
         <xsl:variable name="witfile">
-            <xsl:value-of select="replace(base-uri(.), 'memoireEdmondSeilliez.xml', '')"/>
+            <xsl:value-of select="replace(base-uri(.), '..xml', '')"/>
         </xsl:variable>
         <xsl:variable name="path_orga_index">
-            <xsl:value-of select="concat($witfile, 'html/indexorga', '.html')"/>
+            <xsl:value-of select="concat($witfile, '_indexorga', '.html')"/>
         </xsl:variable>
         <xsl:element name="a">
             <xsl:attribute name="href">
@@ -634,10 +634,10 @@
 
     <xsl:template match="date" mode="#all">
         <xsl:variable name="witfile">
-            <xsl:value-of select="replace(base-uri(.), 'memoireEdmondSeilliez.xml', '')"/>
+            <xsl:value-of select="replace(base-uri(.), '.xml', '')"/>
         </xsl:variable>
         <xsl:variable name="path_chrono">
-            <xsl:value-of select="concat($witfile, 'html/chrono', '.html')"/>
+            <xsl:value-of select="concat($witfile, '_chrono', '.html')"/>
         </xsl:variable>
         <xsl:element name="a">
             <xsl:attribute name="href">
