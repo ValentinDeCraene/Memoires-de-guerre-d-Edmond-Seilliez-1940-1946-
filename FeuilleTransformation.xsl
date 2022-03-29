@@ -45,12 +45,15 @@
                 <xsl:value-of select="//titleStmt/title/text()"/>
             </i>
         </xsl:variable>
+        
         <xsl:variable name="author">
             <xsl:value-of select="concat(//editionStmt//forename, //editionStmt//surname)"/>
         </xsl:variable>
+        
         <xsl:variable name="idPerson">
             <xsl:value-of select="./@xml:id"/>
         </xsl:variable>
+        
         <xsl:variable name="footer">
             <br/>
             <br/>
@@ -431,7 +434,7 @@
                             <xsl:for-each select="//facsimile/surface">
                                 <xsl:variable name="url" select="graphic/@url"/>
                                 <p class="container-sm col-4 text-align-left">
-                                    <xsl:variable name="page"><xsl:value-of select="replace(graphic/@url, '/home/valentin/Documents/Projet_TEI/IMAGES/', '-- ')"/></xsl:variable>
+                                    <xsl:variable name="page"><xsl:value-of select="replace(graphic/@url, 'IMAGES/', '-- ')"/></xsl:variable>
                                     <xsl:value-of select="replace($page, '.png', '-- ')"/>
                                 </p>
                                 <img src="{$url}" width="400px" height="420 px"/>
