@@ -10,7 +10,10 @@
 
     <!-- pour éviter les espaces non voulus -->
     <xsl:template match="/">
-        <!-- On stocke le nom le chemin du fichier courant -->
+        <!-- (!) On stocke le nom le chemin du fichier courant 
+        Attention, cela ne semble pas fonctionner sur une autre machine car
+        la variable stocke le chemin absolu de mon fichier sur ma machine (!)-->
+        
         <xsl:variable name="witfile">
             <xsl:value-of select="replace(base-uri(.), '.xml', '')"/>
         </xsl:variable>
@@ -471,7 +474,7 @@
                                     <xsl:for-each select="//facsimile/surface">
                                     <xsl:variable name="url" select="graphic/@url"/>
                                         <p class="container-sm col-4 text-align-left">
-                                        <xsl:variable name="page"><xsl:value-of select="replace(graphic/@url, '/home/valentin/Documents/Projet_TEI/IMAGES/', '-- ')"/></xsl:variable>
+                                        <xsl:variable name="page"><xsl:value-of select="replace(graphic/@url, 'IMAGES/', '-- ')"/></xsl:variable>
                                         <xsl:value-of select="replace($page, '.png', '-- ')"/>
                                         </p>
                                     <img src="{$url}" width="400px" height="420 px"/>
