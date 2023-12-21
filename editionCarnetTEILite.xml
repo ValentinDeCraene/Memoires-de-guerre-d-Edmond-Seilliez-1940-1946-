@@ -1,0 +1,921 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title> Carnet des mémoires de guerre d'Edmond Seilliez (1940-1946) </title>
+            <author> Edmond Seilliez </author>
+         </titleStmt>
+         <editionStmt>
+            <edition> Edition numérique et encodage XML/TEI</edition>
+            <respStmt>
+               <resp> Encodage, édition numérique, dévelo </resp>
+               <persName>
+                  <forename> Valentin </forename>
+                  <surname> De Craene </surname>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Transcription, numérisation, commentaire initial</resp>
+               <persName>
+                  <forename>Alain</forename>
+                  <surname>Seilliez</surname>
+               </persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <p> Edition et encodage en accord avec Alain Seilliez, fils de l'auteur, par Valentin De
+               Craene, arrière-petit-fils de l'auteur à partir dudit carnet, archive privée. </p>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <settlement> Anvin, Pas-de-Calais </settlement>
+                  <repository> fonds privé, conservé par le fils de l'auteur, Alain Seilliez
+                  </repository>
+               </msIdentifier>
+               <msContents>
+                  <summary>
+                     <p> Second carnet des mémoires de guerre d'Edmond Seilliez pour la période 1940
+                        à 1946, développant le récit de sa participation en tant que soldat français
+                        à la campagne de France, puis sa captivité en Prusse-Orientale et enfin son
+                        retour après la Libération, en 1946. Il est fait mention dans l'introduction
+                        d'un premier carnet égaré traitant de la période antérieure. La source
+                        primaire se présente sous la forme d'un carnet de papier blanc. L'écriture
+                        manuscrite est cursive et régulière. Le style est simple, quasi
+                        télégraphique, laissant néanmoins transparaître les relations d'amitié, de
+                        camaraderie ou de subordination de l'auteur avec les nombreux personnages
+                        mentionnés. L'extrait encodé se présente comme une unité narrative et
+                        intellectuelle à part entière puisqu'elle raconte la période des combats
+                        précédant sa captivité en Prusse-Orientale. Cet épisode de l'acheminement
+                        vers les camps de détention en Prusse Orientale s'affirme effectivement
+                        comme une rupture de fond, puisqu'à partir de ce moment l'auteur s'attache à
+                        transmettre son ressenti personnel et sa peur. Cette rupture justifie donc
+                        ce choix d'encoder à part entière ce passage. </p>
+                  </summary>
+               </msContents>
+               <physDesc>
+                  <objectDesc form="carnet">
+                     <supportDesc material="papier">
+                        <support> Carnet de travail vraisemblablement en lien avec l'activité
+                           professionnelle de l'auteur avec la guerre : secrétaire de notaire. </support>
+                        <extent> 42 double-pages au format A5 (148 x 210 mm). </extent>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>12 lignes par pages et deux marges extérieures verticales. </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <p> L'écriture manuscrite est cursive et régulière, par une seule main. Le
+                        style est simple, quasi télégraphique, laissant néanmoins transparaître les
+                        relations d'amitié, de camaraderie ou de subordination de l'auteur avec les
+                        nombreux personnages mentionnés. </p>
+                  </handDesc>
+                  <bindingDesc>
+                     <binding>
+                        <p> Simple reliure de <material>tissu </material>
+                        </p>
+                        <condition>déterriorée, décousue sur le haut.</condition>
+                     </binding>
+                  </bindingDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="fr-FR" usage="98"> Français </language>
+            <language ident="en-GB" usage="1"> Anglais </language>
+            <language ident="de-DE" usage="1"> Allemand </language>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <front>
+         <div type="preface">
+            <p> J’ai recopié ce document à partir d’un carnet manuscrit que mon père avait écrit
+               pendant sa longue période de captivité, 5 années qui faisaient suite à deux années de
+               service militaire. J’ai fait cela pour faciliter la lecture, car l’écriture de mon
+               père n’était pas facile à déchiffrer. Il écrivait petit pour économiser des feuilles
+               puisqu’il travaillait chez le notaire de <placeName>Pernes</placeName>
+               <persName>Me Jean Germe</persName>. Le style est un peu télégraphique, je n’ai pas
+               voulu le changer pour ne pas dénaturer le document original. J’ai mis en marge le
+               numéro de la page du document original que j’ai numérisé au format « pdf ». Je pense
+               avoir été aussi fidèle que possible. Parfois les noms propres de villes ou de lieus
+               ont changé et je ne les ai pas trouvés dans mes recherches sur Internet. Dans ce cas
+               j’ai retranscrit ce que je lisais le plus fidèlement possible. Quand je l’estimais
+               utile à la compréhension du texte, j’ai ajouté des annotations. Elles sont toujours
+               en italiques. Bonne lecture. <persName>Alain Seilliez</persName>
+            </p>
+         </div>
+      </front>
+      <body>
+         <div type="page" n="1">
+            <p>Mon premier carnet de notes ayant dû être égaré-ou alors l’aurai-je laissé à
+                  <placeName>Pernes</placeName>, à la maison quand je suis retourné au mois
+                  d’<date>avril 1940</date> ?, toujours est-il que j’ai confectionné un nouveau
+               carnet sur lequel je vais inscrire mes mémoires à partir du <date>21 avril
+                  1940</date>- jour où je suis allé en permission exceptionnelle de 3 jours. Au mois
+               d’avril, nous étions toujours aux avant-postes. Nous y montions 5 jours et ensuite on
+               descendait un peu à l’arrière pour 10 jours, dans un cantonnement où on continuait à
+               faire des travaux (tranchées, abris etc.). C’est donc le <date>21 avril 1940</date>
+               que j’obtiens une permission de 3 jours pour aller voir
+                  <persName>Jean-Pierre</persName> qui était un peu souffrant. Nous étions en
+               cantonnement à <placeName>Kirschnaumen</placeName> (Moselle) les bombardements sur
+               les avant-postes se faisaient sentir davantage et c’est avec appréhension qu’on y
+               allait pour 5 jours et 5 nuits. Je ne devais plus y monter, car avec ma permission de
+               3 jours, le bataillon y était remonté. Je suis reparti de
+                  <placeName>Pernes</placeName> le <date>27 avril</date>, j’ai rentré le
+                  <date>29</date> à <placeName>Capsillers</placeName>, là nous sommes restés 2 ou 3
+               jours, puis nous sommes allés à <placeName>Inglange</placeName> pour 10 jours. C’est
+               là que le bataillon était descendu en repos. D’<placeName>Inglange</placeName> est
+               parti le copain <persName>Merlin</persName> et d’autres pour travailler aux mines
+               comme affectés spéciaux, et le <date>10 mai</date> au matin nous étions en alerte-
+               des vagues d’avions passaient au </p>
+         </div>
+         <div type="page" n="2">
+            <p> dessus- qui revenaient de France- et aussitôt on quittait
+                  <placeName>Inglange</placeName> pour aller dans un bois à
+                  <placeName>Budling</placeName> qui se trouve à 4km
+                  d’<placeName>Inglange</placeName>. Dans ce bois on y montait la garde nuit et jour
+               et on y faisait des tranchées et des abris. On s’attendait à partir d’un jour à
+               l’autre et à aller en renfort dans le Nord. Le <date>24 mai</date> dans l’après-midi
+               nous quittons le bois de <placeName>Budling</placeName> pour
+                  <placeName>Metzervisse</placeName> qui est à 8 km de là, et nous y cantonnons. Une
+               brave femme nous donne un bidon de lait et le soir nous mangeons dans une maison une
+               bonne omelette ; c’est là que j’ai rencontré <persName>Georges Gillet</persName>,
+               nous avons trinqué ensemble, il nous paya une bonne bouteille de champagne. J’y
+               rencontre également des soldats appartenant au <orgName>370ème R.A.L.V.F</orgName>.
+               et je me renseignais tout de suite pour savoir si <persName>Raymond</persName>
+               n’était pas là - pas de veine c’était la <orgName>3ème Bie</orgName>- Le <date>25
+                  mai</date>, départ de <placeName>Metzervisse</placeName> pour
+                  <placeName>Sémécourt</placeName> (Moselle) étape de 30km- c’est là que le
+               bataillon touche le renfort. Le dimanche <date>26 mai</date> départ de
+                  <placeName>Sémécourt</placeName> pour <placeName>Amanvillers</placeName> où nous
+               devons embarquer. C’est dans ce patelin que <placeName>Rémy Grimbert</placeName>
+               habitait ; nous y étions déjà passés au mois de mars- pour nous rendre à
+                  <placeName>Sainte Marie aux Chênes</placeName> et là <persName>Rémy
+                  Grimbert</persName> était venu voir <persName>Jean Merlin</persName>. Aussitôt
+               arrivés à <placeName>Amanvillers</placeName> on se dirige sur les quais où le train
+               nous attend et on embarque aussitôt. Je n’ai pas le temps d’aller voir
+                  <persName>Rémy</persName>, le train démarre à 8 h du soir. On ne sait pas où on
+               va, mais on sait qu’on va monter en lignes. On roule, on arrête et on repart pour
+               enfin arriver le <date>27</date> au soir à 8h. Le train a du faire de grands détours
+               car les convois d’artillerie qui passaient par <placeName>Vitry le
+                  François</placeName> avaient été bombardés par les avions. On débarque donc dans
+               une petite gare de la <placeName>Marne</placeName>, à 13km
+                  d’<placeName>Epernay</placeName>. On va cantonner à X –je mets X car je ne me </p>
+         </div>
+         <div type="page" n="3">
+            <p> souviens plus du nom du patelin- on reste 3 jours dans ce village. Je n’ai plus
+               d’argent sur moi et j’emprunte 50 francs à mon copain <persName>Gustave
+                  Royer</persName>. Nous achetons des œufs et nous faisons faire une bonne omelette
+               dans une maison, et ensuite nous buvons quelques bouteilles de champagne, car il
+               n’est pas très cher ici. Le <date>30 mai 1940</date> à 7h30 du soir, on embarque dans
+               des autobus de la <orgName>STCRP</orgName>. On roule presque toute la nuit et on
+               arrive le <date>31</date> à 4h du matin à <placeName>Alincourt</placeName>, petit
+               village des <placeName>Ardennes</placeName>, déjà bien touché par de récents
+               bombardements. On couche le soir dans un bois à quelques kilomètres
+                  d’<placeName>Alincourt</placeName>, en attendant le lendemain car on doit monter à
+                  <placeName>Rethel</placeName> et remplacer le <orgName>152ème Régiment
+                  d’Infanterie de Colmar</orgName>. Le <date>1er juin</date> donc, on quitte le bois
+               pour monter à <placeName>Rethel</placeName> qui se trouve à 20km de là. On arrive
+               dans <placeName>Rethel</placeName> dans la nuit-des maisons brûlent par ci, par là.
+               On entend des diffuseurs allemands. Notre <orgName>Compagnie</orgName> doit prendre
+               ses positions tout à fait en avant, on doit passer le <placeName>canal de
+                  l’Aisne</placeName>, puis une rivière, on prend position dans une grande usine qui
+               avait déjà subi de sérieux bombardements. Nous serons là, un peu en sécurité, car
+               nous avons au- dessus de nos têtes plusieurs plafonds en béton. Nous prenons la garde
+               nuit et jour chacun son tour, un fusil-mitrailleur est installé dans la rue, protégé
+               d’un parapet, et prend la rue en enfilade. On ne dort pas beaucoup ici, à peine
+               dort-on un peu que l’artillerie allemande nous réveille, on croit toujours à une
+               attaque. Heureusement que l’on n’est pas privé pour la nourriture et la boisson. On
+               trouve dans les maisons abandonnées des lapins et des poules, des légumes, des
+               conserves et on fait un peu de popote nous- même, rien que pour le groupe, soit une
+               douzaine. Nous avions </p>
+         </div>
+         <div type="page" n="4">
+            <p> trouvé un dépôt avec plus de 300 bouteilles de champagne et du vin vieux. Je n’ai
+               jamais bu autant champagne de ma vie qu’à <placeName>Rethel</placeName>. J’ai vu 2
+               fois mon copain <persName>Joseph</persName> Je le voyais la nuit en allant à la
+               corvée de soupe, cette corvée n’était pas intéressante, il fallait à un endroit
+               passer dans l’eau, car ils avaient fait sauter un pont et on passait dans l’eau
+               jusqu’à 50 cm avec les bidons et les bouteillons. Un soir, le <date>6 ou le 7</date>
+               je vois <persName>Joseph</persName> qui m’apprend la mort de notre copain
+                  <persName>Jean-François</persName>, il se trouvait dans une cave avec plusieurs de
+               ses copains et un bombardement d’artillerie fait écrouler les murs sur ces pauvres
+               camarades. Fut tué également le <persName>Sergent Abbé Malaquin</persName>. Nous
+               subissons dans <placeName>Rethel</placeName> de gros bombardements d’artillerie,
+               surtout celui du <date>9 juin</date> au matin, à 4h, jusqu’au soir à 7h, des obus de
+               tous les calibres étaient envoyés. On croyait à ce moment-là à notre fin, puis, le
+                  <date>10 juin</date> à 2h du matin, on reçoit l’ordre de nous replier. La
+               situation devient de plus en plus grave pour nous, on laisse pas mal de munitions sur
+               place. On se replie donc à 5 km de <placeName>Rethel</placeName>, on suit la ligne de
+               chemin de fer de <placeName>Reims</placeName> à <placeName>Rethel</placeName> et tout
+               le bataillon s’engage en dessous d’un tunnel de 500m de long. On fait là une pause de
+               plusieurs heures. Je me souviens avoir dormi un peu dans ce tunnel. C’est là que j’ai
+               vu <persName>Joseph</persName> pour la dernière fois, je n’ai guère eu le temps de
+               lui parler, il passait devant nous avec sa compagnie et partait vers la sortie du
+               tunnel pour monter en lignes. On entendait le bruit des obus qui éclataient en
+               dehors, on savait ce qui nous attendait. Le <persName>Commandant du Bataillon
+                  Boutmy</persName> nous dit, « du calme et du </p>
+         </div>
+         <div type="page" n="5">
+            <p> courage et tout ira bien. » Il est 10h environ du matin, on sort aussi du tunnel,
+               les obus pleuvent, les balles sifflent à nos oreilles. Prendre position dans ces
+               conditions ce n’est pas intéressant. Notre section s’installe dans un petit
+               vallonnement où on met les fusils mitrailleurs en batterie. Pour arriver au trou où
+               on doit se mettre je courrais à demi-penché pour ne pas qu’on m’aperçoive et je
+               tenais mon sac chargeur d’une main et mon fusil de l’autre, car les balles passaient
+               au-dessus de notre tête, quand tout à coup, je sens que je viens d’être touché, je me
+               laisse tomber à terre aussitôt et je roule comme un tonneau dans le trou pour
+               rejoindre les camarades qui s’y trouvaient déjà. Je regarde sur moi et je m’aperçois
+               que ma cartouchière gauche et mon masque à gaz avaient été traversés de part en part,
+               mais je n’avais absolument rien. Je l’avais échappé belle. On est resté là plusieurs
+               heures. Le fusil-mitrailleur tirait sans arrêt, les allemands en face de nous, dans
+               la plaine avançaient toujours, puis ensuite on doit à nouveau se replier, mais déjà
+               on voyait arriver sur la route de <placeName>Reims</placeName> et sur la route de
+                  <placeName>Perthes</placeName> des chars allemands. On se sentait encerclés et
+               notre situation était critique. Il était trop tard pour se débiner. Ceux qui ont
+               voulu se replier sur <placeName>Perthes</placeName> à travers champs sont tombés,
+               morts ou blessés, en se repliant, l’étau se refermant de plus en plus, on sentait
+               bien que nous allions être prisonniers. En attendant ce temps, je mange un morceau
+               sur le ravitaillement de la soupe qui était arrivé le matin et nous attendons que les
+               allemands nous prennent. Ils s’avancent sur nous, d’un pas rapide. Nous avons eu pas
+               mal de blessés dans ces quelques heures de combat, et quelques morts, je ne sais pas
+               le nombre. Donc le </p>
+         </div>
+         <div type="page" n="6">
+            <p>
+               <date>10 juin 1940</date>, vers une heure de l’après-midi, nous sommes faits
+               prisonniers. J’en ai gros sur le cœur, nous restons plusieurs heures sur le terrain.
+               Nous ramassons les blessés, il fait une chaleur terrible, les soldats allemands nous
+               conduisent près de la voie ferrée où se trouve une locomotive abandonnée. On vide
+               l’eau qui se trouve dans le tender pour boire et pour les blessés. Un sergent-chef
+               français qui ne voulait pas donner son bidon d’eau se voit menacé d’un révolver par
+               un officier allemand, les balles sifflent toujours, les obus tombent autour de nous.
+               Les soldats allemands passent devant nous et réclament le vin de nos bidons. Des
+               soldats français sont priés de leur porter leurs munitions et leurs armes, en
+               direction de <placeName>Perthes</placeName>. Ils essuient les balles et obus des
+               français, ces copains nous les avons revus le lendemain matin. Tous les prisonniers
+               étaient rassemblés, nous partons pour cantonner dans la cours d’une grande maison
+               près de <placeName>Rethel</placeName> où nous passons la nuit dehors. Le lendemain
+               matin, au réveil, je retrouve mes copains <persName>Royer</persName>,
+                  <persName>Tirant</persName> et autres, qui avaient été fait prisonniers la veille,
+               mais nous n’étions pas ensemble à ce moment-là. Je cherche dans tout le monde
+                  <persName>Joseph</persName>, mais je ne le vois pas. Je vois arriver un peu plus
+               tard <persName>Léonce Huet</persName>, <persName>Henri Darras</persName>, puis nous
+               partons pour <placeName>Charleville</placeName> où nous passons 2 nuits à la
+                  <placeName>caserne des gardes mobiles</placeName>. Là je vois <persName>Paul
+                  Lamorille</persName>, le gendre de <persName>Lourme</persName>, puis nous gagnons
+               la <placeName>Belgique</placeName> et toujours à pied, nous faisons de longues étapes
+               sans beaucoup nous reposer, sans beaucoup manger, et nous souffrons surtout de la
+               soif. Nous buvons bien souvent de l’eau qui n’est certes pas potable, puis nous
+               gagnons la <placeName>Belgique</placeName> où les gens nous font bon accueil et nous
+               embarquons le <date>16 juin</date> à </p>
+         </div>
+         <div type="page" n="7">
+            <p> midi, à <placeName>Bertrix</placeName> pour arriver à <placeName>Trèves</placeName>
+               à 6h le soir. C’est une belle ville, toute décorée de drapeaux, les gens nous
+               regardent avec curiosité. Nous allons loger dans des baraquements tout en haut de la
+               ville, c’est <placeName>un camp de travailleurs allemands</placeName>, il est immense
+               et bien agencé. Tous les prisonniers qui y passent ne posent que 24 ou 48 heures.
+               C’est dit-on un camp de passage et ensuite on doit être dirigé sur un stalag aussi
+               pour se retaper un peu on se débrouille pour rester quelques jours, surtout que j’ai
+               mal aux pieds des suites des longues marches que nous avons faites.
+                  <persName>Royer</persName>, <persName>Lesaut</persName> et
+                  <persName>Mollet</persName> travaillent aux casernes à faire des corvées en ville
+               d’où ils rapportent un peu de pain. Moi j’épluche les patates à la cuisine avec
+               d’autres, où en plus de ma ration ordinaire et de mon casse-croute je touche une
+               autre soupe et un morceau de pain et de fromage. On n’est pas mal. Il y a aussi une
+               cantine où on peut aller boire, bière, vin et acheter divers articles. Il y a du
+               monde et il faut faire la queue. On n’y rentre d’ailleurs que 10 par 10. Je n’y suis
+               allé qu’une seule fois. J’ai bu un verre de bière et acheté un paquet de tabac.
+               J’étais bien content. J’ai payé avec une pièce de 20 francs et on m’a rendu quelques
+               pièces de 10 pfennig. Etant un jour à la corvée de patates, j’aperçois
+                  <persName>Henri Lemaire</persName> de <placeName>Pernes</placeName>, je lui parle
+               et le soir je le retrouve ainsi que <persName>Catelin</persName> de
+                  <placeName>Tangry</placeName>, puis il arrive un ordre que tout le monde doit
+               partir, ça nous embête, on s’y habituait. On essaye de se camoufler, pas moyen, et
+               nous quittons <placeName>Trèves</placeName> le <date>samedi 22 juin 1940</date> dans
+               l’après-midi vers 3h30, et ce qui nous chagrine c’est que nous savons que le convoi
+               part pour la <placeName>Prusse Orientale</placeName>, ça ne nous fait pas sourire.
+               Avant de partir nous avons </p>
+         </div>
+         <div type="page" n="8">
+            <p> touché du pain et du fromage et nous roulons, bien lentement. Le train s’arrête de
+               temps en temps en plaine, où nous demandons pour faire ses besoins et nous arrivons
+               le <date>24 juin</date> à <placeName>Habback- Stalag 1A-</placeName> à minuit ; il y
+               faisait un orage terrible, aussi nous restons un bon moment dans le wagon. Nous
+               allons jusqu’au camp qui se trouve à quelques kilomètres de
+                  <placeName>Habback</placeName>. C’est lugubre quand on rentre dans ce camp. C’est
+               un camp immense avec des fils de fer barbelés à n’en plus finir. Des miradors se
+               dressent de part en part, inondant le camp de flots de lumière, où des gardiens se
+               trouvent avec leurs mitrailleuses. Nous passons le reste de la nuit dehors, puis au
+               jour, on nous met dans des grandes tentes où l’on peut loger 300 hommes. Il y fait
+               très chaud le jour et froid la nuit, surtout que nous dormons à même la terre, une
+               seule couverture pour se couvrir, enfin on peut se remettre du voyage qui a été bien
+               long et fatiguant. Nous ne faisons rien, réveil au matin à 5h, puis rassemblement
+               dehors où nous sommes comptés et recomptés par un officier allemand. Nous touchons le
+               café le matin, à midi une soupe que nous mangeons de bon cœur car nous avons faim, et
+               le soir un morceau de pain, un jour la boule à 4 et un jour la boule à 5 avec beurre,
+               saucisson, fromage, miel. Ça pouvait aller, mais on s’ennuyait et j’avais hâte de
+               partir travailler, puis nous passons aux douches, nous avons les cheveux coupés à
+               ras, et bien nous sommes beaux, puis nous passons au photographe et à la fouille, et
+               nous touchons notre plaque de contrôle 7717 1A que nous devons porter au cou. Puis
+               nous sommes piqués et vaccinés contre la variole et la typhoïde. Il se passe au camp
+               un vrai marché noir, ou alors d’échange, soit pour le manger, soit pour </p>
+         </div>
+         <div type="page" n="9">
+            <p> fumer, c’est incroyable et même honteux. Des types échangent leurs alliances pour
+               fumer. J’attrape un peu mal à la gorge et je vais deux jours à l’infirmerie, ça a
+               bien été tout de suite, et puis le <date>13 juillet</date> nous quittons le camp en
+               convoi. On nous embarque, nous partons au boulot, nous roulons, nous passons à
+                  <placeName>Keingrhag</placeName>, certains y descendent. Nous nous continuons et
+               débarquons à <placeName>Liliau</placeName>, une belle petite ville près de la mer. De
+               la gare on nous rassemble dans un petit parc où nous attendent un tas de gens
+               endimanchés, fumant tous le cigare et la serviette sous le bras. Ce sont nos futurs
+               patrons qui vont nous choisir. C’est un genre de marché aux esclaves qui va
+               commencer. On appelle certaines professions, celui que ça intéresse s’en va avec son
+               nouveau patron, moi je me laisse rouler, je ne suis volontaire en rien du tout ;
+               enfin on est choisi. Il en fallait beaucoup car nous sommes 16. On se dirige vers la
+               voiture qui nous conduira à notre nouveau domicile. Avant de partir nous sommes
+               séparés de <persName>Royer</persName>, <persName>Lesaut</persName> et
+                  <persName>Malesede</persName>. J’aurais tant voulu rester avec eux. Nous montons
+               dans une charrette à 2 chevaux conduite par un vieux domestique et le gardien qui
+               doit nous garder. En cours de route celui-ci nous offre des cigarettes. On a 16
+               kilomètres à faire. On arrive enfin à la nuit. En cours de route nous avons appris
+               que nous allions travailler dans une <placeName>tuilerie-briqueterie</placeName>, ce
+               qui ne me fait pas rire, car je présume que ce travail doit être pénible, et puis je
+               suis avec des copains que je ne connais pas. Bref, arrivés à la briqueterie on nous
+               met dans trois petites pièces qui nous serviront de demeure. Bientôt <placeName>la
+                  patronne</placeName> nous apporte deux grandes bassines de soupe au lait qui est
+               faite avec de la farine et un grand plat de pommes de terre et des tartines </p>
+         </div>
+         <div type="page" n="10">
+            <p> de pain. Cela nous fait grand plaisir et nous commençons tous à manger de grand
+               appétit sous l’œil amusé de <persName>la patronne</persName> et de <persName>ses
+                  filles</persName> qui s’amusent de nous voir manger de si bon appétit et surtout
+               se mettent à rire de notre tête de bagnard. Les gens nous font bonne impression, puis
+               on nous met de la paille fraiche et on va pouvoir faire une bonne nuit. Depuis
+               longtemps je n’avais pas dormi comme cela. <persName>Le gardien</persName>, un rhénan
+               est un chic type, il ne ferme pas la porte à clé. Il est sûr qu’on n’a aucune envie
+               de se débiner. Le lendemain dimanche, c’était le <date>14 juillet</date>, il faisait
+               mauvais temps, je n’étais pas bien. Je ne mange pas le casse- croute du matin et le
+               midi non-plus, ça paraissait bien, 2 boulettes de viande hachée et des pommes de
+               terre. Le <date>lendemain lundi</date> on se fabrique des lits en bois à étage et on
+               va commencer à travailler. On doit faire des briques. On se rend dans un terrain près
+               de la fabrique où l’on entrait de la terre glaise, où l’on remplit des wagonnets qui
+               sont tirés par un cheval. Et l’on remplit de grandes fosses et dès qu’elles sont
+               pleines on pourra commencer à faire des briques. Le travail n’est pas bien dur ; nous
+               avons 2 allemands avec nous, ils ne sont pas bien nerveux, ils nous disent d’aller
+               tout doucement et puis on n’est pas mal nourri. On fait 5 repas par jour. On se lève
+               vers 6h30 pour commencer à 7h. On mange le matin des tartines de marmelade rouge avec
+               du café au lait non sucré, puis à 9h le kleine meltry, des tartines avec un peu de
+               margarine et des petites rondelles de saucisson, du pâté du fromage ou du lard, c’est
+               meilleur qu’au matin. A midi on touche de la soupe aux pommes de terre avec des
+               lardons dedans ou alors des patates avec un petit morceau de viande, ou un jour c’est
+               un œuf, un </p>
+         </div>
+         <div type="page" n="11">
+            <p> autre jour c’est 2 poissons, à l’eau bien entendu. A 1h, reprise du boulot, à 4h une
+               demi-heure de casse-croute, tartines à la marmelade et le soir à 7h fin du boulot ;
+               10 minutes après, souper, on touche de la soupe au lait pas pur, avec de la pâte
+               dedans et des pommes de terre, soit au lait avec du laurier et de la graisse. On
+               n’est pas mal nourri et on ne se plaint pas ; malgré tout un certain jour nous
+               refusons de manger la soupe, un soupe aux patates avec des petits morceaux de lard
+               dedans, mais la viande sent mauvais. On appelle <persName>le gardien</persName> et on
+               lui fait sentir la soupe et on lui dit que si on n’a pas autre chose on ne travaille
+               pas. Finalement on nous apporte des tartines. Le travail marche, on n’est embêté par
+               personne. Le plus dur c’est que nous n’avons plus rien à fumer. Nous sommes heureux
+               quand nous touchons des cartes et du papier à lettre pour pouvoir écrire. Le dimanche
+               le gardien nous fait promener un peu aux environs de l’usine. J’apprends que mes
+               copains <persName>Royer</persName>, <persName>Lesaut</persName> et
+                  <persName>Malevede</persName> sont à 1200m de nous à
+               <placeName>Kiakau</placeName>, un petit patelin. Nous y allons un dimanche et je
+               revois les copains. Ils sont tous dans des fermes ; ils sont très bien et eux
+               possèdent du tabac et des cigarettes, aussi <persName>Royer</persName> m’offre des
+               cigarettes, les moral est meilleur, petit à petit on s’y fait. Au <date>mois
+                  d’aout</date> nous faisons un peu la moisson qui ne dure pas longtemps, elle n’est
+               pas abondante et nous sommes nombreux, puis nous faisons des briques et des tuiles.
+               Vient l’arrachage des pommes de terre et des betteraves. J’arrache des pommes de
+               terre, le champ est grand, puis je garde les vaches pendant 3 semaines, il y en a 3,
+               alors que les copains arrachent des betteraves. Déjà il fait froid. Les gelées
+               commencent et la briqueterie doit s’arrêter. On </p>
+         </div>
+         <div type="page" n="12">
+            <p> entend parler que l’on retournerait peut-être à <placeName>Stabluch</placeName>.
+               Cela ne nous fait pas sourire, je préfère travailler et manger un peu plus. Il faut
+               dire que nous ne connaissons pas la vie de camp ; elle était meilleure qu’au mois
+               d’aout du fait que la <orgName>Croix-Rouge Française</orgName> envoie des vivres et
+               que ceux qui restent au camp touchent davantage que ceux des kommandos. Enfin on
+               arrive au <date>mois d’octobre</date>. <persName>Les alsaciens</persName> s’en
+               retournent chez eux au début du mois et le <date>27 octobre</date> nous allons tous
+               travailler en forêt. Le dimanche avant de commencer à travailler, le <persName>garde
+                  forestier</persName> nous apporte une paire de sabots en bois et des chemises que
+               nous devons payer. Au début nous sortons des bûches de bois en 1m dans un petit
+               sentier pour mettre en tas. Nous allons loin, environ 5km pour y aller. Nous sommes
+               toujours nourris par la <orgName>maison Weiss</orgName>. Ils doivent nous installer
+               un feu dans la chambre et <persName>une cuisinière</persName> pour nous faire nous-
+               même la cuisine. Du boulot on ne se plaint pas, on travaille beaucoup plus près,
+               heureusement car nous avons la neige depuis <date>fin octobre</date>. Nous abattons
+               des arbres, les ébranchons et les scions en morceaux de 1m de long, ça me plait,
+               pourtant il fait assez froid, mais je suis bien vêtu. Le cuistot est nommé c’est
+                  <persName>Léon Hérard</persName> qui nous fait la cuisine. J’aurais pu la faire,
+               mais je préfère ma liberté, car les dimanches le cuistot doit travailler tandis que
+               moi je vais me promener à <placeName>Krah…</placeName> voir les copains et boire un
+               coup. Nous sommes au <date>mois de novembre</date> et c’est vers la fin de ce mois
+               que je touche mon premier colis avec tous les </p>
+         </div>
+         <div type="page" n="13">
+            <p> lainages que j’avais demandés. Une seule chose que je regrette, c’est qu’il n’y a
+               pas de tabac. Enfin ce n’est rien car ce colis m’apprend que vous êtes en vie et
+               l’espoir revient. On se fait petit à petit à sa vie de prisonnier ; d’ailleurs on
+               n’est pas embêté. Les autres colis arrivent et les copains nous font gouter de leur
+               tabac et de leurs cigarettes. Voilà que les premières lettres arrivent. On est tous
+               contents quand on reçoit la première lettre, mais quel cafard aussi. La
+                  <date>Noël</date> approche, on projette de faire un petit réveillon. On se
+               débrouille avec <orgName>les Weiss</orgName>, avec le gardien pour acheter du
+               schnaps, chacun sa bouteille, on aura de la bière aussi, des cigarettes. Avec des
+               copains qui travaillent dans une ferme on achète plusieurs poules et le jour du
+               réveillon on mangera assez bien, avec un peu des colis que nous mettons en commun. La
+                  <persName>patronne du café de <placeName>Krah…</placeName></persName> nous envoie
+               chacun un paquet de cigarettes et je me souviens être un peu saoul ce soir-là, et les
+               copains aussi, en souhaitant que le prochain réveillon on l’aurait fait chez soi –
+               hélas. Le dimanche nous allons souvent voir les copains à
+                  <placeName>Krah...</placeName> avec mon copain <persName>Bance Maurice</persName>,
+               un coiffeur de <placeName>Mézidon</placeName>, et nous rentrons au café. On passe par
+               la cuisine, et là on se fait servir quelques verres de schnaps, ou de la bière. Nous
+               pouvons acheter des cigarettes, mais malheureusement je ne gagne que 14 Marks 04 par
+               mois et je suis toujours à sec. Un petit verre de goutte coûte 0,20 M et un paquet de
+               6 cigarettes 0,24 M. <persName>La patronne</persName> est une belle femme de 40 ans
+               qui a beaucoup de sympathie pour les français. Son mari est en occupation à
+                  <placeName>Prague</placeName>. Il y a une petite fille de 7 ans qui est très
+               gentille. Nous ne parlons pas beaucoup l’allemand, mais on se fait comprendre </p>
+         </div>
+         <div type="page" n="14">
+            <p> quand même. Le <date>jour de Noël</date>, l’après-midi, nous y entrons et la
+               patronne nous invite à la table et nous apporte une assiette de gâteau bien garnie,
+               et une tasse de café, nous ne savons comment remercier. Le prisonnier qui travaille
+               là-dedans doit être très bien. D’ailleurs nous sommes comme là-dedans, nous sommes de
+               bons clients et en semaine le soir, nous y venons sans que <persName>le
+                  gardien</persName> le sache pour acheter de la bière que nous rapportons dans nos
+               serviettes, et des cigarettes et des allumettes. Il fait mauvais temps, il y a 50cm
+               de neige, mais nous y allons quand même. Pour fumer je n’ai pas peur de mes jambes.
+               Nous remarquons qu’il y a deux beaux chats bien gras et nous faisons comprendre que
+               nous les voudrions pour manger ; gros éclats de rire de qui ne veut nous croire.
+               Enfin on prend les chats dans un sac et on les emporte. Nous avons promis avant de
+               rapporter les peaux. Les copains sont heureux de voir cela. Ils sont vite tués. On
+               les met dehors un peu à la gelée et comme c’est dimanche le cuistot fait un bon
+               ragout avec ces deux pauvres bêtes. Au moment d’en manger, je n’en ai pas voulu. Je
+               n’ai mangé que la sauce qui était excellente. Ils se sont bien régalés et la
+                  <orgName>famille Weiss</orgName> rigolait bien de tout cela. Une autre fois c’est
+               une petite escapade que nous avons faite <date>un dimanche de janvier 1941</date>,
+               avec <persName>Bance</persName>. Nous avions à ce moment-là <persName>un nouveau
+                  gardien</persName>, un prussien, pas bien méchant, mais assez méfiant et qui avait
+               peur. Il nous comptait plusieurs fois par jour et surtout au moment de la soupe il
+               nous comptait à chaque coup, or ce dimanche-là le gardien nous dit qu’il va voir le
+               sous- officier pour des échanges de linge. Nous profitons donc du départ du gardien
+               pour nous rendre à <placeName>Krakaw</placeName> voir les copains. Je </p>
+         </div>
+         <div type="page" n="15">
+            <p> reste un moment avec eux puis comme ils vont à la soupe nous partons et en passant
+               on rentre au bistrot pour boire un verre, avec <persName>Royer</persName>. On en boit
+               un, puis plusieurs. <persName>Gustave</persName> s’en va pour diner, nous allons
+               partir également, mais je vois <persName>la patronne</persName> qui sort de son four
+               électrique un beau gâteau de viande-hachis qui nous donne de l’appétit. Pris de
+               culot, je demande à la patronne si on peut manger là. Elle se met à rire, hésite,
+               j’insiste et nous obtenons gain de cause. Aussitôt la bonne dresse la table dans la
+               chambre à coucher et on nous sert deux tranches de viande à chacun, des pommes de
+               terre et de la sauce. C’était bon. Nous demandons du pain, car au restaurant on ne
+               sert jamais de pain en mangeant. Puis elle nous sert une bonne portion de pudding
+               avec une sauce aux fruits, ensuite nous buvons du café avec plusieurs petits verres.
+               On paie pour cela chacun 0,70 M. On fume plusieurs cigarettes. La petite fille joue
+               avec nous, on n’est pas pressés. Tout à coup un coup de téléphone, c’était le
+                  <persName>gardien</persName> qui, s’étant aperçu de notre fugue, téléphonait à la
+               patronne pour savoir si on était là. La bonne femme était un peu embêtée, elle nous
+               prévient bien gentiment, mais nous étions bien saouls et on avait du mal à se tenir
+               sur les jambes. La patronne rigolait bien. On s’en va donc dans la neige. On arrive
+               au logis, <persName>le gardien</persName> nous attendait, tu parles de l’engueulade
+               que nous recevons, il criait, il gueulait, mais on ne comprend pas ce qu’il nous dit.
+               Moi je ne dis rien, <persName>Bance</persName> lui veut rouspéter puis va se coucher.
+                  <persName>Le gardien</persName> pour nous punir nous donne les waters à nettoyer,
+               ce que nous faisons sans rouspétance, et l’affaire s’est terminée comme cela. Nous
+               avons bien ri également et les copains aussi, mais nous étions culottés. Enfin la vie
+               à <placeName>Perentienew</placeName> n’a pas été </p>
+         </div>
+         <div type="page" n="16">
+            <p> plus mauvaise pour nous prisonniers. Le courrier arrive petit à petit et les colis
+               aussi et ils sont la grande joie quand on y trouve quelques paquets de tabac. Le
+               boulot continue toujours dans la forêt. Il fait froid. Il fait -28° et -30° assez
+               souvent aussi un français reste en permanence pour faire du feu et on vient se
+               chauffer de temps en temps. Il faut marcher dans la neige et la déblayer au fur et à
+               mesure qu’on avance pour abattre les arbres. On a les pieds mouillés quand on rentre
+               le soir, mais je n’ai pas souvent eu froid car je mets deux paires de chaussettes de
+               laine, une paire de chaussettes de coton et des chaussettes russes et de la paille
+               fraiche tous les jours dans mes sabots. D’ailleurs j’avais cloué des toiles de sac
+               autour pour que la neige ne pénètre pas. Le moral est assez bon. Un copain joue du
+               violon tous les soirs et on ne mange pas mal. Nous touchons 750g de pain par jour
+               plus un peu de margarine, de saucisson, de fromage et de marmelade. Des pommes de
+               terre nous en avons à volonté, c’est le principal. Le cuistot français se débrouille
+               bien. Il nous fait une bonne soupe que nous mangeons en rentrant et un plat de purée,
+               de rata ou des pommes de terre sautées. Il arrive à nous faire de temps en temps des
+               frites et nous nous régalons bien. Nous touchons aussi du petit lait. On fait une
+               soupe que nous mangeons avant de partir le matin. On emporte aussi des pommes de
+               terre que nous faisons cuire dans la cendre. On mange cela sur son casse-croute et le
+               meilleur repas c’est le soir que nous le faisons, en rentrant. Nous rapportons du
+               bois tous les jours, aussi nous faisons du bon feu dans la chambre. Après souper des
+               camarades jouent aux cartes, nous avons quelques bouquins, ce qui nous fait passer le
+               temps et puis comme j’ai un </p>
+         </div>
+         <div type="page" n="17">
+            <p> peu à fumer, le temps passe. Au début du <date>mois d’avril</date> nous n’abattons
+               plus d’arbre, aussi jusqu’au <date>23 avril</date> nous ne faisons plus rien. La
+               neige commence à disparaitre, il fait meilleur, on peut dire que nous avons eu un dur
+               hiver. Nous envisageons bientôt notre retour à la briqueterie, pour le <date>mois de
+                  mai</date>. Mais voilà qu’un jour <persName>le sous-officier</persName> vient nous
+               prévenir que nous devons partir le lendemain matin. <persName>Le père
+                  Weiss</persName> est désolé. Il téléphone à <orgName>la Cie</orgName> pour que
+               nous restions, mais il n’y a rien à faire, nous devons partir et être répartis dans
+               des fermes. Mon copain <persName>Legros</persName> est désigné pour aller au café à
+                  <placeName>Krak...</placeName> et nous préparons nos affaires. Le lendemain matin
+               nous partons en voiture à la gare voisine et <persName>le gardien</persName> nous
+               conduit à <placeName>Labiau</placeName> à <orgName>la Cie</orgName>. De là nous
+               partons à <placeName>Libenfelde</placeName> où un gardien, une vraie brute, nous
+               conduit à <placeName>Sliccken</placeName>, à 5km de
+               <placeName>Libenfelde</placeName>, où je dois travailler dans une ferme. Je loge dans
+               une chambre avec 3 autres français. Le lendemain matin le gardien me conduit à la
+               ferme où je dois travailler, une petite ferme de 12 ha environ avec 2 chevaux, 3
+               vaches et des cochons. <persName>Le patron</persName> est un homme d’environ 52 ans.
+               Il y a <persName>sa femme</persName> et <persName>une jeune fille de 20
+                  ans</persName>. Ils me regardent tous des pieds à la tête, ayant l’air de se
+               demander si je vais faire l’affaire, surtout que je ne suis pas « fermier » de
+               profession. Je me sens bien seul là-dedans. Je ne sais pas si je pourrais m’y
+               habituer. On me demande si je m’y connais aux chevaux. Un jour que <persName>le
+                  patron</persName> n’était pas là <persName>la patronne</persName> vient dans
+               l’écurie et me dit de donner à manger aux chevaux. Je porte à manger au cheval Isaac
+               et Laura. Tout à coup celui-ci veut me mordre et en repassant à côté de lui il
+               m’envoie une ruade qui m’effleure seulement. J’ai tout de suite compris et </p>
+         </div>
+         <div type="page" n="18">
+            <p> dorénavant je ne donnerai plus à manger aux chevaux. Je ne veux plus, il n’y a rien
+               à faire, je n’ai pas envie de me faire tuer. Surtout que <persName>le
+                  patron</persName> avait été blessé par ce cheval et avait été hospitalisé quelques
+               temps avant que j’arrive chez eux. Je m’occupe un peu des vaches. Je trie les pommes
+               de terre pour la semence. Ça va, la nourriture est bonne et abondante, on mange 5
+               fois par jour. <persName>Le patron</persName> m’apprend à herser dans les champs,
+               c’est laborieux. Je m’applique pour faire le mieux possible, mais le mieux est de ne
+               jamais savoir rien faire, car plus on en fait, plus il faut en faire, et puis le
+               vieux est assez méticuleux et je lui explique que je ne suis pas cultivateur. Une
+               grosse bêtise de ma part, c’est d’avoir appris à traire. Je n’y tenais pas, mais ils
+               m’ont obligé. C’est un grand embêtement car il faut arriver plus tôt le matin pour
+               traire. Puis vient le moment des foins. J’apprends à faucher. C’est assez difficile,
+               mais j’y arrive. Il faut raser l’herbe assez rase. Le plus dur c’est de faire les
+               fossés car on ne perd rien du tout. Je sais qu’il y a des jours où je rentre le soir
+               et je suis fatigué, surtout au moment où on rentre les foins. Le meilleur moment pour
+               moi c’est le soir quand je rentre au logis où je retrouve les copains. Là je fumais
+               ma pipe bien tranquillement et nous discutions ensemble. Il y avait à ce moment-là
+                  <persName>Louis Sanguier</persName>, <persName>Dalizon</persName>, <persName>Morel
+                  Robert</persName>, <persName>Flambenaut Roland</persName> et <persName>Aimar
+                  Raymond</persName>. <persName>Le gardien</persName> que nous avons s’en va et il
+               est remplacé par un type plus intéressant, et c’est tant mieux. La moisson arrive
+               vers les premiers jours du <date>mois d’aout</date>. Nous commençons à couper les
+               seigles, on en fait une grande partie à la faux, et c’est assez dur. <persName>Le
+                  patron</persName> trouve que je laisse trop long les éteules et il me fait voir à
+               plusieurs reprises comment il faut </p>
+         </div>
+         <div type="page" n="19">
+            <p> s’y prendre, il rouspète et comme ce jour-là j’ai mal aux dents, ça ne va pas tout
+               seul, on s’engueule tous les deux sans d’ailleurs se comprendre ni l’un ni l’autre.
+               Il me raconte qu’il faut épargner le grain car l’<placeName>Allemagne</placeName>
+               doit ravitailler la <placeName>France</placeName> et nous ne sommes pas d’accord sur
+               ce point. Enfin la moisson ne dure pas longtemps et le lendemain soir c’est fini,
+               aussi après souper il apporte une bouteille de schnaps et me fait boire plusieurs
+               verres d’affilé et m’offre un cigare. Il ne conservait aucune rancune de la
+               discussion de la veille. On rentre la moisson et c’est au tour des avoines et des
+               orges, mais cela ça va mieux car ce qui est couché on le fait à la faux, mais le
+               reste on le fait à la machine, avec la faucheuse au foin et on ne lie rien, on rentre
+               cela en vrac. C’est du travail car il fait beau temps et il faut se dépêcher. La
+               saison est toujours incertaine. Après avoir rentré la moisson on bat à la batteuse
+               une partie du seigle pour avoir le grain pour l…. et avoir de la farine, et aussi
+               pour avoir de la paille pour les bêtes. C’est une dure journée, les voisins et les
+               prisonniers viennent donner la main. Je n’ai jamais eu la mauvaise place sur la
+               machine, et puis ce jour-là on mange bien, on boit le schnaps. Voici comment l’on
+               fait. La bouteille sur la table et un verre. Le propriétaire de la machine se verse
+               un verre et le boit et ensuite remplit un verre pour son voisin, celui-ci boit et
+               remplit un verre pour son voisin et ainsi de suite jusqu’à épuisement complet des
+               bouteilles. Ensuite vient l’arrachage des pommes de terre, qui est long du fait
+               qu’ils en mettent beaucoup. La première année c’est avec la charrue, l’année d’après
+               il y aura une machine neuve. Les pommes de terre durent un bon moment car nous ne
+               sommes pas bien nombreux pour le ramassage. Le froid arrive, </p>
+         </div>
+         <div type="page" n="20">
+            <p> puis voilà les betteraves, c’est long aussi car on en arrache qu’une petite quantité
+               tous les jours de façon à avoir des feuilles fraiches pour les vaches. Quand nous
+               aurons fini les travaux des champs nous n’aurons plus grand boulot, car le déchaumage
+               et le labourage c’est le patron qui les fait. Il y a le fumier à charrier ce qui dure
+               une journée. Un petit incident que j’ai eu ce avec <persName>la patronne</persName>
+               jour-là. Le charroi du fumier se faisait avec deux voitures, une dans l’écurie et
+               l’autre dans les champs qui se déchargeait. Je chargeais donc les voitures dans
+               l’écurie avec <persName>la patronne</persName>, <persName>le patron</persName> lui,
+               conduisait les voitures et les déchargeait. C’était assez dur car le fumier dans les
+               écuries n’était jamais enlevé. On mettait de la paille aux bêtes et ça devenait
+               fumier. Ça sentait dans l’écurie et quand on charriant fumier le niveau baissait d’au
+               moins 80cm et même d’un mètre et on arrivait au ras du sol. C’est donc dur d’arracher
+               le fumier avec un croc, puis avec la fourche pour charger la voiture. On chargeait
+               donc la voiture à deux et il ne fallait pas s’amuser. <persName>La
+                  patronne</persName> trouvait que je ne travaillais pas assez, que je n’allais pas
+               assez vite, alors que j’en faisais autant qu’elle. Or ce jour-là on s’était engueulé
+               et je ne me laissais pas faire. Voilà qu’arrive une voiture de la police avec un
+               policier, il était venu pour la vérification des cochons. Je reste seul dans l’écurie
+               et <persName>la patronne</persName> et <persName>le policier</persName> vont dans
+               l’étable à cochons. J’entends que celle-ci se plaint que son prisonnier français ne
+               veut pas travailler etc… Je m’attends donc à voir le représentant de l’autorité et
+               son képi vert ; en effet celui-ci m’avise et m’interpelle « français, Madame se
+               plaint que tu ne travailles pas. Tu es prisonnier, tu dois travailler pour
+                  l’<placeName>Allemagne</placeName> ». Je lui dis « je le sais et je travaille » je
+               lui dis que </p>
+         </div>
+         <div type="page" n="21">
+            <p>
+               <persName>la patronne</persName> rouspète toujours et que les camarades dans les
+               autres fermes ont une heure de pause à midi alors que moi je ne l’ai pas etc… Il se
+               met à brailler, je lui dis que je ne veux plus rester ici et que je demande à partir
+               et retourner à la <orgName>Compagnie</orgName>. Il se met en colère et me donne
+               quelques bonnes gifles. Je ne bronche pas, je ne peux rien faire, ça me chauffe les
+               oreilles. Il me demande mon numéro de prisonnier et me dit qu’il allait se plaindre à
+               la <orgName>Compagnie</orgName>. Je n’ai jamais entendu parler de rien. <persName>Le
+                  patron</persName> revient sur ce fait des champs et se demande ce qu’il y a eu et
+               à la fin il engueule sa femme de ce qu’elle avait fait. Si nous avions eu un bon
+               gardien je lui aurais bien raconté l’histoire, mais comme il s’en foutait et que je
+               n’avais aucun espoir d’être défendu par lui je n’ai pas osé lui en parler. J’ai
+               souffert longtemps en moi-même de cette affaire et je n’étais plus très d’accord avec
+                  <persName>la bonne femme</persName> tandis qu’avec <persName>le patron</persName>
+               je m’entendais assez bien.<persName> La jeune fille</persName> c’était le même
+               portrait que sa mère, une pimbêche qui se croyait quelque chose. Par la suite c’était
+               la guerre avec les femmes. Je patientais toujours car j’avais des bons copains et
+               peut-être que la <orgName>Compagnie</orgName> n’aurait pas voulu que je parte. Bref
+                  <date>l’hiver</date> se passe sans grand travail. Donner à manger aux poules, aux
+               vaches, préparer le manger pour les cochons et les chevaux. De midi après la soupe
+               jusqu’à 2h30 où on commençait à donner à manger aux bêtes, je restais dans l’étable
+               aux cochons où je fumais ma pipe. J’avais toujours du tabac à volonté. De temps en
+               temps quand il faisait très froid, je me chauffais avec <persName>le
+               vieux</persName>, le dos appuyé au feu et nous discutions. A 4h la journée était
+               finie et vers les 4h30-5h j’étais de retour au logis où l’on bouquinait jusque 9h… Tu
+               parles si les PAGE 22 soirées étaient longues. Que l’hiver est long ! Heureusement à
+               cette époque je ne manquais jamais de tabac. Les colis arrivaient bien et j’avais
+               toujours une livre de tabac d’avance. <date>Noël</date> arrivait. Nous avons fait un
+               petit réveillon ensemble avec le contenu de nos colis, c’était quand même bon, mais
+               nous n’avions rien pour trinquer, pas même de la bière, mais alors du lait que nous
+               chipions au fermier par seau entier. Il fait toujours froid, mais on est quand même
+               mieux que dans la forêt. <date>Un dimanche de fin janvier</date>, il fait 40° en
+               dessous de zéro, les copains qui sont dans la ferme sont toujours en bagarre avec
+               leur fermier au sujet de la nourriture et demandent toujours pour partir. Finalement
+               ils s’en vont vers <date>la fin mars 1942</date> et sont aussitôt remplacés par
+                  <persName>Gabriel Prade dit Toto</persName>, <persName> André Poret dit
+                  Totoche</persName> et <persName>Castet Marcel</persName> dit le roi de la pierre à
+               briquet. Tous trois sont de bons copains. <persName>Poret</persName> a un banjo et
+               nous joue de la musique tous les soirs. Nous sommes abonnés à des journaux français
+               et nous les recevons assez bien. Le dimanche nous nous promenons un peu et allons
+               voir les camarades dans d’autres Kommandos. Nous avons de temps en temps à
+                  <placeName>Libenfelde</placeName> une messe, environ une fois par mois et nous y
+               allons tous. En même temps si nous avons un colis à la <orgName>Compagnie</orgName>
+               nous le rapportons. Nous avons eu également 2 séances de théâtre données par la
+               troupe de la <orgName>Cie de Labiau</orgName>. Ça nous semble bien et ça distrait un
+               peu. Nous avons la liberté de sortir comme on veut et d’ailleurs on n’est plus
+               enfermé le soir et voici que le beau temps arrive. <date>Le 1er mai 1942</date> j’ai
+               un petit incident avec les patrons. J’avais vu sur les journaux que le 1er mai était
+               jour férié, d’ailleurs la veille <persName>le gardien</persName> était venu nous
+               voir. Donc j’avais la ferme idée de ne pas travailler le lendemain PAGE 23 <date>1er
+                  mai</date>. Au matin j’arrive, je donne à manger aux bêtes, je porte le lait puis
+               je me lave comme tous les matins et je déjeune, ensuite je sors dans la cour.
+                  <persName>La patronne</persName> me crie et me dit d’atteler les chevaux pour
+               aller dans les champs. <persName>Le patron</persName> lui, était déjà dans les
+               champs, il semait de l’engrais. Je lui réponds qu’aujourd’hui c’est fête et qu’on ne
+               travaille pas. Elle s’emballe et me dit par plusieurs fois d’atteler. Je dis je m’en
+               retourne au logis et je vois les copains, nous sommes d’accord pour ne pas
+               travailler, aussi ça fait révolution. <persName>Les patrons</persName> vont trouver
+                  <persName>le gardien</persName>, celui-ci s’amène plusieurs heures plus tard. Il
+               téléphone au <persName>Sous-off</persName> à <orgName>la Cie</orgName>. Celui-ci
+               vient en vélo et nous dit de travailler car il fait beau temps et le travail des
+               champs presse et il n’y a que dans les usines qu’on ne travaille pas et il fallait
+               donc obéir. Je retourne donc à la ferme, <persName>la patronne</persName> m’engueule
+               des pieds à la tête et la fille aussi et me disent que je suis un communiste, un
+               bolchevick etc… et alors que d’habitude je mangeais avec eux dans la cuisine, à
+               partir de ce jour-là, elles mettent la table dans la chambre à coucher. A midi
+                  <persName>le patron</persName> ne veut pas manger avec elles, il va chercher mon
+               assiette et revient dans la cuisine. Il dit que je travaille avec lui et que je dois
+               manger avec lui. Tout cela ne me fait rien du tout, que je mange seul, je suis aussi
+               tranquille. La guerre avec les femmes est déclarée, heureusement que <persName>le
+                  vieux</persName> tient avec moi. Par la suite je demande par plusieurs fois de
+               partir de la ferme, mais ils ne veulent pas. Je me serais bien plu en ferme à
+               condition de travailler avec d’autres camarades. Le travail continue et la moisson de
+                  <date>1942</date> arrive. Toujours beaucoup de travail. J’en ai marre de
+               travailler dans cette ferme. Je voudrais aller dans une autre ferme où je serais avec
+               d’autres PAGE 24 français, là je m’ennuierais moins. Il m’arrive souvent de
+               m’engueuler avec <persName>la patronne</persName>. Je sens bien qu’ils ne me
+               lâcheront pas maintenant, car il y a beaucoup de travail, mais qu’<date>au début de
+                  l’hiver</date> je partirai et c’est tant mieux. Le matin nous nous levons à 6h
+               alors que le premier été, quand je suis arrivé en <date>1941</date> nous nous levions
+               à 5h, des fois 4h45, nous avions à ce moment-là un mauvais gardien, tandis que
+               maintenant c’est <persName>le fermier</persName> qui vient nous réveiller. Au matin,
+               quand il ouvre la porte et nous dit de sa voix claironnante « Aufechten » nous lui
+               répondons par toutes sortes de bêtises. Il se souviendra des français ce nervi
+               fermier prussien. Nous avons acheté pour 35 Marks un phono avec disques, à des
+               polonais. Nous avons mis chacun 5 Marks. Tous les soirs le phono marchait à tout
+               casser et le matin quand le vieux venait nous réveiller on mettait le phono en
+               marche, il rouspétait et on était content de l’entendre. Au <date>début de
+                  novembre</date>, les 3 copains <persName>Prade</persName>,
+                  <persName>Castet</persName> et <persName>Poret</persName> quittent la ferme et se
+               trouvent séparés. Deux autres français viennent les remplacer. Le <date>19 novembre
+                  1942</date> je vois <persName>le gardien</persName> qui vient à la ferme. Je me
+               doutais de quelque chose, aussi je vais voir les copains au logis et je me doute que
+               mon départ est imminent. <persName>Les patrons</persName> étaient partis au marché,
+                  <persName>la jeune fille</persName> était prévenue de mon départ, mais ne me
+               disait rien. Je ne travaille plus. <persName>Le patron</persName> rentre de la ville
+               et aussitôt rentré, à 12h me dit que je pars l’après-midi. Je pars préparer mes
+               affaires. Je ne sais pas où je vais. Je comptais plutôt aller en forêt après diner.
+                  <persName>Le gardien</persName> vient me régler mon compte et <persName>le
+                  patron</persName> me conduira jusqu’à <placeName>Libenfilde</placeName> où je
+               coucherai, car le lendemain je dois partir de bonne heure pour
+                  <placeName>Lubien</placeName> pour la <orgName>Compagnie</orgName>. Vers </p>
+         </div>
+         <div type="page" n="22">
+            <p> 3h de l’après-midi nous attelons la voiture et la patronne me donne un casse-croute
+               pour le lendemain. Nous allons jusque <placeName>Mulheren</placeName> où nous prenons
+               le train et à <placeName>Libenfilde</placeName> je couche au logis de la
+                  <orgName>Compagnie</orgName> avec les copains. Le lendemain matin on prend le
+               train à 5h. Nous étions assez nombreux, je retrouve sur le quai de la gare mon copain
+                  <placeName>Toto</placeName> qui avait été viré de sa ferme. Nous arrivons à
+                  <placeName>Lubian</placeName> et nous allons à la <orgName>Compagnie</orgName>.
+               Nous y passons une partie de la journée. Nous voyons arriver
+                  <persName>Castet</persName> qui lui aussi était viré de sa ferme. Nous apprenons
+               que nous partons à <placeName>Königsberg</placeName> pour travailler en usine. C’est
+               moche, mais enfin, on ne fait pas ce qu’on veut. L’après-midi nous prenons le train
+               nous sommes une cinquantaine et nous arrivons à <placeName>Königsberg</placeName>. Il
+               faisait nuit. Nous allions vers le K° de la <orgName>Reichsbahu</orgName>. On y
+               arrive. Je me voyais rentrer à <persName>Stabluck</persName> de nouveau, le camp est
+               immense, tout entouré de barbelés. Depuis le temps que nous n’en avions pas vus, ça
+               fait triste. Nous sommes mis tous les trois dans une chambre avec des belges. On sent
+               tout de suite que nous serions mieux que dans les fermes. Nous sommes répartis dans
+               différents services. Je n’ai pas de veine, je suis aux locos. C’est un travail assez
+               dur et surtout très salissant. Ça fait un bruit la dedans, une fumée, je ne pourrais
+               jamais m’habituer la dedans. Enfin, petit à petit ça va, la nourriture n’est pas
+               abondante, surtout que les colis n’arrivent pas bien, au début, avec ce changement de
+                  <orgName>Compagnie</orgName>. Aussi <persName>les belges</persName> ne mangent pas
+               toute leur soupe et nous en mettent de côté pour le soir. Puis les colis arrivent, ça
+               va mieux. On fait la popote à trois et ça marche bien. <persName>Castet</persName> au
+                  <date>mois de mai</date> part pour aller travailler à la <orgName>fluch
+                  Waren</orgName>. Ce sera un belle affaire pour </p>
+         </div>
+         <div type="page" n="23">
+            <p> nous, mais il est très loin, à 5km du <orgName>Kommando</orgName> et ce sera
+               difficile pour y aller. On parle de nous faire passer civil, de même que ceux qui
+               sont bien notés, qui ont le plus de pourcentage. Je n’en serai donc pas ! Mais après
+               on dit que c’est tout le monde, et le <date>samedi 10 juillet 1943</date> nous sommes
+               tous rassemblés et nous allons dans la cour de l’hôtel <placeName>Fried
+                  Parck</placeName>. Sur l’estrade sont rassemblés le colonel allemand de
+                  <placeName>Stablack</placeName>, le <persName>général Didelet</persName>, le
+               directeur de la <orgName>Reichbahen</orgName> et d’autres personnalités. Il y a
+               plusieurs discours, le <persName>général Didelet</persName> nous dit, vous devez tous
+               passer civil, vous n’avez pas à discuter, c’est un ordre. C’est un arrangement entre
+               les deux gouvernements. Il nous dit les avantages que nous aurons. On sent bien qu’il
+               y a pression faite sur nous. Nous devons passer dans une salle pour signer. Je n’y
+               vais pas tout de suite et nous attendons dans la cour avec mon copain
+                  <persName>Coffre Marcel</persName>. Nous sommes bien indécis. Ceux qui ne signent
+               pas, et ils ne sont pas nombreux, sont sur la scène et ensuite on les met dehors, à
+               part. Ils sont gardés par des sentinelles baïonnette au canon. A la fin nous nous
+               décidons quand même et nous allons signer. On parle de permission. On a tous un petit
+               espoir d’y aller et puis nous n’aurons plus de gardien. C’est une belle affaire ! Et
+               la nourriture doit changer. Nous allons avoir de l’amélioration en pain, en soupe,
+               nous aurons du saucisson plusieurs fois par semaine (lundi, mercredi, samedi). Nous
+               sommes libres, nous entrons et sortons du camp comme on veut, nous pouvons aller au
+               café, au cinéma. La paie sera intéressante et nous pourrons envoyer de l’argent chez
+               nous. Bref nous avons des avantages assez intéressants et je ne regrette rien. La
+               question du courrier est très intéressante, tous </p>
+         </div>
+         <div type="page" n="24">
+            <p> les deux jours je reçois une lettre, nous pouvons écrire tous les jours. Nous
+               recevons et pouvons acheter des journaux français. Ça nous met au courant de la
+               situation. Les colis arrivent à la douane et nous allons les chercher au bureau de la
+               douane. C’est un passe-temps et une demi-journée de congé. Je suis de temps en temps
+               au marché où nous pouvons acheter une musette de pommes de terre. Au point de vue
+               nourriture nous n’avons pas à nous plaindre. <persName>Castet</persName> nous donne
+               de temps en temps un paquet de viande ou de lard. Il est très chic pour nous. Il faut
+               dire qu’il a une belle place. Nous pouvons envoyer tous les mois un mandat jusqu’à
+               concurrence de 200 marks. La soupe est meilleure, ce sont des avantages appréciables.
+               Il y avait aussi la question de permission, mais je n’y comptais pas trop. Ici il en
+               est parti une trentaine. Le dimanche nous avons la messe de 10h à la salle du théâtre
+               et après la soupe je vais au football. Je prends le train N° 15 qui nous conduit
+               directement au terrain. Il y a de très jolis matchs à
+                  <placeName>Königsberg</placeName> il y a 25 équipes qui disputent le championnat
+               Il y a également des épreuves d’athlétisme, de …, de course à pied. Il y a des
+               représentations de théâtre dans les Kommandos tous les dimanches. Des séances de
+               cinéma, en français, dans une belle salle de spectacle. Nous roulons en tram comme on
+               veut. Quant au travail je m’y habitue, et puis on nous laisse la paix. Au matin en
+               arrivant <persName>le Chleu</persName> nous fait voir le boulot et ensuite il nous
+               laisse faire. Je travaille souvent avec deux prisonniers russes. Ce qu’il y a c’est
+               que c’est très salissant, mais nous avons des douches régulièrement. Malgré tout je
+               me plais beaucoup mieux ici qu’en ferme. On s’embête moins et le moral est meilleur.
+               Nous sommes contents </p>
+         </div>
+         <div type="page" n="25">
+            <p> que le <date>8 juin</date> nous apprenons le débarquement des <orgName>troupes
+                  américaines</orgName> en <placeName>France</placeName>. Nous envisageons une issue
+               fatale assez proche et la fin de la guerre vers le mois de <date>novembre
+               1944</date>. Nous allons faire du graben aux environs de
+                  <placeName>Königsberg</placeName>, le dimanche et aussi en semaine. Les nouvelles
+               sont bonnes. Les russes approchent de jour en jour mais nous prévoyons que nous ne
+               serons pas évacués et que nous aurons de durs moments à passer. Le vendredi <date>26
+                  janvier 1945</date> nous allons au boulot comme d’habitude, il n’y a pas de
+               courant. On ne peut donc pas faire grand-chose aussi on reçoit l’ordre de monter au
+               réfectoire et on ne travaille pas. Après la soupe, l’alerte sonne, on remonte au camp
+               et on ne remettra plus les pieds à l’usine. Le soir du vendredi les prisonniers
+               français, belges et russes sont évacués, ils partent à pied, le canon tonne de plus
+               en plus près. On se sent bientôt aux mains des russes. Le samedi <date>27 janvier
+                  1945</date> on ne descend pas au boulot, malgré les ordres. Nous pensons que nous
+               resterons là et nous demandons nos affaires dans les abris qui sont à côté des
+               baraques. Le soir vers 6h nous recevons la nouvelle de partir aussitôt vers le
+                  <placeName>camp de Livland</placeName>, nouvelle donnée par le logis fûrher. On
+               part avec nos traineaux, en vitesse, et on oublie des affaires. On va jusque
+                  <placeName>Livland</placeName> et de là au <placeName>camp de Bidow 5</placeName>,
+                  <placeName>Schichau</placeName>. On reste quelques jours sans rien faire. Les
+               allemands sont complètement désaxés. Les français s’occupent du ravitaillement des
+               300 hommes qui sont là. Ils font main basse sur la réserve à la grande cuisine. On
+               croit que <placeName>Königsberg</placeName> va être pris par les russes d’un moment à
+               l’autre. Erreur ! L’artillerie donne à tout casser. Les obus passent à côté et
+               au-dessus du camp. On enregistre plusieurs tués et blessés. PAGE 29 Puis les chleus
+               se réunissent. Ils nous envoient au graben, en ville et en dehors de la ville, par
+               tous les temps. Puis ensuite au graben de nuit. Je n’y suis allé qu’une seule nuit et
+                  le<date> 25 février</date> il faut 150 français pour
+                  <placeName>Wettgetten</placeName> qui se trouve à 6km de
+                  <placeName>Königsberg</placeName>. J’en suis ainsi que <persName>Toto</persName>
+               car les allemands ont repris <placeName>Wettgetten</placeName> qui était aux mains
+               des russes. Nous y arrivons, les cadavres trainent encore dans les rues. Nous logeons
+               dans un camp où il y avait des français et nous travaillons dans une cartoucherie.
+               Nous sommes très bien. Nous y passons les fêtes de Pâques. Le <date>samedi de
+                  Pâques</date> nous avons une belle messe sous les bombardements. Puis le
+                  <date>vendredi 6 avril</date> à 9h30 l’attaque commence. Je me mets provisoirement
+               dans des abris tout proches. Des femmes y étaient déjà, elles criaient, elles
+               pleuraient. Je sors et je vais dans nos abris. En passant je prends ma capote et ma
+               musette. Les bombardements continuent, la bataille fait rage et cela jusqu’au
+               mercredi matin <date>11 avril</date>. Vers 4h du matin les premiers soldats russes
+               arrivent dans l’abri où nous avons mis le drapeau blanc. Nous sommes aussitôt dirigés
+               vers <placeName>Königsberg</placeName> où nous y passons la nuit. Le lendemain on se
+               remet en route pour arriver à <placeName>Gumbiner</placeName> le <date>20 avril
+                  1945</date>, où nous avons été ravitaillés. Là nous sommes logés dans un grand
+               bâtiment du ministère des finances où nous attendons notre départ. Trois départs du
+               camp ont déjà eu lieu et lundi <date>25 juin</date> premier départ du bloc 150. On ne
+               fait rien ici, mais on s’ennuie terriblement. On trouve le temps bien long. On doit
+               se rendre à <placeName>Insterbrug</placeName> pour prendre le train qui se trouve à
+               30km d’ici. Le samedi <date>30 juin</date> à 5h du soir nous quittons le bloc pour
+                  <placeName>Insterbrug</placeName>. Nous avons un contrôle des russes dans un pré
+               et nous ne </p>
+         </div>
+         <div type="page" n="26">
+            <p> partons que vers 10h. Nous y arrivons vers 4h30 du matin. Là nous attendons dans une
+               prairie. Nous y touchons du ravitaillement pour 5 jours et nous allons à la gare vers
+               14h. On nous fait retourner, les wagons ne sont pas prêts. Nous y allons vers 19h et
+               on monte dans le train. On décore les wagons et on attend. Le dimanche <date>1
+                  juillet</date> à 2h du matin nous partons. Le train fait de longues haltes dans
+               les gares car il n’y a qu’une seule voie. Nous passons la
+                  <placeName>Vistule</placeName> le <date>mardi 3 juillet</date> au matin à
+                  <placeName>Torun</placeName>, puis on nous met sur une voie de garage. Depuis ce
+               matin 7h30 nous y sommes. Nous attendons une loco pour partir. C’est long. Des
+               polonais viennent avec du pain pour échanger. C’est un vrai marché. Départ de
+                  <placeName>Torun</placeName> le <date>mercredi 4 juillet</date>. On passe à
+                  <placeName>Berlin</placeName> le jeudi <date>5 juillet</date> à 10h le soir, sous
+               les acclamations des gens. Le vendredi on passe à <placeName>Burg</placeName> et on
+               se dirige sur <placeName>Magdebourg</placeName>. On reste une journée entière à
+                  <placeName>Moser</placeName> puis le soir à 8h une loco vient nous chercher et
+               nous conduit 3 km plus loin. On y passe la nuit, en pleine campagne. Le matin on
+               saute dans les champs pour cueillir des légumes frais. On y trouve pommes de terre,
+               carottes, haricots verts etc… Heureusement que nous avons trouvé cela car voilà deux
+               jours que nous sommes sans ravitaillement. Le soir une loco nous reprend et nous mène
+               à <placeName>Magdebourg</placeName> qui se trouve à 17km. On y arrive le soir, on
+               nous conduit en face des casernes, on reste sur le trottoir plusieurs heures. On s’y
+               endort et à 1h du matin on nous conduit dans d’autres casernes. On a le cafard de
+               voir qu’on va encore rester à sécher là-dedans. Le dimanche <date>8 juillet</date> on
+               attend toujours, on ne touche presque pas de ravitaillement. On doit aller voler des
+            </p>
+         </div>
+         <div type="page" n="27">
+            <p> patates dans les champs. Un convoi est déjà parti en camion pour aller du côté des
+               anglais </p>
+         </div>
+      </body>
+      <back>
+         <div type="postface">
+            <p> Papa rentrera à Pernes le samedi <date>21 juillet</date>, jour de la ducasse. Il
+               sera parmi les derniers à rentrer. Il ne le savait pas, mais à
+                  <placeName>Pernes</placeName>, des rumeurs funestes circulaient à son sujet et le
+               bruit courrait qu’il avait été tué. J’imagine la joie qui a du s’emparer de tous et
+               de maman en particulier. Le <date>dimanche 21 avril 1946</date> je pointais le bout
+               de mon nez ! </p>
+         </div>
+      </back>
+   </text>
+</TEI>
